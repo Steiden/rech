@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>РЭЩ</title>
+		<link rel="stylesheet" href="./styles/style.scss" />
+	</head>
+	<body>
+		<div class="dart_wrapper app">
+			<header class="container header">
+				<div class="space-between header__top">
+					<a href="/" class="header__logo"
+						><img src="/assets/img/logo.png" alt="logo" class="header__logo-link"
+					/></a>
+					<div class="input__wrapper header__search-input">
+						<input type="text" placeholder="Поиск по сайту" class="input" />
+						<div class="input__button-wrapper">
+							<button class="input__button">
+								<i class="d_icon d_icon-search"></i>
+							</button>
+						</div>
+					</div>
+					<div class="header__location">
+						<div class="header__location-title">
+							<i class="d_icon d_icon-mark d_icon--red"></i>
+							<span class="header__text">ПРОИЗВОДСТВО:</span>
+						</div>
+						<a
+							href="https://yandex.ru/maps/geo/rybinsk/53057096/?ll=38.819432%2C58.063320&z=12.41"
+							class="header__text header__text--big"
+							>Ярославская обл. г. Рыбинск</a
+						>
+					</div>
+					<div class="header__contacts">
+						<a href="tel:89611561186" class="header__text header__text--telephone"
+							>8 (961) 156-11-86</a
+						>
+						<p class="header__text">пн-пт 08:00 - 17:00</p>
+					</div>
+				</div>
+				<div class="space-between header__menu">
+					<button class="button button--blue header__catalog-button">
+						Каталог
+						<i class="d_icon d_icon-menu catalog-button__icon"></i>
+					</button>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="/" class="header__nav-link">Главная</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="/services" class="header__nav-link">Услуги</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="/projects" class="header__nav-link">Проекты</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="/documentation" class="header__nav-link">Документация</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="/about" class="header__nav-link">О предприятии</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="/partners" class="header__nav-link">Сотрудничество</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="/contacts" class="header__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="dart-main main"></main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>

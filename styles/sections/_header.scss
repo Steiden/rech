@@ -1,0 +1,108 @@
+.header {
+	@include flex-direction($gap: 34px);
+	margin-top: 60px;
+
+	p {
+		color: var(--primary-color);
+	}
+
+	&__top {
+		align-items: center;
+		gap: 20px;
+
+		width: 100%;
+
+		.header__logo {
+            border: none;
+            height: 100%;
+		}
+
+		.header__search {
+            height: 100%;
+		}
+
+		.header__location {
+			@include flex-direction($gap: 15px);
+            justify-content: space-between;
+            height: 100%;
+            color: var(--primary-color);
+		}
+
+		.header__location-title {
+			@include flex-direction(row, 15px);
+		}
+
+		.header__text {
+			&--big {
+				font-size: 20px;
+			}
+
+			&--telephone {
+				color: var(--link-hover-color);
+				font-size: 24px;
+                
+                &:hover {
+                    color: var(--thirdy-alt-color);
+                    border-color: var(--thirdy-alt-color);
+                }
+			}
+		}
+
+		.header__contacts {
+			@include flex-direction($gap: 15px);
+            justify-content: space-between;
+            height: 100%;
+		}
+	}
+
+	&__menu {
+		align-items: center;
+        gap: 20px;
+		width: 100%;
+
+        height: 60px;
+
+		.header__catalog-button {
+			font-size: 20px;
+
+			padding-inline: 25px;
+			min-width: 238px;
+		}
+
+		.header__nav {
+            @include flex-center;
+
+			background-color: var(--primary-alt-color);
+			border-radius: $border-radius;
+			padding: 5px 40px 4px;
+
+            height: 100%;
+            overflow: hidden;
+		}
+
+		.header__nav-list {
+			@include flex-center(row, 10px);
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            margin: 0;
+		}
+
+		.header__nav-item {
+		}
+
+		.header__nav-link {
+            color: var(--white-color);
+            padding: 0;
+            border: none;
+
+            border-radius: $border-radius;
+			padding: 12px 30px;
+            transition-duration: .3s;
+
+			&:hover {
+				background-color: rgba(0, 106, 171, 1);
+			}
+		}
+	}
+}

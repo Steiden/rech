@@ -1,0 +1,249 @@
+@font-face {
+	font-family: "Evolventa";
+	src: url("/assets/fonts/Evolventa-Regular.ttf") format("ttf");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "Evolventa";
+	src: url("/assets/fonts/Evolventa-Bold.ttf") format("ttf");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "Evolventa";
+	src: url("/assets/fonts/Evolventa-BoldOblique.ttf") format("ttf");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "Evolventa";
+	src: url("/assets/fonts/Evolventa-Oblique.ttf") format("ttf");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("/assets/fonts/icomoon.eot?mw4i7u");
+	src: url("/assets/fonts/icomoon.eot?mw4i7u#iefix") format("embedded-opentype"),
+		url("/assets/fonts/icomoon.ttf?mw4i7u") format("truetype"),
+		url("/assets/fonts/icomoon.woff?mw4i7u") format("woff"),
+		url("/assets/fonts/icomoon.svg?mw4i7u#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="d_icon-"],
+[class*=" d_icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.d_icon-search:before {
+	content: "\e92f";
+	color: #ac262f;
+}
+.d_icon-pin:before {
+	content: "\e900";
+	color: #006aab;
+}
+.d_icon-nano:before {
+	content: "\e901";
+	color: #006aab;
+}
+.d_icon-humidity:before {
+	content: "\e902";
+	color: #006aab;
+}
+.d_icon-arrow-double:before {
+	content: "\e903";
+	color: #006aab;
+}
+.d_icon-thermometer:before {
+	content: "\e904";
+	color: #006aab;
+}
+.d_icon-star:before {
+	content: "\e905";
+	color: #006aab;
+}
+.d_icon-event:before {
+	content: "\e906";
+	color: #006aab;
+}
+.d_icon-shop:before {
+	content: "\e907";
+	color: #006aab;
+}
+.d_icon-price:before {
+	content: "\e908";
+	color: #006aab;
+}
+.d_icon-like:before {
+	content: "\e909";
+	color: #006aab;
+}
+.d_icon-heart:before {
+	content: "\e90a";
+	color: #006aab;
+}
+.d_icon-anchor:before {
+	content: "\e90b";
+	color: #006aab;
+}
+.d_icon-rocket:before {
+	content: "\e90c";
+	color: #006aab;
+}
+.d_icon-up:before {
+	content: "\e90d";
+	color: #006aab;
+}
+.d_icon-chat:before {
+	content: "\e90e";
+	color: #006aab;
+}
+.d_icon-pen:before {
+	content: "\e90f";
+	color: #006aab;
+}
+.d_icon-doc2:before {
+	content: "\e910";
+	color: #006aab;
+}
+.d_icon-shield:before {
+	content: "\e911";
+	color: #006aab;
+}
+.d_icon-shield-person:before {
+	content: "\e912";
+	color: #006aab;
+}
+.d_icon-key:before {
+	content: "\e913";
+	color: #006aab;
+}
+.d_icon-settings:before {
+	content: "\e914";
+	color: #006aab;
+}
+.d_icon-check-mark:before {
+	content: "\e915";
+	color: #006aab;
+}
+.d_icon-doc:before {
+	content: "\e916";
+	color: #006aab;
+}
+.d_icon-search-accept:before {
+	content: "\e917";
+	color: #006aab;
+}
+.d_icon-quotation-left-red .path1:before {
+	content: "\e918";
+	color: rgb(172, 38, 47);
+}
+.d_icon-quotation-left-red .path2:before {
+	content: "\e919";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.d_icon-quotation-left-red .path3:before {
+	content: "\e91a";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.d_icon-quotation-right-red .path1:before {
+	content: "\e91b";
+	color: rgb(172, 38, 47);
+}
+.d_icon-quotation-right-red .path2:before {
+	content: "\e91c";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.d_icon-quotation-right-red .path3:before {
+	content: "\e91d";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.d_icon-mark-title-blue:before {
+	content: "\e91e";
+}
+.d_icon-mark-title-red:before {
+	content: "\e91f";
+}
+.d_icon-menu:before {
+	content: "\e920";
+}
+.d_icon-quotation-left:before {
+	content: "\e921";
+}
+.d_icon-quotation-right:before {
+	content: "\e922";
+}
+.d_icon-arrow-diagonal:before {
+	content: "\e923";
+}
+.d_icon-accept .path1:before {
+	content: "\e924";
+	color: rgb(172, 38, 47);
+}
+.d_icon-accept .path2:before {
+	content: "\e925";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.d_icon-close-red .path1:before {
+	content: "\e926";
+	color: rgb(172, 38, 47);
+}
+.d_icon-close-red .path2:before {
+	content: "\e927";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+}
+.d_icon-upload:before {
+	content: "\e928";
+}
+.d_icon-close:before {
+	content: "\e929";
+}
+.d_icon-mark:before {
+	content: "\e92a";
+}
+.d_icon-telegram:before {
+	content: "\e92b";
+}
+.d_icon-whatsapp:before {
+	content: "\e92c";
+}
+.d_icon-calculator:before {
+	content: "\e92d";
+}
+.d_icon-telephone:before {
+	content: "\e92e";
+}

@@ -1,0 +1,19 @@
+.button {
+	@include flex-center(row, 0);
+    justify-content: space-between;
+
+    border-radius: $border-radius;
+    
+	color: var(--secondary-color);
+    font-size: 18px;
+
+	height: 60px;
+
+	&--red {
+		background: linear-gradient(90deg, #ac262f 0%, #d12d23 100%);
+	}
+
+	&--blue {
+		background: linear-gradient(90.47deg, #1cabe7 0.38%, #006aab 99.59%);
+	}
+}
