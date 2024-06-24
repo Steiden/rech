@@ -1,0 +1,43 @@
+.statistics {
+	&__content {
+		@include flex-direction($gap: 90px);
+
+		background: linear-gradient(89.66deg, #006aab 40.17%, #004875 99.07%),
+			url("/assets/img/background/bg-rech.png");
+
+		border-radius: $border-radius-large;
+		padding: 120px;
+
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top: 28px;
+		right: 22px;
+	}
+
+	&__container {
+		display: grid;
+		grid-template: auto / repeat(4, 1fr);
+		gap: 50px;
+		place-items: center;
+	}
+
+	&__item {
+		@include flex-center($gap: 25px);
+	}
+
+	&__title {
+		font-size: 55px;
+		font-weight: 450;
+		line-height: 73px;
+	}
+
+	&__text {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 26px;
+		text-align: center;
+	}
+}
