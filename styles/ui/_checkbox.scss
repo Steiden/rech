@@ -1,0 +1,11 @@
+.my-checkbox {
+	@include flex-center;
+
+	border: 2px solid var(--thirdy-color);
+	border-radius: 10px;
+
+	width: fit-content;
+	height: fit-content;
+
+    padding: 9px 7px;
+}

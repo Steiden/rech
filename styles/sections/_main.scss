@@ -1,0 +1,79 @@
+.main {
+	background-color: var(--primary-color);
+	position: relative;
+	min-height: 100dvh;
+
+	border-bottom-left-radius: $border-radius-very-large;
+	border-bottom-right-radius: $border-radius-very-large;
+
+	&__title {
+		font-size: 70px;
+		font-weight: 700;
+
+		&--blue {
+			color: var(--primary-color);
+		}
+	}
+
+	&__home {
+		background: url("/assets/img/background/bg-main.png") no-repeat center center / cover;
+		position: relative;
+		height: 100dvh;
+	}
+
+	&__content,
+	.main-content {
+		@include flex-direction();
+
+		border-radius: $border-radius-large;
+		backdrop-filter: blur(20px);
+		padding: 65px;
+
+		position: absolute;
+		left: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
+		bottom: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
+
+		&__line {
+			background-color: var(--thirdy-alt-color);
+			border: none;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			height: 4px;
+			width: 50%;
+			margin-block: 32px 65px;
+		}
+
+		&__button-container {
+			display: flex;
+			flex-direction: row;
+			gap: 15px;
+
+			&--vertical {
+				flex-direction: column;
+			}
+
+			&--padding {
+				padding-right: 100px;
+			}
+
+			& .input__wrapper,
+			& .header__button {
+				width: 100%;
+			}
+		}
+
+		&__button {
+			&:hover {
+				background: var(--thirdy-alt-color);
+			}
+		}
+
+		&__text {
+			color: var(--primary-color);
+
+			&--red {
+				color: var(--link-hover-color);
+			}
+		}
+	}
+}

@@ -6,7 +6,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	scrollbar-gutter: stable;
 	font-smoothing: antialiased;
-	font-family: 'EvolentSans', sans-serif;
+	font-family: "EvolentSans", sans-serif;
 	color: var(--white-color);
 	&.loading .preloader {
 		display: block;
@@ -226,11 +226,11 @@ hr {
 
 a {
 	color: var(--primary-color);
-    text-decoration: none;
+	text-decoration: none;
 	transition: all 0.2s ease;
 
-    border-bottom: 1px dashed var(--link-hover-color);
-    padding-bottom: 10px;
+	border-bottom: 1px dashed var(--link-hover-color);
+	padding-bottom: 10px;
 
 	&:hover {
 		color: var(--link-hover-color);
@@ -346,7 +346,7 @@ ol {
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 
 	li {
 		// padding: 7px 0;
@@ -718,7 +718,7 @@ ul {
 	z-index: 2;
 	// height: 80px;
 	// background: var(--white-color);
-    background-color: transparent;
+	background-color: transparent;
 	// border-bottom: 1px solid var(--border-color);
 	display: flex;
 	align-items: center;
@@ -5418,4 +5418,8 @@ ul {
 			padding: 12px;
 		}
 	}
+}
+
+h2 {
+	font-weight: 400;
 }

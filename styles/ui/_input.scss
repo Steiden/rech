@@ -3,6 +3,10 @@
     color: var(--primary-color);
     height: 100%;
     width: 100%;
+
+    &::placeholder {
+        color: var(--primary-color);
+    }
     
     &__wrapper {
         @include flex-center(row, 5px);

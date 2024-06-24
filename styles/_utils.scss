@@ -10,14 +10,14 @@
 
 .visible-desktop-s {
 	@include desktop-s-above {
-        @include visually-hidden;
-    }
+		@include visually-hidden;
+	}
 }
 
 .hidden-tablet-l {
 	@include tablet-l {
-        @include visually-hidden;
-    }
+		@include visually-hidden;
+	}
 }
 
 .visible-tablet-l {
@@ -34,18 +34,30 @@
 
 .visible-tablet {
 	@include tablet-above {
-        @include visually-hidden;
-    }
+		@include visually-hidden;
+	}
 }
 
 .hidden-tablet-s {
 	@include tablet-s {
-        @include visually-hidden;
-    }
+		@include visually-hidden;
+	}
 }
 
 .visible-tablet-s {
 	@include tablet-s-above {
 		@include visually-hidden;
 	}
+}
+
+.section-border-radius {
+	border-radius: $border-radius-very-large;
+}
+
+.blue {
+	color: var(--thirdy-color);
+}
+
+.dark-blue {
+	color: var(--thirdy-alt-color);
 }

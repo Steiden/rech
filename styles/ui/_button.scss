@@ -1,4 +1,4 @@
-.button {
+.my-button {
 	@include flex-center(row, 15px);
     justify-content: space-between;
 
@@ -6,6 +6,7 @@
     
 	color: var(--secondary-color);
     font-size: 18px;
+	transition-duration: .3s;
 
 	height: 60px;
 

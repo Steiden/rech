@@ -1,0 +1,86 @@
+.about {
+	@include flex-direction($gap: 60px);
+	margin-block: 140px;
+
+	&__header {
+		@include flex-direction(row, 10px);
+		justify-content: space-between;
+		align-items: center;
+
+		.about__button {
+			min-width: 335px;
+			height: 60px;
+			padding-inline: 32px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 42px;
+
+		.about__advantages {
+			@include flex-direction($gap: 40px);
+		}
+
+		.about__input-container {
+			display: flex;
+			align-items: center;
+			gap: 35px;
+		}
+	}
+
+	&__img-container {
+		border-radius: $border-radius-large;
+
+		max-height: 590px;
+		max-width: 760px;
+
+		width: 100%;
+		position: relative;
+
+		.about__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.about__img-span {
+            @include flex-center;
+
+			position: absolute;
+			right: 26px;
+			bottom: 22px;
+
+			backdrop-filter: blur(20px);
+			border-radius: 25px;
+			color: var(--white-color);
+			font-size: 18px;
+			font-weight: 400;
+
+			height: 45px;
+            padding-inline: 20px;
+		}
+
+		.about__arrow {
+			position: absolute;
+			top: 50%;
+			translate: 0 -50%;
+
+			&--left {
+				left: 35px;
+			}
+
+			&--right {
+				right: 35px;
+			}
+		}
+
+		.about__arrow-icon {
+			& span::before {
+				font-size: 55px;
+			}
+		}
+	}
+}
