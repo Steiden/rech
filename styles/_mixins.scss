@@ -1,12 +1,25 @@
 @mixin flex-center($direction: column, $gap: 0) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include flex-direction($direction, $gap);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@include flex-direction($direction, $gap);
 }
 
 @mixin flex-direction($direction: column, $gap: 0) {
-    display: flex;
-    flex-direction: $direction;
-    gap: $gap;
+	display: flex;
+	flex-direction: $direction;
+	gap: $gap;
+}
+
+@mixin visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
 }

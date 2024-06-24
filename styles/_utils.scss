@@ -1,3 +1,51 @@
 .container {
-	padding-inline: clamp(32px, #{calc(192 * 100 / 1920)}vw, 192px);
+	padding-inline: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
+}
+
+.hidden-desktop-s {
+	@include desktop-s {
+		@include visually-hidden;
+	}
+}
+
+.visible-desktop-s {
+	@include desktop-s-above {
+        @include visually-hidden;
+    }
+}
+
+.hidden-tablet-l {
+	@include tablet-l {
+        @include visually-hidden;
+    }
+}
+
+.visible-tablet-l {
+	@include tablet-l-above {
+		@include visually-hidden;
+	}
+}
+
+.hidden-tablet {
+	@include tablet {
+		@include visually-hidden;
+	}
+}
+
+.visible-tablet {
+	@include tablet-above {
+        @include visually-hidden;
+    }
+}
+
+.hidden-tablet-s {
+	@include tablet-s {
+        @include visually-hidden;
+    }
+}
+
+.visible-tablet-s {
+	@include tablet-s-above {
+		@include visually-hidden;
+	}
 }
