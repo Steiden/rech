@@ -1,6 +1,6 @@
 .about {
 	@include flex-direction($gap: 60px);
-	margin-block: 140px;
+	margin-top: 20px;
 
 	&__header {
 		@include flex-direction(row, 10px);

@@ -17,4 +17,9 @@
 	&--blue {
 		background: linear-gradient(90.47deg, #1cabe7 0.38%, #006aab 99.59%);
 	}
+
+	&--transparent {
+		background-color: transparent;
+		border: 2px solid rgba(255, 255, 255, 0.8);
+	}
 }

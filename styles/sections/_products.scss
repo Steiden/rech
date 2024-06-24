@@ -1,0 +1,138 @@
+.products {
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+
+		margin-bottom: 65px;
+	}
+
+	&__button {
+		padding-inline: 50px;
+	}
+
+	&__nav {
+		margin-bottom: 82px;
+	}
+
+	&__categories-list {
+		@include flex-direction(row, 25px);
+	}
+
+	&__categories-item {
+		width: 100%;
+
+		&--active,
+		&:hover {
+			.products__categories-button {
+				background: linear-gradient(90.47deg, #1cabe7 0.38%, #006aab 99.59%);
+				border: none;
+				color: var(--white-color);
+			}
+		}
+	}
+
+	&__categories-button {
+		@include flex-center;
+
+		border: 1px solid rgba(90, 197, 239, 0.5);
+		border-radius: $border-radius;
+
+		color: var(--thirdy-color);
+		font-size: 20px;
+
+		padding-inline: 35px;
+
+		height: 62px;
+		min-width: max-content;
+		width: 100%;
+	}
+
+	&__content {
+	}
+
+	&__title {
+		font-size: 36px;
+		font-weight: 400;
+		text-transform: uppercase;
+
+		margin-bottom: 60px;
+	}
+
+	&__card,
+	.product-card {
+		@include flex-direction(row, 110px);
+
+		border-right: 2px solid rgba(90, 197, 239, 0.3);
+
+		&__img-container {
+			@include flex-direction(row, 20px);
+
+			max-width: 760px;
+			width: 100%;
+
+			&--vertical {
+				flex-direction: column;
+			}
+		}
+
+		&__img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: $border-radius-large;
+
+			&--small {
+				border-radius: $border-radius;
+			}
+		}
+
+		&__content {
+			@include flex-direction($gap: 60px);
+		}
+
+		&__block {
+			@include flex-direction($gap: 50px);
+		}
+
+		&__subtitle {
+			font-size: 32px;
+			font-weight: 400;
+		}
+
+		&__advantages {
+			@include flex-direction($gap: 25px);
+		}
+
+		&__input-container {
+			@include flex-direction(row, 35px);
+			align-items: center;
+		}
+
+		&__button-container {
+			@include flex-direction(row, 20px);
+		}
+
+		&__button {
+			height: 66px;
+			font-weight: 700;
+
+			&:nth-child(1n) {
+				font-size: 18px;
+				padding-inline: 50px;
+
+				& i::before {
+					color: var(--thirdy-color);
+				}
+			}
+
+			&:nth-child(2n) {
+				font-size: 20px;
+				padding-inline: 16px;
+				text-align: left;
+				max-width: 300px;
+			}
+		}
+	}
+}

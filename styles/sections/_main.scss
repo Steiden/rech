@@ -1,4 +1,6 @@
 .main {
+	@include flex-direction($gap: 120px);
+
 	background-color: var(--primary-color);
 	position: relative;
 	min-height: 100dvh;
