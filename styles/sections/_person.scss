@@ -1,0 +1,77 @@
+.person {
+	&__content-wrapper {
+		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
+
+		max-height: 700px;
+		height: 700px;
+		padding-inline: 120px;
+		position: relative;
+	}
+
+	&__content {
+		@include flex-center($gap: 60px);
+		align-items: flex-start;
+
+		height: 100%;
+		width: 100%;
+
+		z-index: 10;
+	}
+
+	&__back-img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: 0 -50%;
+
+		&::before {
+			color: #006aab;
+			font-size: 500px;
+			z-index: 1;
+		}
+	}
+
+    &__title,
+    &__text,
+    &__button {
+        z-index: 10;
+    }
+
+	&__title {
+		display: flex;
+		gap: 30px;
+
+		p {
+			font-size: 48px;
+			line-height: 62px;
+		}
+
+		& i::before {
+			color: var(--thirdy-color);
+		}
+	}
+
+	&__button {
+		font-weight: 700;
+		font-size: 18px;
+		padding-inline: 36px;
+
+		& i::before {
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 42px;
+	}
+
+	&__img {
+		position: absolute;
+		bottom: -50px;
+		right: 10px;
+
+		height: 100%;
+	}
+}

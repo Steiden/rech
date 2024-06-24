@@ -1,0 +1,17 @@
+.partners {
+    @include flex-direction($gap: 90px);
+
+    &__title {
+    }
+
+    &__content {
+        display: grid;
+        grid-template: auto / repeat(5, 1fr);
+        column-gap: 22px;
+        row-gap: 60px;
+    }
+
+    &__img {
+        filter: grayscale(1);
+    }
+}
