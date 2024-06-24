@@ -1,0 +1,61 @@
+.advantages {
+    @include flex-direction($gap: 80px);
+    background-color: var(--primary-alt-color);
+    padding-block: 120px;
+
+    &__title {
+
+    }
+
+    &__card-container {
+        display: grid;
+        grid-template: auto / repeat(5, 1fr);
+        gap: 18px;
+
+        overflow-x: scroll;
+    }
+
+    &__card,
+    .advantage-card {
+        @include flex-direction($gap: 30px);
+
+        background-color: var(--white-color);
+        border-radius: $border-radius-large;
+
+        // max-height: 410px;
+        max-width: 370px;
+        width: 370px;
+        padding: 36px 25px;
+
+        &__index {
+            @include flex-center;
+            
+            background-color: var(--thirdy-alt-color);
+            border-radius: 20px;
+            color: var(--white-color);
+            font-size: 40px;
+            line-height: 1;
+
+            align-self: center;
+
+            width: 100px;
+            height: 66px;
+            margin-bottom: 5px;
+        }
+
+        &__title,
+        &__text {
+            color: var(--thirdy-alt-color);
+        }
+
+        &__title {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        &__text {
+            line-height: 25px;
+        }
+    }
+}

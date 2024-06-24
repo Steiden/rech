@@ -1,0 +1,120 @@
+.projects {
+	@include flex-direction($gap: 60px);
+
+	&__header {
+		@include flex-direction(row, 10px);
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		padding-inline: 35px;
+	}
+
+	&__content {
+		@include flex-direction(row, 21px);
+	}
+
+	&__block {
+		@include flex-direction($gap: 60px);
+        max-width: 760px;
+	}
+
+	&__img-container {
+		display: flex;
+		gap: 20px;
+
+		max-width: 760px;
+		position: relative;
+
+		&--vertical {
+			flex-direction: column;
+		}
+	}
+
+	&__img {
+		border-radius: $border-radius-large;
+		height: 100%;
+		width: 100%;
+
+		&--small {
+			border-radius: $border-radius;
+		}
+	}
+
+	&__play-button,
+	.play-button {
+		@include flex-center;
+
+		backdrop-filter: blur(50px);
+		border-radius: 50%;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+
+		width: 70px;
+		aspect-ratio: 1;
+
+        i::before {
+            font-size: 24px;
+        }
+	}
+
+	&__img-logo {
+		position: absolute;
+		bottom: 14px;
+		right: 47px;
+
+		width: 68px;
+		aspect-ratio: 1;
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		translate: 0 -50%;
+
+		&--left {
+			left: 26px;
+		}
+
+		&--right {
+			right: 26px;
+		}
+	}
+
+	&__arrow-icon {
+		span::before {
+			font-size: 55px;
+		}
+	}
+
+    &__text-container {
+        @include flex-direction($gap: 25px);
+    }
+
+    &__title3 {
+        font-size: 32px;
+    }
+
+    &__link-container {
+        @include flex-direction(row, 20px);
+        margin-top: 5px;
+
+        i::before {
+            color: var(--thirdy-color);
+            font-size: 13px;
+        }
+    }
+
+    &__link {
+        color: var(--white-color);
+        font-size: 18px;
+        font-weight: 700;
+
+        padding-bottom: 6px;
+        border-color: var(--thirdy-color);
+    }
+}
