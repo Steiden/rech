@@ -12,15 +12,12 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 	}
 };
 
+// Product section swiper
 const productSwiperPrevButton = document.getElementById("productSwiperPrev");
 const productSwiperNextButton = document.getElementById("productSwiperNext");
 const productSwiper = new Swiper(".productSwiper", {
 	autoplay: true,
     spaceBetween: 20,
-	navigation: {
-		nextEl: "#productSwiperNext",
-		prevEl: "#productSwiperPrev",
-	},
 });
 const productSwiper2 = new Swiper(".productSwiper2", {
 	slidesPerView: 4,
@@ -49,18 +46,56 @@ const aboutSwiper = new Swiper(".aboutSwiper", {
 		prevEl: "#aboutSwiperPrev",
 	},
 });
-const aboutSwiper2 = new Swiper(".aboutSwiper2", {
-	slidesPerView: 4,
-	slideToClickedSlide: true,
-    spaceBetween: 20,
-});
-
-aboutSwiper.on("slideChange", () => syncSwipers(aboutSwiper, aboutSwiper2, 1));
-aboutSwiper2.on("click", () => syncSwipers(aboutSwiper, aboutSwiper2, 2));
-
 aboutSwiperNextButton.addEventListener("click", () => {
 	aboutSwiper.slideNext();
 });
 aboutSwiperPrevButton.addEventListener("click", () => {
 	aboutSwiper.slidePrev();
+});
+
+
+// Project1 section swiper
+const projectSwiperPrevButton = document.getElementById("projectSwiperPrev");
+const projectSwiperNextButton = document.getElementById("projectSwiperNext");
+const projectSwiper11 = new Swiper(".projectSwiper11", {
+	autoplay: true,
+    spaceBetween: 20,
+});
+const projectSwiper12 = new Swiper(".projectSwiper12", {
+	slidesPerView: 4,
+	slideToClickedSlide: true,
+    spaceBetween: 20,
+});
+
+projectSwiper11.on("slideChange", () => syncSwipers(projectSwiper11, projectSwiper12, 1));
+projectSwiper12.on("click", () => syncSwipers(projectSwiper11, projectSwiper12, 2));
+
+projectSwiperNextButton.addEventListener("click", () => {
+	projectSwiper11.slideNext();
+});
+projectSwiperPrevButton.addEventListener("click", () => {
+	projectSwiper11.slidePrev();
+});
+
+// Project2 section swiper
+const project2SwiperPrevButton = document.getElementById("project2SwiperPrev");
+const project2SwiperNextButton = document.getElementById("project2SwiperNext");
+const projectSwiper21 = new Swiper(".projectSwiper21", {
+	autoplay: true,
+    spaceBetween: 20,
+});
+const projectSwiper22 = new Swiper(".projectSwiper22", {
+	slidesPerView: 4,
+	slideToClickedSlide: true,
+    spaceBetween: 20,
+});
+
+projectSwiper21.on("slideChange", () => syncSwipers(projectSwiper21, projectSwiper22, 1));
+projectSwiper22.on("click", () => syncSwipers(projectSwiper21, projectSwiper22, 2));
+
+project2SwiperNextButton.addEventListener("click", () => {
+	projectSwiper21.slideNext();
+});
+project2SwiperPrevButton.addEventListener("click", () => {
+	projectSwiper21.slidePrev();
 });
