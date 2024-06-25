@@ -17,3 +17,18 @@ closeCatalogButton.addEventListener("click", () => {
 	header.classList.remove("header--all");
 	headerMenu.style.display = "none";
 });
+
+// Map
+const markers = document.querySelectorAll(".map__marker");
+console.log(markers);
+markers.forEach((marker) => {
+	marker.addEventListener("click", (e) => {
+		if (marker.classList.contains("map__marker--active")) {
+			marker.classList.remove("map__marker--active");
+			marker.querySelector(".marker__button").style.zIndex = 50;
+		} else {
+			marker.classList.add("map__marker--active");
+			marker.querySelector(".marker__button").style.zIndex = 55;
+		}
+	});
+});

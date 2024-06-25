@@ -92,25 +92,6 @@
 			left: 78.758%;
 		}
 
-		&:not(:active) {
-			.marker__content {
-				@include visually-hidden;
-			}
-		}
-
-		&:active {
-			.marker__button {
-				background: linear-gradient(90deg, #ac262f 0%, #d12d23 100%);
-
-				&::before {
-					rotate: -45deg;
-				}
-
-				&::after {
-					rotate: -225deg;
-				}
-			}
-		}
 
 		&__button {
 			@include flex-center;
@@ -179,7 +160,11 @@
 			min-width: 300px;
 			padding: 18px 27px;
 
-			z-index: 12;
+			transition-duration: .3s;
+
+			z-index: 52;
+			opacity: 0;
+			visibility: hidden;
 		}
 
 		&__text {
@@ -194,6 +179,25 @@
 			color: var(--link-hover-color);
 
 			margin-top: 3px;
+		}
+
+		&--active {
+			.marker__button {
+				background: linear-gradient(90deg, #ac262f 0%, #d12d23 100%);
+
+				&::before {
+					rotate: -45deg;
+				}
+
+				&::after {
+					rotate: -225deg;
+				}
+			}
+
+			.marker__content {
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 }
