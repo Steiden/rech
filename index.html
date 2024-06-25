@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>РЭЩ</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./styles/style.scss" />
 	</head>
 	<body>
@@ -279,18 +280,33 @@
 							</div>
 						</div>
 
-						<div class="about__img-container">
-							<img src="/assets/img/background/bg-about.png" alt="background" class="about__img" />
+						<div class="about__img-container aboutSwiper">
+							<div class="swiper-wrapper">
+								<img
+									src="/assets/img/background/bg-about.png"
+									alt="background"
+									class="about__img swiper-slide"
+								/>
+								<img
+									src="/assets/img/background/bg-about.png"
+									alt="background"
+									class="about__img swiper-slide"
+								/>
+								<img
+									src="/assets/img/background/bg-about.png"
+									alt="background"
+									class="about__img swiper-slide"
+								/>
+							</div>
 
 							<span class="about__img-span">Наша электролаборатория</span>
 
-							<button class="about__arrow about__arrow--left">
+							<button class="about__arrow about__arrow--left" id="aboutSwiperPrev">
 								<i class="d_icon-quotation-left-red about__arrow-icon"
 									><span class="path1"></span><span class="path2"></span><span class="path3"></span
 								></i>
 							</button>
-
-							<button class="about__arrow about__arrow--right">
+							<button class="about__arrow about__arrow--right" id="aboutSwiperNext">
 								<i class="d_icon-quotation-right-red about__arrow-icon"
 									><span class="path1"></span><span class="path2"></span><span class="path3"></span
 								></i>
@@ -390,50 +406,98 @@
 						</h3>
 						<div class="products__card product-card">
 							<div class="product-card__img-container product-card__img-container--vertical">
-								<div class="about__img-container">
-									<img
-										src="/assets/img/products/product1.png"
-										alt="background"
-										class="product-card__img"
-									/>
-									<button class="about__arrow about__arrow--left">
+								<div class="about__img-container productSwiper">
+									<div class="swiper-wrapper">
+										<button class="product-card__img-button swiper-slide">
+											<img
+												src="/assets/img/products/product1.png"
+												alt="background"
+												class="product-card__img"
+											/>
+										</button>
+										<button class="product-card__img-button swiper-slide">
+											<img
+												src="/assets/img/background/bg-about.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button class="product-card__img-button swiper-slide">
+											<img
+												src="/assets/img/background/bg-employees.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button class="product-card__img-button swiper-slide">
+											<img
+												src="/assets/img/background/bg-main.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button class="product-card__img-button swiper-slide">
+											<img
+												src="/assets/img/projects/project1.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+									</div>
+									<button class="about__arrow about__arrow--left" id="productSwiperPrev">
 										<i class="d_icon-quotation-left-red about__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
 										></i>
 									</button>
-									<button class="about__arrow about__arrow--right">
+									<button class="about__arrow about__arrow--right" id="productSwiperNext">
 										<i class="d_icon-quotation-right-red about__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
 										></i>
 									</button>
 								</div>
-								<div class="product-card__img-container">
-									<button class="product-card__img-button">
-										<img
-											src="/assets/img/products/product1.png"
-											class="product-card__img product-card__img--small"
-										/>
-									</button>
-									<button class="product-card__img-button">
-										<img
-											src="/assets/img/products/product1.png"
-											class="product-card__img product-card__img--small"
-										/>
-									</button>
-									<button class="product-card__img-button">
-										<img
-											src="/assets/img/products/product1.png"
-											class="product-card__img product-card__img--small"
-										/>
-									</button>
-									<button class="product-card__img-button">
-										<img
-											src="/assets/img/products/product1.png"
-											class="product-card__img product-card__img--small"
-										/>
-									</button>
+
+								<div class="product-card__img-container productSwiper2">
+									<div class="swiper-wrapper">
+										<button
+											class="product-card__img-button product-card__img-button--small swiper-slide"
+										>
+											<img
+												src="/assets/img/products/product1.png"
+												alt="background"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button
+											class="product-card__img-button product-card__img-button--small swiper-slide"
+										>
+											<img
+												src="/assets/img/background/bg-about.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button
+											class="product-card__img-button product-card__img-button--small swiper-slide"
+										>
+											<img
+												src="/assets/img/background/bg-employees.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button
+											class="product-card__img-button product-card__img-button--small swiper-slide"
+										>
+											<img
+												src="/assets/img/background/bg-main.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+										<button
+											class="product-card__img-button product-card__img-button--small swiper-slide"
+										>
+											<img
+												src="/assets/img/projects/project1.png"
+												class="product-card__img product-card__img--small"
+											/>
+										</button>
+									</div>
 								</div>
 							</div>
 							<div class="product-card__content">
@@ -665,13 +729,13 @@
 										class="projects__img"
 									/>
 									<img src="/assets/img/logo-small.png" alt="logo" class="projects__img-logo" />
-									<button class="projects__arrow projects__arrow--left">
+									<button class="projects__arrow projects__arrow--left" id="projectsSwiperPrev">
 										<i class="d_icon-quotation-left-red projects__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
 										></i>
 									</button>
-									<button class="projects__arrow projects__arrow--right">
+									<button class="projects__arrow projects__arrow--right" id="projectsSwiperNext">
 										<i class="d_icon-quotation-right-red projects__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
@@ -1086,6 +1150,8 @@
 			</footer>
 		</div>
 
-		<script src="./js/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/script.js" type="module"></script>
+		<script src="./js/swipers.js" type="module"></script>
 	</body>
 </html>

@@ -1,3 +1,7 @@
+import Swiper from "swiper";
+import "swiper/css";
+
+// Header
 const header = document.getElementById("header");
 const headerMenu = document.getElementById("headerMenu");
 
@@ -18,9 +22,9 @@ closeCatalogButton.addEventListener("click", () => {
 	headerMenu.style.display = "none";
 });
 
+
 // Map
 const markers = document.querySelectorAll(".map__marker");
-console.log(markers);
 markers.forEach((marker) => {
 	marker.addEventListener("click", (e) => {
 		if (marker.classList.contains("map__marker--active")) {

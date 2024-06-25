@@ -72,8 +72,20 @@
 			max-width: 760px;
 			width: 100%;
 
+			overflow: hidden;
+
 			&--vertical {
 				flex-direction: column;
+			}
+
+			.swiper-wrapper {
+				@include flex-direction(row, 20px);
+			}
+		}
+
+		&__img-button {
+			&--small {
+				max-width: 170px;
 			}
 		}
 
@@ -135,4 +147,8 @@
 			}
 		}
 	}
+}
+
+.productSwiper {
+	overflow: hidden;
 }
