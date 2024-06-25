@@ -1,4 +1,8 @@
 .statistics {
+	@include tablet {
+		padding: 0;
+	}
+
 	&__content {
 		@include flex-direction($gap: 90px);
 
@@ -6,7 +10,7 @@
 			url("/assets/img/background/bg-rech.png");
 
 		border-radius: $border-radius-large;
-		padding: 120px;
+		padding: clamp(50px, #{calc(120 * 100 / 1920)}vw, 120px);
 
 		position: relative;
 	}
@@ -20,8 +24,16 @@
 	&__container {
 		display: grid;
 		grid-template: auto / repeat(4, 1fr);
-		gap: 50px;
+		gap: clamp(20px, #{calc(50 * 100 / 1920)}vw, 50px);
 		place-items: center;
+
+		@include desktop {
+			grid-template: auto / repeat(3, 1fr);
+		}
+
+		@include tablet {
+			grid-template: auto / repeat(2, 1fr);
+		}
 	}
 
 	&__item {
@@ -29,15 +41,23 @@
 	}
 
 	&__title {
-		font-size: 55px;
+		font-size: clamp(35px, #{calc(55 * 100 / 1920)}vw, 55px);
 		font-weight: 450;
 		line-height: 73px;
+
+		@include tablet-l {
+			font-size: clamp(24px, #{calc(35 * 100 / 1024)}vw, 35px);
+		}
 	}
 
 	&__text {
-		font-size: 20px;
+		font-size: clamp(18px, #{calc(20 * 100 / 1920)}vw, 20px);
 		font-weight: 400;
 		line-height: 26px;
 		text-align: center;
+
+		@include tablet-l {
+			font-size: clamp(14px, #{calc(18 * 100 / 1024)}vw, 18px);
+		}
 	}
 }

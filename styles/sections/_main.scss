@@ -6,7 +6,8 @@
 	min-height: 100dvh;
 
 	&__title {
-		font-size: 70px;
+		font-size: clamp(24px, #{calc(70 * 100 / 1920)}vw, 70px);
+		line-height: 1;
 		font-weight: 700;
 
 		&--blue {
@@ -15,6 +16,8 @@
 	}
 
 	&__home {
+		@include flex-center;
+
 		background: url("/assets/img/background/bg-main.png") no-repeat center center / cover;
 		position: relative;
 		height: 100dvh;
@@ -35,6 +38,10 @@
 		left: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 		bottom: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 
+		@include tablet-l {
+			position: static;
+		}
+
 		&__line {
 			background-color: var(--thirdy-alt-color);
 			border: none;
@@ -50,12 +57,16 @@
 			flex-direction: row;
 			gap: 15px;
 
+			@include tablet-l {
+				flex-wrap: wrap;
+			}
+
 			&--vertical {
 				flex-direction: column;
 			}
 
 			&--padding {
-				padding-right: 100px;
+				padding-right: clamp(0px #{calc(100 * 100 / 1920)}vw, 100px);
 			}
 
 			& .input__wrapper,

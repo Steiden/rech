@@ -23,3 +23,7 @@
 	clip: rect(0 0 0 0) !important;
 	overflow: hidden !important;
 }
+
+@mixin container {
+	padding-inline: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
+}

@@ -26,16 +26,16 @@
 
 		&::before {
 			color: #006aab;
-			font-size: 500px;
+			font-size: clamp(150px, #{calc(500 * 100 / 1920)}vw, 500px);
 			z-index: 1;
 		}
 	}
 
-    &__title,
-    &__text,
-    &__button {
-        z-index: 10;
-    }
+	&__title,
+	&__text,
+	&__button {
+		z-index: 10;
+	}
 
 	&__title {
 		display: flex;
@@ -73,5 +73,6 @@
 		right: 10px;
 
 		height: 100%;
+		object-fit: cover;
 	}
 }

@@ -10,6 +10,10 @@
 
 	height: 60px;
 
+	@include tablet {
+		min-width: 100%;
+	}
+
 	&--red {
 		background: linear-gradient(90deg, #ac262f 0%, #d12d23 100%);
 	}

@@ -2,9 +2,10 @@
 	@include flex-direction($gap: 60px);
 
 	&__header {
-		@include flex-direction(row, 10px);
+		@include flex-direction(row, 20px);
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__button {
@@ -13,33 +14,22 @@
 
 	&__content {
 		@include flex-direction(row, 21px);
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@include desktop {
+			justify-content: center;
+		}
 	}
 
 	&__block {
 		@include flex-direction($gap: 60px);
         max-width: 760px;
-	}
-
-	&__img-container {
-		display: flex;
-		gap: 20px;
-
-		max-width: 760px;
-		position: relative;
-
-		&--vertical {
-			flex-direction: column;
-		}
-	}
-
-	&__img {
-		border-radius: $border-radius-large;
-		height: 100%;
 		width: 100%;
+	}
 
-		&--small {
-			border-radius: $border-radius;
-		}
+	&__slider {
+		// width: 50%;
 	}
 
 	&__play-button,

@@ -27,6 +27,10 @@
 		font-weight: 700;
 
 		padding-inline: 58px;
+
+		@include mobile-l {
+			right: 0;
+		}
 	}
 
 	&__up-button {
@@ -54,10 +58,15 @@
 	}
 
 	&__content {
-		@include flex-direction(row, 50px);
+		@include flex-direction(row, clamp(20px, #{calc(50 * 100 / 1920)}vw, 50px));
 		justify-content: space-between;
+		flex-wrap: wrap;
 
 		position: relative;
+
+		@include mobile-l {
+			padding: 0;
+		}
 	}
 
 	&__contacts,
@@ -150,13 +159,22 @@
 	}
 
 	&__nav {
-		@include flex-direction(row, 160px);
+		@include flex-direction(row, clamp(10px, #{calc(160 * 100 / 1920)}vw, 160px));
 		justify-content: space-between;
+		flex-wrap: wrap;
 
 		border-right: 2px solid rgba(90, 197, 239, 0.5);
 
 		margin-top: 60px;
 		padding-right: 50px;
+
+		@include desktop {
+			width: 100%;
+		}
+
+		@include mobile-l {
+			@include container;
+		}
 	}
 
 	&__list {
@@ -181,8 +199,9 @@
 	}
 
 	&__map-services {
-		@include flex-direction(row, 15px);
+		@include flex-direction(row, 25px);
 		justify-content: space-between;
+		flex-wrap: wrap;
 
 		margin-block: 80px;
 	}
@@ -195,14 +214,24 @@
 	.privacy {
 		margin-bottom: 170px;
 
+		@include mobile-l {
+			text-align: center;
+			padding: 0;
+		}
+
 		&__content {
 			@include flex-direction(row, 15px);
 			align-items: center;
 			justify-content: space-between;
+			flex-wrap: wrap;
 
 			background-color: var(--white-color);
 			border-radius: $border-radius;
 			padding: 25px 68px;
+
+			@include mobile-l {
+				justify-content: center;
+			}
 		}
 
 		&__link {

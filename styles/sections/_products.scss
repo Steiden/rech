@@ -3,7 +3,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 10px;
+		flex-wrap: wrap;
+		gap: 20px;
 
 		margin-bottom: 65px;
 	}
@@ -18,10 +19,10 @@
 
 	&__categories-list {
 		@include flex-direction(row, 25px);
+		flex-wrap: wrap;
 	}
 
 	&__categories-item {
-		width: 100%;
 
 		&--active,
 		&:hover {
@@ -63,42 +64,9 @@
 	&__card,
 	.product-card {
 		@include flex-direction(row, 110px);
+		flex-wrap: wrap;
 
 		border-right: 2px solid rgba(90, 197, 239, 0.3);
-
-		// &__img-container {
-		// 	@include flex-direction(row, 20px);
-
-		// 	max-width: 760px;
-		// 	width: 100%;
-
-		// 	overflow: hidden;
-
-		// 	&--vertical {
-		// 		flex-direction: column;
-		// 	}
-
-		// 	.swiper-wrapper {
-		// 		@include flex-direction(row, 20px);
-		// 	}
-		// }
-
-		// &__img-button {
-		// 	&--small {
-		// 		max-width: 170px;
-		// 	}
-		// }
-
-		// &__img {
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	object-fit: cover;
-		// 	border-radius: $border-radius-large;
-
-		// 	&--small {
-		// 		border-radius: $border-radius;
-		// 	}
-		// }
 
 		&__content {
 			@include flex-direction($gap: 60px);
@@ -124,6 +92,7 @@
 
 		&__button-container {
 			@include flex-direction(row, 20px);
+			flex-wrap: wrap;
 		}
 
 		&__button {

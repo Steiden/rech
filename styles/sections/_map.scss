@@ -1,10 +1,14 @@
 .map {
 	background: url("/assets/img/background/bg-map.png") no-repeat center center / cover;
 
-	height: 1155px;
+	height: 1150px;
 
 	overflow: hidden;
 	position: relative;
+
+	@include tablet {
+		height: clamp(500px, #{calc(1150 * 100 / 1920)}vw, 1150px);
+	}
 
 	&__mask {
 		background-color: rgba(255, 255, 255, 0.7);
@@ -92,7 +96,6 @@
 			left: 78.758%;
 		}
 
-
 		&__button {
 			@include flex-center;
 
@@ -160,7 +163,7 @@
 			min-width: 300px;
 			padding: 18px 27px;
 
-			transition-duration: .3s;
+			transition-duration: 0.3s;
 
 			z-index: 52;
 			opacity: 0;

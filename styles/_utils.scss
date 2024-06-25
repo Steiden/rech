@@ -50,6 +50,18 @@
 	}
 }
 
+.hidden-mobile-l {
+	@include mobile-l {
+        @include visually-hidden;
+    }
+}
+
+.visible-mobile-l {
+	@include mobile-l-above {
+		@include visually-hidden;
+	}
+}
+
 .section-border-radius {
 	border-radius: $border-radius-very-large;
 }
