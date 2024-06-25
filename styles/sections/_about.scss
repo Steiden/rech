@@ -64,26 +64,26 @@
 			z-index: 10;
 		}
 
-		.about__arrow {
-			position: absolute;
-			top: 50%;
-			translate: 0 -50%;
-			z-index: 10;
+		// .about__arrow {
+		// 	position: absolute;
+		// 	top: 50%;
+		// 	translate: 0 -50%;
+		// 	z-index: 10;
 
-			&--left {
-				left: 35px;
-			}
+		// 	&--left {
+		// 		left: 35px;
+		// 	}
 
-			&--right {
-				right: 35px;
-			}
-		}
+		// 	&--right {
+		// 		right: 35px;
+		// 	}
+		// }
 
-		.about__arrow-icon {
-			& span::before {
-				font-size: 55px;
-			}
-		}
+		// .about__arrow-icon {
+		// 	& span::before {
+		// 		font-size: 55px;
+		// 	}
+		// }
 	}
 }
 

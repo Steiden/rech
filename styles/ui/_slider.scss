@@ -1,0 +1,56 @@
+.slider {
+	@include flex-direction(row, 20px);
+
+	max-width: 760px;
+	width: 100%;
+
+	overflow: hidden;
+
+	&--vertical {
+		flex-direction: column;
+	}
+
+	.swiper-wrapper {
+		// @include flex-direction(row, 20px);
+	}
+
+	&__img-button {
+        height: 100%;
+
+		&--small {
+			max-width: 170px;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: $border-radius-large;
+
+		&--small {
+			border-radius: $border-radius;
+		}
+	}
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        z-index: 10;
+
+        &--left {
+            left: 35px;
+        }
+
+        &--right {
+            right: 35px;
+        }
+    }
+
+    &__arrow-icon {
+        & span::before {
+            font-size: 55px;
+        }
+    }
+}
