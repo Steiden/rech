@@ -12,7 +12,15 @@
         grid-template: auto / repeat(5, 1fr);
         gap: 18px;
 
-        overflow-x: scroll;
+        overflow-x: auto;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
     }
 
     &__card,

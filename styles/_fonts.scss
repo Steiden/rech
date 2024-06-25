@@ -62,6 +62,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.d_icon-mail:before {
+	content: "\e932";
+	color: #5ac5ef;
+}
 .d_icon-check:before {
 	content: "\e930";
 	color: #5ac5ef;

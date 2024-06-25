@@ -1,4 +1,5 @@
 .footer {
+	background-color: var(--primary-color);
 	border-top-left-radius: $border-radius-very-large;
 	border-top-right-radius: $border-radius-very-large;
 
@@ -55,22 +56,115 @@
 	&__content {
 		@include flex-direction(row, 50px);
 		justify-content: space-between;
+
+		position: relative;
 	}
 
-    &__contacts {
-        
-    }
+	&__contacts,
+	.contacts {
+		@include flex-direction($gap: 25px);
+
+		background-color: rgba(0, 106, 171, 1);
+		border-radius: $border-radius-large;
+
+		padding: 40px 90px 40px 65px;
+		// max-width: 440px;
+
+		translate: 0 -50px;
+
+		&__contact,
+		.contact {
+			@include flex-direction(row, 30px);
+			align-items: center;
+
+			&__icon {
+				@include flex-center;
+
+				border: 2px solid var(--thirdy-color);
+				border-radius: 50%;
+
+				width: 40px;
+				height: 40px;
+				min-width: 40px;
+				min-height: 40px;
+
+				&::before {
+					color: var(--thirdy-color);
+					font-size: 16px;
+				}
+
+				&--whatsapp {
+					border: none;
+					background-color: #25d366;
+
+					&::before {
+						color: var(--white-color);
+						font-size: 20px;
+					}
+				}
+			}
+
+			&__text {
+				font-size: 16px;
+				line-height: 21px;
+
+				&--large {
+					font-size: 24px;
+					line-height: 32px;
+				}
+			}
+
+			&__link-container {
+				@include flex-direction(row, 20px);
+				align-items: center;
+
+				.contact__link-icon {
+					width: 24px;
+					height: 24px;
+
+					&::before {
+						color: var(--thirdy-color);
+						font-size: 13px;
+					}
+				}
+
+				&--green {
+					.contact__link {
+						color: rgba(37, 211, 102, 1);
+						border-color: rgba(37, 211, 102, 1);
+					}
+
+					.contact__link-icon::before {
+						color: rgba(37, 211, 102, 1);
+					}
+				}
+			}
+
+			&__link {
+				color: var(--white-color);
+				border-color: var(--white-color);
+				font-size: 15px;
+				line-height: 20px;
+			}
+		}
+	}
 
 	&__nav {
-		@include flex-direction(row, 40px);
+		@include flex-direction(row, 160px);
 		justify-content: space-between;
+
+		border-right: 2px solid rgba(90, 197, 239, 0.5);
+
+		margin-top: 60px;
+		padding-right: 50px;
 	}
 
-    &__list {
-        @include flex-direction($gap: 25px);
-    }
+	&__list {
+		@include flex-direction($gap: 25px);
+	}
 
 	&__subtitle {
+		color: var(--white-color);
 		font-size: 26px;
 		font-weight: 400;
 		margin-bottom: 5px;
@@ -81,7 +175,38 @@
 
 	&__link {
 		color: var(--thirdy-color);
+		border: none;
 		font-size: 20px;
-        line-height: 26px;
+		line-height: 26px;
+	}
+
+	&__map-services {
+		@include flex-direction(row, 15px);
+		justify-content: space-between;
+
+		margin-block: 80px;
+	}
+
+	&__map-services-link {
+		border: none;
+	}
+
+	&__privacy,
+	.privacy {
+		margin-bottom: 170px;
+
+		&__content {
+			@include flex-direction(row, 15px);
+			align-items: center;
+			justify-content: space-between;
+
+			background-color: var(--white-color);
+			border-radius: $border-radius;
+			padding: 25px 68px;
+		}
+
+		&__link {
+			color: var(--thirdy-alt-color);
+		}
 	}
 }
