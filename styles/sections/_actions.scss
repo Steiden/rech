@@ -71,6 +71,12 @@
 			i::before {
 				color: var(--thirdy-color);
 			}
+
+            @include mobile-l {
+                i:before {
+                    color: var(--white-color);
+                }
+            }
 		}
 
 		@include mobile-l {
