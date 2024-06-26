@@ -2,6 +2,7 @@
 	@include flex-direction($gap: 80px);
 	background-color: var(--primary-alt-color);
 	padding-block: 120px;
+	overflow: hidden;
 
 	&__title {
 	}
@@ -11,6 +12,7 @@
 
 	&__swiper,
 	.swiper {
+		overflow: visible;
 		max-width: 100%;
 
 		.swiper-wrapper {
