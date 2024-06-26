@@ -1,3 +1,21 @@
-h2 {
-    
+.title {
+	@include flex-direction(row, 30px);
+	justify-content: flex-start;
+	align-items: center;
+
+	&__icon {
+		height: 100%;
+
+		&::before {
+			font-size: 44px;
+
+			@include tablet {
+				font-size: clamp(20px, #{calc(44 * 100 / 768)}vw, 44px);
+			}
+		}
+	}
+
+	@include tablet {
+		gap: clamp(12px, #{calc(30 * 100 / 768)}vw, 30px);
+	}
 }

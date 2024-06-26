@@ -1,12 +1,31 @@
+const mapMarker = /*html*/ `<img src="/assets/img/mark.svg" class="footer__mark" />`;
+
 ymaps.ready(() => {
-	var map = new ymaps.Map("map", {
-		center: [55.751574, 37.573856],
-		zoom: 10,
+	const map = new ymaps.Map("ymap", {
+		center: [58.103323, 56.302211],
+		zoom: 15,
 	});
 
-	if (map) {
-		ymaps.modules.require(["Placemark", "Circle"], function (Placemark, Circle) {
-			var placemark = new Placemark([55.37, 35.45]);
-		});
-	}
+	const marker1 = new ymaps.Placemark(
+		[58.101321, 56.303213],
+		{},
+		{
+			iconLayout: "default#image",
+			iconImageHref: "/assets/img/mark.svg",
+			iconImageSize: [35, 55],
+			iconImageOffset: [-3, -42],
+		}
+	);
+	const marker2 = new ymaps.Placemark(
+		[58.103323, 56.304111],
+		{},
+		{
+			iconLayout: "default#image",
+			iconImageHref: "/assets/img/mark.svg",
+			iconImageSize: [35, 55],
+			iconImageOffset: [-3, -42],
+		}
+	);
+
+	map.geoObjects.add(marker1).add(marker2);
 });

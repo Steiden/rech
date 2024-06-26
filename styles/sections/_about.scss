@@ -23,8 +23,11 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		flex-wrap: wrap;
 		gap: 42px;
+
+		@include tablet-l {
+			flex-wrap: wrap;
+		}
 
 		.about__advantages {
 			@include flex-direction($gap: 40px);

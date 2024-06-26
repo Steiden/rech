@@ -6,8 +6,10 @@
 	overflow: hidden;
 	position: relative;
 
-	@include tablet {
+	@include tablet-l {
 		height: clamp(500px, #{calc(1150 * 100 / 1920)}vw, 1150px);
+		padding: 35px 50px;
+		height: fit-content;
 	}
 
 	&__mask {
@@ -29,6 +31,10 @@
 
 	&__title {
 		margin-top: 120px;
+
+		@include tablet-l {
+			margin-top: 0;
+		}
 	}
 
 	&__img-container {
