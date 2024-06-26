@@ -17,22 +17,28 @@
 		&--blue {
 			color: var(--primary-color);
 		}
+
+		@include mobile-l {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__home {
-		@include flex-center;
+		@include flex-direction($gap: 25px);
 		@include section-border-radius;
+
+		justify-content: space-between;
 
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 
 		background: url("/assets/img/background/bg-main.png") no-repeat center center / cover;
 		position: relative;
-		height: 100dvh;
+		min-height: 100dvh;
 
 		@include tablet {
-			height: fit-content;
-			padding: 90px 35px 30px;
+			min-height: fit-content;
 		}
 	}
 
@@ -44,9 +50,12 @@
 		backdrop-filter: blur(20px);
 		padding: 65px;
 
-		position: absolute;
+		// position: absolute;
 		left: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 		bottom: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
+
+		margin-inline: clamp(50px, #{calc(192 * 100 / 1920) - 2}vw, 192px);
+		margin-bottom: clamp(35px, #{calc(190 * 100 / 1920) - 2}vw, 190px);
 
 		@include tablet-l {
 			margin-top: 60px;
@@ -56,6 +65,7 @@
 		@include mobile-l {
 			gap: 25px;
 			padding: 30px 20px;
+			margin-inline: 30px;
 		}
 
 		&__line {
