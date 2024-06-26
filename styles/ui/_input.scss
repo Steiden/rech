@@ -1,47 +1,47 @@
 .input {
-    background-color: transparent;
-    color: var(--primary-color);
-    height: 100%;
-    width: 100%;
+	background-color: transparent;
+	color: var(--primary-color);
+	width: 100%;
+	height: 100%;
 
-    &::placeholder {
-        color: var(--primary-color);
-    }
-    
-    &__wrapper {
-        @include flex-center(row, 5px);
-        justify-content: space-between;
+	&::placeholder {
+		color: var(--primary-color);
+	}
 
-        flex-shrink: 0;
-        flex-grow: 1;
+	&__wrapper {
+		@include flex-center(row, 5px);
+		@include fluid-property(height, 45, 60);
+		justify-content: space-between;
 
-        background-color: transparent;
-        border: 1px solid var(--primary-color);
-        border-radius: $border-radius;
-    
-        height: 60px;
-        padding: 5px 12px;
-    }
+		flex-shrink: 0;
+		flex-grow: 1;
 
-    &__button-wrapper {
-        @include flex-center;
-        
-        border-left: 1px solid var(--primary-color);
+		background-color: transparent;
+		border: 1px solid var(--primary-color);
+		border-radius: $border-radius;
 
-        height: 100%;
-        padding-left: 16px;
+		padding: 5px 12px;
+	}
 
-        position: relative;
-    }
+	&__button-wrapper {
+		@include flex-center;
 
-    &__button {
-        @include flex-center;
-        width: 24px;
-        aspect-ratio: 1;
-        margin-right: 14px;
+		border-left: 1px solid var(--primary-color);
 
-        &:hover i::before {
-            color: var(--thirdy-alt-color);
-        }
-    }
+		height: 100%;
+		padding-left: 16px;
+
+		position: relative;
+	}
+
+	&__button {
+		@include flex-center;
+		width: 24px;
+		aspect-ratio: 1;
+		margin-right: 14px;
+
+		&:hover i::before {
+			color: var(--thirdy-alt-color);
+		}
+	}
 }

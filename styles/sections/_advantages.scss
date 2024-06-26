@@ -38,14 +38,16 @@
 		width: 370px;
 		padding: 36px 25px;
 
-		transition-duration: 0.5s;
+		transition: all linear .5s;
 
 		@include tablet {
 			width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
+			gap: clamp(20px, #{calc(30 * 100 / 768)}vw, 30px);
 			padding: 18px;
 		}
 
 		@include mobile-l {
+			gap: 20px;
 		}
 
 		&:hover {
@@ -68,23 +70,19 @@
 
 		&__index {
 			@include flex-center;
+			@include fluid-property(width, 60, 100);
+			@include fluid-property(height, 40, 66);
+			@include fluid-property(font-size, 24, 40);
+			@include fluid-property(border-radius, 10, 20);
 
 			background-color: var(--thirdy-alt-color);
-			border-radius: 20px;
 			color: var(--white-color);
-			font-size: 40px;
 			line-height: 1;
 
 			align-self: center;
 			flex-shrink: 0;
 
-			width: 100px;
-			height: 66px;
 			margin-bottom: 5px;
-
-			@include tablet {
-				width: clamp(50px, #{calc(100 * 100 / 768)}vw, 100px);
-			}
 		}
 
 		&__title,
@@ -99,7 +97,11 @@
 		}
 
 		&__text {
-			line-height: 25px;
+			font-size: 18px;
+
+			@include tablet {
+				font-size: clamp(16px, #{calc(18 * 100 / 768)}vw, 18px);
+			}
 		}
 	}
 }

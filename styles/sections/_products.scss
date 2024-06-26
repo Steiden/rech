@@ -69,7 +69,8 @@
 	}
 
 	&__title {
-		font-size: 36px;
+		@include fluid-text(18, 36);
+
 		font-weight: 400;
 		text-transform: uppercase;
 
@@ -125,7 +126,7 @@
 		}
 
 		&__subtitle {
-			font-size: 32px;
+			@include fluid-text(18, 32);
 			font-weight: 400;
 		}
 
@@ -145,7 +146,7 @@
 		}
 
 		&__button {
-			height: 66px;
+			@include fluid-property(height, 56, 66);
 			font-weight: 700;
 
 			@include mobile-l {
@@ -155,8 +156,7 @@
 				width: 100%;
 			}
 
-			&:nth-child(1n) {
-				font-size: 18px;
+			&:nth-child(1) {
 				padding-inline: 50px;
 
 				& i::before {
@@ -164,8 +164,9 @@
 				}
 			}
 
-			&:nth-child(2n) {
-				font-size: 20px;
+			&:nth-child(2) {
+				@include fluid-text(14, 20);
+
 				padding-inline: 16px;
 				text-align: left;
 				max-width: 300px;

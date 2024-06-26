@@ -39,3 +39,27 @@
 		border-radius: $border-radius;
 	}
 }
+
+@mixin fluid-text($min, $max) {
+	font-size: #{$max}px;
+
+	@include tablet {
+		font-size: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
+	}
+
+	@include mobile-l {
+		font-size: #{$min}px;
+	}
+}
+
+@mixin fluid-property($property, $min, $max) {
+	#{$property}: #{$max}px;
+
+	@include tablet {
+        #{$property}: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
+    }
+
+	@include mobile-l {
+        #{$property}: #{$min}px;
+    }
+}

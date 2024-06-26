@@ -1,21 +1,18 @@
 .my-button {
 	@include flex-center(row, 15px);
-	justify-content: space-between;
+	@include fluid-text(14, 18); 
+	@include fluid-property(height, 55, 60);
 
-	// flex-shrink: 0;
-	// flex-grow: 1;
+	justify-content: space-between;
 
 	border-radius: $border-radius;
 
 	color: var(--secondary-color);
-	font-size: 18px;
 	transition-duration: 0.3s;
 
-	height: 60px;
 	padding: 5px;
 
 	@include tablet {
-		height: 55px;
 	}
 
 	@include mobile-l {

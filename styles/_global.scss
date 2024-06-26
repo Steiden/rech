@@ -1,7 +1,7 @@
 html,
 body {
-	min-height: 100% !important;
-	height: auto !important;
+	min-height: 100%;
+	height: auto;
 	background: var(--main-background);
 	-webkit-font-smoothing: antialiased;
 	scrollbar-gutter: stable;
@@ -49,7 +49,7 @@ hr {
 	z-index: 99;
 	display: none;
 	&.active {
-		display: block !important;
+		display: block;
 	}
 }
 
@@ -61,7 +61,7 @@ hr {
 }
 
 .dart-overflov-unset {
-	overflow: unset !important;
+	overflow: unset;
 }
 
 .dart_noscroll {
@@ -481,24 +481,24 @@ blockquote {
 
 @media (max-width: $small-desktop) {
 	.mpt-0 {
-		padding-top: 0 !important;
+		padding-top: 0;
 	}
 }
 
 @media (max-width: $big-phones) {
 	.mptm-0 {
-		padding-top: 0 !important;
+		padding-top: 0;
 	}
 
 	.mpm-0 {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
 @media (max-width: $tablets) {
 	.mobile-show {
-		display: block !important;
+		display: block;
 	}
 
 	.desktop-show {
@@ -506,8 +506,8 @@ blockquote {
 	}
 
 	.mp-0 {
-		padding-left: 0 !important;
-		padding-right: 0 !important;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -521,7 +521,7 @@ blockquote {
 
 /* ----------------- TXT ---------------- */
 .hidden {
-	display: none !important;
+	display: none;
 }
 
 .text-center {
@@ -574,8 +574,8 @@ ul {
 }
 
 .dart-align-items-center {
-	-ms-flex-align: center !important;
-	align-items: center !important;
+	-ms-flex-align: center;
+	align-items: center;
 }
 
 .d-col {
@@ -1271,7 +1271,7 @@ ul {
 		img {
 			width: 100%;
 			object-fit: cover;
-			height: 100% !important;
+			height: 100%;
 		}
 	}
 
@@ -1290,16 +1290,16 @@ ul {
 
 #choice_city {
 	.modal-body {
-		padding: 0 !important;
+		padding: 0;
 	}
 
 	.modal-header {
-		padding: 16px 0 !important;
+		padding: 16px 0;
 		border-bottom: none;
 	}
 
 	.modal_input {
-		padding: 0 !important;
+		padding: 0;
 	}
 
 	.modal_radio_button {
@@ -1431,18 +1431,18 @@ ul {
 }
 
 .user-avatar-image-wrapper {
-	border: 2px solid #e2e2e2 !important;
+	border: 2px solid #e2e2e2;
 	margin-bottom: 16px;
 }
 
 .user-avatar-btn {
 	cursor: pointer;
-	border: 1px solid #e2e2e2 !important;
+	border: 1px solid #e2e2e2;
 
 	&:hover {
-		background-color: #e9e9e9 !important;
-		color: var(--secondary-color) !important;
-		border: 1px solid #e2e2e2 !important;
+		background-color: #e9e9e9;
+		color: var(--secondary-color);
+		border: 1px solid #e2e2e2;
 	}
 }
 
@@ -1450,13 +1450,13 @@ ul {
 	cursor: pointer;
 	font-size: 14px;
 	padding: 8px 16px;
-	background: var(--primary-color) !important;
-	color: var(--white-color) !important;
-	border: none !important;
+	background: var(--primary-color);
+	color: var(--white-color);
+	border: none;
 
 	&:hover {
-		background: var(--primary-hover) !important;
-		color: var(--white-color) !important;
+		background: var(--primary-hover);
+		color: var(--white-color);
 	}
 }
 
@@ -1505,14 +1505,14 @@ ul {
 
 		&-image {
 			width: 40px;
-			height: 40px !important;
+			height: 40px;
 			object-fit: cover;
 			border-radius: 50%;
 		}
 
 		&-letter {
 			width: 40px;
-			height: 40px !important;
+			height: 40px;
 			object-fit: cover;
 			border-radius: 50%;
 			background-color: #f29d61;
@@ -1625,7 +1625,7 @@ ul {
 		&.link-no-link {
 			&::before {
 				content: "\e90a";
-				font-family: "icomoon" !important;
+				font-family: "icomoon";
 				position: absolute;
 				right: -25px;
 				font-size: 18px;
@@ -1669,7 +1669,7 @@ ul {
 				&.link-no-link {
 					&::before {
 						content: "\e90a";
-						font-family: "icomoon" !important;
+						font-family: "icomoon";
 						position: absolute;
 						right: -25px;
 						font-size: 18px;
@@ -1848,7 +1848,7 @@ ul {
 	&__icon {
 		border: 1px solid var(--border-color);
 		width: 40px;
-		height: 40px !important;
+		height: 40px;
 		object-fit: contain;
 		border-radius: 50%;
 
@@ -1898,7 +1898,7 @@ ul {
 }
 
 .ymaps-2-1-79-balloon__content {
-	font: unset !important;
+	font: unset;
 }
 
 .ymaps-2-1-79-placemark-overlay {
@@ -2060,7 +2060,7 @@ ul {
 
 		img {
 			width: 100%;
-			height: 100% !important;
+			height: 100%;
 			object-fit: cover;
 		}
 	}
@@ -2126,8 +2126,8 @@ ul {
 
 		// Временно!
 		img {
-			width: 100% !important;
-			height: 100% !important;
+			width: 100%;
+			height: 100%;
 			object-fit: cover;
 		}
 	}
@@ -2314,26 +2314,26 @@ ul {
 
 .product {
 	.swiper-pagination-bullet {
-		background: #b1b1b1 !important;
-		opacity: 1 !important;
+		background: #b1b1b1;
+		opacity: 1;
 	}
 
 	.swiper-pagination-bullet-active {
-		background: #000 !important;
+		background: #000;
 	}
 }
 
 .swiper-image-next,
 .swiper-image-prev {
-	width: 32px !important;
-	height: 32px !important;
+	width: 32px;
+	height: 32px;
 	transform: translateY(0%);
 }
 
 .swiper-date-next,
 .swiper-date-prev {
-	width: 32px !important;
-	height: 32px !important;
+	width: 32px;
+	height: 32px;
 	transform: translateY(20%);
 }
 
@@ -2494,10 +2494,10 @@ ul {
 
 .change-rating {
 	&:hover .d_icon-star {
-		color: #ffe500 !important;
+		color: #ffe500;
 	}
 
-	padding: 0 !important;
+	padding: 0;
 	.d_icon-star {
 		font-size: 32px;
 		cursor: pointer;
@@ -2510,7 +2510,7 @@ ul {
 	}
 
 	input:hover ~ label .d_icon-star {
-		color: #e6e6e6 !important;
+		color: #e6e6e6;
 	}
 
 	input {
@@ -2558,7 +2558,7 @@ ul {
 	.dart-catalog-menu {
 		height: calc(100% - 80px);
 		overflow: auto;
-		display: flex !important;
+		display: flex;
 
 		ul {
 			width: 100%;
@@ -2679,7 +2679,7 @@ ul {
 
 		&::before {
 			content: "\e90a";
-			font-family: "icomoon" !important;
+			font-family: "icomoon";
 			position: absolute;
 			left: 0;
 			font-size: 24px;
@@ -2820,7 +2820,7 @@ ul {
 
 .dropzone-mini {
 	.dz-button {
-		width: 100% !important;
+		width: 100%;
 	}
 }
 
@@ -2832,7 +2832,7 @@ ul {
 
 	img {
 		width: 100%;
-		height: 100% !important;
+		height: 100%;
 		object-fit: cover;
 	}
 }
@@ -2855,7 +2855,7 @@ ul {
 	&__el {
 		img {
 			width: 100%;
-			height: 80px !important;
+			height: 80px;
 			object-fit: cover;
 			border-radius: 5px;
 			margin-bottom: 16px;
@@ -3080,7 +3080,7 @@ ul {
 
 	img {
 		width: 180px;
-		height: 130px !important;
+		height: 130px;
 		object-fit: contain;
 		margin-top: 24px;
 	}
@@ -3212,7 +3212,7 @@ ul {
 
 		img {
 			width: 54px;
-			height: 54px !important;
+			height: 54px;
 			border-radius: 50%;
 			border: 1px solid var(--border-color);
 			object-fit: cover;
@@ -3263,7 +3263,7 @@ ul {
 
 			img {
 				width: 130px;
-				height: 130px !important;
+				height: 130px;
 				object-fit: cover;
 			}
 
@@ -3424,21 +3424,21 @@ ul {
 }
 
 .dart-menu-category__el {
-	color: var(--secondary-color) !important;
+	color: var(--secondary-color);
 }
 
 .dart-menu-category {
-	color: #5c5c5c !important;
+	color: #5c5c5c;
 }
 
 .breadcrumb-item {
-	color: var(--text-color-dop) !important;
-	margin-bottom: 20px !important;
+	color: var(--text-color-dop);
+	margin-bottom: 20px;
 	font-size: 14px;
 }
 
 .breadcrumb a {
-	color: var(--text-color-dop) !important;
+	color: var(--text-color-dop);
 	font-size: 14px;
 }
 
@@ -3447,7 +3447,7 @@ ul {
 }
 
 .breadcrumb {
-	margin: 0 !important;
+	margin: 0;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
@@ -3506,7 +3506,7 @@ ul {
 
 	&__el {
 		list-style: none;
-		padding: 12px 16px !important;
+		padding: 12px 16px;
 		transition: 0.4s;
 		line-height: 1;
 		text-decoration: none;
@@ -3528,7 +3528,7 @@ ul {
 		overflow: hidden;
 
 		.dart-menu-category {
-			margin-bottom: 0 !important;
+			margin-bottom: 0;
 			padding-top: 0;
 			padding-bottom: 0;
 		}
@@ -3646,7 +3646,7 @@ ul {
 
 		img {
 			width: 40px;
-			height: 40px !important;
+			height: 40px;
 			object-fit: contain;
 			border: 1px solid var(--border-color);
 			border-radius: 50%;
@@ -3693,7 +3693,7 @@ ul {
 
 			label {
 				width: 100%;
-				padding: 16px 12px !important;
+				padding: 16px 12px;
 			}
 
 			p {
@@ -3778,7 +3778,7 @@ ul {
 
 			&::before {
 				content: "\e91a";
-				font-family: "icomoon" !important;
+				font-family: "icomoon";
 				color: transparent;
 				font-size: 24px;
 				position: absolute;
@@ -3949,7 +3949,7 @@ ul {
 	}
 
 	img {
-		height: 36px !important;
+		height: 36px;
 		object-fit: cover;
 		width: 100px;
 		object-fit: contain;
@@ -4022,7 +4022,7 @@ ul {
 	}
 
 	*:hover {
-		color: var(--primary-hover) !important;
+		color: var(--primary-hover);
 	}
 }
 
@@ -4031,12 +4031,12 @@ ul {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: absolute;
-	color: var(--secondary-color) !important;
+	color: var(--secondary-color);
 
 	&::before {
 		content: "\e908";
 		position: absolute;
-		font-family: "icomoon" !important;
+		font-family: "icomoon";
 		top: -15px;
 		font-size: 28px;
 		left: 50%;
@@ -4046,11 +4046,11 @@ ul {
 }
 
 .dropzone {
-	min-height: 90px !important;
+	min-height: 90px;
 	position: relative;
 	border-radius: 5px;
-	border: 1px dashed var(--text-color-dop) !important;
-	padding: 24px !important;
+	border: 1px dashed var(--text-color-dop);
+	padding: 24px;
 }
 
 .dart-modal-change-addres {
@@ -4079,7 +4079,7 @@ ul {
 			position: relative;
 
 			p {
-				font-family: var(--bs-body-font-family) !important;
+				font-family: var(--bs-body-font-family);
 			}
 
 			&.show {
@@ -4270,7 +4270,7 @@ ul {
 		// Временно!
 		img {
 			width: 100%;
-			height: 100% !important;
+			height: 100%;
 			object-fit: cover;
 			border-radius: 5px;
 		}
@@ -4413,8 +4413,8 @@ ul {
 	gap: 8px;
 
 	&__img {
-		width: 40px !important;
-		height: 40px !important;
+		width: 40px;
+		height: 40px;
 		object-fit: contain;
 		border: 1px solid var(--text-color-dop);
 		border-radius: 50%;
@@ -4472,8 +4472,8 @@ ul {
 
 	p {
 		color: var(--secondary-color);
-		font-weight: 600 !important;
-		font-size: 16px !important;
+		font-weight: 600;
+		font-size: 16px;
 	}
 }
 
@@ -4483,18 +4483,18 @@ ul {
 }
 
 .button-mini-block {
-	display: block !important;
+	display: block;
 }
 
 .dart-search__form {
 	&.loading {
-		min-height: auto !important;
+		min-height: auto;
 	}
 }
 
 .dart-search {
 	&.loading {
-		min-height: auto !important;
+		min-height: auto;
 	}
 }
 
@@ -4558,7 +4558,7 @@ ul {
 	color: var(--white-color);
 	font-size: 14px;
 	font-weight: 500;
-	font-family: var(--bs-body-font-family) !important;
+	font-family: var(--bs-body-font-family);
 }
 
 .dart-btn .d_icon {
@@ -4713,7 +4713,7 @@ ul {
 @media (max-width: $desktop) {
 	.dart-header {
 		&__components-desctop {
-			padding: 15px 14px !important;
+			padding: 15px 14px;
 		}
 
 		&__components-desctop {
@@ -4896,11 +4896,11 @@ ul {
 	}
 
 	.dart-menu-category {
-		display: none !important;
+		display: none;
 	}
 
 	.d-col-content-mt-0 {
-		padding-top: 0 !important;
+		padding-top: 0;
 	}
 
 	.dart-order {
@@ -4982,12 +4982,12 @@ ul {
 
 	h2,
 	.h2 {
-		font-size: 24px !important;
+		font-size: 24px;
 	}
 
 	h3,
 	.h3 {
-		font-size: 18px !important;
+		font-size: 18px;
 	}
 
 	h4,
@@ -5238,17 +5238,17 @@ ul {
 
 	h2,
 	.h2 {
-		font-size: 22px !important;
+		font-size: 22px;
 	}
 
 	h3,
 	.h3 {
-		font-size: 18px !important;
+		font-size: 18px;
 	}
 
 	h4,
 	.h4 {
-		font-size: 18px !important;
+		font-size: 18px;
 	}
 
 	.changeshop__menu {
@@ -5257,7 +5257,7 @@ ul {
 
 	.changeshop__rating,
 	.changeshop__list {
-		width: 100% !important;
+		width: 100%;
 	}
 
 	.changeshop__map {
@@ -5349,7 +5349,7 @@ ul {
 	}
 
 	.h1-mini {
-		font-size: 18px !important;
+		font-size: 18px;
 	}
 
 	.mobile-basket.show .d-col-basket {
@@ -5427,8 +5427,13 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
 	line-height: 1.2;
+}
+
+p {
+	@include fluid-text(14, 18);
 }
 
 h2 {

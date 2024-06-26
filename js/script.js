@@ -10,6 +10,7 @@ catalogButton.addEventListener("click", () => {
 	closeCatalogButton.style.display = "flex";
 	header.classList.add("header--all");
 	headerMenu.style.display = "flex";
+	document.body.style.overflow = "hidden";
 });
 
 closeCatalogButton.addEventListener("click", () => {
@@ -17,6 +18,7 @@ closeCatalogButton.addEventListener("click", () => {
 	closeCatalogButton.style.display = "none";
 	header.classList.remove("header--all");
 	headerMenu.style.display = "none";
+	document.body.style.overflow = "auto";
 });
 
 const desktopCatalogButton = document.getElementById("desktopCatalogButton");

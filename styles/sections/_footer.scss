@@ -43,14 +43,16 @@
 	}
 
 	&__button {
+		@include fluid-text(14, 20);
+		@include fluid-property(padding-inline, 45, 58);
+
 		position: absolute;
 		top: 60px;
 		right: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 
-		font-size: 20px;
 		font-weight: 700;
 
-		padding-inline: 58px;
+		// padding-inline: 58px;
 
 		@include tablet-s {
 			right: 0;
@@ -67,6 +69,7 @@
 
 	&__up-button {
 		@include flex-center;
+		@include fluid-property(width, 50, 60);
 
 		background-color: var(--thirdy-color);
 		border-radius: $border-radius;
@@ -75,7 +78,6 @@
 		bottom: 60px;
 		right: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 
-		width: 60px;
 		aspect-ratio: 1;
 
 		z-index: 10;

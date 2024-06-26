@@ -47,7 +47,8 @@
 	}
 
 	&__item {
-		@include flex-center($gap: 25px);
+		@include flex-center;
+		@include fluid-property(gap, 23, 25);
 		max-width: 235px;
 	}
 

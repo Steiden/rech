@@ -63,6 +63,14 @@
 	&__item {
 		background-color: #5ac5ef;
 		color: var(--primary-color);
+		
+		&:hover {
+
+			.select__button {
+				border-radius: $border-radius;
+				background-color: #1AA7E3;
+			}
+		}
 	}
 
 	&__button {
@@ -70,5 +78,6 @@
 		width: 100%;
 		padding-inline: 25px;
 		text-align: left;
+		transition-duration: .3s;
 	}
 }
