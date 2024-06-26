@@ -1,11 +1,25 @@
 .person {
+	
+	@include mobile-l {
+		padding: 0;
+	}
+
 	&__content-wrapper {
+		@include flex-direction;
+
 		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
 
 		max-height: 700px;
 		height: 700px;
 		padding-inline: 120px;
+		padding-top: 60px;
 		position: relative;
+
+		@include tablet {
+			max-height: fit-content;
+			height: fit-content;
+			padding-inline: clamp(25px, #{calc(120 * 100 / 1024)}vw, 120px);
+		}
 	}
 
 	&__content {
@@ -29,6 +43,12 @@
 			font-size: clamp(150px, #{calc(500 * 100 / 1920)}vw, 500px);
 			z-index: 1;
 		}
+
+		@include mobile-l {
+			top: 70%;
+			left: 25px;
+			translate: 0;
+		}
 	}
 
 	&__title,
@@ -42,8 +62,12 @@
 		gap: 30px;
 
 		p {
-			font-size: 48px;
-			line-height: 62px;
+			font-size: clamp(36px, #{calc(48 * 100 / 1920)}vw, 48px);
+			line-height: 1.2;
+
+			@include tablet {
+				font-size: clamp(24px, #{calc(36 * 100 / 1024)}vw, 36px);
+			}
 		}
 
 		& i::before {
@@ -62,9 +86,13 @@
 	}
 
 	&__text {
-		font-size: 32px;
+		font-size: clamp(26px, #{calc(36 * 100 / 1024)}vw, 36px);
 		font-weight: 400;
-		line-height: 42px;
+		line-height: 1.2;
+
+		@include tablet {
+			font-size: clamp(18px, #{calc(24 * 100 / 1024)}vw, 24px);
+		}
 	}
 
 	&__img {
@@ -74,5 +102,10 @@
 
 		height: 100%;
 		object-fit: cover;
+
+		@include tablet {
+			position: static;
+			translate: 0 50px;
+		}
 	}
 }

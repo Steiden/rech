@@ -9,9 +9,14 @@
 	transition-duration: .3s;
 
 	height: 60px;
+	padding: 5px;
 
 	@include tablet {
-		min-width: 100%;
+		height: 55px;
+	}
+
+	@include mobile-l {
+		font-size: 14px;
 	}
 
 	&--red {

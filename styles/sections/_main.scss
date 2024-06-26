@@ -5,6 +5,10 @@
 	position: relative;
 	min-height: 100dvh;
 
+	@include mobile-l {
+		gap: 60px;
+	}
+
 	&__title {
 		font-size: clamp(24px, #{calc(70 * 100 / 1920)}vw, 70px);
 		line-height: 1;
@@ -24,6 +28,11 @@
 
 		border-bottom-left-radius: $border-radius-very-large;
 		border-bottom-right-radius: $border-radius-very-large;
+
+		@include tablet {
+			height: fit-content;
+			padding: 90px 35px 30px;
+		}
 	}
 
 	&__content,
@@ -39,7 +48,13 @@
 		bottom: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 
 		@include tablet-l {
+			margin-top: 60px;
 			position: static;
+		}
+
+		@include mobile-l {
+			gap: 25px;
+			padding: 30px 20px;
 		}
 
 		&__line {
@@ -50,6 +65,13 @@
 			height: 4px;
 			width: 50%;
 			margin-block: 32px 65px;
+		}
+
+		&__location {
+		}
+
+		&__text {
+			font-size: 18px;
 		}
 
 		&__button-container {

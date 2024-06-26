@@ -34,6 +34,10 @@
 			display: flex;
 			align-items: center;
 			gap: 35px;
+
+			@include mobile-l {
+				gap: 20px;
+			}
 		}
 	}
 
@@ -53,7 +57,7 @@
 		}
 
 		.about__img-span {
-            @include flex-center;
+			@include flex-center;
 
 			position: absolute;
 			right: 26px;
@@ -66,33 +70,15 @@
 			font-weight: 400;
 
 			height: 45px;
-            padding-inline: 20px;
+			padding-inline: 20px;
 			z-index: 10;
+
+			@include mobile-l {
+				right: 50%;
+				bottom: 8px;
+				translate: 50% 0;
+				width: calc(100% - 23px * 2);
+			}
 		}
-
-		// .about__arrow {
-		// 	position: absolute;
-		// 	top: 50%;
-		// 	translate: 0 -50%;
-		// 	z-index: 10;
-
-		// 	&--left {
-		// 		left: 35px;
-		// 	}
-
-		// 	&--right {
-		// 		right: 35px;
-		// 	}
-		// }
-
-		// .about__arrow-icon {
-		// 	& span::before {
-		// 		font-size: 55px;
-		// 	}
-		// }
 	}
-}
-
-.aboutSwiper {
-	overflow: hidden;
 }

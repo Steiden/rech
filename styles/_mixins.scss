@@ -27,3 +27,15 @@
 @mixin container {
 	padding-inline: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
 }
+
+@mixin section-border-radius {
+	border-radius: $border-radius-very-large;
+
+	@include tablet {
+		border-radius: $border-radius-large;
+	}
+
+	@include mobile {
+		border-radius: $border-radius;
+	}
+}

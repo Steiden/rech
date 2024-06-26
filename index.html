@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
 		<title>РЭЩ</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./styles/style.scss" />
@@ -203,10 +204,20 @@
 				<section class="container main__home">
 					<div class="main__content main-content">
 						<h1 class="main__title">
-							<span class="main__title main__title--blue">ЭЛЕКТРО</span>ТЕХНИЧЕСКИЕ<br />КОМПЛЕКСНЫЕ
-							РЕШЕНИЯ
+							<span class="dark-blue main__title">ЭЛЕКТРО</span>ТЕХНИЧЕСКИЕ<br />КОМПЛЕКСНЫЕ РЕШЕНИЯ
 						</h1>
-						<hr class="main-content__line" />
+						<hr class="main-content__line hidden-mobile-l" />
+						<div class="main-content__location visible-mobile-l">
+							<div class="main-content__location-title">
+								<i class="d_icon d_icon-mark d_icon--red"></i>
+								<span class="main-content__text">ПРОИЗВОДСТВО:</span>
+							</div>
+							<a
+								href="https://yandex.ru/maps/geo/rybinsk/53057096/?ll=38.819432%2C58.063320&z=12.41"
+								class="main-content__text"
+								>Ярославская обл. г. Рыбинск</a
+							>
+						</div>
 						<div
 							class="main-content__button-container main-content__button-container--vertical main-content__button-container--padding"
 						>
@@ -280,27 +291,27 @@
 							</div>
 						</div>
 
-						<div class="slider about__img-container aboutSwiper">
-							<div class="swiper-wrapper">
-								<img
-									src="/assets/img/background/bg-about.png"
-									alt="background"
-									class="slider__img swiper-slide"
-								/>
-								<img
-									src="/assets/img/background/bg-about.png"
-									alt="background"
-									class="slider__img swiper-slide"
-								/>
-								<img
-									src="/assets/img/background/bg-about.png"
-									alt="background"
-									class="slider__img swiper-slide"
-								/>
+						<div class="slider__inner">
+							<div class="slider about__img-container aboutSwiper">
+								<div class="swiper-wrapper">
+									<img
+										src="/assets/img/background/bg-about.png"
+										alt="background"
+										class="slider__img swiper-slide"
+									/>
+									<img
+										src="/assets/img/background/bg-about.png"
+										alt="background"
+										class="slider__img swiper-slide"
+									/>
+									<img
+										src="/assets/img/background/bg-about.png"
+										alt="background"
+										class="slider__img swiper-slide"
+									/>
+								</div>
+								<span class="about__img-span">Наша электролаборатория</span>
 							</div>
-
-							<span class="about__img-span">Наша электролаборатория</span>
-
 							<button class="slider__arrow slider__arrow--left" id="aboutSwiperPrev">
 								<i class="d_icon-quotation-left-red slider__arrow-icon"
 									><span class="path1"></span><span class="path2"></span><span class="path3"></span
@@ -366,13 +377,13 @@
 							<i class="d_icon d_icon-title-mark"></i>
 							ВЫБОР <span class="blue">НАШИХ ЗАКАЗЧИКОВ</span>
 						</h2>
-						<button class="my-button my-button--red products__button">
+						<button class="my-button my-button--red products__button hidden-tablet">
 							Скачать каталог
 							<i class="d_icon d_icon-upload"></i>
 						</button>
 					</header>
 					<nav class="products__nav">
-						<ul class="products__categories-list">
+						<ul class="products__categories-list hidden-mobile-l">
 							<li class="products__categories-item">
 								<button class="my-button my-button--transparent products__categories-button">
 									БКТП_У
@@ -399,6 +410,13 @@
 								</button>
 							</li>
 						</ul>
+						<select class="select">
+							<option class="select__option" selected>БКТП_У</option>
+							<option class="select__option">БКТП_Б</option>
+							<option class="select__option">КРУ/РЭЩ "АНТАРЕС"</option>
+							<option class="select__option">КРУ/РЭЩ «АЛЬТАИР»</option>
+							<option class="select__option">КРУ/РЭЩ "АТЛАНТ" (ВФМ)</option>
+						</select>
 					</nav>
 					<div class="products__content">
 						<h3 class="products__title">
@@ -407,39 +425,41 @@
 						<div class="products__card product-card">
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical">
-								<div class="slider about__img-container productSwiper">
-									<div class="swiper-wrapper">
-										<button class="slider__img-button product__img-button swiper-slide">
-											<img
-												src="/assets/img/products/product1.png"
-												alt="background"
-												class="slider__img product-card__img"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/products/product1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/products/product1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/products/product1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/products/product1.png"
-												class="slider__imgproduct-card__img product-card__img--small"
-											/>
-										</button>
+								<div class="slider__inner">
+									<div class="slider about__img-container productSwiper">
+										<div class="swiper-wrapper">
+											<button class="slider__img-button product__img-button swiper-slide">
+												<img
+													src="/assets/img/products/product1.png"
+													alt="background"
+													class="slider__img product-card__img"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/products/product1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/products/product1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/products/product1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/products/product1.png"
+													class="slider__imgproduct-card__img product-card__img--small"
+												/>
+											</button>
+										</div>
 									</div>
 									<button class="slider__arrow slider__arrow--left" id="productSwiperPrev">
 										<i class="d_icon-quotation-left-red slider__arrow-icon"
@@ -491,6 +511,11 @@
 									</div>
 								</div>
 							</div>
+
+							<button class="my-button my-button--red products__button">
+								Скачать каталог
+								<i class="d_icon d_icon-upload"></i>
+							</button>
 
 							<div class="product-card__content">
 								<div class="product-card__block">
@@ -565,7 +590,7 @@
 					<div class="map__img-container">
 						<img src="/assets/img/map.svg" class="map__img" />
 
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -576,7 +601,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -587,7 +612,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -598,7 +623,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -609,7 +634,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -620,7 +645,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -631,7 +656,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -642,7 +667,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -653,7 +678,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -664,7 +689,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -675,7 +700,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -686,7 +711,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker">
+						<button class="map__marker marker hidden-tablet-s">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -706,7 +731,7 @@
 							<i class="d_icon d_icon-title-mark"></i>
 							ВЫПОЛНЕННЫЕ <span class="blue">ПРОЕКТЫ</span>
 						</h2>
-						<button class="my-button my-button--red projects__button">
+						<button class="my-button my-button--red projects__button hidden-tablet">
 							Смотреть все проекты
 							<i class="d_icon d_icon-arrow-diagonal"></i>
 						</button>
@@ -715,39 +740,41 @@
 						<div class="projects__block">
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical">
-								<div class="slider about__img-container projectSwiper11">
-									<div class="swiper-wrapper">
-										<button class="slider__img-button product__img-button swiper-slide">
-											<img
-												src="/assets/img/projects/project1.png"
-												alt="background"
-												class="slider__img product-card__img"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</button>
-										<button class="slider__img-button product-card__img-button swiper-slide">
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__imgproduct-card__img product-card__img--small"
-											/>
-										</button>
+								<div class="slider__inner">
+									<div class="slider about__img-container projectSwiper11">
+										<div class="swiper-wrapper">
+											<button class="slider__img-button product__img-button swiper-slide">
+												<img
+													src="/assets/img/projects/project1.png"
+													alt="background"
+													class="slider__img product-card__img"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</button>
+											<button class="slider__img-button product-card__img-button swiper-slide">
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__imgproduct-card__img product-card__img--small"
+												/>
+											</button>
+										</div>
 									</div>
 									<button class="slider__arrow slider__arrow--left" id="projectSwiperPrev">
 										<i class="d_icon-quotation-left-red slider__arrow-icon"
@@ -812,7 +839,7 @@
 							</div>
 						</div>
 
-						<div class="projects__block">
+						<div class="projects__block hidden-tablet">
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical">
 								<div class="slider about__img-container projects__slider projectSwiper21">
@@ -912,6 +939,10 @@
 							</div>
 						</div>
 					</div>
+					<button class="my-button my-button--red projects__button visible-tablet">
+						Смотреть все проекты
+						<i class="d_icon d_icon-arrow-diagonal"></i>
+					</button>
 				</section>
 
 				<section class="section-border-radius container advantages">
@@ -1098,6 +1129,9 @@
 			</main>
 			<footer class="footer">
 				<div class="footer__map">
+					<div id="map" class="footer__map-img">
+						<!-- <img src="/assets/img/map.png" alt="map" class="footer__map-img" /> -->
+					</div>
 					<img src="/assets/img/mark.svg" class="footer__mark" />
 
 					<button class="my-button my-button--blue footer__button">
@@ -1105,7 +1139,7 @@
 						<i class="d_icon d_icon-upload"></i>
 					</button>
 
-					<button class="footer__up-button">
+					<button class="footer__up-button hidden-mobile-l">
 						<i class="d_icon d_icon-arrow-diagonal"></i>
 					</button>
 				</div>
@@ -1217,7 +1251,12 @@
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&lang=ru_RU"
+			type="text/javascript"
+		></script>
 		<script src="./js/script.js" type="module"></script>
 		<script src="./js/swipers.js" type="module"></script>
+		<script src="./js/ymap.js" type="module"></script>
 	</body>
 </html>

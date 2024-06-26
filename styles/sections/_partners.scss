@@ -9,9 +9,17 @@
         grid-template: auto / repeat(5, 1fr);
         column-gap: 22px;
         row-gap: 60px;
+
+        overflow: scroll;
+
+        @include tablet {
+            column-gap: 60px;
+            row-gap: clamp(20px, #{calc(60 * 100 / 768)}vw, 60px);
+        }
     }
 
     &__img {
         filter: grayscale(1);
+        min-width: 100px;
     }
 }

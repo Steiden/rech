@@ -8,6 +8,11 @@
 
 	&--vertical {
 		flex-direction: column;
+		overflow: visible;
+	}
+
+	&__inner {
+		position: relative;
 	}
 
 	.swiper-wrapper {
@@ -44,6 +49,16 @@
 
 		&--right {
 			right: 5%;
+		}
+
+		@include mobile-l {
+			&--left {
+				left: -5%;
+			}
+
+			&--right {
+				right: -5%;
+			}
 		}
 	}
 

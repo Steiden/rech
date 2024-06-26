@@ -5238,17 +5238,17 @@ ul {
 
 	h2,
 	.h2 {
-		font-size: 20px !important;
+		font-size: 22px !important;
 	}
 
 	h3,
 	.h3 {
-		font-size: 16px !important;
+		font-size: 18px !important;
 	}
 
 	h4,
 	.h4 {
-		font-size: 14px !important;
+		font-size: 18px !important;
 	}
 
 	.changeshop__menu {
@@ -5418,6 +5418,17 @@ ul {
 			padding: 12px;
 		}
 	}
+}
+
+body {
+	background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.2;
 }
 
 h2 {
