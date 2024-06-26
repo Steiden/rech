@@ -98,7 +98,7 @@ project2SwiperPrevButton.addEventListener("click", () => {
 // Advantages, Solutions
 const swiper = new Swiper(".swiper", {
 	spaceBetween: 18,
-	slidesPerView: 2,
+	slidesPerView: "auto",
 });
 
 // Partners
