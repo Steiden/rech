@@ -12,6 +12,14 @@
 	&__swiper,
 	.swiper {
 		max-width: 100%;
+
+		.swiper-wrapper {
+			align-items: stretch;
+		}
+
+		.swiper-slide {
+			height: auto;
+		}
 	}
 
 	&__card,
@@ -24,7 +32,6 @@
 		flex-shrink: 0;
 		flex-grow: 1;
 
-		min-height: 425px;
 		max-width: 370px;
 		width: 370px;
 		padding: 36px 25px;
@@ -33,12 +40,10 @@
 
 		@include tablet {
 			width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
-			min-height: clamp(375px, #{calc(425 * 100 / 768)}vw, 425px);
 			padding: 18px;
 		}
 
 		@include mobile-l {
-			height: 375px;
 		}
 
 		&:hover {
