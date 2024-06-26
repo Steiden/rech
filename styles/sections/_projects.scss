@@ -23,17 +23,21 @@
 	&__content {
 		@include flex-direction(row, 21px);
 		justify-content: space-between;
-		flex-wrap: wrap;
 
 		@include desktop {
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 	}
 
 	&__block {
 		@include flex-direction($gap: 60px);
-        max-width: 760px;
-		width: 100%;
+		max-width: 760px;
+		width: 50%;
+
+		@include desktop {
+			width: 100%;
+		}
 	}
 
 	&__slider {
@@ -55,9 +59,9 @@
 		width: 70px;
 		aspect-ratio: 1;
 
-        i::before {
-            font-size: 24px;
-        }
+		i::before {
+			font-size: 24px;
+		}
 	}
 
 	&__img-logo {
@@ -89,30 +93,30 @@
 		}
 	}
 
-    &__text-container {
-        @include flex-direction($gap: 25px);
-    }
+	&__text-container {
+		@include flex-direction($gap: 25px);
+	}
 
-    &__title3 {
-        font-size: 32px;
-    }
+	&__title3 {
+		font-size: 32px;
+	}
 
-    &__link-container {
-        @include flex-direction(row, 20px);
-        margin-top: 5px;
+	&__link-container {
+		@include flex-direction(row, 20px);
+		margin-top: 5px;
 
-        i::before {
-            color: var(--thirdy-color);
-            font-size: 13px;
-        }
-    }
+		i::before {
+			color: var(--thirdy-color);
+			font-size: 13px;
+		}
+	}
 
-    &__link {
-        color: var(--white-color);
-        font-size: 18px;
-        font-weight: 700;
+	&__link {
+		color: var(--white-color);
+		font-size: 18px;
+		font-weight: 700;
 
-        padding-bottom: 6px;
-        border-color: var(--thirdy-color);
-    }
+		padding-bottom: 6px;
+		border-color: var(--thirdy-color);
+	}
 }

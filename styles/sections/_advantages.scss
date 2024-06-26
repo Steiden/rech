@@ -83,7 +83,7 @@
 			margin-bottom: 5px;
 
 			@include tablet {
-				width: clamp(50px, #{calc(66 * 100 / 768)}vw, 66px);
+				width: clamp(50px, #{calc(100 * 100 / 768)}vw, 100px);
 			}
 		}
 
