@@ -26,6 +26,7 @@
 		gap: 42px;
 
 		@include tablet-l {
+			justify-content: flex-start;
 			flex-wrap: wrap;
 		}
 

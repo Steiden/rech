@@ -29,6 +29,7 @@
 		height: 100dvh;
 		border-radius: 0;
 		position: fixed;
+		overflow-y: auto;
 	}
 
 	p {
@@ -182,6 +183,8 @@
 			gap: clamp(0px, #{calc(10 * 100 / 1920)}vw, 10px);
 
 			margin: 0;
+			list-style: square;
+			width: 100%;
 		}
 
 		.header__nav-item {
@@ -369,6 +372,7 @@
 
 .block-container {
 	@include flex-direction($gap: 10px);
+	margin-top: 25px;
 
 	.block {
 		display: flex;
@@ -383,6 +387,11 @@
 
 		&__text {
 			color: var(--thirdy-alt-color);
+			text-align: left;
+
+			&:hover {
+				color: var(--link-hover-color);
+			}
 		}
 	}
 }

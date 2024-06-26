@@ -6,7 +6,7 @@
 
 	color: var(--secondary-color);
 	font-size: 18px;
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 
 	height: 60px;
 	padding: 5px;
@@ -21,6 +21,10 @@
 
 	&--red {
 		background: linear-gradient(90deg, #ac262f 0%, #d12d23 100%);
+
+		&:hover {
+			background: linear-gradient(90deg, rgba(172, 38, 47, 0.6) 0%, rgba(209, 45, 35, 0.6) 100%);
+		}
 	}
 
 	&--blue {

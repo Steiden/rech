@@ -34,7 +34,7 @@ desktopCatalogButton.addEventListener("click", () => {
 });
 
 window.addEventListener("click", (e) => {
-	if (e.target !== desktopCatalogButton && e.target !== catalog) {
+	if (!catalog.contains(e.target) && !desktopCatalogButton.contains(e.target)) {
 		catalog.classList.remove("catalog--visible");
 		desktopCatalogButtonIsCliked = false;
 	}
