@@ -1,5 +1,6 @@
 .partners {
 	@include flex-direction($gap: 90px);
+	overflow: hidden;
 
 	&__title {
 	}

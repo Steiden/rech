@@ -25,8 +25,10 @@
 	}
 
 	&__home {
-		@include flex-direction($gap: 25px);
+		@include flex-direction;
 		@include section-border-radius;
+
+		gap: clamp(25px, #{calc(190 * 100 / 1920)}vw, 190px);
 
 		justify-content: space-between;
 
