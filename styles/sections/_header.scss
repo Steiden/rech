@@ -336,6 +336,10 @@
 		}
 	}
 
+	&__link {
+		border: none;
+	}
+
 	&__catalog,
 	.catalog {
 		@include flex-direction(row, 40px);

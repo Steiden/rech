@@ -4,24 +4,30 @@
 	border: 2px solid var(--thirdy-color);
 	border-radius: 10px;
 
-	width: fit-content;
-	height: fit-content;
+	width: 40px;
+	height: 40px;
+	aspect-ratio: 1;
 
-	padding: 9px 7px;
+	padding-inline: 6px;
 
 	& i {
 		@include flex-center;
 
 		&::before {
-			font-size: clamp(12px, #{calc(18 * 100 / 1920)}vw, 18px);
+			font-size: clamp(11px, #{calc(18 * 100 / 1920)}vw, 18px);
 		}
 	}
 
+	@include tablet {
+		width: clamp(32px, #{calc(40 * 100 / 768)}vw, 40px);
+		height: clamp(32px, #{calc(40 * 100 / 768)}vw, 40px);
+	}
+
 	@include mobile-l {
-		padding: 5px 4px;
+		padding: 5px;
 
 		& i::before {
-			font-size: 12px;
+			font-size: 11px;
 		}
 	}
 }
