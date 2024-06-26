@@ -13,8 +13,8 @@
 		position: relative;
 		overflow: hidden;
 
-		@include tablet {
-			height: clamp(300px, #{calc(900 * 100 / 768)}vw, 900px);
+		@include tablet-l {
+			height: clamp(300px, #{calc(900 * 100 / 1024)}vw, 900px);
 		}
 
 		@include mobile-l {

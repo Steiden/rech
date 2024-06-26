@@ -34,9 +34,29 @@
 		width: 370px;
 		padding: 36px 25px;
 
+		transition-duration: 0.5s;
+
+		&:hover {
+			background: linear-gradient(89.66deg, #006aab 40.17%, #004875 99.07%);
+
+			i::before {
+				color: var(--thirdy-color);
+			}
+
+			.advantage-card__index {
+				background-color: var(--thirdy-color);
+				color: var(--thirdy-alt-color);
+			}
+
+			.advantage-card__title,
+			.advantage-card__text {
+				color: var(--white-color);
+			}
+		}
+
 		@include tablet {
 			width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
-            padding: 18px;
+			padding: 18px;
 		}
 
 		&__index {
