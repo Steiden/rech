@@ -91,11 +91,6 @@
 			&--padding {
 				padding-right: clamp(0px #{calc(100 * 100 / 1920)}vw, 100px);
 			}
-
-			& .input__wrapper,
-			& .header__button {
-				width: 100%;
-			}
 		}
 
 		&__button {

@@ -1,5 +1,5 @@
 .container {
-	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 3}vw, 192px);
+	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 2}vw, 192px);
 }
 
 .hidden-desktop {

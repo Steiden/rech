@@ -2,6 +2,9 @@
 	@include flex-center(row, 15px);
 	justify-content: space-between;
 
+	flex-shrink: 0;
+	flex-grow: 1;
+
 	border-radius: $border-radius;
 
 	color: var(--secondary-color);

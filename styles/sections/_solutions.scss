@@ -1,6 +1,7 @@
 .solutions {
     @include flex-direction($gap: 60px);
 	margin-bottom: 120px;
+	overflow: hidden;
 
     &__card-container {
         grid-template: auto / repeat(6, 1fr);
@@ -8,7 +9,7 @@
 
 	&__card,
 	.solution-card {
-		height: 450px;
+		min-height: 450px;
 
 		&__header {
 			@include flex-direction(row, 10px);

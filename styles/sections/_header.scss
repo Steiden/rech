@@ -38,7 +38,6 @@
 
 	&__top {
 		align-items: center;
-		flex-wrap: wrap;
 		gap: clamp(10px, #{calc(20 * 100 / 1920)}vw, 20px);
 
 		width: 100%;
@@ -59,8 +58,12 @@
 			justify-content: space-between;
 		}
 
-		.header__logo {
+		.header__logo-link {
 			border: none;
+		}
+
+		.header__logo {
+			width: 85%;
 		}
 
 		.header__search {
@@ -155,7 +158,7 @@
 		position: relative;
 
 		@include desktop-s {
-			flex-wrap: wrap;
+			flex-wrap: wrap-reverse;
 		}
 
 		.header__nav {
@@ -167,8 +170,12 @@
 
 			overflow: hidden;
 
-			padding-inline: clamp(5px, #{calc(40 * 100 / 1920) - 2}vw, 40px);
-			width: 100%;
+			padding-inline: clamp(5px, #{calc(40 * 100 / 1920)}vw, 40px);
+			width: fit-content;
+
+			@include desktop {
+				padding-inline: clamp(5px, #{calc(40 * 100 / 1920) - 2}vw, 40px);
+			}
 
 			@include desktop-s {
 				padding-inline: 5px;
@@ -177,14 +184,10 @@
 
 		.header__nav-list {
 			@include flex-center(row, 10px);
-			justify-content: flex-start;
-			align-items: center;
-			flex-wrap: wrap;
 			gap: clamp(0px, #{calc(10 * 100 / 1920)}vw, 10px);
 
 			margin: 0;
 			list-style: square;
-			width: 100%;
 		}
 
 		.header__nav-item {
@@ -342,7 +345,7 @@
 
 		visibility: hidden;
 		opacity: 0;
-		transition-duration: .3s;
+		transition-duration: 0.3s;
 
 		&--visible {
 			visibility: visible;
@@ -361,7 +364,7 @@
 		}
 
 		&__text {
-			transition-duration: .3s;
+			transition-duration: 0.3s;
 
 			&:hover {
 				color: var(--link-hover-color);
