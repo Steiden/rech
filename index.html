@@ -410,13 +410,29 @@
 								</button>
 							</li>
 						</ul>
-						<select class="select">
-							<option class="select__option" selected>БКТП_У</option>
-							<option class="select__option">БКТП_Б</option>
-							<option class="select__option">КРУ/РЭЩ "АНТАРЕС"</option>
-							<option class="select__option">КРУ/РЭЩ «АЛЬТАИР»</option>
-							<option class="select__option">КРУ/РЭЩ "АТЛАНТ" (ВФМ)</option>
-						</select>
+						<div class="select visible-mobile-l" id="select">
+							<button class="select__content">
+								<p class="select__text">БКТП_Б</p>
+								<i class="d_icon d_icon-triangle select__icon"></i>
+							</button>
+							<ul class="select__list">
+								<li class="select__item">
+									<button class="select__button">БКТП_У</button>
+								</li>
+								<li class="select__item">
+									<button class="select__button">БКТП_Б</button>
+								</li>
+								<li class="select__item">
+									<button class="select__button">КРУ/РЭЩ "АНТАРЕС"</button>
+								</li>
+								<li class="select__item">
+									<button class="select__button">КРУ/РЭЩ «АЛЬТАИР»</button>
+								</li>
+								<li class="select__item">
+									<button class="select__button">КРУ/РЭЩ "АТЛАНТ" (ВФМ)</button>
+								</li>
+							</ul>
+						</div>
 					</nav>
 					<div class="products__content">
 						<h3 class="products__title">
@@ -1257,6 +1273,7 @@
 		></script>
 		<script src="./js/script.js" type="module"></script>
 		<script src="./js/swipers.js" type="module"></script>
-		<script src="./js/ymap.js" type="module"></script>
+		<script src="./js/ymap.js"></script>
+		<script src="./js/select.js"></script>
 	</body>
 </html>
