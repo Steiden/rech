@@ -59,6 +59,8 @@
 		margin-inline: clamp(50px, #{calc(192 * 100 / 1920) - 2}vw, 192px);
 		margin-bottom: clamp(35px, #{calc(190 * 100 / 1920) - 2}vw, 190px);
 
+		width: fit-content;
+
 		@include tablet-l {
 			margin-top: 60px;
 			position: static;
@@ -103,6 +105,11 @@
 			&--padding {
 				padding-right: clamp(0px #{calc(100 * 100 / 1920)}vw, 100px);
 			}
+		}
+
+		&__button,
+		&__input {
+			max-width: 400px;
 		}
 
 		&__button {
