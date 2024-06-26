@@ -84,8 +84,15 @@
 			rotate: -45deg;
 
 			&::before {
+				color: var(--white-color);
 				font-size: 13px;
 			}
+		}
+
+		@include mobile-l {
+			position: fixed;
+			right: 50px;
+			bottom: 95px;
 		}
 	}
 
