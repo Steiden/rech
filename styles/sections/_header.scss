@@ -151,6 +151,8 @@
 		gap: 20px;
 		width: 100%;
 
+		position: relative;
+
 		@include desktop-s {
 			flex-wrap: wrap;
 		}
@@ -318,6 +320,49 @@
 
 		&--red {
 			color: var(--link-hover-color);
+		}
+	}
+
+	&__catalog,
+	.catalog {
+		@include flex-direction(row, 40px);
+		align-items: flex-start;
+
+		background-color: var(--white-color);
+		border-radius: $border-radius;
+		padding: 45px;
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		translate: 0 12px;
+
+		visibility: hidden;
+		opacity: 0;
+		transition-duration: .3s;
+
+		&--visible {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		&__item {
+			@include flex-direction($gap: 12px);
+			width: 200px;
+		}
+
+		&__img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+
+		&__text {
+			transition-duration: .3s;
+
+			&:hover {
+				color: var(--link-hover-color);
+			}
 		}
 	}
 }

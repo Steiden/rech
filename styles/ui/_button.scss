@@ -1,11 +1,11 @@
 .my-button {
 	@include flex-center(row, 15px);
-    justify-content: space-between;
+	justify-content: space-between;
 
-    border-radius: $border-radius;
-    
+	border-radius: $border-radius;
+
 	color: var(--secondary-color);
-    font-size: 18px;
+	font-size: 18px;
 	transition-duration: .3s;
 
 	height: 60px;
@@ -25,6 +25,15 @@
 
 	&--blue {
 		background: linear-gradient(90.47deg, #1cabe7 0.38%, #006aab 99.59%);
+
+		&:hover {
+			color: var(--primary-alt-color);
+			background: rgba(90, 197, 239, 0.5);
+
+			& i::before {
+				color: var(--primary-alt-color);
+			}
+		}
 	}
 
 	&--transparent {

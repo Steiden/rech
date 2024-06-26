@@ -1,6 +1,3 @@
-import Swiper from "swiper";
-import "swiper/css";
-
 // Header
 const header = document.getElementById("header");
 const headerMenu = document.getElementById("headerMenu");
@@ -22,6 +19,26 @@ closeCatalogButton.addEventListener("click", () => {
 	headerMenu.style.display = "none";
 });
 
+const desktopCatalogButton = document.getElementById("desktopCatalogButton");
+const catalog = document.getElementById("catalog");
+let desktopCatalogButtonIsCliked = false;
+
+desktopCatalogButton.addEventListener("click", () => {
+	if (!desktopCatalogButtonIsCliked) {
+		catalog.classList.add("catalog--visible");
+		desktopCatalogButtonIsCliked = true;
+	} else {
+		catalog.classList.remove("catalog--visible");
+		desktopCatalogButtonIsCliked = false;
+	}
+});
+
+window.addEventListener("click", (e) => {
+	if (e.target !== desktopCatalogButton && e.target !== catalog) {
+		catalog.classList.remove("catalog--visible");
+		desktopCatalogButtonIsCliked = false;
+	}
+});
 
 // Map
 const markers = document.querySelectorAll(".map__marker");
