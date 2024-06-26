@@ -7,19 +7,6 @@
 	}
 
 	&__card-container {
-		display: grid;
-		grid-template: auto / repeat(5, 1fr);
-		gap: 18px;
-
-		overflow-x: auto;
-
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-
-		&::-webkit-scrollbar {
-			width: 0;
-			height: 0;
-		}
 	}
 
 	&__card,
@@ -29,12 +16,22 @@
 		background-color: var(--white-color);
 		border-radius: $border-radius-large;
 
-		// max-height: 410px;
+		max-height: 410px;
 		max-width: 370px;
 		width: 370px;
+		height: 410px;
 		padding: 36px 25px;
 
 		transition-duration: 0.5s;
+
+		@include tablet {
+			width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
+			padding: 18px;
+		}
+
+		@include mobile-l {
+			height: 374px;
+		}
 
 		&:hover {
 			background: linear-gradient(89.66deg, #006aab 40.17%, #004875 99.07%);
@@ -52,11 +49,6 @@
 			.advantage-card__text {
 				color: var(--white-color);
 			}
-		}
-
-		@include tablet {
-			width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
-			padding: 18px;
 		}
 
 		&__index {

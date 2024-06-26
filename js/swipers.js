@@ -17,12 +17,12 @@ const productSwiperPrevButton = document.getElementById("productSwiperPrev");
 const productSwiperNextButton = document.getElementById("productSwiperNext");
 const productSwiper = new Swiper(".productSwiper", {
 	autoplay: true,
-    spaceBetween: 20,
+	spaceBetween: 20,
 });
 const productSwiper2 = new Swiper(".productSwiper2", {
 	slidesPerView: 4,
 	slideToClickedSlide: true,
-    spaceBetween: 20,
+	spaceBetween: 20,
 });
 
 productSwiper.on("slideChange", () => syncSwipers(productSwiper, productSwiper2, 1));
@@ -40,11 +40,7 @@ const aboutSwiperPrevButton = document.getElementById("aboutSwiperPrev");
 const aboutSwiperNextButton = document.getElementById("aboutSwiperNext");
 const aboutSwiper = new Swiper(".aboutSwiper", {
 	autoplay: true,
-    spaceBetween: 20,
-	navigation: {
-		nextEl: "#aboutSwiperNext",
-		prevEl: "#aboutSwiperPrev",
-	},
+	spaceBetween: 20,
 });
 aboutSwiperNextButton.addEventListener("click", () => {
 	aboutSwiper.slideNext();
@@ -53,18 +49,17 @@ aboutSwiperPrevButton.addEventListener("click", () => {
 	aboutSwiper.slidePrev();
 });
 
-
 // Project1 section swiper
 const projectSwiperPrevButton = document.getElementById("projectSwiperPrev");
 const projectSwiperNextButton = document.getElementById("projectSwiperNext");
 const projectSwiper11 = new Swiper(".projectSwiper11", {
 	autoplay: true,
-    spaceBetween: 20,
+	spaceBetween: 20,
 });
 const projectSwiper12 = new Swiper(".projectSwiper12", {
 	slidesPerView: 4,
 	slideToClickedSlide: true,
-    spaceBetween: 20,
+	spaceBetween: 20,
 });
 
 projectSwiper11.on("slideChange", () => syncSwipers(projectSwiper11, projectSwiper12, 1));
@@ -82,12 +77,12 @@ const project2SwiperPrevButton = document.getElementById("project2SwiperPrev");
 const project2SwiperNextButton = document.getElementById("project2SwiperNext");
 const projectSwiper21 = new Swiper(".projectSwiper21", {
 	autoplay: true,
-    spaceBetween: 20,
+	spaceBetween: 20,
 });
 const projectSwiper22 = new Swiper(".projectSwiper22", {
 	slidesPerView: 4,
 	slideToClickedSlide: true,
-    spaceBetween: 20,
+	spaceBetween: 20,
 });
 
 projectSwiper21.on("slideChange", () => syncSwipers(projectSwiper21, projectSwiper22, 1));
@@ -98,4 +93,16 @@ project2SwiperNextButton.addEventListener("click", () => {
 });
 project2SwiperPrevButton.addEventListener("click", () => {
 	projectSwiper21.slidePrev();
+});
+
+// Advantages, Solutions
+const swiper = new Swiper(".swiper", {
+	spaceBetween: 18,
+	slidesPerView: 2,
+});
+
+// Partners
+const partnersSwiper = new Swiper(".partnersSwiper", {
+	spaceBetween: 60,
+	slidesPerView: 2,
 });

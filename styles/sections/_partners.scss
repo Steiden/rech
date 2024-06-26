@@ -1,25 +1,41 @@
 .partners {
-    @include flex-direction($gap: 90px);
+	@include flex-direction($gap: 90px);
 
-    &__title {
-    }
+	&__title {
+	}
 
-    &__content {
-        display: grid;
-        grid-template: auto / repeat(5, 1fr);
-        column-gap: 22px;
-        row-gap: 60px;
+	&__content {
+	}
 
-        overflow: scroll;
+	&__container {
+		display: grid;
+		grid-template: auto / repeat(5, 1fr);
+		column-gap: 47px;
+		row-gap: 90px;
+
+		@include tablet-l {
+            grid-template-columns: repeat(4, 1fr);
+			column-gap: 60px;
+			row-gap: clamp(20px, #{calc(60 * 100 / 768)}vw, 60px);
+		}
 
         @include tablet {
-            column-gap: 60px;
-            row-gap: clamp(20px, #{calc(60 * 100 / 768)}vw, 60px);
+            grid-template-columns: repeat(3, 1fr);
         }
-    }
+	}
 
-    &__img {
-        filter: grayscale(1);
-        min-width: 100px;
-    }
+	&__block {
+		@include flex-direction($gap: 20px);
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__img {
+		filter: grayscale(1);
+		width: 240px;
+
+        @include tablet-l {
+            width: clamp(100px, #{calc(240 * 100 / 768)}vw, 240px);
+        }
+	}
 }
