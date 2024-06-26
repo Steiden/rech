@@ -1,5 +1,17 @@
 .container {
-	padding-inline: clamp(50px, #{calc(192 * 100 / 1920)}vw, 192px);
+	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 3}vw, 192px);
+}
+
+.hidden-desktop {
+	@include desktop {
+		@include visually-hidden;
+	}
+}
+
+.visible-desktop {
+	@include desktop-above {
+		@include visually-hidden;
+	}
 }
 
 .hidden-desktop-s {
@@ -52,8 +64,8 @@
 
 .hidden-mobile-l {
 	@include mobile-l {
-        @include visually-hidden;
-    }
+		@include visually-hidden;
+	}
 }
 
 .visible-mobile-l {

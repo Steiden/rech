@@ -11,109 +11,109 @@ $mobile: 320px;
 $mobile-s: 240px;
 
 @mixin desktop-l-above {
-    @media (min-width: $desktop-l) {
-        @content;
-    }
+	@media (width > $desktop-l) {
+		@content;
+	}
 }
 
 @mixin desktop-l {
-    @media (max-width: $desktop-l) {
-        @content;
-    }
+	@media (width <= $desktop-l) {
+		@content;
+	}
 }
 
 @mixin desktop-above {
-    @media (min-width: $desktop) {
-        @content;
-    }
+	@media (width > $desktop) {
+		@content;
+	}
 }
 
 @mixin desktop {
-    @media (max-width: $desktop) {
-        @content;
-    }
+	@media (width <= $desktop) {
+		@content;
+	}
 }
 
 @mixin desktop-s-above {
-    @media (min-width: $desktop-s) {
-        @content;
-    }
+	@media (width > $desktop-s) {
+		@content;
+	}
 }
 
 @mixin desktop-s {
-    @media (max-width: $desktop-s) {
-        @content;
-    }
+	@media (width <= $desktop-s) {
+		@content;
+	}
 }
 
 @mixin tablet-l-above {
-    @media (min-width: $tablet-l) {
-        @content;
-    }
+	@media (width > $tablet-l) {
+		@content;
+	}
 }
 
 @mixin tablet-l {
-    @media (max-width: $tablet-l) {
-        @content;
-    }
+	@media (width <= $tablet-l) {
+		@content;
+	}
 }
 
 @mixin tablet-above {
-    @media (min-width: $tablet) {
-        @content;
-    }
+	@media (width > $tablet) {
+		@content;
+	}
 }
 
 @mixin tablet {
-    @media (max-width: $tablet) {
-        @content;
-    }
+	@media (width <= $tablet) {
+		@content;
+	}
 }
 
 @mixin tablet-s-above {
-    @media (min-width: $tablet-s) {
-        @content;
-    }
+	@media (width > $tablet-s) {
+		@content;
+	}
 }
 
 @mixin tablet-s {
-    @media (max-width: $tablet-s) {
-        @content;
-    }
+	@media (width <= $tablet-s) {
+		@content;
+	}
 }
 
 @mixin mobile-l-above {
-    @media (min-width: $mobile-l) {
-        @content;
-    }
+	@media (width > $mobile-l) {
+		@content;
+	}
 }
 
 @mixin mobile-l {
-    @media (max-width: $mobile-l) {
-        @content;
-    }
+	@media (width <= $mobile-l) {
+		@content;
+	}
 }
 
 @mixin mobile-above {
-    @media (min-width: $mobile) {
-        @content;
-    }
+	@media (width > $mobile) {
+		@content;
+	}
 }
 
 @mixin mobile {
-    @media (max-width: $mobile) {
-        @content;
-    }
+	@media (width <= $mobile) {
+		@content;
+	}
 }
 
 @mixin mobile-s-above {
-    @media (min-width: $mobile-s) {
-        @content;
-    }
+	@media (width > $mobile-s) {
+		@content;
+	}
 }
 
 @mixin mobile-s {
-    @media (max-width: $mobile-s) {
-        @content;
-    }
+	@media (width <= $mobile-s) {
+		@content;
+	}
 }
