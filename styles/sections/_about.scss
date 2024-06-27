@@ -7,15 +7,15 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+	}
 
-		.about__button {
-			min-width: 335px;
-			height: 60px;
-			padding-inline: 32px;
+	&__button {
+		min-width: 335px;
+		height: 60px;
+		padding-inline: 32px;
 
-			@include tablet {
-				min-width: 100%;
-			}
+		@include tablet {
+			min-width: 100%;
 		}
 	}
 
@@ -27,11 +27,25 @@
 
 		@include tablet-l {
 			justify-content: flex-start;
-			flex-wrap: wrap;
+			flex-wrap: wrap-reverse;
 		}
 
 		.about__advantages {
-			@include flex-direction($gap: 40px);
+			@include flex-direction();
+			@include fluid-property(gap, 20, 40);
+			width: 50%;
+
+			@include tablet-l {
+				width: 100%;
+			}
+		}
+
+		.about__slider {
+			width: 50%;
+
+			@include tablet-l {
+                width: 100%;
+            }
 		}
 
 		.about__input-container {
