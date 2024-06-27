@@ -66,3 +66,24 @@ actions.addEventListener("click", (e) => {
 closeActionsButton.addEventListener("click", () => {
 	actions.classList.remove("actions--show");
 });
+
+// Header
+const services = document.getElementById("services");
+const servicesButton = document.getElementById("servicesButton");
+let isServicesClicked = false;
+servicesButton.addEventListener("click", () => {
+	if (!isServicesClicked) {
+		services.classList.add("services--show");
+		isServicesClicked = true;
+	} else {
+		services.classList.remove("services--show");
+		isServicesClicked = false;
+	}
+});
+
+window.addEventListener("click", (e) => {
+	if (!services.contains(e.target) && !servicesButton.contains(e.target)) {
+		services.classList.remove("services--show");
+		isServicesClicked = false;
+	}
+});

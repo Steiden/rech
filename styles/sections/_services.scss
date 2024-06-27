@@ -1,0 +1,48 @@
+.services {
+	@include flex-direction;
+
+	background-color: var(--white-color);
+	border-radius: $border-radius;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	translate: 0 17px;
+	transition-duration: 0.3s;
+
+	visibility: hidden;
+	opacity: 0;
+	z-index: 100;
+
+	width: 300px;
+
+	&--show {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__item {
+		border-radius: $border-radius;
+		transition-duration: 0.3s;
+
+		&:hover {
+			background-color: #006aab;
+
+			.services__link {
+				color: var(--white-color);
+			}
+		}
+	}
+
+	&__link {
+		@include flex-center;
+		align-items: flex-start;
+
+		color: #006aab;
+		border: none;
+		font-size: 18px;
+
+		height: 57px;
+		padding-inline: 25px;
+	}
+}

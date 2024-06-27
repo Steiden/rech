@@ -171,8 +171,6 @@
 			border-radius: $border-radius;
 			padding: 5px 40px 4px;
 
-			overflow: hidden;
-
 			padding-inline: clamp(5px, #{calc(40 * 100 / 1920)}vw, 40px);
 			width: fit-content;
 
@@ -196,6 +194,8 @@
 		.header__nav-item {
 			@include flex-center;
 			height: 50px;
+
+			position: relative;
 		}
 
 		.header__nav-link {

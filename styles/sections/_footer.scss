@@ -73,7 +73,7 @@
 
 		background-color: var(--thirdy-color);
 		border-radius: $border-radius;
- border: none;
+		border: none;
 
 		position: absolute;
 		bottom: 60px;
@@ -113,7 +113,8 @@
 
 	&__contacts,
 	.contacts {
-		@include flex-direction($gap: 25px);
+		@include flex-direction;
+		@include fluid-property(gap, 17, 25);
 
 		background-color: rgba(0, 106, 171, 1);
 		border-radius: $border-radius-large;
@@ -248,10 +249,10 @@
 	}
 
 	&__link {
+		@include fluid-text(14, 20);
+
 		color: var(--thirdy-color);
 		border: none;
-		font-size: 20px;
-		line-height: 26px;
 	}
 
 	&__map-services {
@@ -281,7 +282,7 @@
 		&__content {
 			@include flex-direction(row, 15px);
 			align-items: center;
-			justify-content: space-between;
+			justify-content: center;
 			flex-wrap: wrap;
 
 			background-color: var(--white-color);
@@ -289,6 +290,7 @@
 			padding: 25px 68px;
 
 			@include mobile-l {
+				flex-direction: column;
 				justify-content: center;
 				padding: 14px;
 			}
