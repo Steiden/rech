@@ -1,7 +1,12 @@
 .solutions {
 	@include flex-direction($gap: 60px);
 	margin-bottom: 120px;
-	overflow: hidden;
+
+	position: relative;
+
+	&__wrapper {
+		position: relative;
+	}
 
 	&__card-container {
 		grid-template: auto / repeat(6, 1fr);

@@ -1,0 +1,86 @@
+.fancybox__toolbar {
+	padding-top: 85px !important;
+	padding-right: 110px !important;
+
+	@include tablet-l {
+		padding-top: 75px !important;
+		padding-right: 55px !important;
+	}
+}
+
+.fancybox__backdrop {
+	background-color: #233a4ccc !important;
+}
+
+.is-prev,
+.is-next {
+	i span::before {
+		@include fluid-text(45, 55);
+	}
+}
+
+.is-prev {
+	left: 125px !important;
+	translate: -50% -50% !important;
+
+	@include mobile-l {
+		left: 30% !important;
+		top: 90% !important;
+	}
+}
+
+.is-next {
+	right: 120px !important;
+	translate: 50% -50% !important;
+
+	@include mobile-l {
+		right: 30% !important;
+		top: 90% !important;
+	}
+}
+
+.f-button {
+	&[data-fancybox-close] {
+		@include fluid-property(width, 32, 60);
+		@include fluid-property(height, 32, 60);
+
+		background-color: transparent;
+		border: 2px solid #ffffffcc;
+		border-radius: $border-radius;
+
+		i {
+			@include flex-center;
+
+			&::before {
+				font-size: 18px;
+			}
+		}
+
+		@include mobile-l {
+			border-radius: 50%;
+		}
+	}
+}
+
+.f-thumbs__track {
+	.f-thumbs__slide {
+		border-radius: $border-radius;
+		overflow: hidden;
+
+		@include tablet {
+			border-radius: 20px;
+		}
+	}
+
+	.is-nav-selected {
+		border: 2px solid var(--white-color);
+	}
+}
+
+.fancybox__footer {
+	background: transparent !important;
+
+	@include mobile-l {
+		bottom: 20% !important;
+	}
+}

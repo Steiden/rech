@@ -227,16 +227,25 @@
 				background-color: transparent;
 				border-radius: 0;
 				padding: 0;
+
+				width: 100%;
 			}
 
 			.header__nav-list {
 				@include flex-center($gap: 15px);
 				align-items: flex-start;
 				list-style: square;
+
+				width: 100%;
 			}
 
 			.header__nav-item {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+
 				height: fit-content;
+				width: 100%;
 
 				.accordion__icon {
 					background-color: var(--thirdy-color);
@@ -259,6 +268,8 @@
 
 	&__accordion,
 	.accordion {
+		width: 100%;
+
 		&[open] {
 			.accordion__icon {
 				rotate: 0deg;
@@ -267,8 +278,9 @@
 
 		&__title {
 			display: flex;
-			justify-content: flex-start;
-			gap: 125px;
+			justify-content: space-between;
+			gap: 10px;
+			cursor: pointer;
 
 			&--sub {
 				gap: 30px;
@@ -289,12 +301,14 @@
 			width: 28px;
 			height: 28px;
 
+			padding: 5px;
+
 			rotate: 135deg;
 			transition-duration: 0.3s;
 
 			&::before {
 				color: var(--white-color);
-				font-size: 18px;
+				font-size: 14px;
 			}
 		}
 	}

@@ -59,7 +59,7 @@ markers.forEach((marker) => {
 // Actions
 const actions = document.getElementById("actions");
 const closeActionsButton = document.getElementById("closeActions");
-actions.addEventListener("click", (e) => {
+actions.addEventListener("mouseenter", (e) => {
 	if (e.target !== closeActionsButton && e.target !== closeActionsButton.querySelector("i"))
 		actions.classList.add("actions--show");
 });

@@ -12,87 +12,91 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 	}
 };
 
-// Product section swiper
-const productSwiperPrevButton = document.getElementById("productSwiperPrev");
-const productSwiperNextButton = document.getElementById("productSwiperNext");
-const productSwiper = new Swiper(".productSwiper", {
-	autoplay: true,
-	spaceBetween: 20,
-});
-const productSwiper2 = new Swiper(".productSwiper2", {
-	slidesPerView: 4,
-	slideToClickedSlide: true,
-	spaceBetween: 20,
-});
+window.addEventListener("load", (e) => {
+	const slidesPerView = window.innerWidth <= 480 ? 3 : 4;
 
-productSwiper.on("slideChange", () => syncSwipers(productSwiper, productSwiper2, 1));
-productSwiper2.on("click", () => syncSwipers(productSwiper, productSwiper2, 2));
+	// Product section swiper
+	const productSwiperPrevButton = document.getElementById("productSwiperPrev");
+	const productSwiperNextButton = document.getElementById("productSwiperNext");
+	const productSwiper = new Swiper(".productSwiper", {
+		autoplay: true,
+		spaceBetween: 20,
+	});
+	const productSwiper2 = new Swiper(".productSwiper2", {
+		slidesPerView: slidesPerView,
+		slideToClickedSlide: true,
+		spaceBetween: 20,
+	});
 
-productSwiperNextButton.addEventListener("click", () => {
-	productSwiper.slideNext();
-});
-productSwiperPrevButton.addEventListener("click", () => {
-	productSwiper.slidePrev();
-});
+	productSwiper.on("slideChange", () => syncSwipers(productSwiper, productSwiper2, 1));
+	productSwiper2.on("click", () => syncSwipers(productSwiper, productSwiper2, 2));
 
-// About section swiper
-const aboutSwiperPrevButton = document.getElementById("aboutSwiperPrev");
-const aboutSwiperNextButton = document.getElementById("aboutSwiperNext");
-const aboutSwiper = new Swiper(".aboutSwiper", {
-	autoplay: true,
-	spaceBetween: 20,
-});
-aboutSwiperNextButton.addEventListener("click", () => {
-	aboutSwiper.slideNext();
-});
-aboutSwiperPrevButton.addEventListener("click", () => {
-	aboutSwiper.slidePrev();
-});
+	productSwiperNextButton.addEventListener("click", () => {
+		productSwiper.slideNext();
+	});
+	productSwiperPrevButton.addEventListener("click", () => {
+		productSwiper.slidePrev();
+	});
 
-// Project1 section swiper
-const projectSwiperPrevButton = document.getElementById("projectSwiperPrev");
-const projectSwiperNextButton = document.getElementById("projectSwiperNext");
-const projectSwiper11 = new Swiper(".projectSwiper11", {
-	autoplay: true,
-	spaceBetween: 20,
-});
-const projectSwiper12 = new Swiper(".projectSwiper12", {
-	slidesPerView: 4,
-	slideToClickedSlide: true,
-	spaceBetween: 20,
-});
+	// About section swiper
+	const aboutSwiperPrevButton = document.getElementById("aboutSwiperPrev");
+	const aboutSwiperNextButton = document.getElementById("aboutSwiperNext");
+	const aboutSwiper = new Swiper(".aboutSwiper", {
+		autoplay: true,
+		spaceBetween: 20,
+	});
+	aboutSwiperNextButton.addEventListener("click", () => {
+		aboutSwiper.slideNext();
+	});
+	aboutSwiperPrevButton.addEventListener("click", () => {
+		aboutSwiper.slidePrev();
+	});
 
-projectSwiper11.on("slideChange", () => syncSwipers(projectSwiper11, projectSwiper12, 1));
-projectSwiper12.on("click", () => syncSwipers(projectSwiper11, projectSwiper12, 2));
+	// Project1 section swiper
+	const projectSwiperPrevButton = document.getElementById("projectSwiperPrev");
+	const projectSwiperNextButton = document.getElementById("projectSwiperNext");
+	const projectSwiper11 = new Swiper(".projectSwiper11", {
+		autoplay: true,
+		spaceBetween: 20,
+	});
+	const projectSwiper12 = new Swiper(".projectSwiper12", {
+		slidesPerView: slidesPerView,
+		slideToClickedSlide: true,
+		spaceBetween: 20,
+	});
 
-projectSwiperNextButton.addEventListener("click", () => {
-	projectSwiper11.slideNext();
-});
-projectSwiperPrevButton.addEventListener("click", () => {
-	projectSwiper11.slidePrev();
-});
+	projectSwiper11.on("slideChange", () => syncSwipers(projectSwiper11, projectSwiper12, 1));
+	projectSwiper12.on("click", () => syncSwipers(projectSwiper11, projectSwiper12, 2));
 
-// Project2 section swiper
-const project2SwiperPrevButton = document.getElementById("project2SwiperPrev");
-const project2SwiperNextButton = document.getElementById("project2SwiperNext");
-const projectSwiper21 = new Swiper(".projectSwiper21", {
-	autoplay: true,
-	spaceBetween: 20,
-});
-const projectSwiper22 = new Swiper(".projectSwiper22", {
-	slidesPerView: 4,
-	slideToClickedSlide: true,
-	spaceBetween: 20,
-});
+	projectSwiperNextButton.addEventListener("click", () => {
+		projectSwiper11.slideNext();
+	});
+	projectSwiperPrevButton.addEventListener("click", () => {
+		projectSwiper11.slidePrev();
+	});
 
-projectSwiper21.on("slideChange", () => syncSwipers(projectSwiper21, projectSwiper22, 1));
-projectSwiper22.on("click", () => syncSwipers(projectSwiper21, projectSwiper22, 2));
+	// Project2 section swiper
+	const project2SwiperPrevButton = document.getElementById("project2SwiperPrev");
+	const project2SwiperNextButton = document.getElementById("project2SwiperNext");
+	const projectSwiper21 = new Swiper(".projectSwiper21", {
+		autoplay: true,
+		spaceBetween: 20,
+	});
+	const projectSwiper22 = new Swiper(".projectSwiper22", {
+		slidesPerView: slidesPerView,
+		slideToClickedSlide: true,
+		spaceBetween: 20,
+	});
 
-project2SwiperNextButton.addEventListener("click", () => {
-	projectSwiper21.slideNext();
-});
-project2SwiperPrevButton.addEventListener("click", () => {
-	projectSwiper21.slidePrev();
+	projectSwiper21.on("slideChange", () => syncSwipers(projectSwiper21, projectSwiper22, 1));
+	projectSwiper22.on("click", () => syncSwipers(projectSwiper21, projectSwiper22, 2));
+
+	project2SwiperNextButton.addEventListener("click", () => {
+		projectSwiper21.slideNext();
+	});
+	project2SwiperPrevButton.addEventListener("click", () => {
+		projectSwiper21.slidePrev();
+	});
 });
 
 // Advantages, Solutions

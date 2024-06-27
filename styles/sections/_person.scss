@@ -1,5 +1,4 @@
 .person {
-	
 	@include mobile-l {
 		padding: 0;
 	}
@@ -10,6 +9,7 @@
 		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
 
 		max-height: 700px;
+		min-height: 640px;
 		height: 700px;
 		padding: 60px 120px;
 		position: relative;
@@ -95,16 +95,17 @@
 	}
 
 	&__img {
-		position: absolute;
-		bottom: -75px;
-		right: 10px;
+		max-height: 90%;
+		height: clamp(350px, #{calc(1080 * 100 / 1920)}vw, 1080px);
 
-		height: 110%;
+		position: absolute;
+		bottom: 100%;
+		right: 10%;
+
 		object-fit: cover;
 
 		@include tablet {
-			position: static;
-			translate: 0 100px;
+			right: 0;
 		}
 	}
 }
