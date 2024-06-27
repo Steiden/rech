@@ -27,8 +27,9 @@
 
 	&__block {
 		@include flex-direction($gap: 20px);
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
+		height: 100%;
 	}
 
 	&__img {
