@@ -9,6 +9,9 @@
 	position: relative;
 
 	&--active {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
         .select__icon {
             rotate: 0deg;
         }

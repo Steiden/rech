@@ -71,33 +71,26 @@
 							</div>
 						</div>
 						<div class="space-between header__menu hidden-tablet-l">
-							<button
-								class="my-button my-button--blue header__catalog-button hidden-tablet-l"
-								id="desktopCatalogButton"
-							>
-								Каталог
-								<i class="d_icon d_icon-menu catalog-button__icon"></i>
-							</button>
-							<button
-								class="my-button my-button--blue header__catalog-button visible-tablet-l"
-								id="desktopCatalogButton"
-							>
-								<i class="d_icon d_icon-menu catalog-button__icon"></i>
-							</button>
-							<!-- Каталог -->
-							<div class="header__catalog catalog" id="catalog">
-								<button class="catalog__item">
-									<img src="/assets/img/products/block.png" alt="" class="catalog__img" />
-									<p class="catalog__text">Комплектные трансформаторные подстанции</p>
+							<div class="hidden-tablet-l" id="desktopCatalogButton">
+								<button class="my-button my-button--blue header__catalog-button">
+									Каталог
+									<i class="d_icon d_icon-menu catalog-button__icon"></i>
 								</button>
-								<button class="catalog__item">
-									<img src="/assets/img/products/block.png" alt="" class="catalog__img" />
-									<p class="catalog__text">Комплектные распределительные устройства</p>
-								</button>
-								<button class="catalog__item">
-									<img src="/assets/img/products/block.png" alt="" class="catalog__img" />
-									<p class="catalog__text">Низковольтные комплекттные устройства</p>
-								</button>
+								<!-- Каталог -->
+								<div class="header__catalog catalog" id="catalog">
+									<button class="catalog__item">
+										<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+										<p class="catalog__text">Комплектные трансформаторные подстанции</p>
+									</button>
+									<button class="catalog__item">
+										<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+										<p class="catalog__text">Комплектные распределительные устройства</p>
+									</button>
+									<button class="catalog__item">
+										<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+										<p class="catalog__text">Низковольтные комплекттные устройства</p>
+									</button>
+								</div>
 							</div>
 							<nav class="header__nav">
 								<ul class="header__nav-list">
@@ -105,21 +98,23 @@
 										<a href="/" class="header__nav-link">Главная</a>
 									</li>
 									<li class="header__nav-item">
-										<button class="header__nav-link" id="servicesButton">Услуги</button>
-										<ul class="services" id="services">
-											<li class="services__item">
-												<a href="/services/1" class="services__link">Инжиниринговый центр</a>
-											</li>
-											<li class="services__item">
-												<a href="/services/2" class="services__link">Электролаборатория</a>
-											</li>
-											<li class="services__item">
-												<a href="/services/3" class="services__link">Лизинг оборудования</a>
-											</li>
-											<li class="services__item">
-												<a href="/services/4" class="services__link">Услуги металлообработки</a>
-											</li>
-										</ul>
+										<div class="" id="servicesButton">
+											<button class="header__nav-link">Услуги</button>
+											<ul class="services" id="services">
+												<li class="services__item">
+													<a href="/services/1" class="services__link">Инжиниринговый центр</a>
+												</li>
+												<li class="services__item">
+													<a href="/services/2" class="services__link">Электролаборатория</a>
+												</li>
+												<li class="services__item">
+													<a href="/services/3" class="services__link">Лизинг оборудования</a>
+												</li>
+												<li class="services__item">
+													<a href="/services/4" class="services__link">Услуги металлообработки</a>
+												</li>
+											</ul>
+										</div>
 									</li>
 									<li class="header__nav-item">
 										<a href="/projects" class="header__nav-link">Проекты</a>
@@ -143,7 +138,7 @@
 							<a href="/" class="header__logo-link"
 								><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
 							/></a>
-							<div class="header__contacts hidden-tablet-s">
+							<div class="header__contacts hidden-mobile-l">
 								<a href="tel:89611561186" class="header__text header__text--telephone"
 									>8 (961) 156-11-86</a
 								>
@@ -170,15 +165,15 @@
 								</summary>
 								<div class="block-container">
 									<button class="block">
-										<img src="/assets/img/products/block.png" alt="block" class="block__img" />
+										<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
 										<p class="block__text">Комплектные трансформаторные подстанции</p>
 									</button>
 									<button class="block">
-										<img src="/assets/img/products/block.png" alt="block" class="block__img" />
+										<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
 										<p class="block__text">Комплектные трансформаторные подстанции</p>
 									</button>
 									<button class="block">
-										<img src="/assets/img/products/block.png" alt="block" class="block__img" />
+										<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
 										<p class="block__text">Комплектные трансформаторные подстанции</p>
 									</button>
 								</div>
@@ -252,9 +247,9 @@
 						</div>
 					</header>
 					<div class="main__content main-content">
-						<h1 class="main__title">
+						<span class="h1 main__title">
 							<span class="dark-blue main__title">ЭЛЕКТРО</span>ТЕХНИЧЕСКИЕ<br />КОМПЛЕКСНЫЕ РЕШЕНИЯ
-						</h1>
+						</span>
 						<hr class="main-content__line hidden-mobile-l" />
 						<div class="main-content__location visible-mobile-l">
 							<div class="main-content__location-title">
@@ -270,15 +265,23 @@
 						<div
 							class="main-content__button-container main-content__button-container--vertical main-content__button-container--padding"
 						>
-							<div class="main-content__button-container">
+							<form class="main-content__button-container">
 								<div class="input__wrapper header__search-input main-content__input">
-									<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
+									<input
+										type="text"
+										placeholder="+ 7 (999) 999-99-99"
+										tag="form"
+										class="telephone"
+									/>
 								</div>
-								<button class="my-button my-button--red header__button main-content__button">
+								<button
+									class="my-button my-button--red header__button main-content__button"
+									tag="form"
+								>
 									Получить КП под ваш запрос
 									<i class="d_icon d_icon-arrow-diagonal"></i>
 								</button>
-							</div>
+							</form>
 							<p class="header__text">
 								Нажимая на кнопку, вы соглашаетесь с
 								<a href="#" class="header__text header__link header__text--red"
@@ -289,12 +292,12 @@
 					</div>
 				</section>
 
-				<section class="container main__about about">
+				<section class="container main__about about" id="about">
 					<header class="about__header">
 						<div class="title about__title">
 							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-							<h2>РЫБИНСК<span class="blue">ЭЛЕКТРОЩИТ</span> - ЭТО</h2>
+							<span class="h2">РЫБИНСК<span class="blue">ЭЛЕКТРОЩИТ</span> - ЭТО</span>
 						</div>
 						<button class="my-button my-button--red about__button hidden-mobile-l">
 							Скачать презентацию
@@ -406,9 +409,9 @@
 						<div class="title about__title">
 							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-							<h2>О НАС <span class="blue">В ЦИФРАХ</span></h2>
+							<span class="h2">О НАС <span class="blue">В ЦИФРАХ</span></span>
 						</div>
-						<div class="statistics__container hidden-mobile-l">
+						<div class="statistics__container">
 							<div class="statistics__item">
 								<p class="statistics__title">10 ЛЕТ</p>
 								<p class="statistics__text">успешной работы на рынке</p>
@@ -433,41 +436,6 @@
 							<div class="statistics__item">
 								<p class="statistics__title">950</p>
 								<p class="statistics__text">модификация оборудования</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title">86</p>
-								<p class="statistics__text">монтажных работ объектов</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title">145</p>
-								<p class="statistics__text">пуско-каладочных работ объектов</p>
-							</div>
-						</div>
-						<div class="statistics__container visible-mobile-l">
-							<div class="statistics__item">
-								<p class="statistics__title">10 ЛЕТ</p>
-								<p class="statistics__text">успешной работы на рынке</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title">950</p>
-								<p class="statistics__text">модификация оборудования</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title">93%</p>
-								<p class="statistics__text">заказчиков работают с нами с первого заказа</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title">45 МЛН</p>
-								<p class="statistics__text">рублей сэкономили заказчикам за счет оптимизации</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title hidden-mobile-l">710</p>
-								<p class="statistics__title visible-mobile-l">750</p>
-								<p class="statistics__text">созданных объектов за все время работы</p>
-							</div>
-							<div class="statistics__item">
-								<p class="statistics__title">140</p>
-								<p class="statistics__text">профессиональных сотрудников штате</p>
 							</div>
 							<div class="statistics__item">
 								<p class="statistics__title">86</p>
@@ -486,7 +454,7 @@
 						<div class="title about__title">
 							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-							<h2>ВЫБОР <span class="blue">НАШИХ ЗАКАЗЧИКОВ</span></h2>
+							<span class="h2">ВЫБОР <span class="blue">НАШИХ ЗАКАЗЧИКОВ</span></span>
 						</div>
 						<button class="my-button my-button--red products__button hidden-tablet">
 							Скачать каталог
@@ -546,9 +514,9 @@
 						</div>
 					</nav>
 					<div class="products__content">
-						<h3 class="products__title">
+						<span class="h3 products__title">
 							Блочная комплектная трансформаторная подстанция в железобетонной оболочке
-						</h3>
+						</span>
 						<div class="products__card product-card">
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical product-card__slider">
@@ -573,7 +541,7 @@
 											>
 												<img
 													src="/assets/img/products/product1.png"
-													class="slider__img product-card__img product-card__img--small"
+													class="slider__img slider__img slider__img--small"
 												/>
 											</a>
 											<a
@@ -583,7 +551,7 @@
 											>
 												<img
 													src="/assets/img/products/product1.png"
-													class="slider__img product-card__img product-card__img--small"
+													class="slider__img slider__img slider__img--small"
 												/>
 											</a>
 											<a
@@ -593,7 +561,7 @@
 											>
 												<img
 													src="/assets/img/products/product1.png"
-													class="slider__img product-card__img product-card__img--small"
+													class="slider__img slider__img slider__img--small"
 												/>
 											</a>
 											<a
@@ -628,31 +596,31 @@
 											<img
 												src="/assets/img/products/product1.png"
 												alt="background"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/products/product1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/products/product1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/products/product1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/products/product1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 									</div>
@@ -666,7 +634,7 @@
 
 							<div class="product-card__content">
 								<div class="product-card__block">
-									<h4 class="product-card__subtitle">ОБЛАСТЬ ПРИМЕНЕНИЯ:</h4>
+									<span class="h4 product-card__subtitle">ОБЛАСТЬ ПРИМЕНЕНИЯ:</span>
 									<div class="product-card__advantages">
 										<div class="product-card__input-container">
 											<div class="my-checkbox">
@@ -689,7 +657,7 @@
 									</div>
 								</div>
 								<div class="product-card__block">
-									<h4 class="product-card__subtitle">ПРЕИМУЩЕСТВА:</h4>
+									<span class="h4 product-card__subtitle">ПРЕИМУЩЕСТВА:</span>
 									<div class="product-card__advantages">
 										<div class="product-card__input-container">
 											<div class="my-checkbox">
@@ -728,19 +696,19 @@
 					</div>
 				</section>
 
-				<section class="section-border-radius container map">
+				<section class="section-border-radius container map hidden-mobile-l">
 					<div class="map__mask"></div>
 					<div class="title about__title map__title">
 						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-						<h2>
+						<span class="h2">
 							<span class="blue">РЕАЛИЗУЕМ ПРОЕКТЫ</span> <span class="red">ПО ВСЕЙ РОССИИ</span>
-						</h2>
+						</span>
 					</div>
 					<div class="map__img-container">
 						<img src="/assets/img/map.svg" class="map__img" />
 
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -751,7 +719,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -762,7 +730,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -773,7 +741,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -784,7 +752,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -795,7 +763,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -806,7 +774,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -817,7 +785,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -828,7 +796,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -839,7 +807,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -850,7 +818,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -861,7 +829,7 @@
 								</div>
 							</div>
 						</button>
-						<button class="map__marker marker hidden-tablet-s">
+						<button class="map__marker marker hidden-tablet">
 							<div class="marker__inner">
 								<div class="marker__button"></div>
 								<div class="marker__content">
@@ -912,7 +880,7 @@
 											>
 												<img
 													src="/assets/img/projects/project1.png"
-													class="slider__img product-card__img product-card__img--small"
+													class="slider__img slider__img slider__img--small"
 												/>
 											</a>
 											<a
@@ -922,7 +890,7 @@
 											>
 												<img
 													src="/assets/img/projects/project1.png"
-													class="slider__img product-card__img product-card__img--small"
+													class="slider__img slider__img slider__img--small"
 												/>
 											</a>
 											<a
@@ -932,7 +900,7 @@
 											>
 												<img
 													src="/assets/img/projects/project1.png"
-													class="slider__img product-card__img product-card__img--small"
+													class="slider__img slider__img slider__img--small"
 												/>
 											</a>
 											<a
@@ -967,38 +935,38 @@
 											<img
 												src="/assets/img/projects/project1.png"
 												alt="background"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 									</div>
 								</div>
 							</div>
 							<div class="projects__text-container">
-								<h3 class="projects__title3">УСТАНОВКА БКТПБ</h3>
+								<span class="h3 projects__title3">УСТАНОВКА БКТПБ</span>
 								<p class="projects__text">
 									Установка подстанции на территории клиента. БКТПБ нужны там, где требуется быстро
 									и без лишних затрат установить новую трансформаторную...
@@ -1033,7 +1001,7 @@
 										>
 											<img
 												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
+												class="slider__img slider__img slider__img--small"
 											/>
 										</a>
 										<a
@@ -1043,7 +1011,7 @@
 										>
 											<img
 												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
+												class="slider__img slider__img slider__img--small"
 											/>
 										</a>
 										<a
@@ -1053,7 +1021,7 @@
 										>
 											<img
 												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
+												class="slider__img slider__img slider__img--small"
 											/>
 										</a>
 										<a
@@ -1087,38 +1055,38 @@
 											<img
 												src="/assets/img/projects/project1.png"
 												alt="background"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
 												src="/assets/img/projects/project1.png"
-												class="product-card__img product-card__img--small"
+												class="slider__img slider__img--small"
 											/>
 										</button>
 									</div>
 								</div>
 							</div>
 							<div class="projects__text-container">
-								<h3 class="projects__title3">УСТАНОВКА БКТПБ</h3>
+								<span class="h3 projects__title3">УСТАНОВКА БКТПБ</span>
 								<p class="projects__text">
 									Установка подстанции на территории клиента. БКТПБ нужны там, где требуется быстро
 									и без лишних затрат установить новую трансформаторную...
@@ -1146,7 +1114,7 @@
 						<div class="advantages__card-container swiper-wrapper">
 							<div class="advantages__card advantage-card swiper-slide">
 								<p class="advantage-card__index">1</p>
-								<h3 class="advantage-card__title">Высокое качество</h3>
+								<span class="h3 advantage-card__title">Высокое качество</span>
 								<p class="advantage-card__text">
 									Это основа нашего бизнеса, мы постоянно стремимся к совершенству во всем, что
 									делаем.
@@ -1154,14 +1122,14 @@
 							</div>
 							<div class="advantages__card advantage-card swiper-slide">
 								<p class="advantage-card__index">2</p>
-								<h3 class="advantage-card__title">Комплексные решения</h3>
+								<span class="h3 advantage-card__title">Комплексные решения</span>
 								<p class="advantage-card__text">
 									Мы понимаем, что нашим клиентам нужны не просто продукты, а комплексные решения
 								</p>
 							</div>
 							<div class="advantages__card advantage-card swiper-slide">
 								<p class="advantage-card__index">3</p>
-								<h3 class="advantage-card__title">Инновационные технологии</h3>
+								<span class="h3 advantage-card__title">Инновационные технологии</span>
 								<p class="advantage-card__text">
 									Мы используем новейшие технологии и инвестируем в исследования и разработки, чтобы
 									создавать лучшее электротехническое оборудование,
@@ -1169,7 +1137,7 @@
 							</div>
 							<div class="advantages__card advantage-card swiper-slide">
 								<p class="advantage-card__index">4</p>
-								<h3 class="advantage-card__title">Экспертиза в отрасли</h3>
+								<span class="h3 advantage-card__title">Экспертиза в отрасли</span>
 								<p class="advantage-card__text">
 									Наша команда обладает глубокими знаниями и опытом в электротехнической отрасли,
 									что позволяет нам предоставлять клиентам ценные рекомендации и решения.
@@ -1177,7 +1145,7 @@
 							</div>
 							<div class="advantages__card advantage-card swiper-slide">
 								<p class="advantage-card__index">5</p>
-								<h3 class="advantage-card__title">Надежная репутация</h3>
+								<span class="h3 advantage-card__title">Надежная репутация</span>
 								<p class="advantage-card__text">
 									Мы гордимся нашей репутацией надежного поставщика в отрасли, мы постоянно работаем
 									над ее поддержанием и укреплением.
@@ -1193,7 +1161,7 @@
 					<div class="title about__title">
 						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-						<h2>С НАМИ <span class="blue">СОТРУДНИЧАЮТ</span></h2>
+						<span class="h2">С НАМИ <span class="blue">СОТРУДНИЧАЮТ</span></span>
 					</div>
 					<div class="partners__content partnersSwiper partners__swiper">
 						<div class="swiper-wrapper visible-mobile-l">
@@ -1321,7 +1289,9 @@
 							<div class="title about__title person__title">
 								<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 								<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-								<h2>ГЛАВНЫЕ СОБЫТИЯ<br />ОТ <span class="blue">ПЕРВОГО</span> ЛИЦА</h2>
+								<span class="h2"
+									>ГЛАВНЫЕ СОБЫТИЯ<br />ОТ <span class="blue">ПЕРВОГО</span> ЛИЦА</span
+								>
 							</div>
 							<p class="person__text">
 								Подпишитесь на телеграм канал директора РЭЩ<br />Цветкова Романа Николаевича
@@ -1341,7 +1311,7 @@
 						<div class="title about__title">
 							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-							<h2>КОМПЛЕКСНОЕ <span class="blue">РЕШЕНИЕ ЗАДАЧ</span></h2>
+							<span class="h2">КОМПЛЕКСНОЕ <span class="blue">РЕШЕНИЕ ЗАДАЧ</span></span>
 						</div>
 						<div class="swiper">
 							<div class="advantages__card-container solutions__card-container swiper-wrapper">
@@ -1353,7 +1323,9 @@
 										<i class="d_icon d_icon-search-accept"></i>
 									</header>
 									<hr class="solution-card__line" />
-									<h3 class="advantage-card__title solution-card__title">Анализ задач заказчика</h3>
+									<span class="h3 advantage-card__title solution-card__title"
+										>Анализ задач заказчика</span
+									>
 									<p class="advantage-card__text solution-card__text">
 										Ознакомление с задачей. Предварительная оценка необходимого комплекса работ.
 									</p>
@@ -1366,9 +1338,9 @@
 										<i class="d_icon d_icon-doc"></i>
 									</header>
 									<hr class="solution-card__line" />
-									<h3 class="advantage-card__title solution-card__title">
+									<span class="h3 advantage-card__title solution-card__title">
 										Проектирование и разработка
-									</h3>
+									</span>
 									<p class="advantage-card__text solution-card__text">
 										Составление ТЗ на основе выявленных потребностей и технических требований
 										заказчика. Утверждение ТЗ.
@@ -1382,7 +1354,9 @@
 										<i class="d_icon d_icon-check-mark"></i>
 									</header>
 									<hr class="solution-card__line" />
-									<h3 class="advantage-card__title solution-card__title">Утверждение проекта</h3>
+									<span class="h3 advantage-card__title solution-card__title"
+										>Утверждение проекта</span
+									>
 									<p class="advantage-card__text solution-card__text">
 										Представление заказчику разработанного проекта с описанием функциональности и
 										тех. характеристик. Корректировки с учетом пожеланий заказчика.
@@ -1396,9 +1370,9 @@
 										<i class="d_icon d_icon-settings"></i>
 									</header>
 									<hr class="solution-card__line" />
-									<h3 class="advantage-card__title solution-card__title">
+									<span class="h3 advantage-card__title solution-card__title">
 										Изготовление и поставка
-									</h3>
+									</span>
 									<p class="advantage-card__text solution-card__text">
 										Организация шефмонтажа или монтажа «под ключ» аттестованными и опытными
 										специалистами. Проведение пуско-наладочных работ для проверки работы
@@ -1413,9 +1387,9 @@
 										<i class="d_icon d_icon-key"></i>
 									</header>
 									<hr class="solution-card__line" />
-									<h3 class="advantage-card__title solution-card__title">
+									<span class="h3 advantage-card__title solution-card__title">
 										Монтаж и пуско-наладочные работы
-									</h3>
+									</span>
 									<p class="advantage-card__text solution-card__text">
 										Организация шефмонтажа или монтажа «под ключ» аттестованными и опытными
 										специалистами. Проведение пуско-наладочных работ для проверки работы
@@ -1430,9 +1404,9 @@
 										<i class="d_icon d_icon-shield-person"></i>
 									</header>
 									<hr class="solution-card__line" />
-									<h3 class="advantage-card__title solution-card__title">
+									<span class="h3 advantage-card__title solution-card__title">
 										Послепродажное обслуживание
-									</h3>
+									</span>
 									<p class="advantage-card__text solution-card__text">
 										Предоставление гарантийных обязательств и возможность быстрой реакции на любые
 										возможные проблемы.
@@ -1499,7 +1473,7 @@
 					</div>
 					<nav class="footer__nav">
 						<ul class="footer__list">
-							<h3 class="footer__subtitle">КАТАЛОГ</h3>
+							<span class="h3 footer__subtitle">КАТАЛОГ</span>
 							<li class="footer__item">
 								<a href="#" class="footer__link">Комплектные трансформаторные<br />подстанции</a>
 							</li>
@@ -1511,7 +1485,7 @@
 							</li>
 						</ul>
 						<ul class="footer__list">
-							<h3 class="footer__subtitle">ИНФОРМАЦИЯ:</h3>
+							<span class="h3 footer__subtitle">ИНФОРМАЦИЯ:</span>
 							<li class="footer__item">
 								<a href="#" class="footer__link">О компании</a>
 							</li>

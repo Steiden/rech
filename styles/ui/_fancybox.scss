@@ -21,7 +21,7 @@
 
 .is-prev {
 	left: 125px !important;
-	translate: -50% -50% !important;
+	translate: -50% 0 !important;
 
 	@include mobile-l {
 		left: 30% !important;
@@ -31,7 +31,7 @@
 
 .is-next {
 	right: 120px !important;
-	translate: 50% -50% !important;
+	translate: 50% 0 !important;
 
 	@include mobile-l {
 		right: 30% !important;
@@ -64,12 +64,8 @@
 
 .f-thumbs__track {
 	.f-thumbs__slide {
-		border-radius: $border-radius;
+		@include fluid-property(border-radius, 10, 15);
 		overflow: hidden;
-
-		@include tablet {
-			border-radius: 20px;
-		}
 	}
 
 	.is-nav-selected {
@@ -82,5 +78,14 @@
 
 	@include mobile-l {
 		bottom: 20% !important;
+	}
+}
+
+.fancybox__content {
+	border-radius: $border-radius-large !important;
+	overflow: hidden !important;
+
+	@include mobile-l {
+		border-radius: 20px !important;
 	}
 }

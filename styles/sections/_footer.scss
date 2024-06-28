@@ -3,9 +3,10 @@
 
 	&__map {
 		@include flex-direction($gap: 30px);
+		@include section-border-radius;
 
-		border-top-left-radius: 60px;
-		border-top-right-radius: 60px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 
 		max-height: 900px;
 		height: 900px;
@@ -18,7 +19,6 @@
 		}
 
 		@include mobile-l {
-			@include section-border-radius;
 			padding-bottom: 60px;
 		}
 	}

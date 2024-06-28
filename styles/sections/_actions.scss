@@ -4,12 +4,22 @@
 	position: fixed;
 	top: 50%;
 	right: 0;
-	translate: 70% -50%;
+	transition-duration: .3s;
+	translate: 100% -50%;
 
-	transition-duration: 0.3s;
 	z-index: 1000;
 
 	&--show {
+		.actions__button-container {
+			height: 0px;
+		}
+
+		.actions__close {
+			rotate: -135deg;
+		}
+	}
+	
+	&--visible {
 		translate: 0 -50%;
 	}
 
@@ -34,6 +44,8 @@
 		background-color: var(--link-hover-color);
 		border-radius: 50%;
 
+		transition-duration: .3s;
+
 		width: 30px;
 		height: 30px;
 
@@ -48,6 +60,11 @@
 
 	&__button-container {
 		@include flex-direction($gap: 14px);
+
+		height: 428px;
+
+		transition-duration: .5s;
+		overflow: hidden;
 
 		@include mobile-l {
 			flex-direction: row;

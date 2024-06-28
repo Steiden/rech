@@ -238,7 +238,7 @@ a {
 	}
 }
 
-span.h1 {
+.h1 {
 	display: block;
 	font-style: normal;
 	font-weight: 700;
@@ -247,7 +247,7 @@ span.h1 {
 	color: var(--primary-color);
 }
 
-span.h2 {
+.h2 {
 	display: block;
 	color: var(--secondary-color);
 	font-size: 48px;
@@ -256,7 +256,7 @@ span.h2 {
 	line-height: 62px;
 }
 
-span.h3 {
+.h3 {
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 500;
@@ -268,7 +268,7 @@ span.h3 {
 	}
 }
 
-span.h4 {
+.h4 {
 	color: var(--secondary-color);
 	font-size: 16px;
 	font-style: normal;
@@ -5425,9 +5425,13 @@ body {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 p {
 	line-height: 1.2;
 }
@@ -5436,7 +5440,7 @@ p {
 	@include fluid-text(14, 18);
 }
 
-h2 {
+h2, .h2 {
 	font-weight: 400;
 }
 

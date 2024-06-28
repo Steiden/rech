@@ -1,4 +1,4 @@
-// Header
+// Header (Catalog)
 const header = document.getElementById("header");
 const headerMenu = document.getElementById("headerMenu");
 
@@ -25,21 +25,14 @@ const desktopCatalogButton = document.getElementById("desktopCatalogButton");
 const catalog = document.getElementById("catalog");
 let desktopCatalogButtonIsCliked = false;
 
-desktopCatalogButton.addEventListener("click", () => {
-	if (!desktopCatalogButtonIsCliked) {
-		catalog.classList.add("catalog--visible");
-		desktopCatalogButtonIsCliked = true;
-	} else {
-		catalog.classList.remove("catalog--visible");
-		desktopCatalogButtonIsCliked = false;
-	}
+desktopCatalogButton.addEventListener("mouseenter", () => {
+	catalog.classList.add("catalog--visible");
+	desktopCatalogButtonIsCliked = true;
 });
 
-window.addEventListener("click", (e) => {
-	if (!catalog.contains(e.target) && !desktopCatalogButton.contains(e.target)) {
-		catalog.classList.remove("catalog--visible");
-		desktopCatalogButtonIsCliked = false;
-	}
+desktopCatalogButton.addEventListener("mouseleave", () => {
+	catalog.classList.remove("catalog--visible");
+	desktopCatalogButtonIsCliked = false;
 });
 
 // Map
@@ -59,31 +52,33 @@ markers.forEach((marker) => {
 // Actions
 const actions = document.getElementById("actions");
 const closeActionsButton = document.getElementById("closeActions");
-actions.addEventListener("mouseenter", (e) => {
-	if (e.target !== closeActionsButton && e.target !== closeActionsButton.querySelector("i"))
-		actions.classList.add("actions--show");
-});
+let iscloseActionsButtonClicked = false;
 closeActionsButton.addEventListener("click", () => {
-	actions.classList.remove("actions--show");
+	if (!iscloseActionsButtonClicked) {
+		actions.classList.add("actions--show");
+		iscloseActionsButtonClicked = true;
+	} else {
+		actions.classList.remove("actions--show");
+		iscloseActionsButtonClicked = false;
+	}
+});
+window.addEventListener("scroll", () => {
+	const currTop = window.scrollY;
+	const sectionTop = document.getElementById("about").getClientRects()[0].top;
+	if (currTop > sectionTop) {
+		actions.classList.add("actions--visible");
+	}
 });
 
-// Header
+// Header (Services)
 const services = document.getElementById("services");
 const servicesButton = document.getElementById("servicesButton");
 let isServicesClicked = false;
-servicesButton.addEventListener("click", () => {
-	if (!isServicesClicked) {
-		services.classList.add("services--show");
-		isServicesClicked = true;
-	} else {
-		services.classList.remove("services--show");
-		isServicesClicked = false;
-	}
+servicesButton.addEventListener("mouseenter", () => {
+	services.classList.add("services--show");
+	isServicesClicked = true;
 });
-
-window.addEventListener("click", (e) => {
-	if (!services.contains(e.target) && !servicesButton.contains(e.target)) {
-		services.classList.remove("services--show");
-		isServicesClicked = false;
-	}
+servicesButton.addEventListener("mouseleave", () => {
+	services.classList.remove("services--show");
+	isServicesClicked = false;
 });

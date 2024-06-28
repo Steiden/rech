@@ -29,15 +29,7 @@
 }
 
 @mixin section-border-radius {
-	border-radius: $border-radius-very-large;
-
-	@include tablet {
-		border-radius: $border-radius-large;
-	}
-
-	@include mobile {
-		border-radius: $border-radius;
-	}
+	@include fluid-property(border-radius, 20, 60);
 }
 
 @mixin fluid-text($min, $max) {

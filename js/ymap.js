@@ -2,12 +2,12 @@ const mapMarker = /*html*/ `<img src="/assets/img/mark.svg" class="footer__mark"
 
 ymaps.ready(() => {
 	const map = new ymaps.Map("ymap", {
-		center: [58.103323, 56.302211],
+		center: [58.099775, 38.741185],
 		zoom: 15,
 	});
 
 	const marker1 = new ymaps.Placemark(
-		[58.101321, 56.303213],
+		[58.099775, 38.741185],
 		{},
 		{
 			iconLayout: "default#image",
@@ -17,7 +17,7 @@ ymaps.ready(() => {
 		}
 	);
 	const marker2 = new ymaps.Placemark(
-		[58.103323, 56.304111],
+		[58.096765, 38.737170],
 		{},
 		{
 			iconLayout: "default#image",
