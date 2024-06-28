@@ -1,6 +1,12 @@
 import Swiper from "swiper";
 import "swiper/css";
 
+const removeSlidesActiveStyle = (slides) => {
+	slides.forEach((slide) => {
+		slide.classList.remove("swiper-slide--active");
+	});
+};
+
 const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 	if (swiperNumber === 1) {
 		swiper2.activeIndex = swiper1.activeIndex;
@@ -10,6 +16,9 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 		swiper1.activeIndex = swiper2.clickedIndex;
 		swiper1.slideTo(swiper2.clickedIndex);
 	}
+
+	removeSlidesActiveStyle(swiper2.slides);
+	swiper2.slides[swiper1.activeIndex].classList.add("swiper-slide--active");
 };
 
 window.addEventListener("load", (e) => {

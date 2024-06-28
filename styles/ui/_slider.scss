@@ -20,6 +20,11 @@
 
 		.swiper-slide {
 			height: auto;
+
+			&--active {
+				@include fluid-property(border-radius, 10, 15);
+				border: 4px solid var(--white-color);
+			}
 		}
 	}
 
