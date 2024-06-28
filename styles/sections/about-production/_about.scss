@@ -1,0 +1,39 @@
+.about-production-about {
+    
+	&__content {
+		@include flex-direction($gap: 40px);
+
+		background-color: var(--thirdy-alt-color);
+
+		padding: 60px 40px;
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 50px;
+
+		height: 100%;
+		width: fit-content;
+		object-fit: cover;
+	}
+
+	&__title {
+		@include fluid-text(24, 70);
+		color: var(--thirdy-color);
+	}
+
+	&__text {
+		@include fluid-text(16, 48);
+	}
+
+	&__button-container {
+		@include flex-direction(row, 50px);
+		@include fluid-property(gap, 8, 50);
+	}
+
+	&__button {
+		padding-inline: 40px;
+	}
+}

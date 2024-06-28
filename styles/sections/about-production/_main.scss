@@ -1,0 +1,7 @@
+.about-production-main {
+    @include flex-direction($gap: 90px);
+
+    &__content {
+        @include flex-direction($gap: 120px);
+    }
+}

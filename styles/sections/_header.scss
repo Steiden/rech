@@ -3,11 +3,21 @@
 	// position: absolute;
 	top: 60px;
 	left: 50%;
-	margin-top: 60px;
+	padding-top: 60px;
 	// transition: all linear 0.5s;
 
 	width: 100%;
 	z-index: 100;
+
+	&--white {
+		@include section-border-radius;
+		
+		background-color: var(--white-color);
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+
+		padding-bottom: 22px;
+	}
 
 	@include tablet-l {
 		border-end-start-radius: 20px;

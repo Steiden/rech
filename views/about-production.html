@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>РЭЩ</title>
+		<link rel="stylesheet" href="../styles/style.scss" />
+	</head>
+	<body>
+		<div class="dart_wrapper app">
+			<div class="actions" id="actions">
+				<button class="actions__close hidden-mobile-l" id="closeActions">
+					<i class="d_icon d_icon-close"></i>
+				</button>
+				<div class="actions__button-container">
+					<button class="actions__button">
+						<i class="d_icon d_icon-calculator"></i>
+						<p class="actions__text">Запросы на<br />расчет</p>
+					</button>
+					<button class="actions__button actions__button--dark" id="callbackModalOpenButton">
+						<i class="d_icon d_icon-telephone"></i>
+						<p class="actions__text">Обратный<br />звонок</p>
+					</button>
+					<button class="actions__button">
+						<i class="d_icon d_icon-whatsapp"></i>
+						<p class="actions__text">Написать в<br />WhatsApp</p>
+					</button>
+					<button class="actions__button hidden-mobile-l">
+						<i class="d_icon d_icon-telegram"></i>
+						<p class="actions__text">Телеграмм<br />канал РЭЩ</p>
+					</button>
+				</div>
+			</div>
+
+			<main class="main about-production-main" id="main">
+				<header class="container header header--white" id="header">
+					<div class="space-between header__top hidden-tablet-l">
+						<a href="/" class="header__logo-link hidden-desktop"
+							><img src="/assets/img/logo.png" alt="logo" class="header__logo"
+						/></a>
+						<a href="/" class="header__logo-link visible-desktop"
+							><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+						/></a>
+						<div class="input__wrapper header__search-input">
+							<input type="text" placeholder="Поиск по сайту" class="input" />
+							<div class="input__button-wrapper">
+								<button class="input__button">
+									<i class="d_icon d_icon-search"></i>
+								</button>
+							</div>
+						</div>
+						<div class="header__location">
+							<div class="header__location-title">
+								<i class="d_icon d_icon-mark d_icon--red"></i>
+								<span class="header__text">ПРОИЗВОДСТВО:</span>
+							</div>
+							<a
+								href="https://yandex.ru/maps/geo/rybinsk/53057096/?ll=38.819432%2C58.063320&z=12.41"
+								class="header__text header__text--big"
+								>Ярославская обл. г. Рыбинск</a
+							>
+						</div>
+						<div class="header__contacts">
+							<a href="tel:89611561186" class="header__text header__text--telephone"
+								>8 (961) 156-11-86</a
+							>
+							<p class="header__text">пн-пт 08:00 - 17:00</p>
+						</div>
+					</div>
+					<div class="space-between header__menu hidden-tablet-l">
+						<div class="hidden-tablet-l" id="desktopCatalogButton">
+							<button class="my-button my-button--blue header__catalog-button">
+								Каталог
+								<i class="d_icon d_icon-menu catalog-button__icon"></i>
+							</button>
+							<!-- Каталог -->
+							<div class="header__catalog catalog" id="catalog">
+								<button class="catalog__item">
+									<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+									<p class="catalog__text">Комплектные трансформаторные подстанции</p>
+								</button>
+								<button class="catalog__item">
+									<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+									<p class="catalog__text">Комплектные распределительные устройства</p>
+								</button>
+								<button class="catalog__item">
+									<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+									<p class="catalog__text">Низковольтные комплекттные устройства</p>
+								</button>
+							</div>
+						</div>
+						<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a href="/" class="header__nav-link">Главная</a>
+								</li>
+								<li class="header__nav-item">
+									<div class="" id="servicesButton">
+										<button class="header__nav-link">Услуги</button>
+										<ul class="services" id="services">
+											<li class="services__item">
+												<a href="/services/1" class="services__link">Инжиниринговый центр</a>
+											</li>
+											<li class="services__item">
+												<a href="/services/2" class="services__link">Электролаборатория</a>
+											</li>
+											<li class="services__item">
+												<a href="/services/3" class="services__link">Лизинг оборудования</a>
+											</li>
+											<li class="services__item">
+												<a href="/services/4" class="services__link">Услуги металлообработки</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="header__nav-item">
+									<a href="/projects" class="header__nav-link">Проекты</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="/documentation" class="header__nav-link">Документация</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="/about" class="header__nav-link">О предприятии</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="/partners" class="header__nav-link">Сотрудничество</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="/contacts" class="header__nav-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__top visible-tablet-l">
+						<a href="/" class="header__logo-link"
+							><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+						/></a>
+						<div class="header__contacts hidden-mobile-l">
+							<a href="tel:89611561186" class="header__text header__text--telephone"
+								>8 (961) 156-11-86</a
+							>
+							<p class="header__text">пн-пт 08:00 - 17:00</p>
+						</div>
+						<button
+							class="my-button my-button--blue header__catalog-button catalog-button visible-tablet-l"
+							id="catalogButton"
+						>
+							<i class="d_icon d_icon-menu catalog-button__icon"></i>
+						</button>
+						<button
+							class="header__close-button close-button visible-tablet-l"
+							id="closeCatalogButton"
+						>
+							<i class="d_icon d_icon-close close-button__icon"></i>
+						</button>
+					</div>
+					<div class="space-between header__menu visible-tablet-l" id="headerMenu">
+						<details class="header__accordion accordion">
+							<summary class="accordion__title">
+								<p class="accordion__text">Каталог</p>
+								<i class="d_icon d_icon-close accordion__icon"></i>
+							</summary>
+							<div class="block-container">
+								<button class="block">
+									<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+									<p class="block__text">Комплектные трансформаторные подстанции</p>
+								</button>
+								<button class="block">
+									<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+									<p class="block__text">Комплектные трансформаторные подстанции</p>
+								</button>
+								<button class="block">
+									<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+									<p class="block__text">Комплектные трансформаторные подстанции</p>
+								</button>
+							</div>
+						</details>
+						<hr class="header__line" />
+						<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a href="/" class="header__nav-link">Главная</a>
+								</li>
+								<li class="header__nav-item">
+									<details class="header__accordion accordion">
+										<summary class="accordion__title">
+											<p class="accordion__text">Услуги</p>
+											<i class="d_icon d_icon-close accordion__icon"></i>
+										</summary>
+										<div class="service-container">
+											<a href="/services/1" class="header__nav-link">Название услуги 1</a>
+											<a href="/services/2" class="header__nav-link">Название услуги 2</a>
+											<a href="/services/3" class="header__nav-link">Название услуги 3</a>
+										</div>
+									</details>
+								</li>
+								<li class="header__nav-item">
+									<a href="/projects" class="header__nav-link">Проекты</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="/documentation" class="header__nav-link">Документация</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="/about" class="header__nav-link">О предприятии</a>
+								</li>
+								<li class="header__nav-item">
+									<details class="header__accordion accordion">
+										<summary class="accordion__title accordion__title--sub">
+											<p class="accordion__text">Сотрудничество</p>
+											<i class="d_icon d_icon-close accordion__icon"></i>
+										</summary>
+										<div class="service-container">
+											<a href="/services/1" class="header__nav-link">Название услуги 1</a>
+											<a href="/services/2" class="header__nav-link">Название услуги 2</a>
+											<a href="/services/3" class="header__nav-link">Название услуги 3</a>
+										</div>
+									</details>
+								</li>
+								<li class="header__nav-item">
+									<a href="/contacts" class="header__nav-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<hr class="header__line" />
+						<button class="my-button my-button--blue header__menu-button">
+							Перейти на наш тг канал
+							<i class="d_icon d_icon-telegram"></i>
+						</button>
+						<div class="header__button-container">
+							<div class="input__wrapper header__search-input">
+								<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
+							</div>
+							<button class="my-button my-button--red header__button">
+								Получить КП под ваш запрос
+								<i class="d_icon d_icon-arrow-diagonal"></i>
+							</button>
+							<p class="header__text">
+								Нажимая на кнопку, вы соглашаетесь с
+								<span class="header__text header__text--red"
+									>политикой по обработке персональных данных</span
+								>
+							</p>
+						</div>
+					</div>
+				</header>
+
+				<div class="about-production-main__content">
+					<section class="container about-production__about about-production-about" id="about">
+						<div class="section-border-radius about-production-about__content">
+							<img
+								src="/assets/img/background/bg-about2.png"
+								alt=""
+								class="about-production-about__img"
+							/>
+							<span class="h1 blue about-production-about__title">О НАШЕМ ПРЕДПРИЯТИИ</span>
+							<p class="about-production-about__text">
+								РЭЩ - ВЕДУЩИЙ РОССИЙСКИЙ ПРОИЗВОДИТЕЛЬ ЭЛЕКТРОТЕХНИЧЕСКОГО ОБОРУДОВАНИЯ
+							</p>
+							<div class="about-production-about__button-container">
+								<button class="my-button my-button--red about-production-about__button">
+									Скачать презентацию
+									<i class="d_icon d_icon-arrow-upload"></i>
+								</button>
+								<button class="my-button my-button--transparent about-production-about__button">
+									Ознакомиться с производством
+									<i class="d_icon d_icon-arrow-diagonal"></i>
+								</button>
+							</div>
+						</div>
+					</section>
+
+					<section class="container about-production__director about-production-director">
+						<header class="about-production-director__header">
+							<div class="title about__title">
+								<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+								<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+								<span class="h2">ОБРАЩЕНИЕ<span class="blue">ДИРЕКТОРА</span></span>
+							</div>
+							<button
+								class="my-button my-button--red about-production-director__button hidden-mobile-l"
+							>
+								Написать директору
+								<i class="d_icon d_icon-mail"></i>
+							</button>
+						</header>
+						<main class="about-production-director__main">
+							<img
+								src="/assets/img/persons/person2.png"
+								alt="director"
+								class="about-production-director__img"
+							/>
+							<div class="about-production-director__content">
+								<p class="about-production-director__text">
+									Хочу выразить Вам благодарность за проявленный интерес к нашей организации и
+									сказать несколько слов о предприятии, основателем и директором которого я являюсь.
+								</p>
+								<p class="about-production-director__text about-production-director__text--small">
+									Мой путь начался с мечты, с идеи, и сегодня с гордостью я смотрю на то, что
+									удалось достичь. «РЫБИНСКЭЛЕКТРОЩИТ» стал надежным партнером для многих наших
+									клиентов в оборонной, рудничной,<br />нефтегазовой,ромышленности, электрических
+									сетей, департаментов городской инфраструктуры и строительства.
+								</p>
+								<p class="about-production-director__text about-production-director__text--small">
+									Цветков Роман Николаевич<br />
+									<span
+										class="blue about-production-director__text about-production-director__text--small"
+									>
+										Директор предприятия РЭЩ
+									</span>
+								</p>
+							</div>
+						</main>
+					</section>
+
+					<section class="section-border-radius about-production__history about-production-history">
+						<header class="container about-production-history__header">
+							<div class="title about__title">
+								<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+								<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+								<span class="h2">ИСТОРИЯ ПРЕДПРИЯТИЯ <span class="blue">И ПЕРСПЕКТИВЫ</span></span>
+							</div>
+						</header>
+						<main class="container advantages solutions about-production-history__main">
+							<div class="swiper">
+								<div class="advantages__card-container solutions__card-container swiper-wrapper">
+									<div
+										class="advantages__card advantage-card solutions__card solution-card about-production-history__card about-production-history-card swiper-slide"
+									>
+										<header class="advantage-card__header solution-card__header">
+											<p
+												class="advantage-card__index solution-card__index about-production-history-card__index"
+											>
+												2015
+											</p>
+										</header>
+										<hr class="solution-card__line" />
+										<span
+											class="h3 advantage-card__title solution-card__title about-production-history-card__title"
+											>Основные и Первые шаги</span
+										>
+										<p
+											class="advantage-card__text solution-card__text about-production-history-card__text"
+										>
+											С первых дней своего существования мы ставили перед собой цель - создавать
+											высококачественное оборудование. За 10 лет РЫБИНСКЭЛЕКТРОЩИТ зарекомендовал
+											себя как надежный производитель и партнер.
+										</p>
+									</div>
+									<div
+										class="advantages__card advantage-card solutions__card solution-card about-production-history__card about-production-history-card swiper-slide"
+									>
+										<header class="advantage-card__header solution-card__header">
+											<p
+												class="advantage-card__index solution-card__index about-production-history-card__index"
+											>
+												2017-2019
+											</p>
+										</header>
+										<hr class="solution-card__line" />
+										<span
+											class="h3 advantage-card__title solution-card__title about-production-history-card__title"
+										>
+											Развитие и Рост
+										</span>
+										<p
+											class="advantage-card__text solution-card__text about-production-history-card__text"
+										>
+											Стремительное развитие, расширение своих производственных и трудовых ресурсов,
+											увеличение номенклатуры и вариантов типоисполнений оборудования.
+										</p>
+									</div>
+									<div
+										class="advantages__card advantage-card solutions__card solution-card about-production-history__card about-production-history-card swiper-slide"
+									>
+										<header class="advantage-card__header solution-card__header">
+											<p
+												class="advantage-card__index solution-card__index about-production-history-card__index"
+											>
+												2020-2021
+											</p>
+										</header>
+										<hr class="solution-card__line" />
+										<span
+											class="h3 advantage-card__title solution-card__title about-production-history-card__title"
+											>Расширение и успехи</span
+										>
+										<p
+											class="advantage-card__text solution-card__text about-production-history-card__text"
+										>
+											Предприятие выходит на лидирующие позиции рынка. Мы завоевываем доверие
+											клиентов, а наша продукция становится надежным выбором для многих компаний по
+											всей России.
+										</p>
+									</div>
+									<div
+										class="advantages__card advantage-card solutions__card solution-card about-production-history__card about-production-history-card swiper-slide"
+									>
+										<header class="advantage-card__header solution-card__header">
+											<p
+												class="advantage-card__index solution-card__index about-production-history-card__index"
+											>
+												2022-2023
+											</p>
+										</header>
+										<hr class="solution-card__line" />
+										<span
+											class="h3 advantage-card__title solution-card__title about-production-history-card__title"
+										>
+											Инновации и Прогресс
+										</span>
+										<p
+											class="advantage-card__text solution-card__text about-production-history-card__text"
+										>
+											Открытие собственного инжинирингого центра. Покупка дополнительной
+											производственной площадки, нового оборудования. Создание собственной
+											электролаборатории с аттестацией РОСТЕХНАДЗОРА
+										</p>
+									</div>
+									<div
+										class="advantages__card advantage-card solutions__card solution-card about-production-history__card about-production-history-card swiper-slide"
+									>
+										<header class="advantage-card__header solution-card__header">
+											<p
+												class="advantage-card__index solution-card__index about-production-history-card__index"
+											>
+												2024
+											</p>
+										</header>
+										<hr class="solution-card__line" />
+										<span
+											class="h3 advantage-card__title solution-card__title about-production-history-card__title"
+										>
+											Партнерство. Будущее и Планы
+										</span>
+										<p
+											class="advantage-card__text solution-card__text about-production-history-card__text"
+										>
+											Долгосрочные партнерские отношения с клиентами. Всегда готовы поддержать
+											клиента на каждом этапе сотрудничества. Продолжаем развиваться и
+											совершенствоваться, чтобы оставаться в лидерах своей отрасли. Создаем решения
+											по требованиям сегодняшнего рынка.
+										</p>
+									</div>
+								</div>
+							</div>
+						</main>
+					</section>
+
+					<section class="container about-production__solutions about-production-solutions">
+						<div class="section-border-radius about-production-solutions__content">
+							<div class="slider about-production-solutions__slider groupSwiper">
+								<button class="slider__arrow slider__arrow--left" id="groupSwiperPrev">
+									<i class="d_icon-quotation-left-red slider__arrow-icon"
+										><span class="path1"></span><span class="path2"></span
+										><span class="path3"></span
+									></i>
+								</button>
+								<div class="swiper-wrapper">
+									<div class="about-production-solutions__card swiper-slide">
+										<img
+											src="/assets/img/groups/group1.png"
+											alt="group"
+											class="about-production-solutions__img"
+										/>
+										<div class="about-production-solutions__mask"></div>
+										<span class="h3 about-production-solutions__title"
+											>РАЗРАБАТЫВАЕМ ИНДИВИДУАЛЬНЫЕ
+											<span class="blue">ТЕХНИЧЕСКИЕ РЕШЕНИЯ</span></span
+										>
+										<p class="about-production-solutions__text">
+											Чтобы каждый проект стал для вас технически и экономически эффективным
+										</p>
+									</div>
+									<div class="about-production-solutions__card swiper-slide">
+										<img
+											src="/assets/img/groups/group1.png"
+											alt="group"
+											class="about-production-solutions__img"
+										/>
+										<div class="about-production-solutions__mask"></div>
+										<span class="h3 about-production-solutions__title"
+											>РАЗРАБАТЫВАЕМ ИНДИВИДУАЛЬНЫЕ
+											<span class="blue">ТЕХНИЧЕСКИЕ РЕШЕНИЯ</span></span
+										>
+										<p class="about-production-solutions__text">
+											Чтобы каждый проект стал для вас технически и экономически эффективным
+										</p>
+									</div>
+									<div class="about-production-solutions__card swiper-slide">
+										<img
+											src="/assets/img/groups/group1.png"
+											alt="group"
+											class="about-production-solutions__img"
+										/>
+										<div class="about-production-solutions__mask"></div>
+										<span class="h3 about-production-solutions__title"
+											>РАЗРАБАТЫВАЕМ ИНДИВИДУАЛЬНЫЕ
+											<span class="blue">ТЕХНИЧЕСКИЕ РЕШЕНИЯ</span></span
+										>
+										<p class="about-production-solutions__text">
+											Чтобы каждый проект стал для вас технически и экономически эффективным
+										</p>
+									</div>
+								</div>
+								<button class="slider__arrow slider__arrow--right" id="groupSwiperNext">
+									<i class="d_icon-quotation-right-red slider__arrow-icon"
+										><span class="path1"></span><span class="path2"></span
+										><span class="path3"></span
+									></i>
+								</button>
+							</div>
+						</div>
+					</section>
+
+                    <section class="container about-production__team about-production-team"></section>
+				</div>
+			</main>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<script src="../js/script.js" type="module"></script>
+		<script src="../js/swipers.js" type="module"></script>
+		<script src="../js/ymap.js" type="module"></script>
+		<script src="../js/select.js" type="module"></script>
+		<script src="../js/fancybox.js" type="module"></script>
+		<script src="../js/modal.js" type="module"></script>
+	</body>
+</html>

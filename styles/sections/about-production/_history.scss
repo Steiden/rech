@@ -1,0 +1,33 @@
+.about-production-history {
+	@include flex-direction($gap: 100px);
+
+	background-color: var(--primary-alt-color);
+	padding-block: 112px;
+
+	&__main {
+		padding-block: 0;
+	}
+
+	&__card,
+	.about-production-history-card {
+        max-height: 100%;
+
+		&__index {
+			background-color: rgba(90, 197, 239, 0.5);
+			color: var(--thirdy-alt-color);
+			font-weight: 700;
+			width: 100%;
+		}
+
+        &__title {
+            @include fluid-text(22, 30);
+            line-height: 1;
+        }
+
+        &__text {
+            @include fluid-text(14, 18);
+            @include fluid-property(line-height, 20, 25);
+            margin-top: 0;
+        }
+	}
+}

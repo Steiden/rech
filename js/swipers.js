@@ -119,3 +119,18 @@ const partnersSwiper = new Swiper(".partnersSwiper", {
 	spaceBetween: 60,
 	slidesPerView: 2,
 });
+
+// Groups
+const groupSwiperPrev = document.getElementById("groupSwiperPrev");
+const groupSwiperNext = document.getElementById("groupSwiperNext");
+const groupSwiper = new Swiper(".groupSwiper", {
+	spaceBetween: 0,
+	slidesPerView: 1,
+});
+
+groupSwiperPrev.addEventListener("click", () => {
+	groupSwiper.slidePrev();
+});
+groupSwiperNext.addEventListener("click", () => {
+	groupSwiper.slideNext();
+});

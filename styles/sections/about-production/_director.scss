@@ -1,0 +1,49 @@
+.about-production-director {
+    @include flex-direction($gap: 80px);
+
+	position: relative;
+
+	&__header {
+		@include flex-direction(row, 10px);
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__button {
+		padding-inline: 50px;
+
+        i::before {
+            color: var(--white-color);
+        }
+	}
+
+	&__main {
+		@include flex-direction(row, 70px);
+		justify-content: space-between;
+	}
+
+	&__img {
+		height: 100%;
+        translate: 0 120px;
+	}
+
+	&__content {
+		@include flex-direction($gap: 15px);
+		@include fluid-property(border-radius, 20, 30);
+
+		background-color: var(--primary-alt-color);
+
+		padding: 60px 100px;
+        height: fit-content;
+	}
+
+	&__text {
+		@include fluid-text(18, 32);
+		@include fluid-property(line-height, 27, 48);
+
+		&--small {
+			@include fluid-text(16, 20);
+			@include fluid-property(line-height, 24, 30);
+		}
+	}
+}
