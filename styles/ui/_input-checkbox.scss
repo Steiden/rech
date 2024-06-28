@@ -1,0 +1,42 @@
+.input-checkbox {
+	@include visually-hidden;
+
+	&:not(:checked) {
+		& + .input-checkbox__label {
+
+			.input-checkbox__icon {
+                display: none;
+            }
+		}
+	}
+
+	&__wrapper {
+		@include flex-center(row, 8px);
+		justify-content: flex-start;
+	}
+
+	&__label {
+		@include flex-center;
+        @include fluid-scales(20, 20);
+
+		border: 2px solid var(--thirdy-color);
+		border-radius: 50%;
+
+		aspect-ratio: 1;
+
+		cursor: pointer;
+	}
+
+	&__icon {
+		@include flex-center;
+
+		&::before {
+			font-size: 8px;
+		}
+	}
+
+	&__span {
+		@include fluid-text(12, 13);
+		color: var(--thirdy-alt-color);
+	}
+}

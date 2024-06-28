@@ -1,0 +1,15 @@
+.info-icon {
+    @include flex-center;
+    @include fluid-scales(14, 14);
+
+    border: 2px solid var(--thirdy-color);
+    border-radius: 50%;
+    
+    &::before {
+        content: "i";
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        color: var(--thirdy-color);
+    }
+}

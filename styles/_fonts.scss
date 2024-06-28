@@ -62,6 +62,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.d_icon-paper-clip:before {
+	content: "\e934";
+	color: #5ac5ef;
+}
 .d_icon-title-mark-small:before {
 	content: "\e933";
 	color: #ac262f;
