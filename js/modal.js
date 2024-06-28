@@ -1,6 +1,6 @@
 // Calc modal
 const calcModal = document.getElementById("calcModal");
-const calcModalCloseButtons = document.querySelectorAll("calcModalCloseButton");
+const calcModalCloseButtons = document.querySelectorAll(".calcModalCloseButton");
 const calcModalOpenButton = document.getElementById("calcModalOpenButton");
 
 calcModalOpenButton.addEventListener("click", () => {
