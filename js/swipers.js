@@ -24,28 +24,40 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 window.addEventListener("load", (e) => {
 	const slidesPerView = window.innerWidth <= 480 ? 3 : 4;
 
+	const createDoubleSwiper = (swiper1, swiper2, prev, next) => {
+		const slider1 = new Swiper(swiper1, {
+			autoplay: true,
+			spaceBetween: 20,
+		});
+		const slider2 = new Swiper(swiper2, {
+			slidesPerView: slidesPerView,
+			slideToClickedSlide: true,
+			spaceBetween: 20,
+		});
+
+		const nextButton = document.querySelector(next);
+		const prevButton = document.querySelector(prev);
+
+		slider1.on("slideChange", () => syncSwipers(slider1, slider2, 1));
+		slider2.on("click", () => syncSwipers(slider1, slider2, 2));
+
+		if (nextButton && prevButton) {
+			nextButton.addEventListener("click", () => {
+				slider1.slideNext();
+			});
+			prevButton.addEventListener("click", () => {
+				slider1.slidePrev();
+			});
+		}
+	};
+
 	// Product section swiper
-	const productSwiperPrevButton = document.getElementById("productSwiperPrev");
-	const productSwiperNextButton = document.getElementById("productSwiperNext");
-	const productSwiper = new Swiper(".productSwiper", {
-		autoplay: true,
-		spaceBetween: 20,
-	});
-	const productSwiper2 = new Swiper(".productSwiper2", {
-		slidesPerView: slidesPerView,
-		slideToClickedSlide: true,
-		spaceBetween: 20,
-	});
-
-	productSwiper.on("slideChange", () => syncSwipers(productSwiper, productSwiper2, 1));
-	productSwiper2.on("click", () => syncSwipers(productSwiper, productSwiper2, 2));
-
-	productSwiperNextButton.addEventListener("click", () => {
-		productSwiper.slideNext();
-	});
-	productSwiperPrevButton.addEventListener("click", () => {
-		productSwiper.slidePrev();
-	});
+	createDoubleSwiper(
+		".productSwiper",
+		".productSwiper2",
+		"#productSwiperPrev",
+		"#productSwiperNext"
+	);
 
 	// About section swiper
 	const aboutSwiperPrevButton = document.getElementById("aboutSwiperPrev");
@@ -54,58 +66,62 @@ window.addEventListener("load", (e) => {
 		autoplay: true,
 		spaceBetween: 20,
 	});
-	aboutSwiperNextButton.addEventListener("click", () => {
-		aboutSwiper.slideNext();
-	});
-	aboutSwiperPrevButton.addEventListener("click", () => {
-		aboutSwiper.slidePrev();
-	});
+	if (aboutSwiperPrevButton && aboutSwiperNextButton) {
+		aboutSwiperNextButton.addEventListener("click", () => {
+			aboutSwiper.slideNext();
+		});
+		aboutSwiperPrevButton.addEventListener("click", () => {
+			aboutSwiper.slidePrev();
+		});
+	}
 
 	// Project1 section swiper
-	const projectSwiperPrevButton = document.getElementById("projectSwiperPrev");
-	const projectSwiperNextButton = document.getElementById("projectSwiperNext");
-	const projectSwiper11 = new Swiper(".projectSwiper11", {
-		autoplay: true,
-		spaceBetween: 20,
-	});
-	const projectSwiper12 = new Swiper(".projectSwiper12", {
-		slidesPerView: slidesPerView,
-		slideToClickedSlide: true,
-		spaceBetween: 20,
-	});
-
-	projectSwiper11.on("slideChange", () => syncSwipers(projectSwiper11, projectSwiper12, 1));
-	projectSwiper12.on("click", () => syncSwipers(projectSwiper11, projectSwiper12, 2));
-
-	projectSwiperNextButton.addEventListener("click", () => {
-		projectSwiper11.slideNext();
-	});
-	projectSwiperPrevButton.addEventListener("click", () => {
-		projectSwiper11.slidePrev();
-	});
+	createDoubleSwiper(
+		".projectSwiper11",
+		".projectSwiper12",
+		"#projectSwiperPrev",
+		"#projectSwiperNext"
+	);
 
 	// Project2 section swiper
-	const project2SwiperPrevButton = document.getElementById("project2SwiperPrev");
-	const project2SwiperNextButton = document.getElementById("project2SwiperNext");
-	const projectSwiper21 = new Swiper(".projectSwiper21", {
-		autoplay: true,
-		spaceBetween: 20,
-	});
-	const projectSwiper22 = new Swiper(".projectSwiper22", {
-		slidesPerView: slidesPerView,
-		slideToClickedSlide: true,
-		spaceBetween: 20,
-	});
+	createDoubleSwiper(
+		".projectSwiper21",
+		".projectSwiper22",
+		"#project2SwiperPrev",
+		"#project2SwiperNext"
+	);
 
-	projectSwiper21.on("slideChange", () => syncSwipers(projectSwiper21, projectSwiper22, 1));
-	projectSwiper22.on("click", () => syncSwipers(projectSwiper21, projectSwiper22, 2));
+	// Complex swiper 1
+	createDoubleSwiper(
+		".complexSwiper11",
+		".complexSwiper12",
+		"#complexSwiper1Prev",
+		"#complexSwiper1Next"
+	);
 
-	project2SwiperNextButton.addEventListener("click", () => {
-		projectSwiper21.slideNext();
-	});
-	project2SwiperPrevButton.addEventListener("click", () => {
-		projectSwiper21.slidePrev();
-	});
+	// Complex swiper 2
+	createDoubleSwiper(
+		".complexSwiper21",
+		".complexSwiper22",
+		"#complexSwiper2Prev",
+		"#complexSwiper2Next"
+	);
+
+	// Complex swiper 3
+	createDoubleSwiper(
+		".complexSwiper31",
+		".complexSwiper32",
+		"#complexSwiper3Prev",
+		"#complexSwiper3Next"
+	);
+
+	// Complex swiper 4
+	createDoubleSwiper(
+		".complexSwiper41",
+		".complexSwiper42",
+		"#complexSwiper4Prev",
+		"#complexSwiper4Next"
+	);
 });
 
 // Advantages, Solutions
@@ -118,7 +134,7 @@ const swiper = new Swiper(".swiper", {
 const teamSwiper = new Swiper(".team-swiper", {
 	spaceBetween: 22,
 	slidesPerView: "auto",
-})
+});
 
 // Partners
 const partnersSwiper = new Swiper(".partnersSwiper", {
@@ -134,9 +150,11 @@ const groupSwiper = new Swiper(".groupSwiper", {
 	slidesPerView: 1,
 });
 
-groupSwiperPrev.addEventListener("click", () => {
-	groupSwiper.slidePrev();
-});
-groupSwiperNext.addEventListener("click", () => {
-	groupSwiper.slideNext();
-});
+if (groupSwiperPrev && groupSwiperNext) {
+	groupSwiperPrev.addEventListener("click", () => {
+		groupSwiper.slidePrev();
+	});
+	groupSwiperNext.addEventListener("click", () => {
+		groupSwiper.slideNext();
+	});
+}
