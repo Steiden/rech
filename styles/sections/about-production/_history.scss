@@ -1,16 +1,48 @@
 .about-production-history {
-	@include flex-direction($gap: 100px);
+	@include flex-direction;
+	@include fluid-property(gap, 60, 100);
 
 	background-color: var(--primary-alt-color);
 	padding-block: 112px;
 
 	&__main {
 		padding-block: 0;
+
+		@include mobile-l {
+			overflow: visible;
+			margin-bottom: 0;
+		}
+	}
+
+	&__card-container {
+		@include flex-direction($gap: 20px);
 	}
 
 	&__card,
 	.about-production-history-card {
-        max-height: 100%;
+		max-height: 100%;
+
+		&:hover {
+			background: 0;
+		}
+
+		@include mobile-l {
+			background: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		&__header {
+			background-color: var(--thirdy-color);
+			border-radius: 15px;
+		}
+
+		&__content {
+			background-color: var(--white-color);
+			border-radius: 20px;
+			padding: 35px 20px;
+			margin-top: 20px;
+		}
 
 		&__index {
 			background-color: rgba(90, 197, 239, 0.5);
@@ -19,15 +51,27 @@
 			width: 100%;
 		}
 
-        &__title {
-            @include fluid-text(22, 30);
-            line-height: 1;
-        }
+		&__line {
+			margin-bottom: 25px;
+		}
 
-        &__text {
-            @include fluid-text(14, 18);
-            @include fluid-property(line-height, 20, 25);
-            margin-top: 0;
-        }
+		&__title {
+			@include fluid-text(22, 30);
+			line-height: 1;
+
+			@include mobile-l {
+				color: var(--thirdy-alt-color) !important;
+			}
+		}
+
+		&__text {
+			@include fluid-text(14, 18);
+			@include fluid-property(line-height, 20, 25);
+			margin-top: 0;
+
+			@include mobile-l {
+				color: var(--thirdy-alt-color) !important;
+			}
+		}
 	}
 }
