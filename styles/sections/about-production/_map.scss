@@ -8,6 +8,10 @@
 
 	overflow: hidden;
 
+    @include tablet-l {
+        padding-block: 60px;
+    }
+
 	&__mask {
 		background-color: rgba(255, 255, 255, 0.46);
 
@@ -32,12 +36,20 @@
 	&__main {
 		@include flex-direction(row);
 		@include fluid-property(gap, 40, 145);
+
+        @include tablet-l {
+            flex-wrap: wrap;
+        }
 	}
 
 	&__about {
 		@include flex-direction;
 		justify-content: space-between;
 		width: 60%;
+
+        @include tablet-l {
+            width: 100%;
+        }
 	}
 
 	&__img-container {
@@ -62,6 +74,8 @@
 
 		@include mobile-l {
 			@include fluid-property(border-radius, 20, 30);
+
+            padding: 47px 26px;
 		}
 	}
 
@@ -81,6 +95,12 @@
         margin-bottom: 110px;
 
 		width: 40%;
+
+        @include tablet-l {
+            @include container;
+            width: 100%;
+            margin: 0;
+        }
 	}
 
 	&__list {
