@@ -6,8 +6,8 @@ module.exports = defineConfig({
 		rollupOptions: {
 			input: {
 				main: resolve(__dirname, "index.html"),
-				about: resolve(__dirname, "about-production/index.html"),
-				home: resolve(__dirname, "home/index.html"),
+				about: resolve(__dirname, "views/about-production.html"),
+				home: resolve(__dirname, "views/home.html"),
 			},
 		},
 	},
