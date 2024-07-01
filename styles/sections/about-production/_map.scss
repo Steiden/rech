@@ -1,0 +1,112 @@
+.about-production-map {
+	@include flex-direction;
+	@include fluid-property(gap, 40, 100);
+
+	background: url("/assets/img/background/bg-map-about.png") no-repeat center center / cover;
+	padding-top: 100px;
+	position: relative;
+
+	overflow: hidden;
+
+	&__mask {
+		background-color: rgba(255, 255, 255, 0.46);
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		backdrop-filter: blur(10px);
+		z-index: 1;
+	}
+
+	&__header,
+	&__main {
+		z-index: 2;
+	}
+
+	&__header {
+	}
+
+	&__main {
+		@include flex-direction(row);
+		@include fluid-property(gap, 40, 145);
+	}
+
+	&__about {
+		@include flex-direction;
+		justify-content: space-between;
+		width: 60%;
+	}
+
+	&__img-container {
+        padding-right: 0;
+	}
+
+	&__img {
+	}
+
+	&__text-container {
+		@include container;
+		@include flex-direction;
+		@include fluid-property(gap, 30, 40);
+		@include fluid-property(border-radius, 20, 30);
+
+		background-color: rgba(0, 106, 171, 0.95);
+		border-bottom-right-radius: 0;
+
+		padding-top: 60px;
+		padding-right: 45px;
+		padding-bottom: 40px;
+
+		@include mobile-l {
+			@include fluid-property(border-radius, 20, 30);
+		}
+	}
+
+	&__title {
+		@include fluid-text(20, 32);
+        color: var(--white-color);
+	}
+
+	&__text {
+		@include fluid-text(16, 20);
+	}
+
+	&__points {
+        @include container;
+
+        padding-left: 0;
+        margin-bottom: 110px;
+
+		width: 40%;
+	}
+
+	&__list {
+		@include flex-direction($gap: 30px);
+	}
+
+	&__item {
+	}
+
+	&__point-container {
+		@include flex-direction(row, 35px);
+        align-items: center;
+	}
+
+	&__point-index {
+		@include fluid-scales(32, 32);
+		@include flex-center;
+
+		background-color: var(--thirdy-alt-color);
+		border-radius: 50%;
+
+		color: var(--white-color);
+		font-size: 16px;
+	}
+
+	&__point-text {
+		color: var(--primary-color);
+	}
+}
