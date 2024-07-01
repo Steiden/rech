@@ -3,6 +3,10 @@
 
 	position: relative;
 
+@include mobile-s {
+padding: 0;
+}
+
 	&__header {
 		@include flex-direction(row, 10px);
 		justify-content: space-between;
