@@ -114,6 +114,12 @@ const swiper = new Swiper(".swiper", {
 	slidesPerView: "auto",
 });
 
+// Team - about-production.html
+const teamSwiper = new Swiper(".team-swiper", {
+	spaceBetween: 22,
+	slidesPerView: "auto",
+})
+
 // Partners
 const partnersSwiper = new Swiper(".partnersSwiper", {
 	spaceBetween: 60,

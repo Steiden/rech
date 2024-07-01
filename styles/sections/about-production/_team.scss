@@ -1,0 +1,72 @@
+.about-production-team {
+	@include flex-direction;
+	@include fluid-property(gap, 160, 220);
+
+	&__header {
+		@include flex-direction(row, 10px);
+		justify-content: space-between;
+
+        @include tablet {
+            flex-wrap: wrap;
+        }
+	}
+
+	&__button {
+		padding-inline: 87px;
+        min-width: 360px;
+	}
+
+	&__content {
+		@include flex-direction(row, 22px);
+	}
+
+	&__swiper {
+		overflow: visible !important;
+	}
+
+	&__card {
+		@include flex-direction;
+		@include fluid-property(gap, 30, 37);
+
+		display: flex !important;
+
+		width: 100%;
+
+		@include tablet-l {
+			width: clamp(270px, #{calc(370 * 100 / 1920)}vw, 370px);
+		}
+	}
+
+	&__img-container {
+		background-color: var(--primary-alt-color);
+		border-radius: 30px;
+
+		height: clamp(240px, #{calc(330 * 100 / 1920)}vw, 330px);
+		width: clamp(270px, #{calc(370 * 100 / 1920)}vw, 370px);
+
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		bottom: 0;
+
+		height: clamp(340px, #{calc(470 * 100 / 1920)}vw, 470px);
+		width: clamp(270px, #{calc(370 * 100 / 1920)}vw, 370px);
+
+		object-fit: cover;
+	}
+
+	&__span,
+	&__title {
+		line-height: 1.5;
+	}
+
+	&__span {
+		@include fluid-text(13, 14);
+	}
+
+	&__title {
+		@include fluid-text(16, 18);
+	}
+}

@@ -1,19 +1,17 @@
 .about-production-solutions {
+	&__content {
+		position: relative;
+		overflow: hidden;
+	}
 
-    &__content {
-        position: relative;
-        overflow: hidden;
+	&__slider {
+		@include flex-direction(row, 45px);
+		max-width: 100%;
+		position: relative;
 
-    }
-
-    &__slider {
-        @include flex-direction(row, 45px);
-        max-width: 100%;
-        position: relative;
-
-        .slider__arrow {
-        }
-    }
+		.slider__arrow {
+		}
+	}
 
 	&__mask {
 		background: linear-gradient(89.84deg, rgba(0, 72, 117, 0.78) 0.12%, #004875 99.84%);
@@ -23,40 +21,42 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-        z-index: 5;
+		z-index: 5;
 	}
 
-    &__card {
-        @include flex-direction;
-        @include fluid-property(gap, 30, 60);
+	&__card {
+		@include fluid-property(border-radius, 15, 60);
+		@include flex-direction;
+		@include fluid-property(gap, 30, 60);
 
-        width: 100%;
-        height: 100%;
+		width: 100%;
+		height: 100%;
 
-        padding: 105px 150px;
-        z-index: 10;
-    }
+		padding: 105px 150px;
+		z-index: 10;
+		overflow: hidden;
+	}
 
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 
-    &__title,
-    &__text {
-        line-height: 1.3;
-        z-index: 10;
-        position: relative;
-    }
+	&__title,
+	&__text {
+		line-height: 1.3;
+		z-index: 10;
+		position: relative;
+	}
 
-    &__title {
-        @include fluid-text(22, 48);
-    }
+	&__title {
+		@include fluid-text(22, 48);
+	}
 
-    &__text {
-        @include fluid-text(18, 32);
-    }
+	&__text {
+		@include fluid-text(18, 32);
+	}
 }
