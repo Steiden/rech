@@ -23,7 +23,7 @@
 		@include fluid-property(border-radius, 5, 10);
 
 		& i::before {
-			font-size: clamp(7px, #{calc(14 * 100 / 1920)}vw, 14px);
+			font-size: clamp(8px, #{calc(14 * 100 / 1920)}vw, 14px);
 		}
 	}
 

@@ -29,11 +29,12 @@
 	}
 
 	&__link {
+        @include fluid-property(right, 25, 55);
+        @include fluid-property(bottom, 25, 55);
+
 		border: none;
 
 		position: absolute;
-		right: 55px;
-		bottom: 55px;
 
 		i::before {
 			font-size: 25px;

@@ -14,3 +14,18 @@
 	"sections/about-production/map", "sections/about-production/complex",
 	"sections/about-production/docs", "sections/about-production/politics",
 	"sections/about-production/footer";
+
+.link-container {
+	@include flex-direction($gap: 15px);
+
+	font-size: 25px;
+	padding: 25px;
+
+	a {
+		color: var(--white-color);
+		border: none;
+
+		&:hover {
+		}
+	}
+}
