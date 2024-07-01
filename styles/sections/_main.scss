@@ -3,7 +3,7 @@
 
 	background-color: var(--primary-color);
 	position: relative;
-	min-height: 100dvh;
+	min-height: 100vmax;
 
 	@include mobile-l {
 		gap: 60px;
