@@ -18,6 +18,15 @@
 		}
 	}
 
+	&--small {
+		@include fluid-scales(20, 32);
+		@include fluid-property(border-radius, 5, 10);
+
+		& i::before {
+			font-size: clamp(7px, #{calc(14 * 100 / 1920)}vw, 14px);
+		}
+	}
+
 	@include tablet {
 		width: clamp(32px, #{calc(40 * 100 / 768)}vw, 40px);
 		height: clamp(32px, #{calc(40 * 100 / 768)}vw, 40px);

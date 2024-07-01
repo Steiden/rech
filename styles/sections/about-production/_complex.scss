@@ -42,6 +42,7 @@
     &__title {
         @include fluid-text(18, 32);
         @include fluid-property(margin-block, 20, 40);
+        align-self: flex-start;
     }
 
     &__button-container {

@@ -1,0 +1,90 @@
+.about-production-politics {
+	@include flex-direction;
+	@include fluid-property(gap, 45, 100);
+
+	&__header {
+		@include flex-center;
+
+		justify-content: space-between;
+	}
+
+	&__main {
+		@include flex-direction;
+		@include fluid-property(gap, 12, 30);
+	}
+
+	&__accordion,
+	.about-production-politics-accordion {
+		&[open] {
+			.about-production-politics-accordion__icon {
+				&::before,
+				&::after {
+					background-color: var(--primary-color);
+					rotate: 180deg;
+				}
+			}
+		}
+
+		&__header {
+			@include flex-center(row, 10px);
+			@include fluid-property(border-radius, 20, 30);
+			@include fluid-property(min-height, 54, 120);
+			@include fluid-property(padding-inline, 30, 60);
+
+			background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
+			justify-content: space-between;
+		}
+
+		&__icon {
+			@include fluid-scales(32, 60);
+
+			background-color: var(--thirdy-color);
+			border-radius: 50%;
+
+			margin: 0;
+			position: relative;
+
+			&::before,
+			&::after {
+				@include fluid-property(width, 14, 24);
+				@include fluid-property(height, 2.5, 5);
+
+				content: "";
+
+				background-color: var(--thirdy-alt-color);
+				border-radius: 10px;
+
+				transition-duration: 0.3s;
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				translate: -50% -50%;
+			}
+
+			&::after {
+				rotate: 90deg;
+			}
+		}
+
+		&__content {
+			@include flex-direction;
+			@include fluid-property(gap, 20, 30);
+			@include fluid-property(padding-block, 30, 50);
+			@include fluid-property(padding-inline, 20, 60);
+		}
+	}
+
+	&__title {
+		@include fluid-text(14, 30);
+		line-height: 1;
+        text-wrap: wrap;
+	}
+
+	&__input-container {
+		@include flex-direction(row);
+		@include fluid-property(gap, 20, 35);
+
+		align-items: center;
+	}
+}

@@ -1,0 +1,35 @@
+.about-production-docs {
+	@include fluid-property(padding-block, 60, 120);
+	background-color: var(--primary-alt-color);
+
+	&__content {
+		@include flex-direction;
+		@include fluid-property(gap, 40, 90);
+	}
+
+	&__header {
+	}
+
+	&__main {
+		@include flex-direction(row, 40px);
+	}
+
+	&__img-container {
+		position: relative;
+	}
+
+	&__img {
+	}
+
+	&__link {
+		border: none;
+
+        position: absolute;
+        right: 55px;
+        bottom: 55px;
+
+		i::before {
+			font-size: 25px;
+		}
+	}
+}

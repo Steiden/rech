@@ -75,12 +75,18 @@
 	min-width: #{$max}px;
 	min-height: #{$max}px;
 
+	max-width: #{$max}px;
+	max-height: #{$max}px;
+
 	@include tablet {
 		width: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
 		height: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
 
 		min-width: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
 		min-height: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
+
+		max-width: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
+		max-height: clamp(#{$min}px, #{calc($max * 100 / 768)}vw, #{$max}px);
 	}
 
 	@include mobile-l {
@@ -89,6 +95,9 @@
 
 		min-width: #{$min}px;
 		min-height: #{$min}px;
+
+		max-width: #{$min}px;
+		max-height: #{$min}px;
 	}
 }
 

@@ -1,178 +1,63 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
-Fancybox.bind('[data-fancybox="aboutGallery"', {
-	hideScrollbar: false,
+const createGallery = (name) => {
+	Fancybox.bind(`[data-fancybox="${name}"`, {
+		hideScrollbar: false,
 
-	Toolbar: {
-		absolute: false,
-		display: {
-			left: [],
-			middle: [],
-			right: ["close"],
+		Toolbar: {
+			absolute: false,
+			display: {
+				left: [],
+				middle: [],
+				right: ["close"],
+			},
 		},
-	},
 
-	Thumbs: {
-		type: "classic",
-	},
-
-	Carousel: {
-		transition: "slide",
-
-		Navigation: {
-			prevTpl: `
-                    <i class="d_icon-quotation-left-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
-			nextTpl: `
-                    <i class="d_icon-quotation-right-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
+		Thumbs: {
+			type: "classic",
 		},
-	},
 
-	tpl: {
-		closeButton: `
-            <button class="f-button is-close-btn close-button" data-fancybox-close title="Закрыть" id="projectSwiperPrev">
-                <i class="d_icon d_icon-close close-button__icon"></i>
-            </button>
-        `,
-	},
-});
+		Carousel: {
+			transition: "slide",
 
-Fancybox.bind('[data-fancybox="productsGallery"', {
-	hideScrollbar: false,
-
-	Toolbar: {
-		absolute: false,
-		display: {
-			left: [],
-			middle: [],
-			right: ["close"],
+			Navigation: {
+				prevTpl: `
+						<i class="d_icon-quotation-left-red slider__arrow-icon"
+							><span class="path1"></span><span class="path2"></span
+							><span class="path3"></span
+						></i>
+				`,
+				nextTpl: `
+						<i class="d_icon-quotation-right-red slider__arrow-icon"
+							><span class="path1"></span><span class="path2"></span
+							><span class="path3"></span
+						></i>
+				`,
+			},
 		},
-	},
 
-	Thumbs: {
-		type: "classic",
-	},
-
-	Carousel: {
-		transition: "slide",
-
-		Navigation: {
-			prevTpl: `
-                    <i class="d_icon-quotation-left-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
-			nextTpl: `
-                    <i class="d_icon-quotation-right-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
+		tpl: {
+			closeButton: `
+				<button class="f-button is-close-btn close-button" data-fancybox-close title="Закрыть" id="projectSwiperPrev">
+					<i class="d_icon d_icon-close close-button__icon"></i>
+				</button>
+			`,
 		},
-	},
+	});
+};
 
-	tpl: {
-		closeButton: `
-            <button class="f-button is-close-btn close-button" data-fancybox-close title="Закрыть" id="projectSwiperPrev">
-                <i class="d_icon d_icon-close close-button__icon"></i>
-            </button>
-        `,
-	},
-});
+createGallery("aboutGallery");
 
-Fancybox.bind('[data-fancybox="projectsGallery1"', {
-	hideScrollbar: false,
+createGallery("productsGallery");
 
-	Toolbar: {
-		absolute: false,
-		display: {
-			left: [],
-			middle: [],
-			right: ["close"],
-		},
-	},
+createGallery("projectsGallery1");
 
-	Thumbs: {
-		type: "classic",
-	},
+createGallery("projectsGallery2");
 
-	Carousel: {
-		transition: "slide",
+createGallery("complexGallery1");
+createGallery("complexGallery2");
+createGallery("complexGallery3");
+createGallery("complexGallery4");
 
-		Navigation: {
-			prevTpl: `
-                    <i class="d_icon-quotation-left-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
-			nextTpl: `
-                    <i class="d_icon-quotation-right-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
-		},
-	},
-
-	tpl: {
-		closeButton: `
-            <button class="f-button is-close-btn close-button" data-fancybox-close title="Закрыть" id="projectSwiperPrev">
-                <i class="d_icon d_icon-close close-button__icon"></i>
-            </button>
-        `,
-	},
-});
-
-Fancybox.bind('[data-fancybox="projectsGallery2"', {
-	hideScrollbar: false,
-
-	Toolbar: {
-		absolute: false,
-		display: {
-			left: [],
-			middle: [],
-			right: ["close"],
-		},
-	},
-
-	Thumbs: {
-		type: "classic",
-	},
-
-	Carousel: {
-		transition: "slide",
-
-		Navigation: {
-			prevTpl: `
-                    <i class="d_icon-quotation-left-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
-			nextTpl: `
-                    <i class="d_icon-quotation-right-red slider__arrow-icon"
-                        ><span class="path1"></span><span class="path2"></span
-                        ><span class="path3"></span
-                    ></i>
-            `,
-		},
-	},
-
-	tpl: {
-		closeButton: `
-            <button class="f-button is-close-btn close-button" data-fancybox-close title="Закрыть" id="projectSwiperPrev">
-                <i class="d_icon d_icon-close close-button__icon"></i>
-            </button>
-        `,
-	},
-});
+createGallery("docsGallery");
