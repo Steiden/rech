@@ -1,39 +1,60 @@
 .about-production-about {
-    
+	@include mobile-l {
+		padding: 0;
+	}
+
 	&__content {
 		@include flex-direction($gap: 40px);
 
-		background-color: var(--thirdy-alt-color);
+		background-color: #034671;
 
 		padding: 60px 40px;
 		position: relative;
+
+		@include mobile-l {
+			padding-top: 220px;
+		}
 	}
 
 	&__img {
 		position: absolute;
 		top: 0;
-		right: 50px;
+		right: 0;
 
 		height: 100%;
 		width: fit-content;
 		object-fit: cover;
+
+		@include mobile-l {
+			top: 50px;
+			right: -150px;
+		}
 	}
 
 	&__title {
-		@include fluid-text(24, 70);
+		font-size: clamp(24px, #{calc(70 * 100 / 1920)}vw, 70px);
 		color: var(--thirdy-color);
 	}
 
 	&__text {
-		@include fluid-text(16, 48);
+		font-size: clamp(16px, #{calc(48 * 100 / 1920)}vw, 48px);
 	}
 
 	&__button-container {
 		@include flex-direction(row, 50px);
 		@include fluid-property(gap, 8, 50);
+
+		@include tablet-l {
+			gap: 8px;
+			flex-wrap: wrap-reverse;
+		}
 	}
 
 	&__button {
 		padding-inline: 40px;
+
+		@include mobile-l {
+			width: 100%;
+		}
 	}
 }

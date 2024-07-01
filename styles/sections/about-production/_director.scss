@@ -20,21 +20,42 @@
 	&__main {
 		@include flex-direction(row, 70px);
 		justify-content: space-between;
+
+		@include tablet-l {
+			gap: 0;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 
 	&__img {
-		height: 100%;
+		align-self: flex-end;
+
+		height: fit-content;
+		width: 50%;
+		object-fit: contain;
         translate: 0 120px;
+
+		@include tablet-l {
+			translate: 0;
+		}
 	}
 
 	&__content {
 		@include flex-direction($gap: 15px);
 		@include fluid-property(border-radius, 20, 30);
+		@include fluid-property(padding-block, 40, 60);
+		@include fluid-property(padding-inline, 48, 100);
 
 		background-color: var(--primary-alt-color);
 
-		padding: 60px 100px;
         height: fit-content;
+
+		width: 50%;
+
+		@include tablet-l {
+			width: 100%;
+		}
 	}
 
 	&__text {

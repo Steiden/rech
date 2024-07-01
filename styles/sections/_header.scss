@@ -11,12 +11,17 @@
 
 	&--white {
 		@include section-border-radius;
-		
+
 		background-color: var(--white-color);
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
 
 		padding-bottom: 22px;
+
+		@include tablet {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
 	}
 
 	@include tablet-l {
@@ -26,6 +31,9 @@
 
 		gap: 40px;
 		padding: 20px 50px;
+
+		position: fixed;
+		left: 0;
 
 		margin-top: 0;
 		top: 0;
