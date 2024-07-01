@@ -29,6 +29,7 @@
 		@include fluid-property(gap, 30, 37);
 
 		display: flex !important;
+        flex-shrink: 1 !important;
 
 		width: 100%;
 

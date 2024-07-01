@@ -4,73 +4,73 @@
 
 .hidden-desktop {
 	@include desktop {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .visible-desktop {
 	@include desktop-above {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .hidden-desktop-s {
 	@include desktop-s {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .visible-desktop-s {
 	@include desktop-s-above {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .hidden-tablet-l {
 	@include tablet-l {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .visible-tablet-l {
 	@include tablet-l-above {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .hidden-tablet {
 	@include tablet {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .visible-tablet {
 	@include tablet-above {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .hidden-tablet-s {
 	@include tablet-s {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .visible-tablet-s {
 	@include tablet-s-above {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .hidden-mobile-l {
 	@include mobile-l {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 
 .visible-mobile-l {
 	@include mobile-l-above {
-		@include visually-hidden;
+		display: none !important;
 	}
 }
 

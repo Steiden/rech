@@ -142,6 +142,12 @@ const partnersSwiper = new Swiper(".partnersSwiper", {
 	slidesPerView: 2,
 });
 
+// Docs - about-production.html
+const docsSwiper = new Swiper(".docs-swiper", {
+	spaceBetween: 40,
+	slidesPerView: "auto",
+});
+
 // Groups
 const groupSwiperPrev = document.getElementById("groupSwiperPrev");
 const groupSwiperNext = document.getElementById("groupSwiperNext");
