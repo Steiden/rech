@@ -95,7 +95,7 @@ $mobile-s: 240px;
 }
 
 @mixin mobile-l-horizontal {
-	@media screen and (orientation: landscape) {
+	@media (height <= $mobile-l) and (orientation: landscape) {
 		@content;
 	}
 }
