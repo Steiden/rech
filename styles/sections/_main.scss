@@ -34,6 +34,7 @@
 
 		gap: clamp(25px, #{calc(190 * 100 / 1920)}vw, 190px);
 
+		align-items: flex-start;
 		justify-content: flex-start;
 
 		border-top-left-radius: 0;
@@ -50,6 +51,10 @@
 		@include mobile-l {
 			@include flex-center;
 			justify-content: center;
+		}
+
+		@include mobile-l-horizontal {
+			min-height: 100dvh;
 		}
 	}
 
@@ -71,7 +76,7 @@
 		width: fit-content;
 
 		@include tablet-l {
-			margin-top: 100px;
+			margin-top: 150px;
 			position: static;
 		}
 
@@ -82,6 +87,7 @@
 		}
 
 		@include mobile-l-horizontal {
+			margin-top: 100px;
 			margin-inline: 25px;
 			margin-bottom: 25px;
 			max-height: 65dvh;
