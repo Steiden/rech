@@ -37,10 +37,14 @@
 
 		background: url("/assets/img/background/bg-main.png") no-repeat center center / cover;
 		position: relative;
-		min-height: 100dvh;
+		height: 100dvh;
 
 		@include tablet {
 			min-height: fit-content;
+		}
+
+		@include mobile-l {
+			@include flex-center;
 		}
 	}
 

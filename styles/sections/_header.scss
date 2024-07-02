@@ -25,12 +25,14 @@
 	}
 
 	@include tablet-l {
+		@include fluid-property(padding-inline, 20, 50);
+
 		border-end-start-radius: 20px;
 		border-end-end-radius: 20px;
 		background-color: var(--white-color);
 
 		gap: 40px;
-		padding: 20px 50px;
+		padding-block: 20px;
 
 		position: fixed;
 		left: 0;
@@ -71,8 +73,9 @@
 
 		@include tablet-l {
 			@include flex-center;
+			@include fluid-property(gap, 10, 26);
+
 			flex-direction: row;
-			gap: 26px;
 		}
 
 		@include tablet-s {
@@ -431,6 +434,9 @@
 		max-height: 100px;
 
 		&__img {
+			width: 100px;
+			height: 100px;
+			object-fit: contain;
 		}
 
 		&__text {
