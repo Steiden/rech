@@ -41,6 +41,10 @@
 		top: 0;
 		width: 100%;
 
+		@include mobile-l-horizontal {
+			padding-block: 10px;
+		}
+
 		a {
 			margin: 0;
 		}
@@ -398,7 +402,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		min-height: 55px;
+		// min-height: 55px;
 
 		font-size: clamp(14px, #{calc(100 * 18 / 480)}vw, 18px);
 		border-radius: $border-radius;

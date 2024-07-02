@@ -19,6 +19,10 @@
 		font-size: 14px;
 	}
 
+	@include mobile-l-horizontal {
+		height: 45px;
+	}
+
 	&--red {
 		background: linear-gradient(90deg, #ac262f 0%, #d12d23 100%);
 

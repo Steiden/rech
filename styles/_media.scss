@@ -94,6 +94,12 @@ $mobile-s: 240px;
 	}
 }
 
+@mixin mobile-l-horizontal {
+	@media screen and (orientation: landscape) {
+		@content;
+	}
+}
+
 @mixin mobile-above {
 	@media (width > $mobile) {
 		@content;

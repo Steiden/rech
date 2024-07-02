@@ -31,8 +31,9 @@
 		min-height: 70px;
 		max-height: 80px;
 
-		top: 100vmax;
-		translate: 0 -100%;
+		top: auto;
+		bottom: env(safe-area-inset-bottom);
+		translate: 0;
 
 		padding: 7px 10px 4px;
 
