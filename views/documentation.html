@@ -7,6 +7,30 @@
 		<link rel="stylesheet" href="../styles/style.scss" />
 	</head>
 	<body>
+		<div class="actions" id="actions">
+			<button class="actions__close hidden-mobile-l" id="closeActions">
+				<i class="d_icon d_icon-close"></i>
+			</button>
+			<div class="actions__button-container">
+				<button class="actions__button">
+					<i class="d_icon d_icon-calculator"></i>
+					<p class="actions__text">Запросы на<br />расчет</p>
+				</button>
+				<button class="actions__button actions__button--dark" id="callbackModalOpenButton">
+					<i class="d_icon d_icon-telephone"></i>
+					<p class="actions__text">Обратный<br />звонок</p>
+				</button>
+				<button class="actions__button">
+					<i class="d_icon d_icon-whatsapp"></i>
+					<p class="actions__text">Написать в<br />WhatsApp</p>
+				</button>
+				<button class="actions__button hidden-mobile-l">
+					<i class="d_icon d_icon-telegram"></i>
+					<p class="actions__text">Телеграмм<br />канал РЭЩ</p>
+				</button>
+			</div>
+		</div>
+		
 		<header class="container header header--white" id="header">
 			<div class="space-between header__top hidden-tablet-l">
 				<a href="/" class="header__logo-link hidden-desktop"
