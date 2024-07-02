@@ -113,6 +113,10 @@
 	}
 }
 
+@mixin adaptive-property($property, $min, $max) {
+	#{$property}: clamp(#{$min}px, #{calc($max * 100 / 1920)}vw, #{$max}px);
+}
+
 @mixin grid($rows, $columns, $gap) {
 	display: grid;
 	grid-template: $rows / $columns;
@@ -147,5 +151,11 @@
 @mixin hidden {
 	visibility: hidden;
 	opacity: 0;
+	transition-duration: .3s;
+}
+
+@mixin visible {
+	visibility: visible;
+	opacity: 1;
 	transition-duration: .3s;
 }

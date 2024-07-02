@@ -1,47 +1,32 @@
+const createModal = (modalSelector, openButtonsSelector, closeButtonsSelector) => {
+	const modal = document.querySelector(modalSelector);
+	const openButtons = document.querySelectorAll(openButtonsSelector);
+	const closeButtons = document.querySelectorAll(closeButtonsSelector);
+
+	openButtons.forEach((button) => {
+		button.addEventListener("click", () => {
+			modal.classList.add("modal__overlay--show");
+			document.body.style.overflow = "hidden";
+		});
+	});
+
+	closeButtons.forEach((button) => {
+		button.addEventListener("click", () => {
+			modal.classList.remove("modal__overlay--show");
+			document.body.style.overflow = "auto";
+		});
+	});
+};
+
+
 // Calc modal
-const calcModal = document.getElementById("calcModal");
-const calcModalCloseButtons = document.querySelectorAll(".calcModalCloseButton");
-const calcModalOpenButton = document.getElementById("calcModalOpenButton");
-
-calcModalOpenButton.addEventListener("click", () => {
-	calcModal.classList.add("modal__overlay--show");
-	document.body.style.overflow = "hidden";
-});
-calcModalCloseButtons.forEach((button) => {
-	button.addEventListener("click", () => {
-		calcModal.classList.remove("modal__overlay--show");
-		document.body.style.overflow = "auto";
-	});
-});
+createModal("#calcModal", "#calcModalOpenButton", ".calcModalCloseButton");
 
 // Callback modal
-const callbackModal = document.getElementById("callbackModal");
-const callbackModalCloseButtons = document.querySelectorAll(".callbackModalCloseButton");
-const callbackModalOpenButton = document.getElementById("callbackModalOpenButton");
+createModal("#callbackModal", "#callbackModalOpenButton", ".callbackModalCloseButton");
 
-callbackModalOpenButton.addEventListener("click", () => {
-	callbackModal.classList.add("modal__overlay--show");
-	document.body.style.overflow = "hidden";
-});
-callbackModalCloseButtons.forEach((button) => {
-	button.addEventListener("click", () => {
-		callbackModal.classList.remove("modal__overlay--show");
-		document.body.style.overflow = "auto";
-	});
-});
+// Question modal
+createModal("#questionModal", "#questionModalOpenButton", ".questionModalCloseButton");
 
-// Callback modal
-const questionModal = document.getElementById("questionModal");
-const questionModalCloseButtons = document.querySelectorAll(".questionModalCloseButton");
-const questionModalOpenButton = document.getElementById("questionModalOpenButton");
-
-questionModalOpenButton.addEventListener("click", () => {
-	questionModal.classList.add("modal__overlay--show");
-	document.body.style.overflow = "hidden";
-});
-questionModalCloseButtons.forEach((button) => {
-	button.addEventListener("click", () => {
-		questionModal.classList.remove("modal__overlay--show");
-		document.body.style.overflow = "auto";
-	});
-});
+// Thanks
+createModal("#thanksModal", "#openThanksModal", '[data-modal="closeThanksModal"');

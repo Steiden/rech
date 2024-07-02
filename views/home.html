@@ -232,7 +232,7 @@
 								<div class="input__wrapper header__search-input">
 									<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
 								</div>
-								<button class="my-button my-button--red header__button">
+								<button class="my-button my-button--red header__button" id="openThanksModal">
 									Получить КП под ваш запрос
 									<i class="d_icon d_icon-arrow-diagonal"></i>
 								</button>
@@ -276,6 +276,7 @@
 								<button
 									class="my-button my-button--red header__button main-content__button"
 									tag="form"
+									id="openThanksModal"
 								>
 									Получить КП под ваш запрос
 									<i class="d_icon d_icon-arrow-diagonal"></i>
@@ -1549,7 +1550,11 @@
 
 		<!-- Calc modal -->
 		<div class="modal__overlay" id="calcModal">
-			<button type="button" class="modal__close hidden-tablet calcModalCloseButton">
+			<button
+				type="button"
+				class="modal__close hidden-tablet calcModalCloseButton"
+				data-modal="close"
+			>
 				<i class="d_icon d_icon-close"></i>
 			</button>
 
@@ -1704,6 +1709,14 @@
 					</button>
 				</div>
 			</form>
+		</div>
+
+		<!-- Thanks -->
+		<div class="thanks__overlay modal__overlay" id="thanksModal" data-modal="closeThanksModal">
+			<div class="thanks modal" data-modal="closeThanksModal">
+				<span class="h2 thanks__title">СПАСИБО ЗА ОБРАЩЕНИЕ В НАШУ КОМПАНИЮ!</span>
+				<p class="thanks__text">МЫ СКОРО СВЯЖЕМСЯ С ВАМИ!</p>
+			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
