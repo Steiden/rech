@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>РЭЩ | Документация</title>
+		<link rel="stylesheet" href="../styles/style.scss" />
+	</head>
+	<body>
+		<header class="container header header--white" id="header">
+			<div class="space-between header__top hidden-tablet-l">
+				<a href="/" class="header__logo-link hidden-desktop"
+					><img src="/assets/img/logo.png" alt="logo" class="header__logo"
+				/></a>
+				<a href="/" class="header__logo-link visible-desktop"
+					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+				/></a>
+				<div class="input__wrapper header__search-input">
+					<input type="text" placeholder="Поиск по сайту" class="input" />
+					<div class="input__button-wrapper">
+						<button class="input__button">
+							<i class="d_icon d_icon-search"></i>
+						</button>
+					</div>
+				</div>
+				<div class="header__location">
+					<div class="header__location-title">
+						<i class="d_icon d_icon-mark d_icon--red"></i>
+						<span class="header__text">ПРОИЗВОДСТВО:</span>
+					</div>
+					<a
+						href="https://yandex.ru/maps/geo/rybinsk/53057096/?ll=38.819432%2C58.063320&z=12.41"
+						class="header__text header__text--big"
+						>Ярославская обл. г. Рыбинск</a
+					>
+				</div>
+				<div class="header__contacts">
+					<a href="tel:89611561186" class="header__text header__text--telephone"
+						>8 (961) 156-11-86</a
+					>
+					<p class="header__text">пн-пт 08:00 - 17:00</p>
+				</div>
+			</div>
+			<div class="space-between header__menu hidden-tablet-l">
+				<div class="hidden-tablet-l" id="desktopCatalogButton">
+					<button class="my-button my-button--blue header__catalog-button">
+						Каталог
+						<i class="d_icon d_icon-menu catalog-button__icon"></i>
+					</button>
+					<!-- Каталог -->
+					<div class="header__catalog catalog" id="catalog">
+						<button class="catalog__item">
+							<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+							<p class="catalog__text">Комплектные трансформаторные подстанции</p>
+						</button>
+						<button class="catalog__item">
+							<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+							<p class="catalog__text">Комплектные распределительные устройства</p>
+						</button>
+						<button class="catalog__item">
+							<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+							<p class="catalog__text">Низковольтные комплекттные устройства</p>
+						</button>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">Главная</a>
+						</li>
+						<li class="header__nav-item">
+							<div class="" id="servicesButton">
+								<button class="header__nav-link">Услуги</button>
+								<ul class="services" id="services">
+									<li class="services__item">
+										<a href="/services/1" class="services__link">Инжиниринговый центр</a>
+									</li>
+									<li class="services__item">
+										<a href="/services/2" class="services__link">Электролаборатория</a>
+									</li>
+									<li class="services__item">
+										<a href="/services/3" class="services__link">Лизинг оборудования</a>
+									</li>
+									<li class="services__item">
+										<a href="/services/4" class="services__link">Услуги металлообработки</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="header__nav-item">
+							<a href="/projects" class="header__nav-link">Проекты</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/documentation" class="header__nav-link">Документация</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/about" class="header__nav-link">О предприятии</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/partners" class="header__nav-link">Сотрудничество</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/contacts" class="header__nav-link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__top visible-tablet-l">
+				<a href="/" class="header__logo-link"
+					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+				/></a>
+				<div class="header__contacts hidden-mobile-l">
+					<a href="tel:89611561186" class="header__text header__text--telephone"
+						>8 (961) 156-11-86</a
+					>
+					<p class="header__text">пн-пт 08:00 - 17:00</p>
+				</div>
+				<button
+					class="my-button my-button--blue header__catalog-button catalog-button visible-tablet-l"
+					id="catalogButton"
+				>
+					<i class="d_icon d_icon-menu catalog-button__icon"></i>
+				</button>
+				<button class="header__close-button close-button visible-tablet-l" id="closeCatalogButton">
+					<i class="d_icon d_icon-close close-button__icon"></i>
+				</button>
+			</div>
+			<div class="space-between header__menu visible-tablet-l" id="headerMenu">
+				<details class="header__accordion accordion">
+					<summary class="accordion__title">
+						<p class="accordion__text">Каталог</p>
+						<i class="d_icon d_icon-close accordion__icon"></i>
+					</summary>
+					<div class="block-container">
+						<button class="block">
+							<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+							<p class="block__text">Комплектные трансформаторные подстанции</p>
+						</button>
+						<button class="block">
+							<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+							<p class="block__text">Комплектные трансформаторные подстанции</p>
+						</button>
+						<button class="block">
+							<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+							<p class="block__text">Комплектные трансформаторные подстанции</p>
+						</button>
+					</div>
+				</details>
+				<hr class="header__line" />
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">Главная</a>
+						</li>
+						<li class="header__nav-item">
+							<details class="header__accordion accordion">
+								<summary class="accordion__title">
+									<p class="accordion__text">Услуги</p>
+									<i class="d_icon d_icon-close accordion__icon"></i>
+								</summary>
+								<div class="service-container">
+									<a href="/services/1" class="header__nav-link">Название услуги 1</a>
+									<a href="/services/2" class="header__nav-link">Название услуги 2</a>
+									<a href="/services/3" class="header__nav-link">Название услуги 3</a>
+								</div>
+							</details>
+						</li>
+						<li class="header__nav-item">
+							<a href="/projects" class="header__nav-link">Проекты</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/documentation" class="header__nav-link">Документация</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/about" class="header__nav-link">О предприятии</a>
+						</li>
+						<li class="header__nav-item">
+							<details class="header__accordion accordion">
+								<summary class="accordion__title accordion__title--sub">
+									<p class="accordion__text">Сотрудничество</p>
+									<i class="d_icon d_icon-close accordion__icon"></i>
+								</summary>
+								<div class="service-container">
+									<a href="/services/1" class="header__nav-link">Название услуги 1</a>
+									<a href="/services/2" class="header__nav-link">Название услуги 2</a>
+									<a href="/services/3" class="header__nav-link">Название услуги 3</a>
+								</div>
+							</details>
+						</li>
+						<li class="header__nav-item">
+							<a href="/contacts" class="header__nav-link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<hr class="header__line" />
+				<button class="my-button my-button--blue header__menu-button">
+					Перейти на наш тг канал
+					<i class="d_icon d_icon-telegram"></i>
+				</button>
+				<div class="header__button-container">
+					<div class="input__wrapper header__search-input">
+						<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
+					</div>
+					<button class="my-button my-button--red header__button">
+						Получить КП под ваш запрос
+						<i class="d_icon d_icon-arrow-diagonal"></i>
+					</button>
+					<p class="header__text">
+						Нажимая на кнопку, вы соглашаетесь с
+						<span class="header__text header__text--red"
+							>политикой по обработке персональных данных</span
+						>
+					</p>
+				</div>
+			</div>
+		</header>
+		<main class="main documentation-main">
+			<section class="container documentation-main__about documentation-main-about">
+				<div class="documentation-main-about__content">
+					<span class="h1 documentation-main-about__title">ДОКУМЕНТАЦИЯ</span>
+					<p class="documentation-main-about__text">ПОДЗАГОЛОВОК</p>
+				</div>
+			</section>
+
+			<section
+				class="container about-production-politics documentation-main__documents documentation-main-documents"
+			>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>В ПРОИЗВОДСТВЕ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+								<i class="info-icon documentation-main-documents-accordion-card__info-icon">
+									<ul class="info-icon__hint documentation-main-documents-accordion-card__list">
+										<li class="documentation-main-documents-accordion-card__item">DWG (2.4 мб)</li>
+										<li class="documentation-main-documents-accordion-card__item">PDF (2.4 мб)</li>
+										<li class="documentation-main-documents-accordion-card__item">CDW (2.4 мб)</li>
+									</ul>
+								</i>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>АЛЬБОМЫ ТИПОВЫХ РЕШЕНИЙ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>РУКОВОДСТВА ПО ЭКСПЛУАТАЦИИ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>КАТАЛОГИ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>СЕРТИФИКАТЫ И ДЕКАЛАРАЦИИ НА ВЫПУСКАЕМУЮ ПРОДУКЦИЮ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>ДОКУМЕНТАЦИЯ ПО ЭЛЕКТРОЛАБОРАТОРИИ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>СВИДЕТЕЛЬСТВО О ВСТУПЛЕНИИ В СРО ПО ПРОЕКТИРОВАНИИ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>МЕЖДУНАРОДНЫЙ СЕРТИФИКАТ МЕНЕДЖМЕНТА КАЧЕСТВА</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>СВИДЕТЕЛЬСТВО НА ТОВАРНЫЙ ЗНАК</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+				<details
+					class="about-production-politics__accordion about-production-politics-accordion documentation-main-documents__accordion documentation-main-documents-accordion"
+				>
+					<summary class="about-production-politics-accordion__header">
+						<span
+							class="h3 blue about-production-politics__title documentation-main-documents-accordion__title"
+							>РЕФЕРЕНС-ЛИСТ</span
+						>
+						<i class="about-production-politics-accordion__icon"></i>
+					</summary>
+
+					<div class="documentation-main-documents-accordion__content">
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
+							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+					</div>
+				</details>
+			</section>
+		</main>
+		<footer class="footer about-production-footer">
+			<div class="footer__map">
+				<div id="ymap" class="footer__map-img">
+					<!-- <img src="/assets/img/map.png" alt="map" class="footer__map-img" /> -->
+				</div>
+
+				<button class="my-button my-button--blue footer__button">
+					Скачать схему проезда
+					<i class="d_icon d_icon-upload"></i>
+				</button>
+
+				<button class="footer__up-button hidden-mobile-l">
+					<i class="d_icon d_icon-arrow-diagonal"></i>
+				</button>
+			</div>
+			<div class="container footer__content">
+				<div class="footer__contacts contacts">
+					<div class="contacts__contact contact">
+						<i class="d_icon d_icon-telephone contact__icon"></i>
+						<div class="contact__content">
+							<p class="contact__text">пн-пт 08:00 - 17:00</p>
+							<p class="contact__text contact__text--large">8 (961) 156-11-86</p>
+							<div class="contact__link-container">
+								<a href="#" class="contact__link">Быстрая консультация</a>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="contact">
+						<i class="d_icon d_icon-mail contact__icon"></i>
+						<div class="contact__content">
+							<p class="contact__text">Email:</p>
+							<p class="contact__text">info@resh76.ru</p>
+						</div>
+					</div>
+					<div class="contact">
+						<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
+						<div class="contact__content">
+							<div class="contact__link-container contact__link-container--green">
+								<button id="questionModalOpenButton">
+									<a class="contact__link">Задать вопрос</a>
+								</button>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="contact">
+						<i class="d_icon d_icon-mark contact__icon"></i>
+						<div class="contact__content">
+							<p class="contact__text contact__text--large">ОФИС:</p>
+							<p class="contact__text">152914, Ярославская обл., г.<br />Рыбинск, ул.Толбухина 8</p>
+						</div>
+					</div>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<span class="h3 footer__subtitle">КАТАЛОГ</span>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Комплектные трансформаторные<br />подстанции</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Комплектные распределительные<br />устройства</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Низковольтное комплектные<br />устройства</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<span class="h3 footer__subtitle">ИНФОРМАЦИЯ:</span>
+						<li class="footer__item">
+							<a href="#" class="footer__link">О компании</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Сотрудничество</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Контакты</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Документация</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Вакансии</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="container footer__map-services">
+				<a href="#" class="footer__map-services-link">
+					<img
+						src="/assets/img/map-services/yandex.svg"
+						alt="yandex maps"
+						class="footer__map-service"
+					/>
+				</a>
+				<a href="" class="footer__map-services-link">
+					<img
+						src="/assets/img/map-services/google.svg"
+						alt="google maps"
+						class="footer__map-service"
+					/>
+				</a>
+				<a href="" class="footer__map-services-link">
+					<img
+						src="/assets/img/map-services/2gis.svg"
+						alt="2gis maps"
+						class="footer__map-service"
+					/>
+				</a>
+			</div>
+
+			<div class="container footer__privacy privacy">
+				<div class="privacy__content">
+					<img src="/assets/img/logo.png" alt="logo" class="hidden-mobile-l" />
+					<img src="/assets/img/logo-small.png" alt="logo" class="visible-mobile-l" />
+					<a href="#" class="footer__link privacy__link">Политика о конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+
+		<a href="#main" class="footer__up-button visible-mobile-l">
+			<i class="d_icon d_icon-arrow-diagonal"></i>
+		</a>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?apikey=9cc9371c-b0ef-422b-b0be-2b1d49e32386&lang=ru_RU"
+			type="text/javascript"
+		></script>
+		<script src="../js/script.js" type="module"></script>
+		<script src="../js/swipers.js" type="module"></script>
+		<script src="../js/ymap.js" type="module"></script>
+		<script src="../js/select.js" type="module"></script>
+		<script src="../js/fancybox.js" type="module"></script>
+		<script src="../js/modal.js" type="module"></script>
+	</body>
+</html>

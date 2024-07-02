@@ -26,9 +26,10 @@
 		}
 
 		&__header {
-			@include flex-center(row, 10px);
+			@include flex-center(row, 20px);
 			@include fluid-property(border-radius, 20, 30);
 			@include fluid-property(min-height, 54, 120);
+			@include fluid-property(padding-block, 11, 48);
 			@include fluid-property(padding-inline, 30, 60);
 
 			background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
@@ -78,7 +79,7 @@
 	&__title {
 		@include fluid-text(14, 30);
 		line-height: 1;
-        text-wrap: wrap;
+        word-break: break-all;
 	}
 
 	&__input-container {
