@@ -1,0 +1,56 @@
+.contacts-main-info {
+    @include mobile-l {
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    &__content {
+        @include flex-direction(row);
+        @include fluid-property(gap, 20, 35);
+
+        @include desktop {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card,
+    .contacts-main-info-card {
+        @include flex-direction($gap: 30px);
+        @include fluid-property(padding-block, 45, 35);
+        @include fluid-property(padding-inline, 50, 35);
+        @include fluid-property(border-radius, 20, 30);
+
+        background-color: #006AAB;
+        width: 100%;
+        max-width: 490px;
+
+        @include desktop-s {
+            max-width: 100%;
+        }
+
+        &__title {
+            @include fluid-text(24, 32);
+            line-height: 1;
+        }
+
+        &__content {
+            @include flex-direction;
+            @include fluid-property(gap, 15, 20);
+        }
+
+        &__text-container {
+            @include flex-direction(row, 30px);
+            align-items: center;
+        }
+
+        &__icon {
+            &::before {
+                color: #5AC5EF;
+            }
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+}

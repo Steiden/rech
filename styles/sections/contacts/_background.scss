@@ -1,0 +1,8 @@
+.contacts-main-background {
+    margin: 0;
+
+    &__content {
+        @include fluid-property(height, 152, 350);
+        background: url("/assets/img/background/bg-main.png") no-repeat center center / cover;
+    }
+}

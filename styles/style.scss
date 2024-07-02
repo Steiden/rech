@@ -3,6 +3,9 @@
 @import "ui/button", "ui/input", "ui/checkbox", "ui/slider", "ui/select", "ui/title", "ui/fancybox",
 	"ui/modal", "ui/input-checkbox", "ui/info-icon";
 
+@import "sections/header", "sections/main", "sections/footer", "sections/actions",
+	"sections/services", "sections/thanks";
+
 @import "sections/home/about", "sections/home/statistics", "sections/home/products",
 	"sections/home/map", "sections/home/projects", "sections/home/advantages",
 	"sections/home/employees", "sections/home/partners", "sections/home/person",
@@ -17,8 +20,8 @@
 
 @import "sections/documentation/about", "sections/documentation/documents";
 
-@import "sections/header", "sections/main", "sections/footer", "sections/actions",
-	"sections/services", "sections/thanks";
+@import "sections/contacts/contacts-main", "sections/contacts/about", "sections/contacts/background",
+	"sections/contacts/info", "sections/contacts/details";
 
 .link-container {
 	@include flex-direction($gap: 15px);
