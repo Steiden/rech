@@ -21,6 +21,13 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 	swiper2.slides[swiper1.activeIndex].classList.add("swiper-slide--active");
 };
 
+const createSwiper = (swiperSelector, gap, slidesPerView) => {
+	return new Swiper(swiperSelector, {
+		spaceBetween: gap,
+		slidesPerView: slidesPerView,
+	});
+};
+
 window.addEventListener("load", (e) => {
 	const slidesPerView = window.innerWidth <= 480 ? 3 : 4;
 
@@ -125,28 +132,18 @@ window.addEventListener("load", (e) => {
 });
 
 // Advantages, Solutions
-const swiper = new Swiper(".swiper", {
-	spaceBetween: 18,
-	slidesPerView: "auto",
-});
+createSwiper(".swiper", 18, "auto");
 
 // Team - about-production.html
-const teamSwiper = new Swiper(".team-swiper", {
-	spaceBetween: 22,
-	slidesPerView: "auto",
-});
+createSwiper(".team-swiper", 22, "auto");
 
 // Partners
-const partnersSwiper = new Swiper(".partnersSwiper", {
-	spaceBetween: 60,
-	slidesPerView: 2,
-});
+createSwiper(".partnersSwiper", 60, 2);
 
 // Docs - about-production.html
-const docsSwiper = new Swiper(".docs-swiper", {
-	spaceBetween: 40,
-	slidesPerView: "auto",
-});
+createSwiper(".docs-swiper", 40, "auto");
+
+createSwiper(".products-swiper", 30, "auto");
 
 // Groups
 const groupSwiperPrev = document.getElementById("groupSwiperPrev");

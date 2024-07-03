@@ -1,0 +1,63 @@
+.catalog-products {
+    overflow: hidden;
+
+	&__content {
+		@include grid(auto, repeat(4, 1fr), 40px);
+
+		@include desktop {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include desktop-s {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	&__card,
+	.catalog-products-card {
+		@include fluid-property(border-radius, 20, 30);
+		@include flex-direction;
+
+		background-color: var(--white-color);
+		overflow: hidden;
+
+		@include tablet-l {
+			@include fluid-property(max-width, 280, 355);
+		}
+
+		&__img {
+			width: 100%;
+			aspect-ratio: 1;
+		}
+
+		&__content {
+			@include flex-direction($gap: 30px);
+			@include fluid-property(padding-inline, 19, 24);
+			padding-block: 40px;
+		}
+
+		&__title {
+			@include fluid-text(20, 24);
+			color: var(--thirdy-alt-color);
+		}
+
+		&__text {
+			@include fluid-text(16, 18);
+			color: var(--primary-alt-color);
+		}
+
+		&__button {
+			@include fluid-property(padding-inline, 36, 58);
+			@include fluid-property(margin-top, 0, 10);
+			border-color: inherit;
+			color: var(--thirdy-alt-color);
+		}
+
+		&__icon {
+			&::before {
+				color: var(--link-hover-color);
+				font-size: 13px;
+			}
+		}
+	}
+}

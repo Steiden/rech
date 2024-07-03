@@ -1,0 +1,61 @@
+.catalog-album {
+	position: relative;
+
+	@include mobile-l {
+		padding: 0;
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		translate: 0 -50%;
+
+		height: 100%;
+		object-fit: contain;
+
+        @include mobile-l {
+            height: 40%;
+            top: 0;
+            translate: 0;
+        }
+	}
+
+	&__content {
+		@include flex-direction;
+		@include fluid-property(gap, 45, 50);
+		@include fluid-property(padding-block, 60, 85);
+		@include fluid-property(padding-inline, 50, 120);
+
+		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
+		position: relative;
+		overflow: hidden;
+
+		@include mobile-l {
+			background: linear-gradient(12.83deg, rgba(0, 72, 117, 0.78) 16.27%, #004875 97.77%);
+		}
+	}
+
+	&__title,
+	&__text,
+	&__button-container {
+		z-index: 2;
+	}
+
+	&__text {
+		@include fluid-text(20, 32);
+		color: var(--white-color);
+
+		&--small {
+			@include fluid-text(12, 13);
+		}
+	}
+
+	&__button-container {
+		@include fluid-property(margin-top, 0, 5);
+	}
+
+	&__link {
+		border: none;
+	}
+}

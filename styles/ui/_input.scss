@@ -25,6 +25,18 @@
 		@include mobile-l-horizontal {
 			height: 45px;
 		}
+
+		&--white {
+			border-color: var(--white-color);
+
+			.input {
+				color: var(--white-color);
+
+				&::placeholder {
+					color: inherit;
+				}
+			}
+		}
 	}
 
 	&__button-wrapper {

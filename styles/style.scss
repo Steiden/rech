@@ -23,6 +23,8 @@
 @import "sections/contacts/contacts-main", "sections/contacts/about", "sections/contacts/background",
 	"sections/contacts/info", "sections/contacts/details";
 
+@import "sections/catalog/about", "sections/catalog/products", "sections/catalog/album";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 
