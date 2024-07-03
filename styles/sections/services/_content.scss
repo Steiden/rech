@@ -1,0 +1,70 @@
+.services-content {
+	@include grid(auto, repeat(2, 1fr), 40px);
+	@include fluid-property(gap, 30, 40);
+
+	@include desktop-s {
+		grid-template-columns: 1fr;
+	}
+
+	&__card,
+	.services-content-card {
+		@include flex-direction(row);
+		@include fluid-property(border-radius, 20, 30);
+
+		overflow: hidden;
+
+		@include mobile-l {
+			flex-direction: column;
+		}
+
+		&__img {
+			width: 40%;
+			object-fit: cover;
+
+			@include mobile-l {
+				min-height: 260px;
+                width: 100%;
+			}
+		}
+
+		&__content {
+			@include flex-direction;
+			@include fluid-property(padding-top, 30, 50);
+			@include fluid-property(padding-inline, 20, 30);
+			@include fluid-property(gap, 30, 20);
+
+			background-color: var(--white-color);
+			padding-bottom: 40px;
+			width: 60%;
+
+            @include mobile-l {
+                width: 100%;
+            }
+		}
+
+		&__title {
+			@include fluid-text(20, 24);
+			color: var(--thirdy-alt-color);
+            word-break: break-all;
+		}
+
+		&__text {
+			@include fluid-text(16, 18);
+			color: var(--primary-alt-color);
+		}
+
+		&__button {
+			@include fluid-property(margin-top, 0, 20);
+			@include fluid-property(padding-inline, 15, 35);
+			border: 2px solid var(--thirdy-alt-color);
+			color: var(--thirdy-alt-color);
+			gap: 20px;
+
+			max-width: 280px;
+
+			i::before {
+				color: var(--link-hover-color);
+			}
+		}
+	}
+}

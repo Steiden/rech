@@ -25,6 +25,8 @@
 
 @import "sections/catalog/about", "sections/catalog/products", "sections/catalog/album";
 
+@import "sections/services/about", "sections/services/content", "sections/services/main";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 
