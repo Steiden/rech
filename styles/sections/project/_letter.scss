@@ -1,0 +1,40 @@
+.project-letter {
+    @include flex-direction(row);
+    @include fluid-property(gap, 50, 210);
+    @include fluid-property(padding-block, 60, 120);
+
+    background-color: var(--primary-alt-color);
+    align-items: center;
+
+    @include tablet-l {
+        flex-direction: column;
+    }
+
+    &__info-wrapper,
+    &__img {
+        width: 50%;
+
+        @include tablet-l {
+            width: 100%;
+        }
+    }
+
+	&__info {
+		border-right: none !important;
+        padding-right: 0 !important;
+
+		border-left: 2px solid #5ac5ef4d;
+        padding-left: 85px;
+
+        width: 100% !important;
+
+        @include mobile-l {
+            border: none !important;
+            padding: 0 !important;
+        }
+	}
+
+    &__img {
+
+    }
+}

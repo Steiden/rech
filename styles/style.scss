@@ -33,6 +33,8 @@
 
 @import "sections/projects/about", "sections/projects/list", "sections/projects/reference";
 
+@import "sections/project/card", "sections/project/letter", "sections/project/production";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 

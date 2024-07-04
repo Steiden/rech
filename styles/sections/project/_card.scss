@@ -1,0 +1,87 @@
+.project-card {
+    @include flex-direction;
+    @include fluid-property(gap, 25, 60);
+    margin-top: 60px;
+
+    @include tablet-l {
+        margin-top: 160px;
+    }
+
+    &__crumbs {
+        @include fluid-text(14, 24);
+        color: #5AC5EF80;
+
+        &--active {
+            color: var(--thirdy-color);
+        }
+    }
+
+    &__title {
+        @include fluid-text(24, 70);
+        line-height: 1.3;
+    }
+
+    &__content {
+        @include flex-direction;
+        @include fluid-property(gap, 40, 75);
+    }
+
+    &__card {
+        @include fluid-property(gap, 40, 90);
+    }
+
+    &__slider,
+    &__info {
+        width: 50%;
+
+        @include tablet-l {
+            width: 100%;
+        }
+    }
+
+    &__block {
+        @include flex-direction;
+        @include fluid-property(gap, 15, 60);
+        margin-top: 50px;
+
+        @include tablet-l {
+            margin-top: 0;
+        }
+    }
+
+    &__subtitle {
+        @include fluid-text(18, 32);
+        margin-top: 0;
+    }
+
+    &__text {
+        @include fluid-text(14, 24);
+        margin-top: 0;
+
+        &--big {
+            @include fluid-text(14, 26);
+        }
+
+        @include mobile-l {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__advantages {
+        @include flex-direction($gap: 20px);
+    }
+
+    &__input-container {
+        @include flex-direction(row, 20px);
+    }
+
+    &__button {
+        @include fluid-property(padding-inline, 30, 70);
+        width: fit-content;
+
+        @include mobile-l {
+            margin-top: 25px;
+            width: 100%;
+        }
+    }
+}
