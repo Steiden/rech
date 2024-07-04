@@ -12,9 +12,9 @@
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 
-        .select__icon {
-            rotate: 0deg;
-        }
+		.select__icon {
+			rotate: 0deg;
+		}
 
 		.select__list {
 			visibility: visible;
@@ -32,14 +32,14 @@
 	}
 
 	&__icon {
-        @include flex-center;
-		
-        rotate: 90deg;
-        transition-duration: .3s;
+		@include flex-center;
 
-        &::before {
-            font-size: 10px;
-        }
+		rotate: 90deg;
+		transition-duration: 0.3s;
+
+		&::before {
+			font-size: 10px;
+		}
 	}
 
 	&__list {
@@ -66,21 +66,21 @@
 	&__item {
 		background-color: #5ac5ef;
 		color: var(--primary-color);
-		
-		&:hover {
 
+		&:hover {
 			.select__button {
 				border-radius: $border-radius;
-				background-color: #1AA7E3;
+				background-color: #1aa7e3;
 			}
 		}
 	}
 
 	&__button {
+		color: var(--primary-color);
 		height: 57px;
 		width: 100%;
 		padding-inline: 25px;
 		text-align: left;
-		transition-duration: .3s;
+		transition-duration: 0.3s;
 	}
 }

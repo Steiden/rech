@@ -1,0 +1,82 @@
+.card-conditions {
+    @include flex-direction;
+
+	@include mobile-l {
+		padding: 0;
+	}
+
+	&__content {
+		@include flex-direction($gap: 40px);
+		@include fluid-property(padding-block, 60, 70);
+		@include fluid-property(padding-inline, 50, 90);
+
+		background: linear-gradient(270.72deg, rgba(0, 106, 171, 0.76) -3.62%, #004875 98.19%);
+        position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		translate: 0 -50%;
+
+        @include mobile-l {
+            top: 0;
+            translate: 0;
+        }
+	}
+
+	&__title {
+		@include fluid-property(margin-bottom, 0, 20);
+	}
+
+	&__list {
+		@include grid(auto, repeat(2, 1fr), 0px);
+		@include fluid-property(row-gap, 28, 65);
+		@include adaptive-property(column-gap, 0, 95);
+
+        @include tablet-l {
+            grid-template-columns: 1fr;
+        }
+	}
+
+	&__item {
+	}
+
+	&__card,
+	.card-conditions-card {
+        @include flex-direction(row, 30px);
+
+		&__icon {
+            @include flex-center;
+            @include fluid-scales(32, 80);
+            
+            border: 2px solid var(--thirdy-color);
+            border-radius: 50%;
+
+            &::before {
+                @include fluid-text(17, 40);
+                color: var(--white-color);
+            }
+		}
+
+		&__content {
+            @include flex-direction;
+            @include fluid-property(gap, 17, 23);
+		}
+
+		&__title {
+            @include fluid-text(18, 30);
+		}
+
+		&__text {
+
+            @include fluid-text(14, 18);
+		}
+	}
+
+	&__button {
+        @include fluid-property(padding-inline, 30, 40);
+        width: fit-content;
+	}
+}

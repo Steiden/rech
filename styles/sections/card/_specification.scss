@@ -1,0 +1,87 @@
+.card-specification {
+	&__text {
+		@include flex-direction;
+		@include fluid-property(gap, 20, 60);
+	}
+
+	&__title {
+		@include fluid-text(18, 36);
+		color: var(--thirdy-color);
+	}
+
+	&__text-container {
+		@include flex-direction($gap: 18px);
+	}
+
+	&__text {
+		@include fluid-text(16, 20);
+	}
+
+	&__table,
+	.card-specification-table {
+		border-collapse: separate;
+		border-spacing: 0;
+        border: none;
+		width: 100%;
+
+		&__container {
+			margin-top: 65px;
+
+			@include mobile-l {
+				padding: 0;
+			}
+		}
+
+        &__wrapper {
+            @include fluid-property(border-radius, 20, 30);
+            overflow: hidden;
+        }
+
+		&__row {
+			&:nth-child(odd) {
+				background-color: #eaf8fd;
+			}
+
+			&:nth-child(even) {
+				background-color: var(--white-color);
+			}
+		}
+
+		&__header {
+			.card-specification-table__row {
+				background-color: var(--thirdy-alt-color);
+			}
+		}
+
+		&__th,
+		&__cell {
+			@include fluid-property(padding-left, 50, 120);
+			padding-right: 10px;
+			text-align: left;
+		}
+
+		&__th {
+			@include fluid-text(16, 20);
+			@include fluid-property(padding-bottom, 22, 29);
+			font-weight: 700;
+			padding-top: 24px;
+		}
+
+		&__body {
+		}
+
+		&__cell {
+			@include fluid-text(14, 20);
+			@include fluid-property(padding-block, 20, 30);
+			color: var(--thirdy-alt-color);
+
+            &:nth-child(1) {
+                border-right: 1px solid var(--thirdy-alt-color);
+            }
+
+			&:nth-child(2) {
+				@include fluid-property(padding-left, 20, 120);
+			}
+		}
+	}
+}

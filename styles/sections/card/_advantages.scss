@@ -1,0 +1,60 @@
+.card-advantages {
+	@include grid(auto, 1fr, 40px);
+
+	&__card,
+	.card-advantages-card {
+		@include flex-direction;
+		@include fluid-property(gap, 30, 40);
+		@include fluid-property(padding-block, 60, 175);
+		@include fluid-property(padding-inline, 20, 70);
+		@include fluid-property(border-radius, 20, 30);
+
+		background-color: var(--primary-alt-color);
+		width: 100%;
+
+		overflow: hidden;
+		position: relative;
+
+		&__container {
+			@include flex-direction(row);
+			@include fluid-property(gap, 30, 40);
+
+			@include tablet-l {
+				flex-direction: column;
+			}
+		}
+
+		&__title,
+		&__text,
+		&__item {
+			color: var(--white-color);
+		}
+
+		&__title {
+			@include fluid-text(20, 32);
+		}
+
+		&__text {
+			@include fluid-text(16, 18);
+		}
+
+		&__img {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+		}
+
+		&__list {
+			@include flex-direction;
+			@include fluid-property(gap, 15, 20);
+			@include fluid-property(padding-left, 0, 12);
+			list-style-type: disc;
+		}
+
+		&__item {
+		}
+	}
+}

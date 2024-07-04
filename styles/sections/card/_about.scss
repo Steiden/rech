@@ -1,0 +1,51 @@
+.card-about {
+	@include mobile-l {
+		padding: 0;
+	}
+
+	&__content {
+		@include flex-direction(row);
+	}
+
+	&__inner {
+		@include flex-direction;
+		@include fluid-property(gap, 25, 60);
+	}
+
+    &__title {
+        font-weight: 700;
+    }
+
+	&__img {
+        object-fit: contain;
+
+		@include tablet-l {
+			position: static;
+			translate: 0;
+		}
+	}
+
+	&__span {
+		@include fluid-text(16, 36);
+	}
+
+	&__input {
+		min-width: 400px;
+
+        @include tablet {
+            min-width: 100%;
+        }
+	}
+
+	&__button {
+		@include fluid-property(padding-inline, 30, 35);
+
+        @include tablet {
+            width: 100%;
+        }
+	}
+
+	&__text {
+		color: var(--thirdy-alt-color);
+	}
+}

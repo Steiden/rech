@@ -35,10 +35,19 @@
 
 	&__categories-list {
 		@include flex-direction(row, 25px);
-		flex-wrap: wrap;
+
+		@include desktop {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__categories-item {
+		width: 100%;
+
+		@include desktop {
+			max-width: max-content;
+		}
+
 		&--active,
 		&:hover {
 			.products__categories-button {
@@ -63,6 +72,10 @@
 		height: 62px;
 		min-width: max-content;
 		width: 100%;
+
+		@include mobile-l {
+			min-width: fit-content;
+		}
 	}
 
 	&__content {

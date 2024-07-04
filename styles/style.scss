@@ -27,6 +27,10 @@
 
 @import "sections/services/about", "sections/services/content", "sections/services/main";
 
+@import "sections/card/about", "sections/card/conditions", "sections/card/equipment",
+	"sections/card/links", "sections/card/specification", "sections/card/advantages",
+	"sections/card/reasons", "sections/card/products";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 

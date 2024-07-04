@@ -1,0 +1,13 @@
+.card-reasons {
+
+    .card-reasons-card {
+        @include fluid-property(padding-bottom, 30, 70);
+        @include fluid-property(padding-top, 30, 35);
+        @include fluid-property(gap, 30, 35);
+    }
+
+    &__title {
+        @include fluid-text(22, 32);
+        line-height: 1;
+    }
+}

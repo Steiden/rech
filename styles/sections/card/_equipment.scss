@@ -1,0 +1,54 @@
+.card-equipment {
+	@include flex-direction;
+	@include fluid-property(gap, 60, 80);
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__accordion,
+	.card-equipment-accordion {
+		&__header {
+            @include fluid-property(padding-block, 10, 20);
+			min-height: auto;
+		}
+
+        &__content {
+            @include flex-direction(row);
+            @include fluid-property(padding-inline, 18, 65);
+            @include adaptive-property(gap, 0, 180);
+
+            @include tablet-l {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .card-equipment__point-container {
+            @include flex-direction($gap: 20px);
+        }
+
+        &__point,
+        .card-equipment-point {
+            @include flex-direction(row);
+            @include fluid-property(gap, 20, 35);
+            align-items: center;
+            
+            &__index {
+                @include flex-center;
+                @include fluid-scales(32, 42);
+                @include fluid-text(16, 24);
+
+                background-color: var(--thirdy-alt-color);
+                border-radius: 50%;
+
+                color: var(--white-color);
+                font-weight: 700;
+            }
+
+            &__text {
+                @include fluid-text(14, 18);
+            }
+        }
+	}
+}

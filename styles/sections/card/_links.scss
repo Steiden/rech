@@ -1,0 +1,87 @@
+.card-links {
+    @include mobile-l {
+        padding: 0;
+    }
+
+    &__content {
+        @include adaptive-property(padding-inline, 50, 165);
+
+        background-color: var(--primary-alt-color);
+
+        padding-block: 60px;
+    }
+
+    &__list {
+        @include flex-direction(row, 20px);
+        justify-content: space-between;
+        align-items: center;
+
+        @include desktop-s {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include tablet {
+            justify-content: flex-start;
+        }
+    }
+
+    &__item {
+        @include mobile-l {
+            width: 100%;
+        }
+    }
+
+    &__link-container {
+        @include flex-direction(row, 15px);
+        align-items: center;
+
+        @include mobile-l {
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        display: contents;
+
+        @include mobile-l {
+            @include flex-direction(row, 30px);
+        }
+    }
+
+    &__icon {
+        @include flex-center;
+        @include fluid-scales(32, 40);
+
+        border: 2px solid var(--thirdy-color);
+        border-radius: 50%;
+
+        &::before {
+            @include fluid-text(14, 17.5);
+            color: var(--white-color);
+        }
+
+        @include mobile-l {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        color: var(--white-color);
+        border: none;
+        text-decoration: underline dashed var(--thirdy-color);
+        text-underline-offset: 5px;
+
+        &:hover {
+            color: var(--white-color);
+            text-decoration-color: var(--link-hover-color);
+        }
+    }
+
+    &__link-icon {
+        &::before {
+            color: var(--thirdy-color);
+            font-size: 18px;
+        }
+    }
+}
