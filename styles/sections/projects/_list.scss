@@ -1,0 +1,84 @@
+.projects-list {
+	@include flex-center;
+	overflow: hidden;
+
+	@include mobile-l {
+		display: block;
+	}
+
+	&__inner {
+		@include fluid-property(gap, 30, 60);
+
+		@include mobile-l {
+			display: block;
+		}
+	}
+
+	&__card,
+	.projects-list-card {
+		@include tablet {
+			flex-direction: column !important;
+		}
+
+		@include mobile-l {
+			max-width: 80vw;
+		}
+
+		&__img {
+			@include tablet {
+				width: 100%;
+				max-height: 380px;
+			}
+		}
+
+		&__content {
+			@include tablet {
+				width: 100%;
+			}
+		}
+
+		&__button {
+			justify-content: center;
+		}
+	}
+
+	&__button {
+		@include fluid-property(margin-top, 60, 80);
+		@include fluid-property(padding-inline, 30, 60);
+		font-weight: 700;
+
+        @include mobile-l {
+            width: 100%;
+        };
+	}
+
+	&__button-icon {
+		@include flex-center;
+
+		background-color: var(--thirdy-color);
+		border-radius: 50%;
+
+		width: 20px;
+		height: 20px;
+
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			background-color: var(--white-color);
+
+			width: 10px;
+			height: 1.5px;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			translate: -50% -50%;
+		}
+
+		&::after {
+			rotate: 90deg;
+		}
+	}
+}

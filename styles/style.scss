@@ -1,7 +1,7 @@
 @import "reset", "fonts", "variables", "mixins", "media", "utils", "global", "uikit";
 
 @import "ui/button", "ui/input", "ui/checkbox", "ui/slider", "ui/select", "ui/title", "ui/fancybox",
-	"ui/modal", "ui/input-checkbox", "ui/info-icon";
+	"ui/modal", "ui/input-checkbox", "ui/info-icon", "ui/table", "ui/search-input";
 
 @import "sections/header", "sections/main", "sections/footer", "sections/actions",
 	"sections/services", "sections/thanks";
@@ -30,6 +30,8 @@
 @import "sections/card/about", "sections/card/conditions", "sections/card/equipment",
 	"sections/card/links", "sections/card/specification", "sections/card/advantages",
 	"sections/card/reasons", "sections/card/products";
+
+@import "sections/projects/about", "sections/projects/list", "sections/projects/reference";
 
 .link-container {
 	@include flex-direction($gap: 15px);

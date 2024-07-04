@@ -1,0 +1,39 @@
+.projects-reference {
+	@include fluid-property(padding-block, 50, 120);
+	background-color: var(--primary-alt-color);
+
+	&__table,
+	.table {
+		.table__header {
+			.table__row:nth-child(1) {
+				background-color: var(--white-color);
+				color: var(--thirdy-alt-color);
+			}
+		}
+
+		&__row {
+		}
+
+		&__th,
+		&__cell {
+			padding-left: 25px;
+
+			&:not(:nth-child(6)) {
+				border-right: 1px solid var(--thirdy-alt-color);
+			}
+		}
+
+		&__th {
+			&:nth-child(1n),
+			&:nth-child(3n) {
+				padding-right: 25px;
+			}
+		}
+
+		&__cell {
+			&:nth-child(6) {
+				padding-right: 50px;
+			}
+		}
+	}
+}
