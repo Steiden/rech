@@ -1,0 +1,37 @@
+.error-about {
+	&__content {
+		background: linear-gradient(270.72deg, rgba(0, 106, 171, 0.76) -3.62%, #004875 98.19%),
+			url("/assets/img/background/bg-contacts.png") no-repeat center center / cover;
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		right: 45px;
+		translate: 0 -50%;
+
+        height: 90%;
+        object-fit: contain;
+
+		@include mobile-l {
+			position: static;
+            translate: 0;
+		}
+	}
+
+    &__span,
+    &__text,
+    &__button {
+        z-index: 10;
+    }
+
+	&__button {
+		@include fluid-property(padding-inline, 30, 65);
+		width: fit-content;
+
+        @include mobile-l {
+            width: 100%;
+        }
+	}
+}

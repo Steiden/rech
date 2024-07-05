@@ -52,6 +52,8 @@
 @import "sections/career/director", "sections/career/reasons", "sections/career/history",
 	"sections/career/questions", "sections/career/job";
 
+@import "sections/404/about", "sections/404/main";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 
