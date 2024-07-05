@@ -1,0 +1,25 @@
+.electrolaboratory-questions {
+
+    &__accordion,
+    .accordion {
+
+        &__title {
+            color: var(--white-color);
+            word-break: normal;
+
+            @include tablet-l {
+                word-break: break-all;
+            }
+
+            @include mobile-l {
+                color: var(--thirdy-alt-color);
+            }
+        }
+
+        &__header {
+            @include fluid-property(min-height, 54, 100);
+            @include fluid-property(padding-block, 10, 40);
+            height: auto;
+        }
+    }
+}

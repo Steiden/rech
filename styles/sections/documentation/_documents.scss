@@ -3,8 +3,7 @@
     @include fluid-property(gap, 12, 30);
     @include fluid-property(margin-bottom, 30, 50);
 
-	&__accordion,
-	.documentation-main-documents-accordion {
+	.accordion {
 		@include flex-direction;
 
 		&__title {
@@ -16,6 +15,8 @@
 			@include fluid-property(gap, 20, 30);
 			@include fluid-property(margin-top, 30, 45);
             @include fluid-property(margin-bottom, 28, 30);
+
+            padding: 0;
 
             @include desktop-s {
                 grid-template-columns: repeat(3, 1fr);

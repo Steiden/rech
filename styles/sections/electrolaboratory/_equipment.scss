@@ -1,0 +1,60 @@
+.electrolaboratory-equipment {
+	@include flex-direction;
+	@include fluid-property(gap, 40, 80);
+    overflow: hidden;
+
+	&__main {
+		@include grid(auto, repeat(4, 1fr), 40px);
+
+		@include desktop {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include desktop-s {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include tablet {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__card-container {
+		display: contents;
+	}
+
+	&__card {
+		@include flex-direction;
+		@include fluid-property(gap, 40, 35);
+		@include fluid-property(border-radius, 20, 30);
+
+		background-color: var(--white-color);
+		overflow: hidden;
+	}
+
+	&__img {
+		border-radius: 20px;
+        width: 100%;
+	}
+
+	&__span {
+		@include fluid-text(20, 24);
+		@include fluid-property(margin-inline, 10, 24);
+
+		color: var(--thirdy-alt-color);
+		font-weight: 700;
+		margin-bottom: 36px;
+	}
+
+    &__slider {
+        .swiper-slide {
+            width: auto;
+        }
+    }
+
+    &__button {
+        @include mobile-l {
+            margin-top: 10px;
+        }
+    }
+}

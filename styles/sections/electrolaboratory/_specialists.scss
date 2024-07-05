@@ -1,0 +1,48 @@
+.electrolaboratory-specialists {
+    @include flex-direction;
+    @include fluid-property(gap, 40, 80);
+    overflow: hidden;
+ 
+    &__card-container {
+        @include flex-direction(row, 40px);
+    }
+
+    &__card {
+        @include flex-direction;
+        display: flex;
+
+        @include tablet-l {
+            max-width: 80%;
+        }
+    }
+
+    &__img {
+        @include fluid-property(border-radius, 20, 30);
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        @include flex-direction;
+        @include fluid-property(gap, 20, 40);
+        @include fluid-property(margin-top, 30, 60);
+    }
+
+    &__title-container {
+        @include flex-direction($gap: 5px);
+    }
+
+    &__span,
+    &__text {
+        text-transform: uppercase;
+    }
+
+    &__span {
+        @include fluid-text(12, 20);
+        color: var(--thirdy-color);
+    }
+
+    &__text {
+        @include fluid-text(13, 24);
+    }
+}

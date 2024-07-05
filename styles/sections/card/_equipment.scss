@@ -7,11 +7,12 @@
 	}
 
 	&__accordion,
-	.card-equipment-accordion {
-		&__header {
-            @include fluid-property(padding-block, 10, 20);
-			min-height: auto;
-		}
+    .accordion {
+
+        &__header {
+            @include fluid-property(padding-left, 30, 38);
+            @include fluid-property(padding-right, 30, 60);
+        }
 
         &__content {
             @include flex-direction(row);

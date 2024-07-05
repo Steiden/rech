@@ -1,0 +1,19 @@
+.electrolaboratory-differences {
+
+    &__card-container {
+        @include flex-direction(row);
+        @include adaptive-property(gap, 18, 40);
+    }
+
+    &__card {
+        width: 100% !important;
+        max-width: 90% !important;
+
+        flex-shrink: 1 !important;
+        flex-grow: 0 !important;
+
+        .h3 {
+            word-break: break-all;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.electrolaboratory-trials {
+    @include flex-direction;
+    @include fluid-property(gap, 40, 80);
+
+	&__main {
+		@include flex-direction(row);
+		@include fluid-property(gap, 20, 40);
+
+        @include tablet-l {
+            flex-direction: column;
+        }
+	}
+
+	&__accordion,
+	.accordion {
+        &__title {
+            color: var(--white-color);
+        }
+
+		&__content {
+			@include flex-direction;
+			@include fluid-property(gap, 20, 32);
+			@include fluid-property(padding-block, 30, 55);
+			@include fluid-property(padding-inline, 20, 45);
+			@include fluid-property(border-radius, 20, 30);
+
+			background-color: var(--white-color);
+            margin-top: 15px;
+		}
+
+        width: 100%;
+	}
+
+	&__text-container {
+		@include flex-direction(row);
+		@include fluid-property(gap, 20, 40);
+	}
+
+	&__icon {
+		@include flex-center;
+		@include fluid-scales(20, 24);
+		@include fluid-property(border-radius, 5, 10);
+
+		border: 2px solid var(--thirdy-color);
+		padding: 5px;
+
+		i {
+            display: flex;
+			&::before {
+				@include fluid-text(9, 12);
+				color: var(--thirdy-color);
+			}
+		}
+	}
+
+	&__text {
+		@include fluid-text(14, 24);
+		color: var(--thirdy-color);
+	}
+}

@@ -1,7 +1,7 @@
 @import "reset", "fonts", "variables", "mixins", "media", "utils", "global", "uikit";
 
 @import "ui/button", "ui/input", "ui/checkbox", "ui/slider", "ui/select", "ui/title", "ui/fancybox",
-	"ui/modal", "ui/input-checkbox", "ui/info-icon", "ui/table", "ui/search-input";
+	"ui/modal", "ui/input-checkbox", "ui/info-icon", "ui/table", "ui/search-input", "ui/accordion";
 
 @import "sections/header", "sections/main", "sections/footer", "sections/actions",
 	"sections/services", "sections/thanks";
@@ -34,6 +34,12 @@
 @import "sections/projects/about", "sections/projects/list", "sections/projects/reference";
 
 @import "sections/project/card", "sections/project/letter", "sections/project/production";
+
+@import "sections/electrolaboratory/about", "sections/electrolaboratory/director",
+	"sections/electrolaboratory/info", "sections/electrolaboratory/specialists",
+	"sections/electrolaboratory/differences", "sections/electrolaboratory/trials",
+	"sections/electrolaboratory/equipment", "sections/electrolaboratory/questions",
+	"sections/electrolaboratory/order";
 
 .link-container {
 	@include flex-direction($gap: 15px);
