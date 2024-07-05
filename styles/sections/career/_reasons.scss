@@ -1,0 +1,17 @@
+.career-reasons {
+	@include fluid-property(padding-top, 60, 120);
+	@include fluid-property(padding-bottom, 0, 160);
+    background-color: var(--primary-alt-color);
+
+    @include mobile-l {
+        background-color: transparent;
+    }
+
+	&__card-container {
+		@include grid(auto, repeat(3, 1fr), 40px);
+
+        @include desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+	}
+}

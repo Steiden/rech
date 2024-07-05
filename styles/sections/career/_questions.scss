@@ -1,0 +1,29 @@
+.career-questions {
+
+    &__content {
+        @include flex-direction;
+        @include fluid-property(gap, 30, 60);
+    }
+
+    &__block {
+        @include flex-direction;
+        @include fluid-property(gap, 20, 30);
+    }
+    
+    &__text {
+        @include fluid-text(16, 24);
+
+        @include mobile-l {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__accordion,
+    .accordion {
+        &__title {
+            @include mobile-l {
+                color: var(--white-color);
+            }
+        }
+    }
+}

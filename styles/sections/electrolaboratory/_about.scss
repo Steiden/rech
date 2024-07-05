@@ -1,6 +1,10 @@
 .electrolaboratory-about {
     @include fluid-property(margin-top, 0, 70);
 
+    @include tablet-l {
+        margin-top: 160px;
+    }
+
     @include mobile-l {
         padding: 0;
     }
@@ -25,7 +29,7 @@
         color: var(--thirdy-color) !important;
 
         &::placeholder {
-            color: inhert;
+            color: inherit;
         }
     }
 

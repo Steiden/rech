@@ -49,6 +49,9 @@
 @import "sections/partners/about", "sections/partners/director", "sections/partners/letter",
 	"sections/partners/factors", "sections/partners/sertificate", "sections/partners/help";
 
+@import "sections/career/director", "sections/career/reasons", "sections/career/history",
+	"sections/career/questions", "sections/career/job";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 

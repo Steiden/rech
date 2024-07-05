@@ -1,0 +1,26 @@
+.career-job {
+	&__content {
+		gap: 30px;
+
+		background: linear-gradient(90deg, #01629d 0%, rgba(0, 0, 0, 0) 100%),
+			url("/assets/img/background/bg-main-transparent.png") no-repeat center center / cover;
+	}
+
+	&__title {
+		@include fluid-text(20, 32);
+		color: var(--white-color);
+	}
+
+	&__span {
+		@include fluid-text(18, 24);
+	}
+
+	&__button-container {
+        @include fluid-property(gap, 12, 40);
+		margin-top: 10px;
+	}
+
+	&__send-button {
+		@include fluid-property(padding-inline, 32, 85);
+	}
+}
