@@ -32,6 +32,7 @@
 
 	&__text {
 		@include fluid-text(16, 32);
+		word-break: break-all;
 
 		&--small {
 			@include fluid-text(16, 24);

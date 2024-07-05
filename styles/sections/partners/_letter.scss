@@ -1,0 +1,12 @@
+.partners-letter {
+    @include adaptive-property(gap, 50, 100);
+    padding-block: 0;
+    background-color: transparent;
+
+    &__info {
+        @include tablet-l {
+            padding: 0;
+            border: none;
+        }
+    }
+}

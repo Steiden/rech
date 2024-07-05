@@ -1,0 +1,24 @@
+.partners-help {
+    margin-top: 0;
+    
+	&__content {
+		background: linear-gradient(270.72deg, rgba(0, 106, 171, 0.76) -3.62%, #004875 98.19%),
+			url("/assets/img/background/bg-partners3.png") no-repeat right center / cover;
+	}
+
+	&__text {
+		@include fluid-text(18, 24);
+	}
+
+	&__text-container {
+		@include flex-direction;
+		@include fluid-property(gap, 10, 15);
+	}
+
+	&__list {
+		list-style-type: disc !important;
+		color: var(--white-color);
+
+		margin-left: 15px;
+	}
+}

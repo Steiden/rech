@@ -1,0 +1,16 @@
+.partners-sertificate {
+    @include flex-direction;
+    @include fluid-property(gap, 40, 80);
+    overflow: hidden;
+
+    &__button {
+        @include fluid-property(padding-inline, 35, 62);
+    }
+
+    &__img-container {
+        @include grid(auto, repeat(3, 1fr), 40px);
+    }
+
+    &__img {
+    }
+}

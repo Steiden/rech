@@ -1,0 +1,18 @@
+.partners-about {
+    margin-top: 70px;
+
+    @include tablet-l {
+        margin-top: 160px;
+    }
+
+    @include mobile-l {
+        margin: 0;
+    }
+
+	&__content {
+        @include fluid-property(padding-inline, 50, 120);
+
+		background: linear-gradient(270.72deg, rgba(0, 106, 171, 0.76) -3.62%, #004875 98.19%),
+			url("/assets/img/background/bg-partners.png") no-repeat right center / cover;
+	}
+}

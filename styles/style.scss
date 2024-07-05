@@ -46,6 +46,9 @@
 	"sections/engineering-center/bg", "sections/engineering-center/advantages",
 	"sections/engineering-center/bg2";
 
+@import "sections/partners/about", "sections/partners/director", "sections/partners/letter",
+	"sections/partners/factors", "sections/partners/sertificate", "sections/partners/help";
+
 .link-container {
 	@include flex-direction($gap: 15px);
 

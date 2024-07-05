@@ -35,6 +35,6 @@
 	}
 
     &__img {
-
+        @include fluid-property(border-radius, 20, 30);
     }
 }
