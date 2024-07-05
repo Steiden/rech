@@ -278,6 +278,10 @@
 			padding-inline: clamp(10px, #{calc(25 * 100 / 1920)}vw, 25px);
 			transition-duration: 0.3s;
 
+			&--active {
+				background-color: rgba(0, 106, 171, 1);
+			}
+
 			&:hover {
 				background-color: rgba(0, 106, 171, 1);
 			}
