@@ -102,6 +102,10 @@
 	color: var(--white-color);
 }
 
+.black {
+	color: var(--primary-color) !important;
+}
+
 .justify-content-center {
 	justify-content: center !important;
 }
@@ -112,4 +116,20 @@
 
 .width-fit-content {
 	width: fit-content !important;
+}
+
+.space-between {
+	justify-content: space-between !important;
+}
+
+.p-inline-30 {
+	padding-inline: 30px !important;
+}
+
+.bold {
+	font-weight: 700 !important;
+}
+
+.border-none {
+	border: none !important;
 }

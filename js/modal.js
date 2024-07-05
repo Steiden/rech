@@ -19,14 +19,32 @@ const createModal = (modalSelector, openButtonsSelector, closeButtonsSelector) =
 };
 
 
-// Calc modal
+// Calc modal - home.html
 createModal("#calcModal", "#calcModalOpenButton", ".calcModalCloseButton");
 
-// Callback modal
+// Callback modal - home.html
 createModal("#callbackModal", "#callbackModalOpenButton", ".callbackModalCloseButton");
 
-// Question modal
+// Question modal - home.html
 createModal("#questionModal", "#questionModalOpenButton", ".questionModalCloseButton");
 
-// Thanks
+// Thanks - home.html
 createModal("#thanksModal", "#openThanksModal", '[data-modal="closeThanksModal"');
+
+// Director modal - about-production.html
+createModal("#directorModal", "#directorModalOpenButton", ".directorModalCloseButton");
+
+// Complex modal - about-production.html
+createModal("#complexModal", "#complexModalOpenButton", ".complexModalCloseButton");
+
+// Download modal - documentation.html
+createModal("#downloadModal", "#downloadModalOpenButton", ".downloadModalCloseButton");
+
+// Price modal - project.html
+createModal("#priceModal", "#priceModalOpenButton", ".priceModalCloseButton");
+
+// Tender modal - partners.html
+createModal("#tenderModal", "#tenderModalOpenButton", ".tenderModalCloseButton");
+
+// Resume modal - career.html
+createModal("#resumeModal", "#resumeModalOpenButton", ".resumeModalCloseButton")

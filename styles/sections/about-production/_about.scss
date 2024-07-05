@@ -1,5 +1,7 @@
 .about-production-about {
-	margin-top: calc(90px + 90px);
+	@include tablet-l {
+		margin-top: calc(90px + 90px);
+	}
 
 	@include mobile-l {
 		padding: 0;

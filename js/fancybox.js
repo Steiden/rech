@@ -62,3 +62,5 @@ createGallery("complexGallery4");
 
 createGallery("docsGallery");
 createGallery("docsGallery2");
+
+createGallery("productionGallery");

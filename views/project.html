@@ -239,7 +239,7 @@
 			</div>
 		</header>
 		<main class="main documentation-main">
-			<section class="container project-card">
+			<section class="container project-card" id="about">
 				<p class="project-card__crumbs">
 					Выполненные проекты /
 					<span class="project-card__crumbs--active"
@@ -468,82 +468,103 @@
 						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
 						<span class="h2">ФОТО ПРОЦЕССА<span class="blue"> ПРОИЗВОДСТВА</span></span>
 					</div>
-					<button class="my-button my-button--red about__button hidden-mobile-l">
+					<button
+						class="my-button my-button--red about__button hidden-mobile-l"
+						id="priceModalOpenButton"
+					>
 						Отправить заявку на рассчет
 						<i class="d_icon d_icon-calculator"></i>
 					</button>
 				</header>
 				<main class="project-production__main">
 					<article class="project-production__img-container">
-						<img
-							src="/assets/img/project/production/production1.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production1.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production1.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container">
-						<img
-							src="/assets/img/project/production/production2.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production2.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production2.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container">
-						<img
-							src="/assets/img/project/production/production3.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production3.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production3.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container">
-						<img
-							src="/assets/img/project/production/production4.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production4.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production4.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container hidden-mobile-l">
-						<img
-							src="/assets/img/project/production/production5.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production5.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production5.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container hidden-mobile-l">
-						<img
-							src="/assets/img/project/production/production6.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production6.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production6.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container hidden-mobile-l">
-						<img
-							src="/assets/img/project/production/production7.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production7.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production7.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container hidden-mobile-l">
-						<img
-							src="/assets/img/project/production/production8.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production8.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production8.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 					<article class="project-production__img-container hidden-mobile-l">
-						<img
-							src="/assets/img/project/production/production9.png"
-							alt="production"
-							class="project-production__img"
-						/>
+						<a href="/assets/img/project/production/production9.png" class="border-none" data-fancybox="productionGallery">
+							<img
+								src="/assets/img/project/production/production9.png"
+								alt="production"
+								class="project-production__img"
+							/>
+						</a>
 						<span class="project-production__img-description">Описание фотографии</span>
 					</article>
 				</main>
@@ -683,6 +704,48 @@
 		<a href="#main" class="footer__up-button visible-mobile-l">
 			<i class="d_icon d_icon-arrow-diagonal"></i>
 		</a>
+
+		<!-- Price modal -->
+		<div class="modal__overlay" id="priceModal">
+			<button type="button" class="modal__close hidden-tablet priceModalCloseButton">
+				<i class="d_icon d_icon-close"></i>
+			</button>
+
+			<form action="" method="post" class="modal modal--small">
+				<button type="button" class="modal__close visible-tablet priceModalCloseButton">
+					<i class="d_icon d_icon-close"></i>
+				</button>
+
+				<span class="h3 modal__title">Запрос цены</span>
+
+				<div class="modal__input-container modal__input-container--small">
+					<input type="text" placeholder="Ваше имя*" tag="form" class="modal__input" />
+					<input type="email" placeholder="Ваш E-mail*" tag="form" class="modal__input" />
+					<textarea
+						placeholder="Сообщение"
+						tag="form"
+						class="modal__input modal__textarea"
+					></textarea>
+				</div>
+
+				<div class="modal__submit-container">
+					<div class="input-checkbox__wrapper">
+						<input type="checkbox" class="input-checkbox" tag="form" id="acception3" />
+						<label for="acception3" class="input-checkbox__label">
+							<i class="d_icon d_icon-check input-checkbox__icon"></i>
+						</label>
+						<label for="acception3" class="input-checkbox__span">
+							Согласие на обработку
+							<a href="#" class="modal__link">персональных данных</a>
+						</label>
+					</div>
+					<button class="my-button my-button--red modal__submit-button">
+						Отправить
+						<i class="d_icon d_icon-arrow-diagonal"></i>
+					</button>
+				</div>
+			</form>
+		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script
