@@ -27,13 +27,14 @@
 		@include fluid-property(padding-block, 11, 48);
 		@include fluid-property(padding-inline, 30, 60);
 
-        height: 120px;
+        min-height: 120px;
 		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
 		justify-content: space-between;
 	}
 
     &__title {
-        font-size: 30px;
+		@include fluid-text(14, 30);
+		word-break: break-all;
     }
 
 	&__icon {

@@ -35,7 +35,7 @@ createModal("#thanksModal", "#openThanksModal", '[data-modal="closeThanksModal"'
 createModal("#directorModal", "#directorModalOpenButton", ".directorModalCloseButton");
 
 // Complex modal - about-production.html
-createModal("#complexModal", "#complexModalOpenButton", ".complexModalCloseButton");
+createModal("#complexModal", ".complexModalOpenButton", ".complexModalCloseButton");
 
 // Download modal - documentation.html
 createModal("#downloadModal", "#downloadModalOpenButton", ".downloadModalCloseButton");
