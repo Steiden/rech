@@ -2,6 +2,10 @@
 	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 2}vw, 192px);
 }
 
+.hidden {
+	display: none !important;
+}
+
 .hidden-desktop {
 	@include desktop {
 		display: none !important;

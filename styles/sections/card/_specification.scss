@@ -16,4 +16,50 @@
 	&__text {
 		@include fluid-text(16, 20);
 	}
+
+	&__list-container,
+	.card-specification-list {
+		@include fluid-property(padding-block, 20, 70);
+		@include fluid-property(padding-inline, 0, 90);
+		@include flex-direction(row);
+		@include fluid-property(gap, 30, 85);
+
+		border-left: 2px solid #5AC5EF4D;
+		margin-top: 40px;
+
+		@include tablet-l {
+			flex-direction: column;
+		}
+
+		@include mobile-l {
+			border-left: 0;
+		}
+
+		&__title {
+			@include fluid-text(18, 32);
+			color: var(--white-color);
+		}
+
+		&__wrapper {
+			@include flex-direction;
+			@include fluid-property(gap, 25, 50);
+		}
+
+		&__list {
+			@include flex-direction;
+			@include fluid-property(gap, 15, 25);
+		}
+
+		&__img {
+			@include fluid-property(border-radius, 20, 30);
+			max-height: 540px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__list-wrapper {
+		@include flex-direction;
+		@include fluid-property(gap, 20, 45);
+	}
 }
