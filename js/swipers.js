@@ -22,9 +22,13 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 };
 
 const createSwiper = (swiperSelector, gap, slidesPerView) => {
-	return new Swiper(swiperSelector, {
-		spaceBetween: gap,
-		slidesPerView: slidesPerView,
+	const sliders = document.querySelectorAll(swiperSelector);
+
+	sliders.forEach((slider) => {
+		new Swiper(slider, {
+			slidesPerView: slidesPerView,
+			spaceBetween: gap,
+		});
 	});
 };
 

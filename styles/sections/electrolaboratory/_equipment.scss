@@ -47,6 +47,8 @@
 	}
 
     &__slider {
+		max-width: 30%;
+
         .swiper-slide {
             width: auto;
         }

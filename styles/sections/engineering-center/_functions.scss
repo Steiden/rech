@@ -47,4 +47,8 @@
     &__send-button {
         @include fluid-property(padding-inline, 30, 35);
     }
+
+    &__slider {
+        max-width: 85vw;
+    }
 }

@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
-    "smart-webcomponents": "^19.0.8",
+    "color-calendar": "^1.0.7",
     "swiper": "^11.1.4"
   }
 }

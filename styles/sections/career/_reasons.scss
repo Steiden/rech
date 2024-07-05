@@ -14,4 +14,8 @@
             grid-template-columns: repeat(2, 1fr);
         }
 	}
+
+    &__slider {
+        max-width: 85vw;;
+    }
 }

@@ -92,6 +92,10 @@
 		}
 	}
 
+	&__input-wrapper {
+		position: relative;
+	}
+
 	&__input {
 		border: 1px solid rgba(90, 197, 239, 0.5);
 		border-radius: $border-radius;
@@ -100,10 +104,36 @@
 		height: 59px;
 		padding: 23px 30px;
 
+		width: 100%;
+
 		&::placeholder {
 			@include fluid-text(14, 18);
 			color: var(--thirdy-alt-color);
 		}
+
+		&--date {
+			border: 2px solid var(--thirdy-color);
+			position: relative;
+
+			&:focus {
+				& + .modal__input-hint {
+					@include visible;
+				}
+			}
+		}
+	}
+
+	&__input-hint {
+		@include hidden;
+		position: absolute;
+		top: 100%;
+	}
+
+	&__input-icon {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		translate: 0 -50%;
 	}
 
     &__textarea {
