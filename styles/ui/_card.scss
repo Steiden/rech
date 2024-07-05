@@ -1,0 +1,134 @@
+.advantage-card {
+	@include flex-direction($gap: 30px);
+
+	background-color: var(--white-color);
+	border-radius: $border-radius-large;
+
+	flex-shrink: 0;
+	flex-grow: 1;
+
+	max-width: 370px;
+	width: 370px;
+	padding: 36px 25px;
+
+	transition: all linear 0.5s;
+
+	&--alt {
+		max-height: 450px;
+
+		.advantage-card__header {
+			@include flex-direction(row, 10px);
+			justify-content: space-between;
+
+			& i {
+				@include flex-center;
+				@include fluid-property(width, 50, 66);
+				@include fluid-property(height, 50, 66);
+
+				border: 4px solid var(--thirdy-color);
+				border-radius: 50%;
+
+				// width: 66px;
+
+				&::before {
+					@include fluid-text(25, 34);
+					// font-size: 33px;
+				}
+			}
+		}
+
+		.advantage-card__index {
+			@include fluid-property(width, 75, 100);
+			@include fluid-property(height, 50, 66);
+			@include fluid-property(font-size, 24, 40);
+
+			background-color: rgba(90, 197, 239, 0.5);
+			color: var(--thirdy-alt-color);
+		}
+
+		.advantage-card__line {
+			background-color: rgba(90, 197, 239, 0.5);
+			border: none;
+			border-radius: 20px;
+
+			height: 4px;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+
+		.advantage-card__title {
+			font-size: 30px;
+
+			@include tablet {
+				font-size: clamp(22px, #{calc(30 * 100 / 768)}vw, 30px);
+			}
+		}
+
+		.advantage-card__text {
+			font-size: 16px;
+
+			@include tablet {
+				font-size: clamp(14px, #{calc(16 * 100 / 768)}vw, 16px);
+			}
+		}
+	}
+
+	@include tablet {
+		width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
+		gap: clamp(20px, #{calc(30 * 100 / 768)}vw, 30px);
+		padding: 18px;
+	}
+
+	@include mobile-l {
+		gap: 20px;
+	}
+
+	&:hover {
+		background: linear-gradient(89.66deg, #006aab 40.17%, #004875 99.07%);
+
+		i::before {
+			color: var(--thirdy-color);
+		}
+
+		.advantage-card__index {
+			background-color: var(--thirdy-color);
+			color: var(--thirdy-alt-color);
+		}
+
+		.advantage-card__title,
+		.advantage-card__text {
+			color: var(--white-color);
+		}
+	}
+
+	&__index {
+		@include flex-center;
+		@include fluid-property(width, 60, 100);
+		@include fluid-property(height, 40, 66);
+		@include fluid-property(font-size, 24, 40);
+		@include fluid-property(border-radius, 10, 20);
+
+		background-color: var(--thirdy-alt-color);
+		color: var(--white-color);
+		line-height: 1;
+
+		align-self: center;
+		flex-shrink: 0;
+
+		margin-bottom: 5px;
+	}
+
+	&__title,
+	&__text {
+		color: var(--thirdy-alt-color);
+	}
+
+	&__title {
+		@include fluid-text(22, 36);
+		font-weight: 400;
+	}
+
+	&__text {
+		@include fluid-text(16, 18);
+	}
+}

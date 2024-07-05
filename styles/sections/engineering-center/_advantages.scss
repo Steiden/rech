@@ -1,0 +1,22 @@
+.eng-advantages {
+
+    &__card-container {
+        @include grid(auto, repeat(3, 1fr), 40px);
+
+        @include desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .advantage-card {
+        height: auto;
+
+        &__header {
+            @include flex-center;
+        }
+
+        &__title {
+            word-break: break-all;
+        }
+    }
+}

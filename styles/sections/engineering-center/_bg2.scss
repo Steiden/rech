@@ -1,0 +1,4 @@
+.eng-bg2 {
+    @include flex-direction;
+    @include fluid-property(gap, 40, 90);
+}

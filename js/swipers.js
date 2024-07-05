@@ -145,6 +145,8 @@ createSwiper(".docs-swiper", 40, "auto");
 
 createSwiper(".products-swiper", 30, "auto");
 
+createSwiper(".functions-swiper", 18, "auto");
+
 // Groups
 const groupSwiperPrev = document.getElementById("groupSwiperPrev");
 const groupSwiperNext = document.getElementById("groupSwiperNext");
