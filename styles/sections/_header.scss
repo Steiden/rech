@@ -332,6 +332,11 @@
 				transition-duration: 0.3s;
 				padding: 0;
 
+				&--active {
+					background-color: transparent;
+					color: var(--thirdy-color);
+				}
+
 				&:hover {
 					background-color: transparent;
 					color: var(--thirdy-color);
