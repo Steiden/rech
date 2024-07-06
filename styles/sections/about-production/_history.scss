@@ -22,14 +22,14 @@
 	.about-production-history-card {
 		max-height: 100%;
 
-		&:hover {
-			background: 0;
-		}
-
 		@include mobile-l {
 			background: 0;
 			padding: 0;
 			width: 100%;
+
+			&:hover {
+				background: 0;
+			}
 		}
 
 		&__header {

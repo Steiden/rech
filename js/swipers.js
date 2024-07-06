@@ -1,5 +1,5 @@
-import Swiper from "swiper";
-import "swiper/css";
+import Swiper from "swiper/bundle";
+import "swiper/swiper-bundle.css";
 
 const removeSlidesActiveStyle = (slides) => {
 	slides.forEach((slide) => {
@@ -25,9 +25,14 @@ const createSwiper = (swiperSelector, gap, slidesPerView) => {
 	const sliders = document.querySelectorAll(swiperSelector);
 
 	sliders.forEach((slider) => {
+		const swiperPagination = document.querySelector(".swiper-pagination");
+
 		new Swiper(slider, {
 			slidesPerView: slidesPerView,
 			spaceBetween: gap,
+			pagination: {
+				el: swiperPagination,
+			},
 		});
 	});
 };
@@ -157,6 +162,11 @@ const groupSwiperNext = document.getElementById("groupSwiperNext");
 const groupSwiper = new Swiper(".groupSwiper", {
 	spaceBetween: 0,
 	slidesPerView: 1,
+	loop: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
 });
 
 if (groupSwiperPrev && groupSwiperNext) {

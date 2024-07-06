@@ -5,6 +5,7 @@
 	width: 100%;
 
 	overflow: hidden;
+	position: relative;
 
 	&--vertical {
 		flex-direction: column;
@@ -24,6 +25,25 @@
 			&--active {
 				@include fluid-property(border-radius, 10, 15);
 				border: 4px solid var(--white-color);
+			}
+		}
+	}
+
+	.swiper-pagination {
+		position: absolute !important;
+		bottom: 5% !important;
+		left: 50% !important;
+		translate: -50% 0 !important;
+
+		.swiper-pagination-bullet {
+			@include fluid-scales(8, 12);
+			background-color: transparent;
+			border: 1px solid var(--thirdy-color);
+			border-radius: 50%;
+
+			&-active {
+				border: none;
+				background-color: var(--link-hover-color);
 			}
 		}
 	}

@@ -378,7 +378,9 @@
 					<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
 					<span class="h2"><span class="blue">БАЗОВАЯ</span> КОМПЛЕКТАЦИЯ</span>
 				</div>
-				<div class="section-border-radius about-production-solutions__content">
+				<div
+					class="section-border-radius about-production-solutions__content card-equipment__content"
+				>
 					<div class="slider about-production-solutions__slider groupSwiper">
 						<div class="swiper-wrapper">
 							<img
@@ -397,17 +399,26 @@
 								class="card-equipment__img swiper-slide"
 							/>
 						</div>
+						<div class="swiper-pagination"></div>
 					</div>
-					<button class="slider__arrow slider__arrow--left" id="groupSwiperPrev">
-						<i class="d_icon-quotation-left-red slider__arrow-icon"
-							><span class="path1"></span><span class="path2"></span><span class="path3"></span
-						></i>
-					</button>
-					<button class="slider__arrow slider__arrow--right" id="groupSwiperNext">
-						<i class="d_icon-quotation-right-red slider__arrow-icon"
-							><span class="path1"></span><span class="path2"></span><span class="path3"></span
-						></i>
-					</button>
+					<div class="card-equipment__arrow-container">
+						<button
+							class="slider__arrow slider__arrow--left card-equipment__arrow"
+							id="groupSwiperPrev"
+						>
+							<i class="d_icon-quotation-left-red slider__arrow-icon"
+								><span class="path1"></span><span class="path2"></span><span class="path3"></span
+							></i>
+						</button>
+						<button
+							class="slider__arrow slider__arrow--right card-equipment__arrow"
+							id="groupSwiperNext"
+						>
+							<i class="d_icon-quotation-right-red slider__arrow-icon"
+								><span class="path1"></span><span class="path2"></span><span class="path3"></span
+							></i>
+						</button>
+					</div>
 				</div>
 				<section
 					class="about-production-politics documentation-main__documents documentation-main-documents"

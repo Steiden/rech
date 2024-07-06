@@ -23,7 +23,6 @@ closeCatalogButton.addEventListener("click", () => {
 
 const desktopCatalogButton = document.getElementById("desktopCatalogButton");
 const catalog = document.getElementById("catalog");
-console.log(desktopCatalogButton, catalog);
 let desktopCatalogButtonIsCliked = false;
 
 desktopCatalogButton.addEventListener("mouseenter", () => {

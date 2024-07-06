@@ -6,50 +6,67 @@
 		margin-bottom: 20px;
 	}
 
+	&__content {
+		@include mobile-l {
+			@include flex-direction($gap: 20px);
+			align-items: center;
+		}
+	}
+
 	&__accordion,
-    .accordion {
+	.accordion {
+		&__header {
+			@include fluid-property(padding-left, 30, 38);
+			@include fluid-property(padding-right, 30, 60);
+		}
 
-        &__header {
-            @include fluid-property(padding-left, 30, 38);
-            @include fluid-property(padding-right, 30, 60);
-        }
+		&__content {
+			@include flex-direction(row);
+			@include fluid-property(padding-inline, 18, 65);
+			@include adaptive-property(gap, 0, 180);
 
-        &__content {
-            @include flex-direction(row);
-            @include fluid-property(padding-inline, 18, 65);
-            @include adaptive-property(gap, 0, 180);
+			@include tablet-l {
+				flex-direction: column;
+				gap: 20px;
+			}
+		}
 
-            @include tablet-l {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
+		.card-equipment__point-container {
+			@include flex-direction($gap: 20px);
+		}
 
-        .card-equipment__point-container {
-            @include flex-direction($gap: 20px);
-        }
+		&__point,
+		.card-equipment-point {
+			@include flex-direction(row);
+			@include fluid-property(gap, 20, 35);
+			align-items: center;
 
-        &__point,
-        .card-equipment-point {
-            @include flex-direction(row);
-            @include fluid-property(gap, 20, 35);
-            align-items: center;
-            
-            &__index {
-                @include flex-center;
-                @include fluid-scales(32, 42);
-                @include fluid-text(16, 24);
+			&__index {
+				@include flex-center;
+				@include fluid-scales(32, 42);
+				@include fluid-text(16, 24);
 
-                background-color: var(--thirdy-alt-color);
-                border-radius: 50%;
+				background-color: var(--thirdy-alt-color);
+				border-radius: 50%;
 
-                color: var(--white-color);
-                font-weight: 700;
-            }
+				color: var(--white-color);
+				font-weight: 700;
+			}
 
-            &__text {
-                @include fluid-text(14, 18);
-            }
-        }
+			&__text {
+				@include fluid-text(14, 18);
+			}
+		}
+	}
+
+    &__arrow-container {
+        @include flex-direction(row, 16px);
+    }
+
+	&__arrow {
+		@include mobile-l {
+			position: static;
+			translate: 0;
+		}
 	}
 }
