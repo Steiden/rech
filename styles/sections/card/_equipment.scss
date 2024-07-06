@@ -59,6 +59,10 @@
 		}
 	}
 
+    &__swiper-wrapper {
+        min-width: 85vw;
+    }
+
     &__arrow-container {
         @include flex-direction(row, 16px);
     }
