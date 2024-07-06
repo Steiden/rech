@@ -159,6 +159,7 @@
 
 	&__catalog,
 	.catalog {
+		@include hidden;
 		@include flex-direction(row, 40px);
 		align-items: flex-start;
 
@@ -170,14 +171,10 @@
 		top: 100%;
 		left: 0;
 		translate: 0 12px;
-
-		visibility: hidden;
-		opacity: 0;
-		transition-duration: 0.3s;
+		z-index: 100;
 
 		&--visible {
-			visibility: visible;
-			opacity: 1;
+			@include visible
 		}
 
 		&__item {
@@ -351,7 +348,17 @@
 
 		&[open] {
 			.accordion__icon {
-				rotate: 0deg;
+				&::before,
+				&::after {
+					background-color: var(--white-color);
+				}
+
+				&::before {
+					rotate: 135deg;
+				}
+				&::after {
+					rotate: 225deg;
+				}
 			}
 		}
 
@@ -373,21 +380,18 @@
 		}
 
 		&__icon {
+			@include fluid-scales(28, 28);
 			@include flex-center;
 			background-color: var(--thirdy-alt-color);
 			border-radius: 50%;
 
-			width: 28px;
-			height: 28px;
-
-			padding: 5px;
-
-			rotate: 135deg;
 			transition-duration: 0.3s;
 
-			&::before {
-				color: var(--white-color);
-				font-size: 14px;
+			&::before,
+			&::after {
+				background-color: var(--white-color);
+				width: 14px;
+				height: 2px;
 			}
 		}
 	}
