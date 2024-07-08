@@ -2,6 +2,12 @@
     @include flex-direction;
     @include fluid-property(gap, 60, 65);
 
+    @include mobile-l {
+        background-color: var(--primary-alt-color);
+        padding-block: 60px;
+        border-radius: 20px;
+    }
+
     &__header {
 
     }
