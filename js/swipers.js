@@ -18,13 +18,15 @@ const syncSwipers = (swiper1, swiper2, swiperNumber) => {
 	}
 
 	removeSlidesActiveStyle(swiper2.slides);
-	swiper2.slides[swiper1.activeIndex].classList.add("swiper-slide--active");
+	swiper2.slides[swiper1.activeIndex]?.classList.add("swiper-slide--active");
 };
 
 const createSwiper = (swiperSelector, gap, slidesPerView) => {
 	const sliders = document.querySelectorAll(swiperSelector);
 
 	sliders.forEach((slider) => {
+		if(!slider) return
+
 		const swiperPagination = document.querySelector(".swiper-pagination");
 
 		new Swiper(slider, {
@@ -41,15 +43,22 @@ window.addEventListener("load", (e) => {
 	const slidesPerView = window.innerWidth <= 480 ? 3 : 4;
 
 	const createDoubleSwiper = (swiper1, swiper2, prev, next) => {
-		const slider1 = new Swiper(swiper1, {
+		const sliderEl1 = document.querySelector(swiper1);
+		const sliderEL2 = document.querySelector(swiper2);
+
+		if(!sliderEl1 || !sliderEL2) return
+
+		const slider1 = new Swiper(sliderEl1, {
 			autoplay: true,
 			spaceBetween: 20,
 		});
-		const slider2 = new Swiper(swiper2, {
+		const slider2 = new Swiper(sliderEL2, {
 			slidesPerView: slidesPerView,
 			slideToClickedSlide: true,
 			spaceBetween: 20,
 		});
+
+		slider2.slides[slider2.activeIndex]?.classList.add("swiper-slide--active");
 
 		const nextButton = document.querySelector(next);
 		const prevButton = document.querySelector(prev);
