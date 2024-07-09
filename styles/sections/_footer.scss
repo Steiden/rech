@@ -102,9 +102,12 @@
 	&__content {
 		@include flex-direction(row, clamp(20px, #{calc(50 * 100 / 1920)}vw, 50px));
 		justify-content: space-between;
-		flex-wrap: wrap;
 
 		position: relative;
+
+		@include tablet-l {
+			flex-wrap: wrap;
+		}
 
 		@include mobile-l {
 			padding: 0;
@@ -115,14 +118,19 @@
 	.contacts {
 		@include flex-direction;
 		@include fluid-property(gap, 17, 25);
+		@include adaptive-property(padding-inline, 20, 65);
 
 		background-color: rgba(0, 106, 171, 1);
 		border-radius: $border-radius-large;
 
-		padding: 40px 90px 40px 65px;
+		padding-block: 40px;
 		// max-width: 440px;
 
 		translate: 0 -50px;
+
+		@include tablet-l {
+			padding-inline: 90px 65px;
+		}
 
 		@include mobile-l {
 			padding: 40px 50px;
@@ -203,14 +211,18 @@
 				border-color: var(--white-color);
 				font-size: 15px;
 				line-height: 20px;
+				cursor: pointer;
+				padding-bottom: 6px;
+				border-bottom: 2px dashed;
 			}
 		}
 	}
 
 	&__nav {
-		@include flex-direction(row, clamp(10px, #{calc(160 * 100 / 1920)}vw, 160px));
+		@include flex-direction(row);
+		@include adaptive-property(gap, 10, 160);
+
 		justify-content: space-between;
-		flex-wrap: wrap;
 
 		border-right: 2px solid rgba(90, 197, 239, 0.5);
 
@@ -218,7 +230,13 @@
 		padding-right: 50px;
 
 		@include desktop {
+			@include adaptive-property(gap, 25, 100);
 			width: 100%;
+		}
+
+		@include tablet-l {
+			@include adaptive-property(gap, 10, 160);
+			flex-wrap: wrap;
 		}
 
 		@include mobile-l {
