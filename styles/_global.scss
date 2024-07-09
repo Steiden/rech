@@ -5441,13 +5441,16 @@ h2, .h2 {
 }
 
 html {
+	min-height: auto;
 	scroll-behavior: smooth;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	// overflow-y: scroll;
+	// overflow-x: hidden;
 }
 
 body {
-	overflow-y: hidden;
+	@include scrollbar(12px, 10px, var(--thirdy-color));
+	overflow: auto;
+	// width: 100vw;
 }
 
 .app {

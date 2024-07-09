@@ -3,9 +3,10 @@
 
 	position: fixed;
 	top: 50%;
-	right: 0;
+	left: 100vw;
+	// right: 0;
 	transition-duration: 0.3s;
-	translate: 100% -50%;
+	translate: -12px -50%;
 
 	z-index: 1000;
 
@@ -20,7 +21,7 @@
 	}
 
 	&--visible {
-		translate: 0 -50%;
+		translate: calc((100% + 12px) * -1) -50%;
 	}
 
 	@include mobile-l {
@@ -88,7 +89,7 @@
 	&__button-container {
 		@include flex-direction($gap: 14px);
 
-		height: 428px;
+		// height: 428px;
 
 		transition-duration: 0.5s;
 		overflow: hidden;
@@ -112,13 +113,15 @@
 		border-bottom-left-radius: 15px;
 
 		padding: 19px 15px;
+		width: 115px;
+		min-height: 100px;
 
 		i::before {
 			color: var(--white-color);
 		}
 
 		&--dark {
-			background: var(--thirdy-alt-color);
+			background: var(--primary-alt-color);
 
 			i::before {
 				color: var(--thirdy-color);

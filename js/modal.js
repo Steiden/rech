@@ -1,3 +1,5 @@
+const app = document.querySelector(".app");
+
 const createModal = (modalSelector, openButtonsSelector, closeButtonsSelector) => {
 	const modal = document.querySelector(modalSelector);
 	const openButtons = document.querySelectorAll(openButtonsSelector);
@@ -7,14 +9,22 @@ const createModal = (modalSelector, openButtonsSelector, closeButtonsSelector) =
 		button.addEventListener("click", () => {
 			console.log(modal);
 			modal.classList.add("modal__overlay--show");
-			document.body.style.overflow = "";
+			
+			app.style.overflow = "hidden";
+			app.style.minHeight = "auto";
+			app.style.maxHeight = "100vh";
+			document.body.style.minHeight = "auto";
 		});
 	});
 
 	closeButtons.forEach((button) => {
 		button.addEventListener("click", () => {
 			modal.classList.remove("modal__overlay--show");
-			document.body.style.overflow = "auto";
+
+			app.style.overflow = "auto";
+			app.style.minHeight = "100dvh";
+			app.style.maxHeight = "100%";
+			document.body.style.minHeight = "100vmax";
 		});
 	});
 };
