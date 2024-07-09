@@ -5,8 +5,9 @@ const createModal = (modalSelector, openButtonsSelector, closeButtonsSelector) =
 
 	openButtons.forEach((button) => {
 		button.addEventListener("click", () => {
+			console.log(modal);
 			modal.classList.add("modal__overlay--show");
-			document.body.style.overflow = "hidden";
+			document.body.style.overflow = "";
 		});
 	});
 

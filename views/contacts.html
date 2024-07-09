@@ -124,7 +124,9 @@
 							<a href="./partners.html" class="header__nav-link">Сотрудничество</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="./contacts.html" class="header__nav-link header__nav-link--active">Контакты</a>
+							<a href="./contacts.html" class="header__nav-link header__nav-link--active"
+								>Контакты</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -333,10 +335,13 @@
 
 					<div class="modal__button-container modal__button-container--small">
 						<div class="modal__button-wrapper">
-							<button class="modal__button">
-								Прикрепить файл
-								<i class="d_icon d_icon-paper-clip"></i>
-							</button>
+							<div class="file-input__wrapper">
+								<input type="file" name="calcModalFile1" id="calcModalFile1" class="file-input" />
+								<label for="calcModalFile1" class="modal__button file-input__label">
+									Прикрепить файл
+									<i class="d_icon d_icon-paper-clip"></i>
+								</label>
+							</div>
 						</div>
 					</div>
 

@@ -1765,38 +1765,37 @@
 				<i class="d_icon d_icon-close"></i>
 			</button>
 
-			<form action="" method="post" class="modal modal--small">
-				<button type="button" class="modal__close visible-tablet downloadModalCloseButton">
-					<i class="d_icon d_icon-close"></i>
-				</button>
-
-				<span class="h3 modal__title">Получите ссылку для скачивания документа</span>
-
-				<div class="modal__input-container modal__input-container--small">
-					<input type="text" placeholder="Ваше имя*" tag="form" class="modal__input" />
-					<input type="tel" placeholder="+7 (___) ___-__-__*" tag="form" class="modal__input" />
-					<input type="email" placeholder="Ваш E-mail*" tag="form" class="modal__input" />
-				</div>
-
-				<div class="modal__submit-container">
-					<div class="input-checkbox__wrapper">
-						<input type="checkbox" tag="form" class="input-checkbox" id="acception2" />
-						<label for="acception2" class="input-checkbox__label">
-							<i class="d_icon d_icon-check input-checkbox__icon"></i>
-						</label>
-						<label for="acception2" class="input-checkbox__span">
-							Согласие на обработку
-							<a href="#" class="modal__link">персональных данных</a>
-						</label>
-					</div>
-					<button
-						class="my-button my-button--red modal__submit-button space-between p-inline-30 bold"
-					>
-						Скачать файл
-						<i class="d_icon d_icon-upload"></i>
+			<div class="modal__wrapper">
+				<form action="" method="post" class="modal modal--small">
+					<button type="button" class="modal__close visible-tablet downloadModalCloseButton">
+						<i class="d_icon d_icon-close"></i>
 					</button>
-				</div>
-			</form>
+					<span class="h3 modal__title">Получите ссылку для скачивания документа</span>
+					<div class="modal__input-container modal__input-container--small">
+						<input type="text" placeholder="Ваше имя*" tag="form" class="modal__input" />
+						<input type="tel" placeholder="+7 (___) ___-__-__*" tag="form" class="modal__input" />
+						<input type="email" placeholder="Ваш E-mail*" tag="form" class="modal__input" />
+					</div>
+					<div class="modal__submit-container">
+						<div class="input-checkbox__wrapper">
+							<input type="checkbox" tag="form" class="input-checkbox" id="acception2" />
+							<label for="acception2" class="input-checkbox__label">
+								<i class="d_icon d_icon-check input-checkbox__icon"></i>
+							</label>
+							<label for="acception2" class="input-checkbox__span">
+								Согласие на обработку
+								<a href="#" class="modal__link">персональных данных</a>
+							</label>
+						</div>
+						<button
+							class="my-button my-button--red modal__submit-button space-between p-inline-30 bold"
+						>
+							Скачать файл
+							<i class="d_icon d_icon-upload"></i>
+						</button>
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -64,8 +64,7 @@ closeActionsButton.addEventListener("click", () => {
 });
 window.addEventListener("scroll", () => {
 	const currTop = window.scrollY;
-	const sectionTop = document.getElementById("about").getClientRects()[0].top;
-	if (currTop > sectionTop) {
+	if (currTop > 500) {
 		actions.classList.add("actions--visible");
 	}
 });

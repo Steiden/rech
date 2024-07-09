@@ -1,0 +1,23 @@
+.file-input {
+	@include visually-hidden;
+
+	&__wrapper {
+	}
+
+	&__label {
+		@include flex-center(row, 20px);
+
+		border: 2px solid var(--thirdy-alt-color);
+		border-radius: $border-radius;
+		color: var(--thirdy-alt-color);
+
+		height: 60px;
+		padding-inline: 10px;
+
+        cursor: pointer;
+
+		i::before {
+			color: var(--thirdy-color);
+		}
+	}
+}
