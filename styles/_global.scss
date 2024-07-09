@@ -5441,6 +5441,7 @@ h2, .h2 {
 }
 
 html {
+	background-color: var(--primary-color);
 	min-height: auto;
 	scroll-behavior: smooth;
 	// overflow-y: scroll;
@@ -5448,7 +5449,7 @@ html {
 }
 
 body {
-	@include scrollbar(12px, 10px, var(--thirdy-color));
+	@include scrollbar(12px, 10px, var(--thirdy-color), 5px, var(--white-color));
 	overflow: auto;
 	// width: 100vw;
 }
