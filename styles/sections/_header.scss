@@ -174,7 +174,7 @@
 		z-index: 100;
 
 		&--visible {
-			@include visible
+			@include visible;
 		}
 
 		&__item {
@@ -263,6 +263,43 @@
 			height: 50px;
 
 			position: relative;
+			cursor: pointer;
+
+			&--menu {
+				&:hover {
+					& > .services {
+						@include visible;
+					}
+				}
+			}
+
+			&--menu-item {
+				align-items: flex-start;
+
+				& > .services__link {
+					@include flex-direction(row, 10px);
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+
+					i {
+						@include flex-center;
+						rotate: -90deg;
+						transition-duration: .3s;
+
+						&::before {
+							font-size: 8px;
+							color: var(--thirdy-alt-color);
+						}
+					}
+				}
+
+				& > .services {
+					left: 100%;
+					top: 0;
+					translate: 17px 0;
+				}
+			}
 		}
 
 		.header__nav-link {

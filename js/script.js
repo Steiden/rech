@@ -68,16 +68,3 @@ window.addEventListener("scroll", () => {
 		actions.classList.add("actions--visible");
 	}
 });
-
-// Header (Services)
-const services = document.getElementById("services");
-const servicesButton = document.getElementById("servicesButton");
-let isServicesClicked = false;
-servicesButton.addEventListener("mouseenter", () => {
-	services.classList.add("services--show");
-	isServicesClicked = true;
-});
-servicesButton.addEventListener("mouseleave", () => {
-	services.classList.remove("services--show");
-	isServicesClicked = false;
-});

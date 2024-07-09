@@ -62,6 +62,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.d_icon-triangle:before {
+	content: "\e937";
+	color: #fff;
+}
 .d_icon-relative-humidity .path1:before {
 	content: "\e925";
 	color: rgb(255, 255, 255);
