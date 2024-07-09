@@ -1,0 +1,11 @@
+.tabs {
+	.tab-item {
+		&--active {
+			button {
+				background: linear-gradient(90.47deg, #1cabe7 0.38%, #006aab 99.59%);
+				border: none;
+				color: var(--white-color);
+			}
+		}
+	}
+}
