@@ -13,7 +13,7 @@
 		border-bottom-right-radius: 0;
 
 		.select__icon {
-			rotate: 0deg;
+			rotate: 180deg;
 		}
 
 		.select__list {
@@ -34,7 +34,7 @@
 	&__icon {
 		@include flex-center;
 
-		rotate: 90deg;
+		transform-origin: 50% 50%;
 		transition-duration: 0.3s;
 
 		&::before {

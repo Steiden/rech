@@ -14,6 +14,7 @@
 
 	&__wrapper {
 		@include fluid-property(border-radius, 20, 30);
+		@include scrollbar;
 		overflow: auto;
 	}
 
