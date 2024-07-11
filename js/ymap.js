@@ -6,6 +6,8 @@ ymaps.ready(() => {
 		zoom: 15,
 	});
 
+	map.behaviors.disable('scrollZoom');
+
 	const marker1 = new ymaps.Placemark(
 		[58.099775, 38.741185],
 		{},

@@ -31,6 +31,7 @@
 		gap: clamp(28px, #{calc(50 * 100 / 1920)}vw, 50px);
 		row-gap: 90px;
 		place-items: center;
+		z-index: 2;
 
 		@include desktop {
 			grid-template: auto / repeat(3, 1fr);
@@ -52,6 +53,10 @@
 		justify-content: space-between;
 		height: 100%;
 		max-width: 235px;
+
+		@include mobile-l {
+			justify-content: flex-start;
+		}
 	}
 
 	&__title {
@@ -60,6 +65,7 @@
 		line-height: 1.2;
 		text-align: center;
 		width: 100%;
+		z-index: 2;
 
 		@include tablet-l {
 			font-size: clamp(24px, #{calc(35 * 100 / 1024)}vw, 35px);

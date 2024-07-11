@@ -43,6 +43,11 @@ markers.forEach((marker) => {
 			marker.classList.remove("map__marker--active");
 			marker.querySelector(".marker__button").style.zIndex = 50;
 		} else {
+			markers.forEach((marker) => {
+				marker.classList.remove("map__marker--active");
+				marker.querySelector(".marker__button").style.zIndex = 50;
+			});
+
 			marker.classList.add("map__marker--active");
 			marker.querySelector(".marker__button").style.zIndex = 55;
 		}

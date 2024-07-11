@@ -7,7 +7,6 @@ const createModal = (modalSelector, openButtonsSelector, closeButtonsSelector) =
 
 	openButtons.forEach((button) => {
 		button.addEventListener("click", () => {
-			console.log(modal);
 			modal.classList.add("modal__overlay--show");
 			
 			document.body.style.overflow = "hidden";
@@ -43,7 +42,7 @@ createModal("#directorModal", "#directorModalOpenButton", ".directorModalCloseBu
 createModal("#complexModal", ".complexModalOpenButton", ".complexModalCloseButton");
 
 // Download modal - documentation.html
-createModal("#downloadModal", "#downloadModalOpenButton", ".downloadModalCloseButton");
+createModal("#downloadModal", ".downloadModalOpenButton", ".downloadModalCloseButton");
 
 // Price modal - project.html
 createModal("#priceModal", "#priceModalOpenButton", ".priceModalCloseButton");

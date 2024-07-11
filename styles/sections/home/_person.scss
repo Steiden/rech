@@ -6,7 +6,7 @@
 	&__content-wrapper {
 		@include flex-direction;
 
-		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
+		background: linear-gradient(92.91deg, #004875 -28.34%, #01629d 96.7%);
 
 		max-height: 700px;
 		min-height: 640px;
@@ -35,7 +35,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		translate: 0 -50%;
+		translate: -25% -50%;
 
 		&::before {
 			color: #006aab;
@@ -44,9 +44,11 @@
 		}
 
 		@include mobile-l {
-			top: 70%;
+			top: auto;
+			bottom: 60px;
 			left: 25px;
 			translate: 0;
+			rotate: -10deg;
 		}
 	}
 
@@ -79,8 +81,21 @@
 		font-size: 18px;
 		padding-inline: 36px;
 
-		& i::before {
+		i::before {
 			font-size: 18px;
+		}
+
+		&:hover {
+			background: var(--thirdy-color);
+			color: var(--thirdy-alt-color);
+
+			i::before {
+				color: var(--thirdy-alt-color);
+			}
+		}
+
+		@include mobile-l {
+			width: 100%;
 		}
 	}
 
@@ -95,17 +110,22 @@
 	}
 
 	&__img {
-		max-height: 90%;
-		height: clamp(350px, #{calc(1080 * 100 / 1920)}vw, 1080px);
+		@include adaptive-property(height, 350, 1080);
+
+		max-height: 100%;
 
 		position: absolute;
-		bottom: 100%;
-		right: 10%;
+		right: 0;
+		bottom: -120px;
 
 		object-fit: cover;
 
 		@include tablet {
 			right: 0;
+		}
+
+		@include mobile-l {
+			bottom: -60px;
 		}
 	}
 }

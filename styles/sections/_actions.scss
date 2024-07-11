@@ -6,7 +6,7 @@
 	left: 100vw;
 	// right: 0;
 	transition-duration: 0.3s;
-	translate: -12px -50%;
+	translate: 0 -50%;
 
 	z-index: 1000;
 
@@ -32,6 +32,7 @@
 		min-height: 70px;
 		max-height: 80px;
 
+		left: 0;
 		top: auto;
 		bottom: env(safe-area-inset-bottom);
 		translate: 0;
@@ -89,7 +90,7 @@
 	&__button-container {
 		@include flex-direction($gap: 14px);
 
-		// height: 428px;
+		height: 450px;
 
 		transition-duration: 0.5s;
 		overflow: hidden;
@@ -141,6 +142,8 @@
 		}
 
 		@include mobile-l {
+			min-height: auto;
+			width: auto;
 			background: none;
 			padding: 0;
 		}

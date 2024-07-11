@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>РЭЩ | Документация</title>
+		<title>РЭЩ | Контакты</title>
 		<link rel="stylesheet" href="../styles/style.scss" />
 	</head>
 	<body>
@@ -34,10 +34,10 @@
 		<header class="container header header--white" id="header">
 			<div class="space-between header__top hidden-tablet-l">
 				<a href="/" class="header__logo-link hidden-desktop"
-					><img src="/assets/img/logo.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo.svg" alt="logo" class="header__logo"
 				/></a>
 				<a href="/" class="header__logo-link visible-desktop"
-					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 				/></a>
 				<div class="input__wrapper header__search-input">
 					<input type="text" placeholder="Поиск по сайту" class="input" />
@@ -131,7 +131,7 @@
 			</div>
 			<div class="header__top visible-tablet-l">
 				<a href="/" class="header__logo-link"
-					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 				/></a>
 				<div class="header__contacts hidden-mobile-l">
 					<a href="tel:89611561186" class="header__text header__text--telephone"
@@ -217,10 +217,10 @@
 					</ul>
 				</nav>
 				<hr class="header__line" />
-				<button class="my-button my-button--blue header__menu-button">
+				<a class="my-button my-button--blue header__menu-button">
 					Перейти на наш тг канал
 					<i class="d_icon d_icon-telegram"></i>
-				</button>
+				</a>
 				<div class="header__button-container">
 					<div class="input__wrapper header__search-input">
 						<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
@@ -270,11 +270,15 @@
 							</div>
 							<div class="contacts-main-info-card__text-container">
 								<i class="d_icon d_icon-telephone contacts-main-info-card__icon"></i>
-								<p class="contacts-main-info-card__text">8 (961) 027-63-73</p>
+								<a href="tel:89610276373" class="contacts-main-info-card__text"
+									>8 (961) 027-63-73</a
+								>
 							</div>
 							<div class="contacts-main-info-card__text-container">
 								<i class="d_icon d_icon-mail contacts-main-info-card__icon"></i>
-								<p class="contacts-main-info-card__text">info@resh76.ru</p>
+								<a href="mailto:info@resh76.ru" class="contacts-main-info-card__text"
+									>info@resh76.ru</a
+								>
 							</div>
 						</div>
 					</div>
@@ -283,18 +287,24 @@
 						<div class="contacts-main-info-card__content">
 							<div class="contacts-main-info-card__text-container">
 								<i class="d_icon d_icon-telephone contacts-main-info-card__icon"></i>
-								<p class="contacts-main-info-card__text">8 (961) 156-11-86</p>
+								<a href="tel:89611561186" class="contacts-main-info-card__text"
+									>8 (961) 156-11-86</a
+								>
 							</div>
 							<div class="contacts-main-info-card__text-container">
 								<i class="d_icon d_icon-mail contacts-main-info-card__icon"></i>
-								<p class="contacts-main-info-card__text">sales@resh76.ru</p>
+								<a href="mailto:sales@resh76.ru" class="contacts-main-info-card__text"
+									>sales@resh76.ru</a
+								>
 							</div>
 						</div>
 						<span class="h2 contacts-main-info-card__title">Тех поддержка:</span>
 						<div class="contacts-main-info-card__content">
 							<div class="contacts-main-info-card__text-container">
 								<i class="d_icon d_icon-mail contacts-main-info-card__icon"></i>
-								<p class="contacts-main-info-card__text">service@resh76.ru</p>
+								<a href="mailto:service@resh76.ru" class="contacts-main-info-card__text"
+									>service@resh76.ru</a
+								>
 							</div>
 						</div>
 					</div>
@@ -309,7 +319,9 @@
 							</div>
 							<div class="contacts-main-info-card__text-container">
 								<i class="d_icon d_icon-mail contacts-main-info-card__icon"></i>
-								<p class="contacts-main-info-card__text">service@resh76.ru</p>
+								<a href="mailto:service@resh76.ru" class="contacts-main-info-card__text"
+									>service@resh76.ru</a
+								>
 							</div>
 						</div>
 					</div>
@@ -445,10 +457,10 @@
 							</div>
 						</div>
 					</div>
-					<button class="my-button my-button--blue contacts-main-details__button">
+					<a class="my-button my-button--blue contacts-main-details__button">
 						Скачать реквизиты
 						<i class="d_icon d_icon-upload"></i>
-					</button>
+					</a>
 				</div>
 			</section>
 		</main>
@@ -458,10 +470,10 @@
 					<!-- <img src="/assets/img/map.png" alt="map" class="footer__map-img" /> -->
 				</div>
 
-				<button class="my-button my-button--blue footer__button">
+				<a class="my-button my-button--blue footer__button">
 					Скачать схему проезда
 					<i class="d_icon d_icon-upload"></i>
-				</button>
+				</a>
 
 				<button class="footer__up-button hidden-mobile-l">
 					<i class="d_icon d_icon-arrow-diagonal"></i>
@@ -487,15 +499,15 @@
 							<p class="contact__text">info@resh76.ru</p>
 						</div>
 					</div>
-						<div class="contact">
-							<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
-							<div class="contact__content">
-								<div class="contact__link-container contact__link-container--green">
-									<p class="contact__link" id="questionModalOpenButton">Задать вопрос</p>
-									<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
-								</div>
+					<div class="contact">
+						<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
+						<div class="contact__content">
+							<div class="contact__link-container contact__link-container--green">
+								<p class="contact__link" id="questionModalOpenButton">Задать вопрос</p>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
 							</div>
 						</div>
+					</div>
 					<div class="contact">
 						<i class="d_icon d_icon-mark contact__icon"></i>
 						<div class="contact__content">
@@ -564,8 +576,8 @@
 
 			<div class="container footer__privacy privacy">
 				<div class="privacy__content">
-					<img src="/assets/img/logo.png" alt="logo" class="hidden-mobile-l" />
-					<img src="/assets/img/logo-small.png" alt="logo" class="visible-mobile-l" />
+					<img src="/assets/img/logo.svg" alt="logo" class="hidden-mobile-l" />
+					<img src="/assets/img/logo-small.svg" alt="logo" class="visible-mobile-l" />
 					<a href="#" class="footer__link privacy__link">Политика о конфиденциальности</a>
 				</div>
 			</div>
@@ -586,5 +598,6 @@
 		<script src="../js/select.js" type="module"></script>
 		<script src="../js/fancybox.js" type="module"></script>
 		<script src="../js/modal.js" type="module"></script>
+		<script src="../js/input-mask.js" type="module"></script>
 	</body>
 </html>

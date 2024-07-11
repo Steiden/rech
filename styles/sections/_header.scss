@@ -65,7 +65,7 @@
 
 	&__top {
 		align-items: center;
-		gap: clamp(10px, #{calc(20 * 100 / 1920)}vw, 20px);
+		gap: clamp(10px, #{calc(80 * 100 / 1920)}vw, 80px);
 
 		width: 100%;
 
@@ -88,6 +88,7 @@
 
 		.header__logo-link {
 			border: none;
+			padding: 0;
 		}
 
 		.header__logo {
@@ -96,6 +97,10 @@
 
 		.header__search {
 			height: 100%;
+		}
+
+		.header__search-input {
+			// max-width: 400px;
 		}
 
 		.header__location {
@@ -119,6 +124,7 @@
 			&--telephone {
 				@include fluid-text(16, 24);
 				color: var(--link-hover-color);
+				text-wrap: nowrap;
 
 				&:hover {
 					color: var(--thirdy-alt-color);
@@ -147,13 +153,14 @@
 
 		@include tablet-l {
 			@include flex-center;
+			background: var(--thirdy-alt-color);
 			width: 50px;
 			height: 50px;
 			padding: 0;
+		}
 
-			&__icon::before {
-				color: var(--primary-alt-color);
-			}
+		&__icon::before {
+			color: var(--primary-alt-color);
 		}
 	}
 
@@ -247,6 +254,7 @@
 
 			@include desktop-s {
 				padding-inline: 5px;
+				width: 100%;
 			}
 		}
 
@@ -285,7 +293,7 @@
 					i {
 						@include flex-center;
 						rotate: -90deg;
-						transition-duration: .3s;
+						transition-duration: 0.3s;
 
 						&::before {
 							font-size: 8px;

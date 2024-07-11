@@ -173,6 +173,13 @@
 			&__text {
 				font-size: 16px;
 				line-height: 21px;
+				padding: 0;
+				border: none;
+				color: var(--white-color);
+
+				&:hover {
+					color: inherit;
+				}
 
 				&--large {
 					font-size: 24px;
@@ -300,12 +307,16 @@
 		&__content {
 			@include flex-direction(row, 15px);
 			align-items: center;
-			justify-content: center;
+			justify-content: space-between;
 			flex-wrap: wrap;
 
 			background-color: var(--white-color);
 			border-radius: $border-radius;
 			padding: 25px 68px;
+
+			@include tablet-l {
+				justify-content: center;
+			}
 
 			@include mobile-l {
 				flex-direction: column;

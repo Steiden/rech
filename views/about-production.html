@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>РЭЩ</title>
+		<title>РЭЩ | О производстве</title>
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -41,10 +41,10 @@
 				<header class="container header header--white" id="header">
 					<div class="space-between header__top hidden-tablet-l">
 						<a href="/" class="header__logo-link hidden-desktop"
-							><img src="/assets/img/logo.png" alt="logo" class="header__logo"
+							><img src="/assets/img/logo.svg" alt="logo" class="header__logo"
 						/></a>
 						<a href="/" class="header__logo-link visible-desktop"
-							><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+							><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 						/></a>
 						<div class="input__wrapper header__search-input">
 							<input type="text" placeholder="Поиск по сайту" class="input" />
@@ -123,7 +123,11 @@
 									<a href="./documentation.html" class="header__nav-link">Документация</a>
 								</li>
 								<li class="header__nav-item">
-									<a href="./about-production.html" class="header__nav-link header__nav-link--active">О предприятии</a>
+									<a
+										href="./about-production.html"
+										class="header__nav-link header__nav-link--active"
+										>О предприятии</a
+									>
 								</li>
 								<li class="header__nav-item">
 									<a href="./partners.html" class="header__nav-link">Сотрудничество</a>
@@ -136,7 +140,7 @@
 					</div>
 					<div class="header__top visible-tablet-l">
 						<a href="/" class="header__logo-link"
-							><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+							><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 						/></a>
 						<div class="header__contacts hidden-mobile-l">
 							<a href="tel:89611561186" class="header__text header__text--telephone"
@@ -225,10 +229,10 @@
 							</ul>
 						</nav>
 						<hr class="header__line" />
-						<button class="my-button my-button--blue header__menu-button">
+						<a class="my-button my-button--blue header__menu-button">
 							Перейти на наш тг канал
 							<i class="d_icon d_icon-telegram"></i>
-						</button>
+						</a>
 						<div class="header__button-container">
 							<div class="input__wrapper header__search-input">
 								<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
@@ -260,14 +264,14 @@
 								РЭЩ - ВЕДУЩИЙ РОССИЙСКИЙ ПРОИЗВОДИТЕЛЬ ЭЛЕКТРОТЕХНИЧЕСКОГО ОБОРУДОВАНИЯ
 							</p>
 							<div class="about-production-about__button-container">
-								<button class="my-button my-button--red about-production-about__button">
+								<a class="my-button my-button--red about-production-about__button">
 									Скачать презентацию
 									<i class="d_icon d_icon-upload"></i>
-								</button>
-								<button class="my-button my-button--transparent about-production-about__button">
+								</a>
+								<a class="my-button my-button--transparent about-production-about__button">
 									Ознакомиться с производством
 									<i class="d_icon d_icon-arrow-diagonal"></i>
-								</button>
+								</a>
 							</div>
 						</div>
 					</section>
@@ -952,7 +956,9 @@
 						</main>
 					</section>
 
-					<section class="container section-border-radius about-production__complex about-production-complex">
+					<section
+						class="container section-border-radius about-production__complex about-production-complex"
+					>
 						<header class="about-production-team__header">
 							<div class="title about__title">
 								<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
@@ -1412,7 +1418,9 @@
 									Смотреть ещё
 									<i class="d_icon d_icon-arrow-diagonal"></i>
 								</button>
-								<button class="my-button my-button--red about-production-complex__button complexModalOpenButton">
+								<button
+									class="my-button my-button--red about-production-complex__button complexModalOpenButton"
+								>
 									Записаться нап экскурсию
 									<i class="d_icon d_icon-arrow-diagonal"></i>
 								</button>
@@ -1439,31 +1447,76 @@
 									Перейти на канал
 									<i class="d_icon d_icon-telegram"></i>
 								</button>
+								<img src="/assets/img/persons/person1.png" alt="person" class="person__img" />
 							</div>
 						</div>
 					</section>
 
-					<div class="solutions__wrapper">
-						<img src="/assets/img/persons/person1.png" alt="person" class="person__img" />
-
-						<section class="section-border-radius about-production__docs about-production-docs">
-							<div class="container about-production-docs__content">
-								<header class="about-production-team__header">
-									<div class="title about__title">
-										<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
-										<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-										<span class="h2">СЕРТИФИКАТЫ <span class="blue">И ДЕКЛАРАЦИИ </span></span>
+					<section class="section-border-radius about-production__docs about-production-docs">
+						<div class="container about-production-docs__content">
+							<header class="about-production-team__header">
+								<div class="title about__title">
+									<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+									<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+									<span class="h2">СЕРТИФИКАТЫ <span class="blue">И ДЕКЛАРАЦИИ </span></span>
+								</div>
+								<button
+									class="my-button my-button--red about-production-complex__button hidden-mobile-l"
+								>
+									Подробнее
+									<i class="d_icon d_icon-arrow-diagonal"></i>
+								</button>
+							</header>
+							<main class="about-production-docs__main">
+								<div class="about-production-docs__container hidden-tablet-l">
+									<div class="about-production-docs__img-container">
+										<img
+											src="/assets/img/docs/doc1.png"
+											alt="document"
+											class="about-production-docs__img"
+										/>
+										<a
+											href="/assets/img/docs/doc1.png"
+											class="about-production-docs__link"
+											data-fancybox="docsGallery"
+										>
+											<i class="d_icon d_icon-search"></i>
+										</a>
 									</div>
-									<button
-										class="my-button my-button--red about-production-complex__button hidden-mobile-l"
-									>
-										Подробнее
-										<i class="d_icon d_icon-arrow-diagonal"></i>
-									</button>
-								</header>
-								<main class="about-production-docs__main">
-									<div class="about-production-docs__container hidden-tablet-l">
-										<div class="about-production-docs__img-container">
+									<div class="about-production-docs__img-container">
+										<img
+											src="/assets/img/docs/doc2.png"
+											alt="document"
+											class="about-production-docs__img"
+										/>
+										<a
+											href="/assets/img/docs/doc2.png"
+											class="about-production-docs__link"
+											data-fancybox="docsGallery"
+										>
+											<i class="d_icon d_icon-search"></i>
+										</a>
+									</div>
+									<div class="about-production-docs__img-container">
+										<img
+											src="/assets/img/docs/doc3.png"
+											alt="document"
+											class="about-production-docs__img"
+										/>
+										<a
+											href="/assets/img/docs/doc3.png"
+											class="about-production-docs__link"
+											data-fancybox="docsGallery"
+										>
+											<i class="d_icon d_icon-search"></i>
+										</a>
+									</div>
+								</div>
+								<div
+									class="docs-swiper advantages__swiper about-production-team__swiper visible-tablet-l"
+								>
+									<div class="advantages__card-container swiper-wrapper">
+										<div class="about-production-docs__img-container swiper-slide">
 											<img
 												src="/assets/img/docs/doc1.png"
 												alt="document"
@@ -1472,12 +1525,12 @@
 											<a
 												href="/assets/img/docs/doc1.png"
 												class="about-production-docs__link"
-												data-fancybox="docsGallery"
+												data-fancybox="docsGallery2"
 											>
 												<i class="d_icon d_icon-search"></i>
 											</a>
 										</div>
-										<div class="about-production-docs__img-container">
+										<div class="about-production-docs__img-container swiper-slide">
 											<img
 												src="/assets/img/docs/doc2.png"
 												alt="document"
@@ -1486,12 +1539,12 @@
 											<a
 												href="/assets/img/docs/doc2.png"
 												class="about-production-docs__link"
-												data-fancybox="docsGallery"
+												data-fancybox="docsGallery2"
 											>
 												<i class="d_icon d_icon-search"></i>
 											</a>
 										</div>
-										<div class="about-production-docs__img-container">
+										<div class="about-production-docs__img-container swiper-slide">
 											<img
 												src="/assets/img/docs/doc3.png"
 												alt="document"
@@ -1500,64 +1553,16 @@
 											<a
 												href="/assets/img/docs/doc3.png"
 												class="about-production-docs__link"
-												data-fancybox="docsGallery"
+												data-fancybox="docsGallery2"
 											>
 												<i class="d_icon d_icon-search"></i>
 											</a>
 										</div>
 									</div>
-									<div
-										class="docs-swiper advantages__swiper about-production-team__swiper visible-tablet-l"
-									>
-										<div class="advantages__card-container swiper-wrapper">
-											<div class="about-production-docs__img-container swiper-slide">
-												<img
-													src="/assets/img/docs/doc1.png"
-													alt="document"
-													class="about-production-docs__img"
-												/>
-												<a
-													href="/assets/img/docs/doc1.png"
-													class="about-production-docs__link"
-													data-fancybox="docsGallery2"
-												>
-													<i class="d_icon d_icon-search"></i>
-												</a>
-											</div>
-											<div class="about-production-docs__img-container swiper-slide">
-												<img
-													src="/assets/img/docs/doc2.png"
-													alt="document"
-													class="about-production-docs__img"
-												/>
-												<a
-													href="/assets/img/docs/doc2.png"
-													class="about-production-docs__link"
-													data-fancybox="docsGallery2"
-												>
-													<i class="d_icon d_icon-search"></i>
-												</a>
-											</div>
-											<div class="about-production-docs__img-container swiper-slide">
-												<img
-													src="/assets/img/docs/doc3.png"
-													alt="document"
-													class="about-production-docs__img"
-												/>
-												<a
-													href="/assets/img/docs/doc3.png"
-													class="about-production-docs__link"
-													data-fancybox="docsGallery2"
-												>
-													<i class="d_icon d_icon-search"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</main>
-							</div>
-						</section>
-					</div>
+								</div>
+							</main>
+						</div>
+					</section>
 
 					<section class="container about-production__politics about-production-politics">
 						<header class="about-production-team__header">
@@ -1709,10 +1714,10 @@
 						<!-- <img src="/assets/img/map.png" alt="map" class="footer__map-img" /> -->
 					</div>
 
-					<button class="my-button my-button--blue footer__button">
+					<a class="my-button my-button--blue footer__button">
 						Скачать схему проезда
 						<i class="d_icon d_icon-upload"></i>
-					</button>
+					</a>
 
 					<button class="footer__up-button hidden-mobile-l">
 						<i class="d_icon d_icon-arrow-diagonal"></i>
@@ -1819,8 +1824,8 @@
 
 				<div class="container footer__privacy privacy">
 					<div class="privacy__content">
-						<img src="/assets/img/logo.png" alt="logo" class="hidden-mobile-l" />
-						<img src="/assets/img/logo-small.png" alt="logo" class="visible-mobile-l" />
+						<img src="/assets/img/logo.svg" alt="logo" class="hidden-mobile-l" />
+						<img src="/assets/img/logo-small.svg" alt="logo" class="visible-mobile-l" />
 						<a href="#" class="footer__link privacy__link">Политика о конфиденциальности</a>
 					</div>
 				</div>
@@ -1899,7 +1904,7 @@
 								class="modal__input modal__input--date"
 							/>
 							<div class="modal__input-hint" id="complexDate"></div>
-							<img src="/assets/img/time-icon.svg" class="modal__input-icon">
+							<img src="/assets/img/time-icon.svg" class="modal__input-icon" />
 						</div>
 						<input type="text" placeholder="Организация*" tag="form" class="modal__input" />
 						<textarea
@@ -1940,5 +1945,6 @@
 		<script src="../js/fancybox.js" type="module"></script>
 		<script src="../js/modal.js" type="module"></script>
 		<script src="../js/color-calendar.js" type="module"></script>
+		<script src="../js/input-mask.js" type="module"></script>
 	</body>
 </html>

@@ -65,7 +65,7 @@ padding: 0;
 	&__text {
 		@include fluid-text(18, 32);
 		@include fluid-property(line-height, 27, 48);
-  word-break: break-all;
+  
 
 		&--small {
 			@include fluid-text(16, 20);
