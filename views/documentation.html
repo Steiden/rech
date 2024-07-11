@@ -34,10 +34,10 @@
 		<header class="container header header--white" id="header">
 			<div class="space-between header__top hidden-tablet-l">
 				<a href="/" class="header__logo-link hidden-desktop"
-					><img src="/assets/img/logo.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo.svg" alt="logo" class="header__logo"
 				/></a>
 				<a href="/" class="header__logo-link visible-desktop"
-					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 				/></a>
 				<div class="input__wrapper header__search-input">
 					<input type="text" placeholder="Поиск по сайту" class="input" />
@@ -113,7 +113,9 @@
 							<a href="./projects.html" class="header__nav-link">Проекты</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="./documentation.html" class="header__nav-link header__nav-link--active">Документация</a>
+							<a href="./documentation.html" class="header__nav-link header__nav-link--active"
+								>Документация</a
+							>
 						</li>
 						<li class="header__nav-item">
 							<a href="./about-production.html" class="header__nav-link">О предприятии</a>
@@ -129,7 +131,7 @@
 			</div>
 			<div class="header__top visible-tablet-l">
 				<a href="/" class="header__logo-link"
-					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 				/></a>
 				<div class="header__contacts hidden-mobile-l">
 					<a href="tel:89611561186" class="header__text header__text--telephone"
@@ -215,10 +217,10 @@
 					</ul>
 				</nav>
 				<hr class="header__line" />
-				<button class="my-button my-button--blue header__menu-button">
+				<a class="my-button my-button--blue header__menu-button">
 					Перейти на наш тг канал
 					<i class="d_icon d_icon-telegram"></i>
-				</button>
+				</a>
 				<div class="header__button-container">
 					<div class="input__wrapper header__search-input">
 						<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
@@ -236,7 +238,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="main documentation-main" id="downloadModalOpenButton">
+		<main class="main documentation-main">
 			<section class="container documentation-main__about documentation-main-about" id="about">
 				<div class="documentation-main-about__content">
 					<span class="h1 documentation-main-about__title">ДОКУМЕНТАЦИЯ</span>
@@ -273,7 +275,46 @@
 									</ul>
 								</i>
 							</header>
+							<a class="documentation-main-documents-accordion-card__link downloadModalOpenButton"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+							</header>
 							<a href="#" class="documentation-main-documents-accordion-card__link"
+								>Опросный лист - КРУ-РН «ОРИОН»</a
+							>
+						</article>
+						<article
+							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
+						>
+							<header class="documentation-main-documents-accordion-card__header">
+								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
+								<div class="documentation-main-documents-accordion-card__info">
+									<p class="dark-blue documentation-main-documents-accordion-card__text">
+										11.01.2024
+									</p>
+									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
+								</div>
+								<i class="info-icon documentation-main-documents-accordion-card__info-icon">
+									<ul class="info-icon__hint documentation-main-documents-accordion-card__list">
+										<li class="documentation-main-documents-accordion-card__item">DWG (2.4 мб)</li>
+										<li class="documentation-main-documents-accordion-card__item">PDF (2.4 мб)</li>
+										<li class="documentation-main-documents-accordion-card__item">CDW (2.4 мб)</li>
+									</ul>
+								</i>
+							</header>
+							<a class="documentation-main-documents-accordion-card__link downloadModalOpenButton"
 								>Опросный лист - КРУ-РН «ОРИОН»</a
 							>
 						</article>
@@ -320,40 +361,15 @@
 									</p>
 									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
 								</div>
+								<i class="info-icon documentation-main-documents-accordion-card__info-icon">
+									<ul class="info-icon__hint documentation-main-documents-accordion-card__list">
+										<li class="documentation-main-documents-accordion-card__item">DWG (2.4 мб)</li>
+										<li class="documentation-main-documents-accordion-card__item">PDF (2.4 мб)</li>
+										<li class="documentation-main-documents-accordion-card__item">CDW (2.4 мб)</li>
+									</ul>
+								</i>
 							</header>
-							<a href="#" class="documentation-main-documents-accordion-card__link"
-								>Опросный лист - КРУ-РН «ОРИОН»</a
-							>
-						</article>
-						<article
-							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
-						>
-							<header class="documentation-main-documents-accordion-card__header">
-								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
-								<div class="documentation-main-documents-accordion-card__info">
-									<p class="dark-blue documentation-main-documents-accordion-card__text">
-										11.01.2024
-									</p>
-									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
-								</div>
-							</header>
-							<a href="#" class="documentation-main-documents-accordion-card__link"
-								>Опросный лист - КРУ-РН «ОРИОН»</a
-							>
-						</article>
-						<article
-							class="documentation-main-documents-accordion__card documentation-main-documents-accordion-card"
-						>
-							<header class="documentation-main-documents-accordion-card__header">
-								<i class="d_icon d_icon-doc documentation-main-documents-accordion-card__icon"></i>
-								<div class="documentation-main-documents-accordion-card__info">
-									<p class="dark-blue documentation-main-documents-accordion-card__text">
-										11.01.2024
-									</p>
-									<p class="red documentation-main-documents-accordion-card__text">PDF (2.4 МБ)</p>
-								</div>
-							</header>
-							<a href="#" class="documentation-main-documents-accordion-card__link"
+							<a class="documentation-main-documents-accordion-card__link downloadModalOpenButton"
 								>Опросный лист - КРУ-РН «ОРИОН»</a
 							>
 						</article>
@@ -1638,10 +1654,10 @@
 					<!-- <img src="/assets/img/map.png" alt="map" class="footer__map-img" /> -->
 				</div>
 
-				<button class="my-button my-button--blue footer__button">
+				<a class="my-button my-button--blue footer__button">
 					Скачать схему проезда
 					<i class="d_icon d_icon-upload"></i>
-				</button>
+				</a>
 
 				<button class="footer__up-button hidden-mobile-l">
 					<i class="d_icon d_icon-arrow-diagonal"></i>
@@ -1667,15 +1683,15 @@
 							<p class="contact__text">info@resh76.ru</p>
 						</div>
 					</div>
-						<div class="contact">
-							<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
-							<div class="contact__content">
-								<div class="contact__link-container contact__link-container--green">
-									<p class="contact__link" id="questionModalOpenButton">Задать вопрос</p>
-									<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
-								</div>
+					<div class="contact">
+						<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
+						<div class="contact__content">
+							<div class="contact__link-container contact__link-container--green">
+								<p class="contact__link" id="questionModalOpenButton">Задать вопрос</p>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
 							</div>
 						</div>
+					</div>
 					<div class="contact">
 						<i class="d_icon d_icon-mark contact__icon"></i>
 						<div class="contact__content">
@@ -1744,8 +1760,8 @@
 
 			<div class="container footer__privacy privacy">
 				<div class="privacy__content">
-					<img src="/assets/img/logo.png" alt="logo" class="hidden-mobile-l" />
-					<img src="/assets/img/logo-small.png" alt="logo" class="visible-mobile-l" />
+					<img src="/assets/img/logo.svg" alt="logo" class="hidden-mobile-l" />
+					<img src="/assets/img/logo-small.svg" alt="logo" class="visible-mobile-l" />
 					<a href="#" class="footer__link privacy__link">Политика о конфиденциальности</a>
 				</div>
 			</div>
@@ -1783,9 +1799,7 @@
 								<a href="#" class="modal__link">персональных данных</a>
 							</label>
 						</div>
-						<button
-							class="my-button my-button--red modal__submit-button space-between p-inline-30 bold"
-						>
+						<button class="my-button my-button--red modal__submit-button space-between p-inline-30 bold">
 							Скачать файл
 							<i class="d_icon d_icon-upload"></i>
 						</button>
@@ -1805,5 +1819,6 @@
 		<script src="../js/select.js" type="module"></script>
 		<script src="../js/fancybox.js" type="module"></script>
 		<script src="../js/modal.js" type="module"></script>
+		<script src="../js/input-mask.js" type="module"></script>
 	</body>
 </html>

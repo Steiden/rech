@@ -149,13 +149,13 @@
 }
 
 @mixin hidden {
-	visibility: hidden;
-	opacity: 0;
+	visibility: collapse !important;
+	opacity: 0 !important;
 	transition-duration: .3s;
 }
 
 @mixin visible {
-	visibility: visible;
-	opacity: 1;
+	visibility: visible !important;
+	opacity: 1 !important;
 	transition-duration: .3s;
 }

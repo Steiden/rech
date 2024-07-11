@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>РЭЩ | Документация</title>
+		<title>РЭЩ | Электролаборатория</title>
 		<link rel="stylesheet" href="../styles/style.scss" />
 	</head>
 	<body>
@@ -34,10 +34,10 @@
 		<header class="container header header--white" id="header">
 			<div class="space-between header__top hidden-tablet-l">
 				<a href="/" class="header__logo-link hidden-desktop"
-					><img src="/assets/img/logo.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo.svg" alt="logo" class="header__logo"
 				/></a>
 				<a href="/" class="header__logo-link visible-desktop"
-					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 				/></a>
 				<div class="input__wrapper header__search-input">
 					<input type="text" placeholder="Поиск по сайту" class="input" />
@@ -129,7 +129,7 @@
 			</div>
 			<div class="header__top visible-tablet-l">
 				<a href="/" class="header__logo-link"
-					><img src="/assets/img/logo-small.png" alt="logo" class="header__logo"
+					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
 				/></a>
 				<div class="header__contacts hidden-mobile-l">
 					<a href="tel:89611561186" class="header__text header__text--telephone"
@@ -215,10 +215,10 @@
 					</ul>
 				</nav>
 				<hr class="header__line" />
-				<button class="my-button my-button--blue header__menu-button">
+				<a class="my-button my-button--blue header__menu-button">
 					Перейти на наш тг канал
 					<i class="d_icon d_icon-telegram"></i>
-				</button>
+				</a>
 				<div class="header__button-container">
 					<div class="input__wrapper header__search-input">
 						<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
@@ -251,7 +251,7 @@
 								class="input__wrapper input__wrapper--white header__search-input main-content__input"
 							>
 								<input
-									type="text"
+									type="tel"
 									placeholder="+ 7 (999) 999-99-99"
 									tag="form"
 									class="input electrolaboratory-about__input"
@@ -318,22 +318,22 @@
 						class="main-content__button-container main-content__button-container--vertical main-content__button-container--padding electrolaboratory-about__button-container"
 					>
 						<div class="main-content__button-container">
-							<button
+							<a
 								class="my-button my-button--red header__button main-content__button electrolaboratory-about__button"
 								tag="form"
 								id="openThanksModal"
 							>
 								Скачать свидетельство
 								<i class="d_icon d_icon-upload"></i>
-							</button>
-							<button
+							</a>
+							<a
 								class="my-button my-button--transparent header__button main-content__button electrolaboratory-about__button electrolaboratory-about__button--small"
 								tag="form"
 								id="openThanksModal"
 							>
 								Скачать акт осмотра
 								<i class="d_icon d_icon-upload"></i>
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -1256,60 +1256,57 @@
 						<p class="person__text">
 							Подпишитесь на телеграм канал директора РЭЩ<br />Цветкова Романа Николаевича
 						</p>
-						<button class="my-button my-button--blue person__button">
+						<a class="my-button my-button--blue person__button">
 							Перейти на канал
 							<i class="d_icon d_icon-telegram"></i>
-						</button>
+						</a>
+						<img src="/assets/img/persons/person1.png" alt="person" class="person__img" />
 					</div>
 				</div>
 			</section>
 
-			<div class="solutions__wrapper">
-				<img src="/assets/img/persons/person1.png" alt="person" class="person__img" />
-
-				<section class="container section-border-radius electrolaboratory-order">
-					<div class="title about__title">
-						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
-						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-						<span class="h2">ЗАКАЗАТЬ УСЛУГУ <span class="blue">ЭЛЕКТРОЛАБОРАТОРИИ</span></span>
-					</div>
-					<div class="electrolaboratory-order__content">
-						<form class="electrolaboratory-order__input-container">
-							<input
-								type="text"
-								tag="form"
-								placeholder="Ваше имя*"
-								class="electrolaboratory-order__input"
-							/>
-							<input
-								type="tel"
-								tag="form"
-								placeholder="+7 (___) ___-__-__*"
-								class="electrolaboratory-order__input"
-							/>
-							<button
-								type="button"
-								class="my-button my-button-transparent electrolaboratory-order__button"
-							>
-								Прикрепить файл
-								<i class="d_icon d_icon-paper-clip"></i>
-							</button>
-							<button
-								class="my-button my-button--red justify-content-center electrolaboratory-order__send-button"
-							>
-								Отправить заявку
-								<i class="d_icon d_icon-arrow-diagonal"></i>
-							</button>
-						</form>
-						<span class="electrolaboratory-order__span"
-							>Нажимая на кнопку, вы соглашаетесь с
-							<a href="#" class="electrolaboratory-order__link"
-								>политикой по обработке персональных данных</a
-							></span
+			<section class="container section-border-radius electrolaboratory-order">
+				<div class="title about__title">
+					<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+					<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+					<span class="h2">ЗАКАЗАТЬ УСЛУГУ <span class="blue">ЭЛЕКТРОЛАБОРАТОРИИ</span></span>
+				</div>
+				<div class="electrolaboratory-order__content">
+					<form class="electrolaboratory-order__input-container">
+						<input
+							type="text"
+							tag="form"
+							placeholder="Ваше имя*"
+							class="electrolaboratory-order__input"
+						/>
+						<input
+							type="tel"
+							tag="form"
+							placeholder="+7 (___) ___-__-__*"
+							class="electrolaboratory-order__input"
+						/>
+						<button
+							type="button"
+							class="my-button my-button-transparent electrolaboratory-order__button"
 						>
-					</div>
-				</section>
-			</div>
+							Прикрепить файл
+							<i class="d_icon d_icon-paper-clip"></i>
+						</button>
+						<button
+							class="my-button my-button--red justify-content-center electrolaboratory-order__send-button"
+						>
+							Отправить заявку
+							<i class="d_icon d_icon-arrow-diagonal"></i>
+						</button>
+					</form>
+					<span class="electrolaboratory-order__span"
+						>Нажимая на кнопку, вы соглашаетесь с
+						<a href="#" class="electrolaboratory-order__link"
+							>политикой по обработке персональных данных</a
+						></span
+					>
+				</div>
+			</section>
 		</main>
 		<footer class="footer about-production-footer">
 			<div class="footer__map">
@@ -1317,10 +1314,10 @@
 					<!-- <img src="/assets/img/map.png" alt="map" class="footer__map-img" /> -->
 				</div>
 
-				<button class="my-button my-button--blue footer__button">
+				<a class="my-button my-button--blue footer__button">
 					Скачать схему проезда
 					<i class="d_icon d_icon-upload"></i>
-				</button>
+				</a>
 
 				<button class="footer__up-button hidden-mobile-l">
 					<i class="d_icon d_icon-arrow-diagonal"></i>
@@ -1346,15 +1343,15 @@
 							<p class="contact__text">info@resh76.ru</p>
 						</div>
 					</div>
-						<div class="contact">
-							<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
-							<div class="contact__content">
-								<div class="contact__link-container contact__link-container--green">
-									<p class="contact__link" id="questionModalOpenButton">Задать вопрос</p>
-									<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
-								</div>
+					<div class="contact">
+						<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
+						<div class="contact__content">
+							<div class="contact__link-container contact__link-container--green">
+								<p class="contact__link" id="questionModalOpenButton">Задать вопрос</p>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
 							</div>
 						</div>
+					</div>
 					<div class="contact">
 						<i class="d_icon d_icon-mark contact__icon"></i>
 						<div class="contact__content">
@@ -1423,8 +1420,8 @@
 
 			<div class="container footer__privacy privacy">
 				<div class="privacy__content">
-					<img src="/assets/img/logo.png" alt="logo" class="hidden-mobile-l" />
-					<img src="/assets/img/logo-small.png" alt="logo" class="visible-mobile-l" />
+					<img src="/assets/img/logo.svg" alt="logo" class="hidden-mobile-l" />
+					<img src="/assets/img/logo-small.svg" alt="logo" class="visible-mobile-l" />
 					<a href="#" class="footer__link privacy__link">Политика о конфиденциальности</a>
 				</div>
 			</div>
@@ -1445,5 +1442,6 @@
 		<script src="../js/select.js" type="module"></script>
 		<script src="../js/fancybox.js" type="module"></script>
 		<script src="../js/modal.js" type="module"></script>
+		<script src="../js/input-mask.js" type="module"></script>
 	</body>
 </html>
