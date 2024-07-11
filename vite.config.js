@@ -21,6 +21,11 @@ module.exports = defineConfig({
 				404: resolve(__dirname, "views/404.html"),
 				career: resolve(__dirname, "views/career.html"),
 			},
+			output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
 		},
 	},
 });
