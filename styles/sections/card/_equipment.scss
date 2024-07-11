@@ -14,7 +14,7 @@
 	}
 
 	&__accordion,
-	.accordion {
+	.card-equipment-accordion {
 		&__header {
 			@include fluid-property(padding-left, 30, 38);
 			@include fluid-property(padding-right, 30, 60);
@@ -29,6 +29,31 @@
 				flex-direction: column;
 				gap: 20px;
 			}
+
+			ol {
+				counter-reset: num;
+
+				&:nth-child(2) {
+					counter-reset: num 4;
+				}
+
+				li {
+					&::before {
+						@include flex-center;
+						@include fluid-scales(32, 42);
+						@include fluid-text(16, 24);
+
+						counter-increment: num;
+						content: counter(num);
+
+						background-color: var(--thirdy-alt-color);
+						border-radius: 50%;
+
+						color: var(--white-color);
+						font-weight: 700;
+					}
+				}
+			}
 		}
 
 		.card-equipment__point-container {
@@ -41,17 +66,8 @@
 			@include fluid-property(gap, 20, 35);
 			align-items: center;
 
-			&__index {
-				@include flex-center;
-				@include fluid-scales(32, 42);
-				@include fluid-text(16, 24);
-
-				background-color: var(--thirdy-alt-color);
-				border-radius: 50%;
-
-				color: var(--white-color);
-				font-weight: 700;
-			}
+			// &__index {
+			// }
 
 			&__text {
 				@include fluid-text(14, 18);
@@ -59,13 +75,13 @@
 		}
 	}
 
-    &__swiper-wrapper {
-        min-width: 85vw;
-    }
+	&__swiper-wrapper {
+		min-width: 85vw;
+	}
 
-    &__arrow-container {
-        @include flex-direction(row, 16px);
-    }
+	&__arrow-container {
+		@include flex-direction(row, 16px);
+	}
 
 	&__arrow {
 		@include mobile-l {

@@ -15,5 +15,5 @@ createTelMask("[type=tel]");
 
 
 new IMask(document.getElementById("callbackModalTime"), {
-    mask: "000:00-00:00"
+    mask: "00:00-00:00"
 })
