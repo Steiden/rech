@@ -79,6 +79,8 @@
 	}
 
 	&__content {
+		@include flex-direction;
+		@include fluid-property(gap, 40, 60);
 	}
 
 	&__title {
@@ -86,12 +88,6 @@
 
 		font-weight: 400;
 		text-transform: uppercase;
-
-		margin-bottom: 60px;
-
-		@include tablet {
-			margin-bottom: 40px;
-		}
 	}
 
 	&__card,
