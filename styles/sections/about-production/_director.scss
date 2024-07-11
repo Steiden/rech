@@ -1,24 +1,28 @@
 .about-production-director {
-    @include flex-direction($gap: 80px);
+	@include flex-direction($gap: 80px);
 
 	position: relative;
 
-@include mobile-l {
-padding: 0;
-}
+	@include mobile-l {
+		padding: 0;
+	}
 
 	&__header {
 		@include flex-direction(row, 10px);
 		justify-content: space-between;
 		align-items: center;
+
+		@include mobile-l {
+			@include container;
+		}
 	}
 
 	&__button {
 		padding-inline: 50px;
 
-        i::before {
-            color: var(--white-color);
-        }
+		i::before {
+			color: var(--white-color);
+		}
 	}
 
 	&__main {
@@ -38,7 +42,7 @@ padding: 0;
 		height: fit-content;
 		width: 50%;
 		object-fit: contain;
-        translate: 0 120px;
+		translate: 0 120px;
 
 		@include tablet-l {
 			translate: 0;
@@ -53,7 +57,7 @@ padding: 0;
 
 		background-color: var(--primary-alt-color);
 
-        height: fit-content;
+		height: fit-content;
 
 		width: 50%;
 
@@ -65,7 +69,6 @@ padding: 0;
 	&__text {
 		@include fluid-text(18, 32);
 		@include fluid-property(line-height, 27, 48);
-  
 
 		&--small {
 			@include fluid-text(16, 20);

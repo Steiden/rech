@@ -5,6 +5,11 @@
 	background-color: var(--primary-color);
 	position: relative;
 	min-height: 100vmax;
+	padding-bottom: 120px;
+
+	@include mobile-l {
+		padding-bottom: 60px;
+	}
 
 	&__title {
 		font-size: clamp(24px, #{calc(70 * 100 / 1920)}vw, 70px);
