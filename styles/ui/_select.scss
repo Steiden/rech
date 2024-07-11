@@ -22,6 +22,13 @@
 		}
 	}
 
+	&__text {
+
+		&::placeholder {
+			color: inherit;
+		}
+	}
+
 	&__content {
 		@include flex-direction(row, 10px);
 		justify-content: space-between;

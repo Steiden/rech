@@ -18,7 +18,8 @@ allSelect.forEach((select) => {
 
 	selectItems.forEach((item) => {
 		item.addEventListener("click", () => {
-			selectButton.querySelector(".select__text").textContent = item.textContent;
+			const selectInput = select.querySelector(".select__text");
+			selectInput.value = item.textContent.trim();
 			select.classList.remove("select--active");
 			isClicked = false;
 		});
