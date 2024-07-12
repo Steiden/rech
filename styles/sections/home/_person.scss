@@ -39,7 +39,7 @@
 
 		&::before {
 			color: #006aab;
-			font-size: clamp(150px, #{calc(500 * 100 / 1920)}vw, 500px);
+			font-size: clamp(150px, #{calc(420 * 100 / 1920)}vw, 420px);
 			z-index: 1;
 		}
 
@@ -110,9 +110,7 @@
 	}
 
 	&__img {
-		@include adaptive-property(height, 350, 1080);
-
-		max-height: 100%;
+		height: 115%;
 
 		position: absolute;
 		right: 0;
@@ -120,11 +118,29 @@
 
 		object-fit: cover;
 
+		@include desktop {
+			height: 100%;
+		}
+
+		@include desktop-s {
+			height: 90%;
+		}
+
+		@include tablet-l {
+			height: 85%;
+		}
+
 		@include tablet {
+			height: 80%;
 			right: 0;
 		}
 
+		@include tablet-s {
+			height: 75%;
+		}
+
 		@include mobile-l {
+			height: 50%;
 			bottom: -60px;
 		}
 	}

@@ -29,7 +29,8 @@
 
 	&__title {
         @include adaptive-property(font-size, 24, 70);
-        color: #5AC5EF;
+        // color: #5AC5EF;
+		color: var(--white-color);
 	}
 
 	&__text {

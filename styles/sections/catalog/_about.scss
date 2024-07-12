@@ -51,6 +51,7 @@
 
 	&__title {
 		@include adaptive-property(font-size, 24, 70);
+		font-weight: 700;
 	}
 
 	&__span {

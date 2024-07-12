@@ -6,7 +6,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	scrollbar-gutter: stable;
 	font-smoothing: antialiased;
-	font-family: "EvolentSans", sans-serif;
+	// font-family: "EvolentSans", sans-serif;
 	color: var(--white-color);
 	&.loading .preloader {
 		display: block;
@@ -4976,20 +4976,20 @@ p {
 	// 	max-height: 130px;
 	// }
 
-	h2,
-	.h2 {
-		font-size: 24px;
-	}
+	// h2,
+	// .h2 {
+	// 	font-size: 24px;
+	// }
 
-	h3,
-	.h3 {
-		font-size: 18px;
-	}
+	// h3,
+	// .h3 {
+	// 	font-size: 18px;
+	// }
 
-	h4,
-	.h4 {
-		font-size: 16px;
-	}
+	// h4,
+	// .h4 {
+	// 	font-size: 16px;
+	// }
 
 	.changeshop {
 		&.showList {
@@ -5232,20 +5232,20 @@ p {
 		}
 	}
 
-	h2,
-	.h2 {
-		font-size: 22px;
-	}
+	// h2,
+	// .h2 {
+	// 	font-size: 22px;
+	// }
 
-	h3,
-	.h3 {
-		font-size: 18px;
-	}
+	// h3,
+	// .h3 {
+	// 	font-size: 18px;
+	// }
 
-	h4,
-	.h4 {
-		font-size: 18px;
-	}
+	// h4,
+	// .h4 {
+	// 	font-size: 18px;
+	// }
 
 	.changeshop__menu {
 		width: 100%;
@@ -5436,15 +5436,19 @@ p {
 	@include fluid-text(14, 18);
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-weight: 400;
+}
+
+* {
+	font-family: "Evolventa", sans-serif;
 }
 
 html {
 	background-color: var(--primary-color);
 	min-height: auto;
 	scroll-behavior: smooth;
-	font-family: 'Evolventa', sans-serif;
 	// overflow-y: scroll;
 	// overflow-x: hidden;
 }
