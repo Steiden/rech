@@ -6,14 +6,14 @@
 	&__content {
 		@include flex-direction($gap: 90px);
 
-		background: linear-gradient(89.66deg, #006aab 40.17%, #004875 99.07%),
+		background: linear-gradient(89.66deg, #004875 40.17%, #006aab 99.07%),
 			url("/assets/img/background/bg-rech.png");
 
 		border-radius: $border-radius-large;
 		padding: clamp(50px, #{calc(120 * 100 / 1920)}vw, 120px);
 
 		position: relative;
-		
+
 		@include tablet {
 			gap: clamp(44px, #{calc(90 * 100 / 768)}vw, 90px);
 		}
@@ -72,8 +72,8 @@
 		}
 
 		@include mobile-l {
-            text-align: left;
-        }
+			text-align: left;
+		}
 	}
 
 	&__text {
