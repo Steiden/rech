@@ -31,211 +31,216 @@
 			</div>
 		</div>
 
-		<header class="container header header--white" id="header">
-			<div class="space-between header__top hidden-tablet-l">
-				<a href="/" class="header__logo-link hidden-desktop"
-					><img src="/assets/img/logo.svg" alt="logo" class="header__logo"
-				/></a>
-				<a href="/" class="header__logo-link visible-desktop"
-					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
-				/></a>
-				<div class="input__wrapper header__search-input">
-					<input type="text" placeholder="Поиск по сайту" class="input" />
-					<div class="input__button-wrapper">
-						<button class="input__button">
-							<i class="d_icon d_icon-search"></i>
+		<div class="header__wrapper">
+			<header class="container header header--white" id="header">
+				<div class="space-between header__top hidden-tablet-l">
+					<a href="/" class="header__logo-link hidden-desktop"
+						><img src="/assets/img/logo.svg" alt="logo" class="header__logo"
+					/></a>
+					<a href="/" class="header__logo-link visible-desktop"
+						><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
+					/></a>
+					<div class="input__wrapper header__search-input">
+						<input type="text" placeholder="Поиск по сайту" class="input" />
+						<div class="input__button-wrapper">
+							<button class="input__button">
+								<i class="d_icon d_icon-search"></i>
+							</button>
+						</div>
+					</div>
+					<div class="header__location">
+						<div class="header__location-title">
+							<i class="d_icon d_icon-mark d_icon--red"></i>
+							<span class="header__text">ПРОИЗВОДСТВО:</span>
+						</div>
+						<a
+							href="https://yandex.ru/maps/geo/rybinsk/53057096/?ll=38.819432%2C58.063320&z=12.41"
+							class="header__text header__text--big"
+							>Ярославская обл. г. Рыбинск</a
+						>
+					</div>
+					<div class="header__contacts">
+						<a href="tel:89611561186" class="header__text header__text--telephone"
+							>8 (961) 156-11-86</a
+						>
+						<p class="header__text">пн-пт 08:00 - 17:00</p>
+					</div>
+				</div>
+				<div class="space-between header__menu hidden-tablet-l">
+					<div class="hidden-tablet-l" id="desktopCatalogButton">
+						<button class="my-button my-button--blue header__catalog-button">
+							Каталог
+							<i class="d_icon d_icon-menu catalog-button__icon"></i>
 						</button>
+						<!-- Каталог -->
+						<div class="header__catalog catalog" id="catalog">
+							<button class="catalog__item">
+								<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+								<p class="catalog__text">Комплектные трансформаторные подстанции</p>
+							</button>
+							<button class="catalog__item">
+								<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+								<p class="catalog__text">Комплектные распределительные устройства</p>
+							</button>
+							<button class="catalog__item">
+								<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
+								<p class="catalog__text">Низковольтные комплекттные устройства</p>
+							</button>
+						</div>
 					</div>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="./home.html" class="header__nav-link">Главная</a>
+							</li>
+							<li class="header__nav-item header__nav-item--menu">
+								<span class="header__nav-link">Услуги</span>
+								<ul class="services" id="services">
+									<li class="services__item">
+										<a href="./services.html" class="services__link">Инжиниринговый центр</a>
+									</li>
+									<li class="services__item">
+										<a href="./services.html" class="services__link">Электролаборатория</a>
+									</li>
+									<li class="services__item">
+										<a href="./services.html" class="services__link">Лизинг оборудования</a>
+									</li>
+									<li class="services__item">
+										<a href="./services.html" class="services__link">Услуги металлообработки</a>
+									</li>
+								</ul>
+							</li>
+							<li class="header__nav-item">
+								<a href="./projects.html" class="header__nav-link">Проекты</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="./documentation.html" class="header__nav-link">Документация</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="./about-production.html" class="header__nav-link">О предприятии</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="./partners.html" class="header__nav-link">Сотрудничество</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="./contacts.html" class="header__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<div class="header__location">
-					<div class="header__location-title">
-						<i class="d_icon d_icon-mark d_icon--red"></i>
-						<span class="header__text">ПРОИЗВОДСТВО:</span>
+				<div class="header__top visible-tablet-l">
+					<a href="/" class="header__logo-link"
+						><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
+					/></a>
+					<div class="header__contacts hidden-mobile-l">
+						<a href="tel:89611561186" class="header__text header__text--telephone"
+							>8 (961) 156-11-86</a
+						>
+						<p class="header__text">пн-пт 08:00 - 17:00</p>
 					</div>
-					<a
-						href="https://yandex.ru/maps/geo/rybinsk/53057096/?ll=38.819432%2C58.063320&z=12.41"
-						class="header__text header__text--big"
-						>Ярославская обл. г. Рыбинск</a
+					<button
+						class="my-button my-button--blue header__catalog-button catalog-button visible-tablet-l"
+						id="catalogButton"
 					>
-				</div>
-				<div class="header__contacts">
-					<a href="tel:89611561186" class="header__text header__text--telephone"
-						>8 (961) 156-11-86</a
-					>
-					<p class="header__text">пн-пт 08:00 - 17:00</p>
-				</div>
-			</div>
-			<div class="space-between header__menu hidden-tablet-l">
-				<div class="hidden-tablet-l" id="desktopCatalogButton">
-					<button class="my-button my-button--blue header__catalog-button">
-						Каталог
 						<i class="d_icon d_icon-menu catalog-button__icon"></i>
 					</button>
-					<!-- Каталог -->
-					<div class="header__catalog catalog" id="catalog">
-						<button class="catalog__item">
-							<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
-							<p class="catalog__text">Комплектные трансформаторные подстанции</p>
-						</button>
-						<button class="catalog__item">
-							<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
-							<p class="catalog__text">Комплектные распределительные устройства</p>
-						</button>
-						<button class="catalog__item">
-							<img src="/assets/img/products/block1.png" alt="" class="catalog__img" />
-							<p class="catalog__text">Низковольтные комплекттные устройства</p>
-						</button>
-					</div>
-				</div>
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a href="./home.html" class="header__nav-link">Главная</a>
-						</li>
-						<li class="header__nav-item header__nav-item--menu">
-							<span class="header__nav-link">Услуги</span>
-							<ul class="services" id="services">
-								<li class="services__item">
-									<a href="./services.html" class="services__link">Инжиниринговый центр</a>
-								</li>
-								<li class="services__item">
-									<a href="./services.html" class="services__link">Электролаборатория</a>
-								</li>
-								<li class="services__item">
-									<a href="./services.html" class="services__link">Лизинг оборудования</a>
-								</li>
-								<li class="services__item">
-									<a href="./services.html" class="services__link">Услуги металлообработки</a>
-								</li>
-							</ul>
-						</li>
-						<li class="header__nav-item">
-							<a href="./projects.html" class="header__nav-link">Проекты</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="./documentation.html" class="header__nav-link">Документация</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="./about-production.html" class="header__nav-link">О предприятии</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="./partners.html" class="header__nav-link">Сотрудничество</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="./contacts.html" class="header__nav-link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header__top visible-tablet-l">
-				<a href="/" class="header__logo-link"
-					><img src="/assets/img/logo-small.svg" alt="logo" class="header__logo"
-				/></a>
-				<div class="header__contacts hidden-mobile-l">
-					<a href="tel:89611561186" class="header__text header__text--telephone"
-						>8 (961) 156-11-86</a
+					<button
+						class="header__close-button close-button visible-tablet-l"
+						id="closeCatalogButton"
 					>
-					<p class="header__text">пн-пт 08:00 - 17:00</p>
-				</div>
-				<button
-					class="my-button my-button--blue header__catalog-button catalog-button visible-tablet-l"
-					id="catalogButton"
-				>
-					<i class="d_icon d_icon-menu catalog-button__icon"></i>
-				</button>
-				<button class="header__close-button close-button visible-tablet-l" id="closeCatalogButton">
-					<i class="d_icon d_icon-close close-button__icon"></i>
-				</button>
-			</div>
-			<div class="space-between header__menu visible-tablet-l" id="headerMenu">
-				<details class="header__accordion accordion">
-					<summary class="accordion__title">
-						<p class="accordion__text">Каталог</p>
-						<i class="d_icon d_icon-close accordion__icon"></i>
-					</summary>
-					<div class="block-container">
-						<button class="block">
-							<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
-							<p class="block__text">Комплектные трансформаторные подстанции</p>
-						</button>
-						<button class="block">
-							<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
-							<p class="block__text">Комплектные трансформаторные подстанции</p>
-						</button>
-						<button class="block">
-							<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
-							<p class="block__text">Комплектные трансформаторные подстанции</p>
-						</button>
-					</div>
-				</details>
-				<hr class="header__line" />
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a href="./home.html" class="header__nav-link">Главная</a>
-						</li>
-						<li class="header__nav-item">
-							<details class="header__accordion accordion">
-								<summary class="accordion__title">
-									<p class="accordion__text">Услуги</p>
-									<i class="d_icon d_icon-close accordion__icon"></i>
-								</summary>
-								<div class="service-container">
-									<a href="./services.html" class="header__nav-link">Название услуги 1</a>
-									<a href="./services.html" class="header__nav-link">Название услуги 2</a>
-									<a href="./services.html" class="header__nav-link">Название услуги 3</a>
-								</div>
-							</details>
-						</li>
-						<li class="header__nav-item">
-							<a href="./projects.html" class="header__nav-link">Проекты</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="./documentation.html" class="header__nav-link">Документация</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="./about-production.html" class="header__nav-link">О предприятии</a>
-						</li>
-						<li class="header__nav-item">
-							<details class="header__accordion accordion">
-								<summary class="accordion__title accordion__title--sub">
-									<p class="accordion__text">Сотрудничество</p>
-									<i class="d_icon d_icon-close accordion__icon"></i>
-								</summary>
-								<div class="service-container">
-									<a href="./partners.html" class="header__nav-link">Название услуги 1</a>
-									<a href="./partners.html" class="header__nav-link">Название услуги 2</a>
-									<a href="./partners.html" class="header__nav-link">Название услуги 3</a>
-								</div>
-							</details>
-						</li>
-						<li class="header__nav-item">
-							<a href="./contacts.html" class="header__nav-link">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<hr class="header__line" />
-				<a class="my-button my-button--blue header__menu-button">
-					Перейти на наш тг канал
-					<i class="d_icon d_icon-telegram"></i>
-				</a>
-				<div class="header__button-container">
-					<div class="input__wrapper header__search-input">
-						<input type="text" placeholder="+ 7 (999) 999-99-99" class="input telephone" />
-					</div>
-					<button class="my-button my-button--red header__button">
-						Получить КП под ваш запрос
-						<i class="d_icon d_icon-arrow-diagonal"></i>
+						<i class="d_icon d_icon-close close-button__icon"></i>
 					</button>
-					<p class="header__text">
-						Нажимая на кнопку, вы соглашаетесь с
-						<span class="header__text header__text--red"
-							>политикой по обработке персональных данных</span
-						>
-					</p>
 				</div>
-			</div>
-		</header>
+				<div class="space-between header__menu visible-tablet-l" id="headerMenu">
+					<details class="header__accordion accordion">
+						<summary class="accordion__title">
+							<p class="accordion__text">Каталог</p>
+							<i class="d_icon d_icon-close accordion__icon"></i>
+						</summary>
+						<div class="block-container">
+							<button class="block">
+								<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+								<p class="block__text">Комплектные трансформаторные подстанции</p>
+							</button>
+							<button class="block">
+								<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+								<p class="block__text">Комплектные трансформаторные подстанции</p>
+							</button>
+							<button class="block">
+								<img src="/assets/img/products/block1.png" alt="block" class="block__img" />
+								<p class="block__text">Комплектные трансформаторные подстанции</p>
+							</button>
+						</div>
+					</details>
+					<hr class="header__line" />
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="./home.html" class="header__nav-link">Главная</a>
+							</li>
+							<li class="header__nav-item">
+								<details class="header__accordion accordion">
+									<summary class="accordion__title">
+										<p class="accordion__text">Услуги</p>
+										<i class="d_icon d_icon-close accordion__icon"></i>
+									</summary>
+									<div class="service-container">
+										<a href="./services.html" class="header__nav-link">Название услуги 1</a>
+										<a href="./services.html" class="header__nav-link">Название услуги 2</a>
+										<a href="./services.html" class="header__nav-link">Название услуги 3</a>
+									</div>
+								</details>
+							</li>
+							<li class="header__nav-item">
+								<a href="./projects.html" class="header__nav-link">Проекты</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="./documentation.html" class="header__nav-link">Документация</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="./about-production.html" class="header__nav-link">О предприятии</a>
+							</li>
+							<li class="header__nav-item">
+								<details class="header__accordion accordion">
+									<summary class="accordion__title accordion__title--sub">
+										<p class="accordion__text">Сотрудничество</p>
+										<i class="d_icon d_icon-close accordion__icon"></i>
+									</summary>
+									<div class="service-container">
+										<a href="./partners.html" class="header__nav-link">Название услуги 1</a>
+										<a href="./partners.html" class="header__nav-link">Название услуги 2</a>
+										<a href="./partners.html" class="header__nav-link">Название услуги 3</a>
+									</div>
+								</details>
+							</li>
+							<li class="header__nav-item">
+								<a href="./contacts.html" class="header__nav-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<hr class="header__line" />
+					<a class="my-button my-button--blue header__menu-button">
+						Перейти на наш тг канал
+						<i class="d_icon d_icon-telegram"></i>
+					</a>
+					<div class="header__button-container">
+						<div class="input__wrapper header__search-input">
+							<input type="text" placeholder="+ 7 (999) 999-99-99" class="input telephone" />
+						</div>
+						<button class="my-button my-button--red header__button">
+							Получить КП под ваш запрос
+							<i class="d_icon d_icon-arrow-diagonal"></i>
+						</button>
+						<p class="header__text">
+							Нажимая на кнопку, вы соглашаетесь с
+							<span class="header__text header__text--red"
+								>политикой по обработке персональных данных</span
+							>
+						</p>
+					</div>
+				</div>
+			</header>
+		</div>
 		<main class="main documentation-main">
 			<section class="container electrolaboratory-about" id="about">
 				<div class="section-border-radius catalog-album__content electrolaboratory-about__content">
@@ -297,100 +302,23 @@
 				</main>
 			</section>
 
-			<section class="container section-border-radius eng-functions career-reasons">
-				<header class="about__header">
-					<div class="title about__title">
-						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
-						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-						<span class="h2"><span class="blue">6 ПРИЧИН</span> РАБОТАТЬ С НАМИ</span>
-					</div>
-				</header>
-				<main class="eng-functions__main">
-					<div class="eng-functions__card-container career-reasons__card-container hidden-tablet-l">
-						<article class="advantage-card advantage-card--alt eng-functions__card">
-							<header class="advantage-card__header">
-								<p class="advantage-card__index">1</p>
-								<i class="d_icon d_icon-up advantage-card__icon"></i>
-							</header>
-							<hr class="advantage-card__line" />
-							<span class="h3 advantage-card__title">Профессиональный рост и развитие</span>
-							<p class="advantage-card__text">
-								"Мы инвестируем в развитие наших сотрудников, предоставляя возможности для обучения,
-								повышения квалификации и карьерного роста.
-							</p>
-						</article>
-						<article class="advantage-card advantage-card--alt eng-functions__card">
-							<header class="advantage-card__header">
-								<p class="advantage-card__index">2</p>
-								<i class="d_icon d_icon-rocket advantage-card__icon"></i>
-							</header>
-							<hr class="advantage-card__line" />
-							<span class="h3 advantage-card__title">Уверенность в завтрашнем дне</span>
-							<p class="advantage-card__text">
-								Мы предлагаем стабильную работу, конкурентную заработную плату и социальные
-								гарантии. Вы можете быть уверены в своем будущем и строить долгосрочные планы."
-							</p>
-						</article>
-						<article class="advantage-card advantage-card--alt eng-functions__card">
-							<header class="advantage-card__header">
-								<p class="advantage-card__index">3</p>
-								<i class="d_icon d_icon-heart advantage-card__icon"></i>
-							</header>
-							<hr class="advantage-card__line" />
-							<span class="h3 advantage-card__title">Позитивная команда и атмосфера</span>
-							<p class="advantage-card__text">
-								Мы ценим командную работу и создаем рабочую среду, где каждый сотрудник чувствует
-								себя частью большой команды. У нас регулярно проходят корпоративные мероприятия и
-								праздники."
-							</p>
-						</article>
-						<article class="advantage-card advantage-card--alt eng-functions__card">
-							<header class="advantage-card__header">
-								<p class="advantage-card__index">4</p>
-								<i class="d_icon d_icon-nano advantage-card__icon"></i>
-							</header>
-							<hr class="advantage-card__line" />
-							<span class="h3 advantage-card__title">Современные технологии </span>
-							<p class="advantage-card__text">
-								Мы используем и постоянно внедряем передовые технологии, что позволяет нам быть на
-								шаг впереди конкурентов. Вы получите возможность работать с современным
-								оборудованием в современных условиях
-							</p>
-						</article>
-						<article class="advantage-card advantage-card--alt eng-functions__card">
-							<header class="advantage-card__header">
-								<p class="advantage-card__index">5</p>
-								<i class="d_icon d_icon-pin advantage-card__icon"></i>
-							</header>
-							<hr class="advantage-card__line" />
-							<span class="h3 advantage-card__title">Интересные задачи и проекты</span>
-							<p class="advantage-card__text">
-								Мы не стоим на месте, постоянно развиваемся и реализуем амбициозные проекты. У нас
-								всегда есть интересные задачи, которые позволят вам проявить себя и получить ценный
-								опыт."
-							</p>
-						</article>
-						<article class="advantage-card advantage-card--alt eng-functions__card">
-							<header class="advantage-card__header">
-								<p class="advantage-card__index">6</p>
-								<i class="d_icon d_icon-star advantage-card__icon"></i>
-							</header>
-							<hr class="advantage-card__line" />
-							<span class="h3 advantage-card__title">Признание заслуг и мотивация</span>
-							<p class="advantage-card__text">
-								Мы не стоим на месте, постоянно развиваемся и реализуем амбициозные проекты. У нас
-								всегда есть интересные задачи, которые позволят вам проявить себя и получить ценный
-								опыт."
-							</p>
-						</article>
-					</div>
-
-					<div class="swiper eng-functions__slider visible-tablet-l">
-						<div class="swiper-wrapper">
-							<article class="advantage-card advantage-card--alt eng-functions__card swiper-slide">
+			<div class="section-border-radius career-reasons__wrapper">
+				<section class="container eng-functions career-reasons">
+					<header class="about__header">
+						<div class="title about__title">
+							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+							<span class="h2"><span class="blue">6 ПРИЧИН</span> РАБОТАТЬ С НАМИ</span>
+						</div>
+					</header>
+					<main class="eng-functions__main">
+						<div
+							class="eng-functions__card-container career-reasons__card-container hidden-tablet-l"
+						>
+							<article class="advantage-card advantage-card--alt eng-functions__card">
 								<header class="advantage-card__header">
 									<p class="advantage-card__index">1</p>
-									<i class="d_icon d_icon-search-accept advantage-card__icon"></i>
+									<i class="d_icon d_icon-up advantage-card__icon"></i>
 								</header>
 								<hr class="advantage-card__line" />
 								<span class="h3 advantage-card__title">Профессиональный рост и развитие</span>
@@ -399,7 +327,7 @@
 									обучения, повышения квалификации и карьерного роста.
 								</p>
 							</article>
-							<article class="advantage-card advantage-card--alt eng-functions__card swiper-slide">
+							<article class="advantage-card advantage-card--alt eng-functions__card">
 								<header class="advantage-card__header">
 									<p class="advantage-card__index">2</p>
 									<i class="d_icon d_icon-rocket advantage-card__icon"></i>
@@ -411,7 +339,7 @@
 									гарантии. Вы можете быть уверены в своем будущем и строить долгосрочные планы."
 								</p>
 							</article>
-							<article class="advantage-card advantage-card--alt eng-functions__card swiper-slide">
+							<article class="advantage-card advantage-card--alt eng-functions__card">
 								<header class="advantage-card__header">
 									<p class="advantage-card__index">3</p>
 									<i class="d_icon d_icon-heart advantage-card__icon"></i>
@@ -424,10 +352,10 @@
 									праздники."
 								</p>
 							</article>
-							<article class="advantage-card advantage-card--alt eng-functions__card swiper-slide">
+							<article class="advantage-card advantage-card--alt eng-functions__card">
 								<header class="advantage-card__header">
 									<p class="advantage-card__index">4</p>
-									<i class="d_icon d_icon-search-accept advantage-card__icon"></i>
+									<i class="d_icon d_icon-nano advantage-card__icon"></i>
 								</header>
 								<hr class="advantage-card__line" />
 								<span class="h3 advantage-card__title">Современные технологии </span>
@@ -437,7 +365,7 @@
 									оборудованием в современных условиях
 								</p>
 							</article>
-							<article class="advantage-card advantage-card--alt eng-functions__card swiper-slide">
+							<article class="advantage-card advantage-card--alt eng-functions__card">
 								<header class="advantage-card__header">
 									<p class="advantage-card__index">5</p>
 									<i class="d_icon d_icon-pin advantage-card__icon"></i>
@@ -450,7 +378,7 @@
 									ценный опыт."
 								</p>
 							</article>
-							<article class="advantage-card advantage-card--alt eng-functions__card swiper-slide">
+							<article class="advantage-card advantage-card--alt eng-functions__card">
 								<header class="advantage-card__header">
 									<p class="advantage-card__index">6</p>
 									<i class="d_icon d_icon-star advantage-card__icon"></i>
@@ -464,9 +392,101 @@
 								</p>
 							</article>
 						</div>
-					</div>
-				</main>
-			</section>
+						<div class="swiper eng-functions__slider visible-tablet-l">
+							<div class="swiper-wrapper">
+								<article
+									class="advantage-card advantage-card--alt eng-functions__card swiper-slide"
+								>
+									<header class="advantage-card__header">
+										<p class="advantage-card__index">1</p>
+										<i class="d_icon d_icon-search-accept advantage-card__icon"></i>
+									</header>
+									<hr class="advantage-card__line" />
+									<span class="h3 advantage-card__title">Профессиональный рост и развитие</span>
+									<p class="advantage-card__text">
+										"Мы инвестируем в развитие наших сотрудников, предоставляя возможности для
+										обучения, повышения квалификации и карьерного роста.
+									</p>
+								</article>
+								<article
+									class="advantage-card advantage-card--alt eng-functions__card swiper-slide"
+								>
+									<header class="advantage-card__header">
+										<p class="advantage-card__index">2</p>
+										<i class="d_icon d_icon-rocket advantage-card__icon"></i>
+									</header>
+									<hr class="advantage-card__line" />
+									<span class="h3 advantage-card__title">Уверенность в завтрашнем дне</span>
+									<p class="advantage-card__text">
+										Мы предлагаем стабильную работу, конкурентную заработную плату и социальные
+										гарантии. Вы можете быть уверены в своем будущем и строить долгосрочные планы."
+									</p>
+								</article>
+								<article
+									class="advantage-card advantage-card--alt eng-functions__card swiper-slide"
+								>
+									<header class="advantage-card__header">
+										<p class="advantage-card__index">3</p>
+										<i class="d_icon d_icon-heart advantage-card__icon"></i>
+									</header>
+									<hr class="advantage-card__line" />
+									<span class="h3 advantage-card__title">Позитивная команда и атмосфера</span>
+									<p class="advantage-card__text">
+										Мы ценим командную работу и создаем рабочую среду, где каждый сотрудник
+										чувствует себя частью большой команды. У нас регулярно проходят корпоративные
+										мероприятия и праздники."
+									</p>
+								</article>
+								<article
+									class="advantage-card advantage-card--alt eng-functions__card swiper-slide"
+								>
+									<header class="advantage-card__header">
+										<p class="advantage-card__index">4</p>
+										<i class="d_icon d_icon-search-accept advantage-card__icon"></i>
+									</header>
+									<hr class="advantage-card__line" />
+									<span class="h3 advantage-card__title">Современные технологии </span>
+									<p class="advantage-card__text">
+										Мы используем и постоянно внедряем передовые технологии, что позволяет нам быть
+										на шаг впереди конкурентов. Вы получите возможность работать с современным
+										оборудованием в современных условиях
+									</p>
+								</article>
+								<article
+									class="advantage-card advantage-card--alt eng-functions__card swiper-slide"
+								>
+									<header class="advantage-card__header">
+										<p class="advantage-card__index">5</p>
+										<i class="d_icon d_icon-pin advantage-card__icon"></i>
+									</header>
+									<hr class="advantage-card__line" />
+									<span class="h3 advantage-card__title">Интересные задачи и проекты</span>
+									<p class="advantage-card__text">
+										Мы не стоим на месте, постоянно развиваемся и реализуем амбициозные проекты. У
+										нас всегда есть интересные задачи, которые позволят вам проявить себя и получить
+										ценный опыт."
+									</p>
+								</article>
+								<article
+									class="advantage-card advantage-card--alt eng-functions__card swiper-slide"
+								>
+									<header class="advantage-card__header">
+										<p class="advantage-card__index">6</p>
+										<i class="d_icon d_icon-star advantage-card__icon"></i>
+									</header>
+									<hr class="advantage-card__line" />
+									<span class="h3 advantage-card__title">Признание заслуг и мотивация</span>
+									<p class="advantage-card__text">
+										Мы не стоим на месте, постоянно развиваемся и реализуем амбициозные проекты. У
+										нас всегда есть интересные задачи, которые позволят вам проявить себя и получить
+										ценный опыт."
+									</p>
+								</article>
+							</div>
+						</div>
+					</main>
+				</section>
+			</div>
 
 			<section class="section-border-radius eng-bg">
 				<img src="/assets/img/background/bg-about.png" alt="" class="eng-bg__img" />
@@ -476,6 +496,7 @@
 				<header class="about__header">
 					<div class="title about__title">
 						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
 						<span class="h2"><span class="blue">МЫ ЦЕНИМ</span> В СОТРУДНИКАХ</span>
 					</div>
 				</header>
@@ -592,58 +613,61 @@
 				</main>
 			</section>
 
-			<section class="container section-border-radius career-history">
-				<header class="about__header">
-					<div class="title about__title">
-						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
-						<span class="h2"><span class="blue">ИСТОРИИ УСПЕХОВ</span> НАШИХ СОТРУДНИКОВ</span>
-					</div>
-				</header>
-				<main class="card__advantages card-advantages">
-					<article class="card-advantages-card__container career-history__card-container">
-						<div class="card-advantages__card card-advantages-card career-history__card">
-							<div class="career-history__title-container">
-								<span class="h3 card-advantages-card__title">АНДРЕЙ КОРАБЛЕВ</span>
-								<span class="career-history__span">СТАРШИЙ ИНЖЕНЕР-КОНСТРУКТОР</span>
-							</div>
-							<p class="career-history__text">
-								Несколько слов от сотрудников компании.... технологий для внедрения передовых
-								решений в разработку и производство электротехнического оборудования.
-							</p>
-							<div class="career-history__link-container">
-								<a href="#" class="career-history__link">Читать полностью</a>
-								<i class="d_icon d_icon-arrow-diagonal"></i>
-							</div>
+			<div class="section-border-radius career-history__wrapper">
+				<section class="container career-history">
+					<header class="about__header career-history__header">
+						<div class="title about__title">
+							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+							<span class="h2"><span class="blue">ИСТОРИИ УСПЕХОВ</span> НАШИХ СОТРУДНИКОВ</span>
 						</div>
-						<div class="card-advantages__card card-advantages-card career-history__img-card">
-							<img src="/assets/img/career/1.png" alt="" class="card-advantages-card__img" />
-						</div>
-					</article>
-					<article class="card-advantages-card__container career-history__card-container">
-						<div class="card-advantages__card card-advantages-card career-history__img-card">
-							<img src="/assets/img/career/2.png" alt="" class="card-advantages-card__img" />
-						</div>
-						<div class="card-advantages__card card-advantages-card career-history__card">
-							<div class="career-history__title-container">
-								<span class="h3 card-advantages-card__title">АЛЁНА ТЮНИНА</span>
-								<span class="career-history__span">МЕНДЖЕР ПО ПРОДАЖАМ</span>
+					</header>
+					<main class="card__advantages card-advantages">
+						<article class="card-advantages-card__container career-history__card-container">
+							<div class="card-advantages__card card-advantages-card career-history__card">
+								<div class="career-history__title-container">
+									<span class="h3 card-advantages-card__title">АНДРЕЙ КОРАБЛЕВ</span>
+									<span class="career-history__span">СТАРШИЙ ИНЖЕНЕР-КОНСТРУКТОР</span>
+								</div>
+								<p class="career-history__text">
+									Несколько слов от сотрудников компании.... технологий для внедрения передовых
+									решений в разработку и производство электротехнического оборудования.
+								</p>
+								<div class="career-history__link-container">
+									<a href="#" class="career-history__link">Читать полностью</a>
+									<i class="d_icon d_icon-arrow-diagonal"></i>
+								</div>
 							</div>
-							<p class="career-history__text">
-								Несколько слов от сотрудников компании.... технологий для внедрения передовых
-								решений в разработку и производство электротехнического оборудования.
-							</p>
-							<div class="career-history__link-container">
-								<a href="#" class="career-history__link">Читать полностью</a>
-								<i class="d_icon d_icon-arrow-diagonal"></i>
+							<div class="card-advantages__card card-advantages-card career-history__img-card">
+								<img src="/assets/img/career/1.png" alt="" class="card-advantages-card__img" />
 							</div>
-						</div>
-					</article>
-				</main>
-				<button class="my-button my-button--blue projects-list__button career-history__button">
-					Загрузить ещё
-					<i class="d_icon d_icon-plus projects-list__button-icon"></i>
-				</button>
-			</section>
+						</article>
+						<article class="card-advantages-card__container career-history__card-container">
+							<div class="card-advantages__card card-advantages-card career-history__img-card">
+								<img src="/assets/img/career/2.png" alt="" class="card-advantages-card__img" />
+							</div>
+							<div class="card-advantages__card card-advantages-card career-history__card">
+								<div class="career-history__title-container">
+									<span class="h3 card-advantages-card__title">АЛЁНА ТЮНИНА</span>
+									<span class="career-history__span">МЕНДЖЕР ПО ПРОДАЖАМ</span>
+								</div>
+								<p class="career-history__text">
+									Несколько слов от сотрудников компании.... технологий для внедрения передовых
+									решений в разработку и производство электротехнического оборудования.
+								</p>
+								<div class="career-history__link-container">
+									<a href="#" class="career-history__link">Читать полностью</a>
+									<i class="d_icon d_icon-arrow-diagonal"></i>
+								</div>
+							</div>
+						</article>
+					</main>
+					<button class="my-button my-button--blue projects-list__button career-history__button">
+						Загрузить ещё
+						<i class="d_icon d_icon-plus projects-list__button-icon"></i>
+					</button>
+				</section>
+			</div>
 
 			<section
 				class="container about-production__politics about-production-politics electrolaboratory-questions career-questions"
@@ -778,129 +802,17 @@
 									</p>
 								</li>
 							</ul>
-						</div>
-					</details>
-					<details
-						class="accordion about-production-politics__accordion electrolaboratory-questions__accordion career-questions__accordion"
-					>
-						<summary class="accordion__header">
-							<span class="h3 blue accordion__title about-production-politics__title"
-								>ИНЖЕНЕР-КОНСТРУКТОР (ЭЛЕКТРОЩИТОВОЕ ОБОРУДОВАНИЕ)</span
-							>
-							<i class="accordion__icon"></i>
-						</summary>
-
-						<div class="accordion__content career-questions__content">
-							<div class="career-questions__block">
-								<p class="electrolaboratory-questions__text career-questions__text">ОБЯЗАННОСТИ:</p>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Разрабатывает эскизные, технические и рабочие проекты изделий, используя
-										средства автоматизации проектирования, обеспечивает при этом соответствие
-										разрабатываемых конструкций техническим заданиям, стандартам, нормам охраны
-										труда, требованиям наиболее экономичной технологии производства
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Составляет общие компоновки и теоретические увязки отдельных элементов
-										конструкций на основании принципиальных схем и эскизных проектов, проверяет
-										рабочие проекты и осуществляет контроль чертежей по специальности или профилю
-										работы.
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Изучает и анализирует поступающую от других предприятий конструкторскую
-										документацию в целях ее использования при проектировании и конструировании.
-									</p>
-								</div>
-							</div>
-							<div class="career-questions__block">
-								<p class="electrolaboratory-questions__text career-questions__text">ТРЕБОВАНИЯ:</p>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">Высшее техническое образование</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Знания электротехники и электрощитового оборудования 0,4кВ, 6 (10) кВ;
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Уверенный пользователь САПР Solidworks и Autocad;
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Навыки проектирования изделия из листового материала приветствуется;
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Знание государственных стандартов и нормативно-технической документации по
-										разработке и конструированию, знание ЕСКД;
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Методы проведения технических расчетов при проектировании;
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Английский язык – на уровне чтения технической документации
-									</p>
-								</div>
-							</div>
-							<div class="career-questions__block">
-								<p class="electrolaboratory-questions__text career-questions__text">УСЛОВИЯ:</p>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Пятидневная рабочая неделя с 8:00 до 17:00 часов.
-									</p>
-								</div>
-								<div class="about-production-politics__input-container">
-									<div class="my-checkbox my-checkbox--small">
-										<i class="d_icon d_icon-check my-checkbox__icon"></i>
-									</div>
-									<p class="about-production-politics__text">
-										Официальное трудоустройство, официальная заработная плата, социальный пакет
-									</p>
-								</div>
+							<div class="about-production-about__button-container career-job__button-container">
+								<button
+									class="my-button my-button--red about-production-about__button career-job__send-button"
+								>
+									Скачать анкету
+									<i class="d_icon d_icon-upload"></i>
+								</button>
+								<button class="my-button my-button--transparent about-production-about__button">
+									Отправить резюме
+									<i class="d_icon d_icon-arrow-diagonal blue"></i>
+								</button>
 							</div>
 						</div>
 					</details>
@@ -1026,6 +938,18 @@
 									</p>
 								</li>
 							</ul>
+							<div class="about-production-about__button-container career-job__button-container">
+								<button
+									class="my-button my-button--red about-production-about__button career-job__send-button"
+								>
+									Скачать анкету
+									<i class="d_icon d_icon-upload"></i>
+								</button>
+								<button class="my-button my-button--transparent about-production-about__button">
+									Отправить резюме
+									<i class="d_icon d_icon-arrow-diagonal blue"></i>
+								</button>
+							</div>
 						</div>
 					</details>
 					<details
@@ -1150,6 +1074,154 @@
 									</p>
 								</li>
 							</ul>
+							<div class="about-production-about__button-container career-job__button-container">
+								<button
+									class="my-button my-button--red about-production-about__button career-job__send-button"
+								>
+									Скачать анкету
+									<i class="d_icon d_icon-upload"></i>
+								</button>
+								<button class="my-button my-button--transparent about-production-about__button">
+									Отправить резюме
+									<i class="d_icon d_icon-arrow-diagonal blue"></i>
+								</button>
+							</div>
+						</div>
+					</details>
+					<details
+						class="accordion about-production-politics__accordion electrolaboratory-questions__accordion career-questions__accordion"
+					>
+						<summary class="accordion__header">
+							<span class="h3 blue accordion__title about-production-politics__title"
+								>ИНЖЕНЕР-КОНСТРУКТОР (ЭЛЕКТРОЩИТОВОЕ ОБОРУДОВАНИЕ)</span
+							>
+							<i class="accordion__icon"></i>
+						</summary>
+
+						<div class="accordion__content career-questions__content">
+							<ul class="career-questions__block">
+								<p class="electrolaboratory-questions__text career-questions__text">ОБЯЗАННОСТИ:</p>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Разрабатывает эскизные, технические и рабочие проекты изделий, используя
+										средства автоматизации проектирования, обеспечивает при этом соответствие
+										разрабатываемых конструкций техническим заданиям, стандартам, нормам охраны
+										труда, требованиям наиболее экономичной технологии производства
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Составляет общие компоновки и теоретические увязки отдельных элементов
+										конструкций на основании принципиальных схем и эскизных проектов, проверяет
+										рабочие проекты и осуществляет контроль чертежей по специальности или профилю
+										работы.
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Изучает и анализирует поступающую от других предприятий конструкторскую
+										документацию в целях ее использования при проектировании и конструировании.
+									</p>
+								</li>
+							</ul>
+							<ul class="career-questions__block">
+								<p class="electrolaboratory-questions__text career-questions__text">ТРЕБОВАНИЯ:</p>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">Высшее техническое образование</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Знания электротехники и электрощитового оборудования 0,4кВ, 6 (10) кВ;
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Уверенный пользователь САПР Solidworks и Autocad;
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Навыки проектирования изделия из листового материала приветствуется;
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Знание государственных стандартов и нормативно-технической документации по
+										разработке и конструированию, знание ЕСКД;
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Методы проведения технических расчетов при проектировании;
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Английский язык – на уровне чтения технической документации
+									</p>
+								</li>
+							</ul>
+							<ul class="career-questions__block">
+								<p class="electrolaboratory-questions__text career-questions__text">УСЛОВИЯ:</p>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Пятидневная рабочая неделя с 8:00 до 17:00 часов.
+									</p>
+								</li>
+								<li class="about-production-politics__input-container">
+									<div class="my-checkbox my-checkbox--small">
+										<i class="d_icon d_icon-check my-checkbox__icon"></i>
+									</div>
+									<p class="about-production-politics__text">
+										Официальное трудоустройство, официальная заработная плата, социальный пакет
+									</p>
+								</li>
+							</ul>
+							<div class="about-production-about__button-container career-job__button-container">
+								<button
+									class="my-button my-button--red about-production-about__button career-job__send-button"
+								>
+									Скачать анкету
+									<i class="d_icon d_icon-upload"></i>
+								</button>
+								<button class="my-button my-button--transparent about-production-about__button">
+									Отправить резюме
+									<i class="d_icon d_icon-arrow-diagonal blue"></i>
+								</button>
+							</div>
 						</div>
 					</details>
 				</main>
@@ -1157,20 +1229,22 @@
 
 			<section class="container electrolaboratory-about career-job">
 				<div class="section-border-radius catalog-album__content career-job__content">
+					<img src="/assets/img/background/bg-main2.png" alt="" class="career-job__img" />
+
 					<span class="h1 career-job__title">Не нашли подходящую вакансию?</span>
 					<span class="blue career-job__span"
 						>Просто отправьте свое резюме или оставьте свои данные
 					</span>
 					<div class="about-production-about__button-container career-job__button-container">
-						<button class="my-button my-button--transparent about-production-about__button">
-							Отправить резюме
-							<i class="d_icon d_icon-paper-clip"></i>
-						</button>
 						<button
 							class="my-button my-button--red about-production-about__button career-job__send-button"
 						>
-							Написать нам
-							<i class="d_icon d_icon-arrow-diagonal"></i>
+							Скачать анкету
+							<i class="d_icon d_icon-upload"></i>
+						</button>
+						<button class="my-button my-button--transparent about-production-about__button">
+							Отправить резюме
+							<i class="d_icon d_icon-arrow-diagonal blue"></i>
 						</button>
 					</div>
 				</div>
@@ -1185,51 +1259,49 @@
 					Скачать схему проезда
 					<i class="d_icon d_icon-upload"></i>
 				</a>
-				<button class="footer__up-button hidden-mobile-l">
+				<a href="#" class="footer__up-button hidden-mobile-l">
 					<i class="d_icon d_icon-arrow-diagonal"></i>
-				</button>
+				</a>
 			</div>
 			<div class="container footer__content">
-					<div class="footer__contacts contacts">
-						<div class="contacts__contact contact">
-							<i class="d_icon d_icon-telephone contact__icon"></i>
-							<div class="contact__content">
-								<p class="contact__text">пн-пт 08:00 - 17:00</p>
-								<a href="tel:8 (961) 156-11-86" class="contact__text contact__text--large"
-									>8 (961) 156-11-86</a
-								>
-								<div class="contact__link-container">
-									<a href="#" class="contact__link">Быстрая консультация</a>
-									<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
-								</div>
-							</div>
-						</div>
-						<div class="contact">
-							<i class="d_icon d_icon-mail contact__icon"></i>
-							<div class="contact__content">
-								<p class="contact__text">Email:</p>
-								<a href="mailto:info@resh76.ru" class="contact__text">info@resh76.ru</a>
-							</div>
-						</div>
-						<div class="contact">
-							<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
-							<div class="contact__content">
-								<div class="contact__link-container contact__link-container--green">
-									<a class="contact__link" id="questionModalOpenButton">Задать вопрос</a>
-									<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
-								</div>
-							</div>
-						</div>
-						<div class="contact">
-							<i class="d_icon d_icon-mark contact__icon"></i>
-							<div class="contact__content">
-								<p class="contact__text contact__text--large">ОФИС:</p>
-								<p class="contact__text">
-									152914, Ярославская обл., г.<br />Рыбинск, ул.Толбухина 8
-								</p>
+				<div class="footer__contacts contacts">
+					<div class="contacts__contact contact">
+						<i class="d_icon d_icon-telephone contact__icon"></i>
+						<div class="contact__content">
+							<p class="contact__text">пн-пт 08:00 - 17:00</p>
+							<a href="tel:8 (961) 156-11-86" class="contact__text contact__text--large"
+								>8 (961) 156-11-86</a
+							>
+							<div class="contact__link-container">
+								<a href="#" class="contact__link">Быстрая консультация</a>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
 							</div>
 						</div>
 					</div>
+					<div class="contact">
+						<i class="d_icon d_icon-mail contact__icon"></i>
+						<div class="contact__content">
+							<p class="contact__text">Email:</p>
+							<a href="mailto:info@resh76.ru" class="contact__text">info@resh76.ru</a>
+						</div>
+					</div>
+					<div class="contact">
+						<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
+						<div class="contact__content">
+							<div class="contact__link-container contact__link-container--green">
+								<a class="contact__link" id="questionModalOpenButton">Задать вопрос</a>
+								<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="contact">
+						<i class="d_icon d_icon-mark contact__icon"></i>
+						<div class="contact__content">
+							<p class="contact__text contact__text--large">ОФИС:</p>
+							<p class="contact__text">152914, Ярославская обл., г.<br />Рыбинск, ул.Толбухина 8</p>
+						</div>
+					</div>
+				</div>
 				<nav class="footer__nav">
 					<ul class="footer__list">
 						<span class="h3 footer__subtitle">КАТАЛОГ</span>

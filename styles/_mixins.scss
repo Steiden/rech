@@ -25,6 +25,12 @@
 }
 
 @mixin container {
+	width: clamp(300px, #{calc(1540 * 100 / 1920)}vw, 1540px);
+	max-width: 1540px;
+	margin: 0 auto;
+}
+
+@mixin container-padding {
 	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 3}vw, 192px);
 }
 
@@ -123,7 +129,13 @@
 	gap: $gap;
 }
 
-@mixin scrollbar($width: 10px, $height: 10px, $bg-thumb-color: #edf2fa, $border-radius: 5px, $bg-track-color: transparent) {
+@mixin scrollbar(
+	$width: 10px,
+	$height: 10px,
+	$bg-thumb-color: #edf2fa,
+	$border-radius: 5px,
+	$bg-track-color: transparent
+) {
 	&::-webkit-scrollbar {
 		width: $width;
 		height: $height;
@@ -151,11 +163,11 @@
 @mixin hidden {
 	visibility: collapse !important;
 	opacity: 0 !important;
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 }
 
 @mixin visible {
 	visibility: visible !important;
 	opacity: 1 !important;
-	transition-duration: .3s;
+	transition-duration: 0.3s;
 }

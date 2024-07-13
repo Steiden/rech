@@ -1,6 +1,9 @@
 .projects-reference {
 	@include fluid-property(padding-block, 50, 120);
-	background-color: var(--primary-alt-color);
+
+	&__wrapper {
+		background-color: var(--primary-alt-color);
+	}
 
 	&__table,
 	.table {

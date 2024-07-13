@@ -1,6 +1,11 @@
 .partners-director {
     @include flex-direction;
     @include fluid-property(gap, 40, 10);
+    margin-bottom: 0;
+
+    @include mobile-l {
+        margin-bottom: 0;
+    }
 
     &__header {
         @include mobile-l {
@@ -16,6 +21,7 @@
     &__img,
     &__content {
         width: 50%;
+        margin-bottom: 0;
 
         @include tablet-l {
             width: 100%;
@@ -23,7 +29,7 @@
     }
 
     &__img {
-        align-self: flex-start;
+        // align-self: flex-start;
         translate: 0;
 
         @include tablet-l {

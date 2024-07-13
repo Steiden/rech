@@ -70,6 +70,10 @@
 		width: 30px;
 		height: 30px;
 
+		&:hover {
+			background-color: var(--thirdy-alt-color);
+		}
+
 		i {
 			@include flex-center;
 
@@ -114,14 +118,16 @@
 		border-bottom-left-radius: 15px;
 
 		padding: 19px 15px;
-		width: 115px;
+		width: 120px;
 		min-height: 100px;
+
+		transition-duration: .3s;
 
 		i::before {
 			color: var(--white-color);
 		}
 
-		&--dark {
+		&:hover {
 			background: var(--primary-alt-color);
 
 			i::before {

@@ -1,7 +1,7 @@
 .documentation-main-documents {
-    @include flex-direction;
-    @include fluid-property(gap, 12, 30);
-    @include fluid-property(margin-bottom, 30, 50);
+	@include flex-direction;
+	@include fluid-property(gap, 12, 30);
+	@include fluid-property(margin-bottom, 30, 50);
 
 	.accordion {
 		@include flex-direction;
@@ -14,21 +14,22 @@
 			@include grid(auto, repeat(4, 1fr), 30px);
 			@include fluid-property(gap, 20, 30);
 			@include fluid-property(margin-top, 30, 45);
-            @include fluid-property(margin-bottom, 28, 30);
+			@include fluid-property(margin-bottom, 28, 30);
 
-            padding: 0;
+			width: auto;
+			padding: 0;
 
-            @include desktop-s {
-                grid-template-columns: repeat(3, 1fr);
-            }
+			@include desktop-s {
+				grid-template-columns: repeat(3, 1fr);
+			}
 
-            @include tablet-l {
-                grid-template-columns: repeat(2, 1fr);
-            }
+			@include tablet-l {
+				grid-template-columns: repeat(2, 1fr);
+			}
 
-            @include tablet-s {
-                grid-template-columns: 1fr;
-            }
+			@include tablet-s {
+				grid-template-columns: 1fr;
+			}
 		}
 
 		&__card,
@@ -55,46 +56,46 @@
 				@include flex-direction($gap: 10px);
 			}
 
-            &__info-icon,
-            .info-icon {
-                align-self: flex-end;
-                translate: 0 -25%;
-                position: relative;
+			&__info-icon,
+			.info-icon {
+				align-self: flex-end;
+				translate: 0 -25%;
+				position: relative;
 
-                &:hover {
-                    .info-icon__hint {
-                        visibility: visible;
-                        opacity: 1;
-                    }
-                }
-            }
+				&:hover {
+					.info-icon__hint {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
 
-            &__list {
-                @include flex-direction($gap: 12px);
+			&__list {
+				@include flex-direction($gap: 12px);
 
-                background-color: #5AC5EF;
-                border-radius: 10px;
+				background-color: #5ac5ef;
+				border-radius: 10px;
 
-                padding: 11px 14px;
-                min-width: 140px;
+				padding: 11px 14px;
+				min-width: 140px;
 
-                position: absolute;
-                bottom: 100%;
-                left: 100%;
-                translate: 0% 15%;
-                visibility: hidden;
-                opacity: 0;
-                transition-duration: 0.3s;
+				position: absolute;
+				bottom: 100%;
+				left: 100%;
+				translate: 0% 15%;
+				visibility: hidden;
+				opacity: 0;
+				transition-duration: 0.3s;
 
-                @include mobile-l {
-                    left: auto;
-                    right: 100%;
-                }
-            }
+				@include mobile-l {
+					left: auto;
+					right: 100%;
+				}
+			}
 
-            &__item {
-                font-size: 16px;
-            }
+			&__item {
+				font-size: 16px;
+			}
 
 			&__text,
 			&__link {
@@ -105,13 +106,13 @@
 			}
 
 			&__link {
-                color: #006AAB;
-                border: none;
-                cursor: pointer;
+				color: #006aab;
+				border: none;
+				cursor: pointer;
 
-                &:hover {
-                    color: #AC262F;
-                }
+				&:hover {
+					color: #ac262f;
+				}
 			}
 		}
 	}

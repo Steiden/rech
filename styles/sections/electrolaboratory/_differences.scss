@@ -1,5 +1,9 @@
 .electrolaboratory-differences {
 
+    &__wrapper {
+        background-color: var(--primary-alt-color);
+    }
+
     &__card-container {
         @include flex-direction(row);
         @include adaptive-property(gap, 18, 40);

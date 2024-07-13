@@ -4,11 +4,13 @@
 	@include flex-direction;
 	@include fluid-property(gap, 40, 90);
 
-    background-color: var(--primary-alt-color);
+	&__wrapper {
+		background-color: var(--primary-alt-color);
+	}
 
 	&__content {
-        @include flex-direction;
-        @include fluid-property(gap, 13, 16);
+		@include flex-direction;
+		@include fluid-property(gap, 13, 16);
 	}
 
 	&__input-container {
@@ -17,55 +19,55 @@
 		flex-wrap: wrap;
 	}
 
-    &__input,
-    &__button,
-    &__send-button {
-        @include fluid-property(height, 55, 66);
+	&__input,
+	&__button,
+	&__send-button {
+		@include fluid-property(height, 55, 66);
 
-        @include tablet {
-            width: 100%;
-        }
-    }
+		@include tablet {
+			width: 100%;
+		}
+	}
 
 	&__input {
 		@include fluid-property(padding-block, 22, 26);
-        
-        background-color: var(--white-color);
-        border-radius: 15px;
+
+		background-color: var(--white-color);
+		border-radius: 15px;
 		color: var(--thirdy-alt-color);
 
 		min-width: 300px;
-        padding-inline: 23px;
+		padding-inline: 23px;
 
-        &::placeholder {
-            color: inherit;
-        }
+		&::placeholder {
+			color: inherit;
+		}
 	}
 
-    &__button {
-        @include fluid-property(padding-inline, 55, 50);
+	&__button {
+		@include fluid-property(padding-inline, 55, 50);
 
-        border: 1px solid var(--thirdy-color);
+		border: 1px solid var(--thirdy-color);
 
-        i::before {
-            color: var(--white-color);
-        }
-    }
+		i::before {
+			color: var(--white-color);
+		}
+	}
 
-    &__send-button {
-        @include fluid-property(padding-inline, 30, 130);
+	&__send-button {
+		@include fluid-property(padding-inline, 30, 130);
 
-        @include mobile-l {
-            margin-top: 25px;
-        }
-    }
+		@include mobile-l {
+			margin-top: 25px;
+		}
+	}
 
-    &__span {
-        @include fluid-text(12, 13);
-    }
+	&__span {
+		@include fluid-text(12, 13);
+	}
 
-    &__link {
-        border: none;
-        color: var(--thirdy-color);
-    }
+	&__link {
+		border: none;
+		color: var(--thirdy-color);
+	}
 }

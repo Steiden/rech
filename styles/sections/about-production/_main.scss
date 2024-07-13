@@ -3,5 +3,9 @@
 
     &__content {
         @include flex-direction($gap: 120px);
+
+        @include mobile-l {
+            gap: 60px;
+        }
     }
 }

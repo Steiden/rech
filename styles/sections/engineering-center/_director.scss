@@ -1,4 +1,9 @@
 .eng-director {
+    margin-bottom: 0;
+
+    @include mobile-l {
+        margin-bottom: 0;
+    }
 
     &__img {
         translate: 50px 0;

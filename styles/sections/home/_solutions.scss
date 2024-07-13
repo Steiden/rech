@@ -13,7 +13,7 @@
 
 	&__card,
 	.solution-card {
-		max-height: 450px;
+		// max-height: 450px;
 
 		&__header {
 			@include flex-direction(row, 10px);

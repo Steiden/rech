@@ -1,5 +1,11 @@
 .container {
-	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 2}vw, 192px);
+	width: clamp(300px, #{calc((1540 * 100 / 1920) + 5)}vw, 1540px);
+	max-width: 1540px;
+	margin: 0 auto;
+}
+
+.container-padding {
+	padding-inline: clamp(50px, #{calc(192 * 100 / 1920) - 3}vw, 192px);
 }
 
 .hidden {

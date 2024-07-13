@@ -53,14 +53,18 @@
 	}
 
 	&__img-container {
+		@include flex-center;
 		padding-right: 0;
+
+		@include tablet-l {
+			@include container-padding;
+		}
 	}
 
 	&__img {
 	}
 
 	&__text-container {
-		@include container;
 		@include flex-direction;
 		@include fluid-property(gap, 30, 40);
 		@include fluid-property(border-radius, 20, 30);
@@ -69,10 +73,10 @@
 		border-bottom-right-radius: 0;
 
 		padding-top: 60px;
-		padding-right: 45px;
+		padding-inline: 45px;
 		padding-bottom: 40px;
 
-		@include mobile-l {
+		@include tablet-l {
 			@include fluid-property(border-radius, 20, 30);
 
 			padding: 47px 26px;
@@ -98,8 +102,6 @@
 
 		@include tablet-l {
 			@include container;
-			width: 100%;
-			margin: 0;
 		}
 	}
 

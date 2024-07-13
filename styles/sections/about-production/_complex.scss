@@ -3,9 +3,11 @@
     @include fluid-property(gap, 60, 65);
 
     @include mobile-l {
+        @include container-padding;
         background-color: var(--primary-alt-color);
         padding-block: 60px;
         border-radius: 20px;
+        width: 100%;
     }
 
     &__header {

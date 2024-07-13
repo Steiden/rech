@@ -1,6 +1,11 @@
 .career-director {
     @include flex-direction;
     @include fluid-property(gap, 40, 80);
+    margin-bottom: -120px;
+
+    @include tablet-l {
+        margin-bottom: 0;
+    }
 
     &__main {
         align-items: flex-start;

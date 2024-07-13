@@ -21,7 +21,7 @@
         height: auto !important;
 
         @include tablet-l {
-            @include fluid-property(max-width, 268, 350);
+            @include fluid-property(max-width, 268, 430);
         }
     }
 

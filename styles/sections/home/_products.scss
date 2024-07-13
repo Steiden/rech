@@ -155,7 +155,7 @@
 		}
 
 		&__button {
-			@include fluid-property(height, 56, 66);
+			@include fluid-property(min-height, 56, 66);
 			font-weight: 700;
 
 			@include mobile-l {

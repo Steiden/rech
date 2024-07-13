@@ -1,15 +1,10 @@
 .map {
-	background: url("/assets/img/background/bg-map.png") no-repeat center center / cover;
-
 	height: 1150px;
-
-	overflow: hidden;
-	position: relative;
 
 	&:hover {
 		.map__img {
 			display: none;
-			
+
 			&--light {
 				display: block;
 			}
@@ -28,6 +23,12 @@
 		height: clamp(500px, #{calc(1150 * 100 / 1920)}vw, 1150px);
 		padding: 35px 50px;
 		height: fit-content;
+	}
+
+	&__wrapper {
+		background: url("/assets/img/background/bg-map.png") no-repeat center center / cover;
+		position: relative;
+		overflow: hidden;
 	}
 
 	&__mask {
@@ -50,7 +51,6 @@
 	}
 
 	&__img {
-		
 		&--light {
 			display: none;
 		}

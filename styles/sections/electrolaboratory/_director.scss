@@ -1,6 +1,13 @@
 .electrolaboratory-director {
+	margin-bottom: -120px;
+
+	@include tablet-l {
+		margin-bottom: 0;
+	}
+
 	@include mobile-l {
 		padding: 0;
+		width: auto;
 	}
 
 	&__main {
@@ -32,7 +39,7 @@
 
 	&__text {
 		@include fluid-text(16, 32);
-		
+		line-height: 1.5;
 
 		&--small {
 			@include fluid-text(16, 24);

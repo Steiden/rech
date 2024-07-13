@@ -1,6 +1,7 @@
 .statistics {
 	@include tablet {
 		padding: 0;
+		width: auto;
 	}
 
 	&__content {

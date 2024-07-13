@@ -1,10 +1,16 @@
 .about-production-director {
 	@include flex-direction($gap: 80px);
 
+	margin-bottom: -120px;
 	position: relative;
+
+	@include tablet-l {
+		margin-bottom: 0;
+	}
 
 	@include mobile-l {
 		padding: 0;
+		width: auto;
 	}
 
 	&__header {
@@ -38,15 +44,9 @@
 
 	&__img {
 		align-self: flex-end;
-
 		height: fit-content;
 		width: 50%;
 		object-fit: contain;
-		translate: 0 120px;
-
-		@include tablet-l {
-			translate: 0;
-		}
 	}
 
 	&__content {
@@ -58,10 +58,11 @@
 		background-color: var(--primary-alt-color);
 
 		height: fit-content;
-
 		width: 50%;
+		margin-bottom: 120px;
 
 		@include tablet-l {
+			margin-bottom: 0;
 			width: 100%;
 		}
 	}
