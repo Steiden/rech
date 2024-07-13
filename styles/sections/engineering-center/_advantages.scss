@@ -1,4 +1,9 @@
 .eng-advantages {
+    padding-bottom: 20px;
+
+    &__wrapper {
+        overflow: hidden;
+    }
 
     &__card-container {
         @include grid(auto, repeat(3, 1fr), 40px);

@@ -7,9 +7,9 @@
 
 	&__main {
 		padding-block: 0;
+		overflow: visible;
 
 		@include mobile-l {
-			overflow: visible;
 			margin-bottom: 0;
 		}
 	}

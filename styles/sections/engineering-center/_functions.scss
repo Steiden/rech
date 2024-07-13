@@ -1,7 +1,10 @@
 .eng-functions {
 	@include flex-direction;
 	@include fluid-property(gap, 40, 90);
-    overflow: hidden;
+
+    &__wrapper {
+        overflow: hidden;
+    }
 
 	&__main {
         @include flex-direction($gap: 60px);
@@ -50,5 +53,6 @@
 
     &__slider {
         max-width: 85vw;
+        overflow: visible !important;
     }
 }

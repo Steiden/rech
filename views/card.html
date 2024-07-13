@@ -144,7 +144,10 @@
 					>
 						<i class="d_icon d_icon-menu catalog-button__icon"></i>
 					</button>
-					<button class="header__close-button close-button visible-tablet-l" id="closeCatalogButton">
+					<button
+						class="header__close-button close-button visible-tablet-l"
+						id="closeCatalogButton"
+					>
 						<i class="d_icon d_icon-close close-button__icon"></i>
 					</button>
 				</div>
@@ -423,7 +426,9 @@
 				<section
 					class="about-production-politics documentation-main__documents documentation-main-documents"
 				>
-					<details class="accordion accordion--small card-equipment__accordion card-equipment-accordion">
+					<details
+						class="accordion accordion--small card-equipment__accordion card-equipment-accordion"
+					>
 						<summary class="accordion__header">
 							<span class="h3 blue accordion__title">НАДЗЕМНЫЙ БЛОК</span>
 							<i class="accordion__icon"></i>
@@ -914,130 +919,58 @@
 				</article>
 			</section>
 
-			<section class="section-border-radius container-padding advantages card__reasons card-reasons">
-				<div class="container title">
-					<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
-					<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-					<span class="h2"><span class="blue">ПОЧЕМУ ВЫБИРАЮТ</span> ДАННОЕ ОБОРУДОВАНИЕ</span>
-				</div>
-				<div class="swiper advantages__swiper">
-					<div class="advantages__card-container swiper-wrapper">
-						<div class="advantages__card advantage-card card-reasons-card swiper-slide">
-							<p class="advantage-card__index">1</p>
-							<span class="h3 advantage-card__title card-reasons__title"
-								>Простота и оперативность монтажа</span
-							>
+			<div class="section-border-radius card-reasons__wrapper">
+				<section class="container advantages card__reasons card-reasons">
+					<header class="card-reasons__header">
+						<div class="container title">
+							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+							<span class="h2"><span class="blue">ПОЧЕМУ ВЫБИРАЮТ</span> ДАННОЕ ОБОРУДОВАНИЕ</span>
 						</div>
-						<div class="advantages__card advantage-card card-reasons-card swiper-slide">
-							<p class="advantage-card__index">2</p>
-							<span class="h3 advantage-card__title card-reasons__title"
-								>Отсутствие капитальных затрат для ввода в эксплуатацию</span
-							>
+					</header>
+					<main class="card-reasons__main">
+						<div class="swiper advantages__swiper">
+							<div class="advantages__card-container swiper-wrapper">
+								<div class="advantages__card advantage-card card-reasons-card swiper-slide">
+									<p class="advantage-card__index">1</p>
+									<span class="h3 advantage-card__title card-reasons__title"
+										>Простота и оперативность монтажа</span
+									>
+								</div>
+								<div class="advantages__card advantage-card card-reasons-card swiper-slide">
+									<p class="advantage-card__index">2</p>
+									<span class="h3 advantage-card__title card-reasons__title"
+										>Отсутствие капитальных затрат для ввода в эксплуатацию</span
+									>
+								</div>
+								<div class="advantages__card advantage-card card-reasons-card swiper-slide">
+									<p class="advantage-card__index">3</p>
+									<span class="h3 advantage-card__title card-reasons__title"
+										>Возможность поставки как типовых, так и нетиповых конструкций</span
+									>
+								</div>
+								<div class="advantages__card advantage-card card-reasons-card swiper-slide">
+									<p class="advantage-card__index">4</p>
+									<span class="h3 advantage-card__title card-reasons__title"
+										>Предмонтажная проверка осуществляется в заводских условиях</span
+									>
+								</div>
+							</div>
+							<div class="swiper-scrollbar"></div>
 						</div>
-						<div class="advantages__card advantage-card card-reasons-card swiper-slide">
-							<p class="advantage-card__index">3</p>
-							<span class="h3 advantage-card__title card-reasons__title"
-								>Возможность поставки как типовых, так и нетиповых конструкций</span
-							>
-						</div>
-						<div class="advantages__card advantage-card card-reasons-card swiper-slide">
-							<p class="advantage-card__index">4</p>
-							<span class="h3 advantage-card__title card-reasons__title"
-								>Предмонтажная проверка осуществляется в заводских условиях</span
-							>
-						</div>
+					</main>
+				</section>
+			</div>
+
+			<div class="catalog-products__wrapper">
+				<section class="container catalog__products catalog-products card-products">
+					<div class="title">
+						<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
+						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
+						<span class="h2"><span class="blue">ЕЩЁ ОБОРУДОВАНИЕ</span> ИЗ РАЗДЕЛА "НАЗВАНИЕ"</span>
 					</div>
-				</div>
-			</section>
-
-			<section class="container catalog__products catalog-products card-products">
-				<div class="title">
-					<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
-					<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
-					<span class="h2"><span class="blue">ЕЩЁ ОБОРУДОВАНИЕ</span> ИЗ РАЗДЕЛА "НАЗВАНИЕ"</span>
-				</div>
-				<div class="catalog-products__content hidden-tablet-l">
-					<article class="catalog-products__card catalog-products-card">
-						<img
-							src="/assets/img/products/block4.png"
-							alt="product"
-							class="catalog-products-card__img"
-						/>
-						<div class="catalog-products-card__content">
-							<span class="h3 catalog-products-card__title"
-								>Блочная комплектная трансформаторная подстанция</span
-							>
-							<p class="catalog-products-card__text">
-								Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
-							</p>
-							<a class="my-button my-button--transparent catalog-products-card__button">
-								Подробнее
-								<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
-							</a>
-						</div>
-					</article>
-					<article class="catalog-products__card catalog-products-card">
-						<img
-							src="/assets/img/products/block4.png"
-							alt="product"
-							class="catalog-products-card__img"
-						/>
-						<div class="catalog-products-card__content">
-							<span class="h3 catalog-products-card__title"
-								>Блочная комплектная трансформаторная подстанция</span
-							>
-							<p class="catalog-products-card__text">
-								Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
-							</p>
-							<a class="my-button my-button--transparent catalog-products-card__button">
-								Подробнее
-								<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
-							</a>
-						</div>
-					</article>
-					<article class="catalog-products__card catalog-products-card">
-						<img
-							src="/assets/img/products/block4.png"
-							alt="product"
-							class="catalog-products-card__img"
-						/>
-						<div class="catalog-products-card__content">
-							<span class="h3 catalog-products-card__title"
-								>Блочная комплектная трансформаторная подстанция</span
-							>
-							<p class="catalog-products-card__text">
-								Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
-							</p>
-							<a class="my-button my-button--transparent catalog-products-card__button">
-								Подробнее
-								<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
-							</a>
-						</div>
-					</article>
-					<article class="catalog-products__card catalog-products-card">
-						<img
-							src="/assets/img/products/block4.png"
-							alt="product"
-							class="catalog-products-card__img"
-						/>
-						<div class="catalog-products-card__content">
-							<span class="h3 catalog-products-card__title"
-								>Блочная комплектная трансформаторная подстанция</span
-							>
-							<p class="catalog-products-card__text">
-								Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
-							</p>
-							<a class="my-button my-button--transparent catalog-products-card__button">
-								Подробнее
-								<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
-							</a>
-						</div>
-					</article>
-				</div>
-
-				<div class="products-swiper visible-tablet-l">
-					<div class="swiper-wrapper">
-						<article class="catalog-products__card catalog-products-card swiper-slide">
+					<div class="catalog-products__content hidden-tablet-l">
+						<article class="catalog-products__card catalog-products-card">
 							<img
 								src="/assets/img/products/block4.png"
 								alt="product"
@@ -1056,7 +989,7 @@
 								</a>
 							</div>
 						</article>
-						<article class="catalog-products__card catalog-products-card swiper-slide">
+						<article class="catalog-products__card catalog-products-card">
 							<img
 								src="/assets/img/products/block4.png"
 								alt="product"
@@ -1075,7 +1008,7 @@
 								</a>
 							</div>
 						</article>
-						<article class="catalog-products__card catalog-products-card swiper-slide">
+						<article class="catalog-products__card catalog-products-card">
 							<img
 								src="/assets/img/products/block4.png"
 								alt="product"
@@ -1094,7 +1027,7 @@
 								</a>
 							</div>
 						</article>
-						<article class="catalog-products__card catalog-products-card swiper-slide">
+						<article class="catalog-products__card catalog-products-card">
 							<img
 								src="/assets/img/products/block4.png"
 								alt="product"
@@ -1114,8 +1047,89 @@
 							</div>
 						</article>
 					</div>
-				</div>
-			</section>
+					<div class="products-swiper catalog-products__swiper visible-tablet-l">
+						<div class="swiper-wrapper">
+							<article class="catalog-products__card catalog-products-card swiper-slide">
+								<img
+									src="/assets/img/products/block4.png"
+									alt="product"
+									class="catalog-products-card__img"
+								/>
+								<div class="catalog-products-card__content">
+									<span class="h3 catalog-products-card__title"
+										>Блочная комплектная трансформаторная подстанция</span
+									>
+									<p class="catalog-products-card__text">
+										Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
+									</p>
+									<a class="my-button my-button--transparent catalog-products-card__button">
+										Подробнее
+										<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
+									</a>
+								</div>
+							</article>
+							<article class="catalog-products__card catalog-products-card swiper-slide">
+								<img
+									src="/assets/img/products/block4.png"
+									alt="product"
+									class="catalog-products-card__img"
+								/>
+								<div class="catalog-products-card__content">
+									<span class="h3 catalog-products-card__title"
+										>Блочная комплектная трансформаторная подстанция</span
+									>
+									<p class="catalog-products-card__text">
+										Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
+									</p>
+									<a class="my-button my-button--transparent catalog-products-card__button">
+										Подробнее
+										<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
+									</a>
+								</div>
+							</article>
+							<article class="catalog-products__card catalog-products-card swiper-slide">
+								<img
+									src="/assets/img/products/block4.png"
+									alt="product"
+									class="catalog-products-card__img"
+								/>
+								<div class="catalog-products-card__content">
+									<span class="h3 catalog-products-card__title"
+										>Блочная комплектная трансформаторная подстанция</span
+									>
+									<p class="catalog-products-card__text">
+										Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
+									</p>
+									<a class="my-button my-button--transparent catalog-products-card__button">
+										Подробнее
+										<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
+									</a>
+								</div>
+							</article>
+							<article class="catalog-products__card catalog-products-card swiper-slide">
+								<img
+									src="/assets/img/products/block4.png"
+									alt="product"
+									class="catalog-products-card__img"
+								/>
+								<div class="catalog-products-card__content">
+									<span class="h3 catalog-products-card__title"
+										>Блочная комплектная трансформаторная подстанция</span
+									>
+									<p class="catalog-products-card__text">
+										Способность быстро адаптироваться к изменяющимся требованиям рынка и клиентов.
+									</p>
+									<a class="my-button my-button--transparent catalog-products-card__button">
+										Подробнее
+										<i class="d_icon d_icon-arrow-diagonal catalog-products-card__icon"></i>
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</section>
+			</div>
 		</main>
 		<footer class="footer about-production-footer">
 			<div class="footer__map">

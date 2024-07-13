@@ -1,5 +1,17 @@
 .card-reasons {
 
+    &__wrapper {
+        background-color: var(--primary-alt-color);
+    }
+
+    &__header {
+
+    }
+
+    &__main {
+        overflow: visible;
+    }
+
     .card-reasons-card {
         @include fluid-property(padding-bottom, 30, 70);
         @include fluid-property(padding-top, 30, 35);

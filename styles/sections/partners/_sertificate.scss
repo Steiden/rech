@@ -12,5 +12,8 @@
     }
 
     &__img {
+        @include tablet-l {
+            max-width: 350px;
+        }
     }
 }

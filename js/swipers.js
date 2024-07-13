@@ -27,7 +27,8 @@ const createSwiper = (swiperSelector, gap, slidesPerView) => {
 	sliders.forEach((slider) => {
 		if(!slider) return
 
-		const swiperPagination = document.querySelector(".swiper-pagination");
+		const swiperPagination = slider.querySelector(".swiper-pagination");
+		const swiperScrollbar = slider.querySelector(".swiper-scrollbar");
 
 		new Swiper(slider, {
 			slidesPerView: slidesPerView,
@@ -35,6 +36,9 @@ const createSwiper = (swiperSelector, gap, slidesPerView) => {
 			pagination: {
 				el: swiperPagination,
 			},
+			scrollbar: {
+				el: swiperScrollbar,
+			}
 		});
 	});
 };

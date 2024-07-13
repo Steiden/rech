@@ -5467,3 +5467,12 @@ body {
 		word-break: break-word;
 	}
 }
+
+.swiper-scrollbar {
+	bottom: -20px !important;
+	// background-color: var(--white-color);
+
+	&-drag {
+		background-color: var(--thirdy-color) !important;
+	}
+}
