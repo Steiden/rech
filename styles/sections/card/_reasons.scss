@@ -1,4 +1,6 @@
 .card-reasons {
+    @include fluid-property(gap, 40, 60);
+    padding-block: 60px;
 
     &__wrapper {
         background-color: var(--primary-alt-color);

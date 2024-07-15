@@ -1,4 +1,6 @@
 .partners-factors {
+    @include fluid-property(gap, 40, 60);
+    @include fluid-property(padding-block, 60, 120);
     overflow: visible;
 
     &__wrapper {

@@ -1,8 +1,19 @@
 .partners-bonus {
+    @include fluid-property(gap, 40, 60);
     overflow: visible;
+
+    @include mobile-l {
+        background-color: transparent;
+        padding: 0;
+        padding-bottom: 20px;
+    }
 
     &__wrapper {
         background-color: var(--primary-alt-color);
         overflow: hidden;
+
+        @include mobile-l {
+            background-color: transparent;
+        }
     }
 }

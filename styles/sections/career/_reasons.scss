@@ -1,14 +1,20 @@
 .career-reasons {
 	@include fluid-property(padding-top, 60, 120);
 	@include fluid-property(padding-bottom, 0, 160);
+    @include fluid-property(gap, 40, 60);
 
 	@include mobile-l {
-		background-color: transparent;
+		padding: 0;
+		padding-bottom: 20px;
 	}
 
 	&__wrapper {
 		background-color: var(--primary-alt-color);
 		overflow: hidden;
+
+		@include mobile-l {
+			background-color: transparent;
+		}
 	}
 
 	&__card-container {
