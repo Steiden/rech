@@ -59,6 +59,10 @@
 			padding-block: 0;
 			height: 100%;
 		}
+		
+		@include mobile-l {
+			height: fit-content;
+		}
 	}
 
 	&__close {

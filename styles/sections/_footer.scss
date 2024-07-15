@@ -202,6 +202,10 @@
 				}
 
 				&--green {
+					button {
+						text-align: left;
+					}
+
 					.contact__link {
 						color: rgba(37, 211, 102, 1);
 						border-color: rgba(37, 211, 102, 1);

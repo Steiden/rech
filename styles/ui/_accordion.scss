@@ -31,6 +31,11 @@
 		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
 		justify-content: space-between;
 		cursor: pointer;
+
+		@include mobile-l {
+			min-height: 54px;
+            background: linear-gradient(12.83deg, rgba(0, 72, 117, 0.78) 16.27%, #004875 97.77%);
+		}
 	}
 
     &__title {
