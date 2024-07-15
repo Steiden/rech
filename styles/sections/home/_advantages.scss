@@ -34,14 +34,15 @@
 		flex-shrink: 0;
 		flex-grow: 1;
 
-		max-width: 370px;
-		width: 370px;
+		max-width: 450px;
+		// width: 370px;
+		width: fit-content;
 		padding: 36px 25px;
 
 		transition: all linear .5s;
 
 		@include tablet {
-			width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
+			// width: clamp(268px, #{calc(370 * 100 / 768)}vw, 370px);
 			gap: clamp(20px, #{calc(30 * 100 / 768)}vw, 30px);
 			padding: 18px;
 		}
@@ -94,7 +95,6 @@
 		&__title {
 			@include fluid-text(22, 36);
 			font-weight: 400;
-			word-break: break-word;
 		}
 
 		&__text {

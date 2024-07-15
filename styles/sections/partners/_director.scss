@@ -28,12 +28,22 @@
         }
     }
 
+    &__content {
+    }
+
     &__img {
-        // align-self: flex-start;
         translate: 0;
 
         @include tablet-l {
             @include container;
+        }
+    }
+
+    &__text {
+        @include fluid-text(18, 26);
+
+        &--small {
+            @include fluid-text(16, 18);
         }
     }
 }

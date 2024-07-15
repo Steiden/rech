@@ -23,7 +23,7 @@
 	}
 
 	&__img {
-		@include adaptive-property(height, 290, 515);
+		@include adaptive-property(height, 290, 500);
 
 		position: absolute;
 		top: 50%;
@@ -31,8 +31,14 @@
 		translate: 0 -50%;
 
 		z-index: 1;
+		object-fit: contain;
 
-		@include mobile-l {
+		@include tablet-l {
+			top: 65%;
+			right: 25px;
+		}
+
+		@include tablet {
 			position: static;
 			translate: 0;
 		}
@@ -56,7 +62,14 @@
 	}
 
 	&__span {
-		@include adaptive-property(font-size, 16, 46);
+		@include adaptive-property(font-size, 16, 42);
+	}
+
+	& &__input {
+	}
+
+	& &__button {
+		max-width: fit-content;
 	}
 
 	&__advantages,

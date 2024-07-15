@@ -3,6 +3,12 @@
 	border-spacing: 0;
 	border: none;
 	width: 100%;
+	// table-layout: fixed;
+
+	// th,
+	// td {
+	// 	width: 100%;
+	// }
 
 	& * {
 		color: var(--thirdy-alt-color);
@@ -34,6 +40,16 @@
 	}
 
 	&__header {
+		.table__row {
+			&--blue {
+				background-color: var(--thirdy-alt-color);
+
+				& * {
+					color: var(--white-color);
+				}
+			}
+		}
+
 		.table__row:nth-child(2) {
 			background-color: var(--thirdy-alt-color);
 

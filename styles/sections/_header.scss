@@ -146,6 +146,10 @@
 		}
 	}
 
+	#desktopCatalogButton {
+		display: contents;
+	}
+
 	.header__catalog-button,
 	.catalog-button {
 		display: flex;
@@ -155,7 +159,7 @@
 		font-size: 20px;
 
 		padding-inline: 25px;
-		max-width: 238px;
+		width: 250px;
 
 		@include tablet-l {
 			@include flex-center;

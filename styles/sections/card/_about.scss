@@ -19,6 +19,7 @@
 
 	&__img {
         object-fit: contain;
+		right: 25px;
 
 		@include tablet-l {
 			position: static;

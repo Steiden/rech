@@ -151,12 +151,16 @@
 
 		&__button-container {
 			@include flex-direction(row, 20px);
-			flex-wrap: wrap;
+
+			@include desktop {
+				flex-wrap: wrap;
+			}
 		}
 
 		&__button {
 			@include fluid-property(min-height, 56, 66);
 			font-weight: 700;
+			height: fit-content;
 
 			@include mobile-l {
 				font-weight: 400;

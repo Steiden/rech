@@ -45,7 +45,7 @@
 		&__title {
 			@include fluid-text(20, 24);
 			color: var(--thirdy-alt-color);
-            
+            font-weight: 700;
 		}
 
 		&__text {

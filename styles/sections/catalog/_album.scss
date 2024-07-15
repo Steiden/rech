@@ -26,7 +26,7 @@
 		@include flex-direction;
 		@include fluid-property(gap, 45, 50);
 		@include fluid-property(padding-block, 60, 85);
-		@include fluid-property(padding-inline, 50, 120);
+		@include fluid-property(padding-inline, 50, 100);
 
 		background: linear-gradient(89.66deg, #01629d 40.17%, #004875 99.07%);
 		position: relative;

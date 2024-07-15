@@ -68,6 +68,7 @@
 
 		&__title {
             @include fluid-text(18, 30);
+			color: var(--white-color);
 		}
 
 		&__text {

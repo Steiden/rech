@@ -9,6 +9,16 @@
 
     &__main {
         align-items: flex-start;
+        gap: 80px;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 30%;
+    }
+
+    &__content {
+        padding-block: 60px;
     }
 
     &__text {

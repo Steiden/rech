@@ -18,6 +18,12 @@ const createTabs = (tabsSelector, contentSelectors) => {
 
 	tabItems.forEach((tab, index) => {
 		tab.addEventListener("click", () => {
+			if(!tabContentItems[index]?.classList.contains("hidden")) {
+				tab.classList.remove("tab-item--active");
+				tabContentItems[index]?.classList.add("hidden");
+				return;
+			}
+
 			tabItems.forEach((tab) => {
 				tab.classList.remove("tab-item--active");
 			});
@@ -32,3 +38,4 @@ const createTabs = (tabsSelector, contentSelectors) => {
 };
 
 createTabs(".cardTabs", ["#cardTabContent1", "#cardTabContent2"]);
+createTabs(".cardTabs2", ["#cardTabContent1", "#cardTabContent2"]);

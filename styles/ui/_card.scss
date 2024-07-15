@@ -35,6 +35,14 @@
 					// font-size: 33px;
 				}
 			}
+
+			& .advantage-card__icon {
+				&--small {
+					&::before {
+						font-size: 28px;
+					}
+				}
+			}
 		}
 
 		.advantage-card__index {

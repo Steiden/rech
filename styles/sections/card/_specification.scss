@@ -1,4 +1,11 @@
 .card-specification {
+	@include flex-direction;
+	@include fluid-property(gap, 40, 80);
+
+	&__nav {
+		margin-bottom: 0;
+	}
+
 	&__text {
 		@include flex-direction;
 		@include fluid-property(gap, 20, 60);

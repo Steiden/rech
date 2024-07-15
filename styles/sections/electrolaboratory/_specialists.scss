@@ -5,11 +5,14 @@
  
     &__card-container {
         @include flex-direction(row, 40px);
+
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
     }
 
     &__card {
         @include flex-direction;
-        display: flex;
+        height: auto;
 
         @include tablet-l {
             max-width: 80%;
@@ -19,6 +22,7 @@
     &__img {
         @include fluid-property(border-radius, 20, 30);
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -35,6 +39,11 @@
     &__span,
     &__text {
         text-transform: uppercase;
+    }
+
+    &__span:nth-child(1),
+    &__text {
+        width: max-content;
     }
 
     &__span {

@@ -59,9 +59,11 @@
 
 		height: fit-content;
 		width: 50%;
+		margin-top: 50px;
 		margin-bottom: 120px;
 
 		@include tablet-l {
+			margin-top: 0;
 			margin-bottom: 0;
 			width: 100%;
 		}
