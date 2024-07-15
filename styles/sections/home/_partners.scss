@@ -2,6 +2,10 @@
 	@include flex-direction($gap: 90px);
 	overflow: hidden;
 
+	@include mobile-l {
+		padding-bottom: 20px;
+	}
+
 	&__title {
 	}
 
@@ -16,14 +20,14 @@
 		place-items: center;
 
 		@include tablet-l {
-            grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 			column-gap: 60px;
 			row-gap: clamp(20px, #{calc(60 * 100 / 768)}vw, 60px);
 		}
 
-        @include tablet {
-            grid-template-columns: repeat(3, 1fr);
-        }
+		@include tablet {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 
 	&__block {
@@ -35,24 +39,28 @@
 
 	&__img {
 		filter: grayscale(1);
-		transition-duration: .3s;
+		transition-duration: 0.3s;
 		width: 240px;
 
 		&:hover {
 			filter: grayscale(0);
 		}
 
-        @include tablet-l {
-            width: clamp(100px, #{calc(240 * 100 / 768)}vw, 240px);
-        }
+		@include tablet-l {
+			width: clamp(100px, #{calc(240 * 100 / 768)}vw, 240px);
+		}
+	}
+
+	&__swiper {
+		position: relative;
 	}
 }
 
 .partnersSwiper {
-  .swiper-wrapper {
-    display: flex;
- }
-  .swiper-slide {
-    height: auto;
- }
+	.swiper-wrapper {
+		display: flex;
+	}
+	.swiper-slide {
+		height: auto;
+	}
 }
