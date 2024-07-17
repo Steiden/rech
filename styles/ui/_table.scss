@@ -3,12 +3,19 @@
 	border-spacing: 0;
 	border: none;
 	width: 100%;
-	// table-layout: fixed;
 
-	// th,
-	// td {
-	// 	width: 100%;
-	// }
+	@include desktop-above {
+		table-layout: fixed;
+
+		th,
+		td {
+			word-break: break-all;
+			
+			&:last-child {
+				width: 125px;
+			}
+		}
+	}
 
 	& * {
 		color: var(--thirdy-alt-color);
@@ -113,6 +120,7 @@
 				color: var(--thirdy-alt-color);
 				font-size: 20px;
 				font-weight: 700;
+				width: 100%;
 			}
 
 			.select__icon {

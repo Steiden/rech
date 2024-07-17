@@ -33,6 +33,7 @@
 
 	&__mask {
 		background-color: rgba(255, 255, 255, 0.7);
+		// filter: brightness(0.6);
 
 		position: absolute;
 		top: 0;
@@ -207,6 +208,10 @@
 			font-size: 16px;
 			font-weight: 400;
 			color: var(--thirdy-alt-color);
+
+			&--title {
+				width: max-content;
+			}
 		}
 
 		&__link {

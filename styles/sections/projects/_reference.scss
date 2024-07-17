@@ -36,6 +36,10 @@
 		&__cell {
 			&:nth-child(6) {
 				padding-right: 50px;
+
+				@include desktop-above {
+					@include adaptive-property(padding-right, 10, 40);
+				}
 			}
 		}
 	}

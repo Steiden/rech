@@ -27,6 +27,12 @@
         }
 	}
 
+	&__title,
+	&__list,
+	&__button {
+		z-index: 2;
+	}
+
 	&__title {
 		@include fluid-property(margin-bottom, 0, 20);
 	}
