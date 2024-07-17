@@ -27,6 +27,11 @@
 
 				* {
 					font-size: 22px;
+					font-weight: 700;
+
+					.search-input__icon::before {
+						font-weight: normal;
+					}
 				}
 			}
 		}
