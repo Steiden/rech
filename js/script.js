@@ -543,6 +543,7 @@ try {
 			return arr;
 		}, []);
 
+
 		tabItems.forEach((tab) => {
 			tab.classList.remove("tab-item--active");
 		});
@@ -574,8 +575,8 @@ try {
 		});
 	};
 
-	createTabs(".cardTabs", ["#cardTabContent1", "#cardTabContent2"]);
-	createTabs(".cardTabs2", ["#cardTabContent1", "#cardTabContent2"]);
+	createTabs(".cardTabs", ["#cardTabContent1", "#cardTabContent2", "#cardTabContent3"]);
+	createTabs(".cardTabs2", ["#cardTabContent1", "#cardTabContent2", "#cardTabContent3"]);
 } catch (e) {
 	console.log(e);
 }
