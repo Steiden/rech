@@ -7,6 +7,19 @@
 
 	&__table,
 	.table {
+		@include desktop-200-above {
+			table-layout: fixed;
+
+			th,
+			td {
+				word-break: break-all;
+
+				&:last-child {
+					width: 125px;
+				}
+			}
+		}
+
 		.table__header {
 			.table__row:nth-child(1) {
 				background-color: var(--white-color);
@@ -25,7 +38,7 @@
 						font-size: 22px;
 					}
 				}
-	
+
 				&:nth-child(odd) {
 					* {
 						font-size: 18px;
