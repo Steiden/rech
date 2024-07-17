@@ -92,18 +92,23 @@ try {
 
 // Color calendar
 try {
-	const complexDateInput = document.querySelector("#complexDateInput");
-	const complexDate = new Calendar({
-		id: "#complexDate",
-		calendarSize: "small",
-		theme: "basic",
-		weekdayType: "short",
-		primaryColor: "#0c71ae",
-	});
+	const createCalendar = (inputSelector, dateSelector) => {
+		const complexDateInput = document.querySelector(inputSelector);
+		if(!document.querySelector(dateSelector) || !complexDateInput) return;
+		const calendar = new Calendar({
+			id: dateSelector,
+			calendarSize: "small",
+			theme: "basic",
+			weekdayType: "short",
+			primaryColor: "#0c71ae",
+		});
 
-	complexDate.dateChanged = (date) => {
-		complexDateInput.value = new Date(date).toLocaleDateString();
+		calendar.dateChanged = (date) => {
+			complexDateInput.value = new Date(date).toLocaleDateString();
+		};
 	};
+
+	createCalendar("#complexDateInput", "#complexDate");
 } catch (e) {
 	console.log(e);
 }
@@ -190,24 +195,20 @@ try {
 
 // Input mask
 try {
-	const createTelMask = (selector) => {
+	const createMask = (selector, mask = "+{7} (000) 000-00-00") => {
 		const inputs = document.querySelectorAll(selector);
 
-		if (!inputs.length) return;
+		if(!inputs.length) return;
 
 		inputs.forEach((input) => {
 			new IMask(input, {
-				mask: "+{7} (000) 000-00-00",
-				lazy: true,
+				mask: mask,
 			});
 		});
 	};
 
-	createTelMask("[type=tel]");
-
-	new IMask(document.getElementById("callbackModalTime"), {
-		mask: "00:00-00:00",
-	});
+	createMask("[type=tel]");
+	createMask("#callbackModalTime", "00:00-00:00")
 } catch (e) {
 	console.log(e);
 }
@@ -542,7 +543,6 @@ try {
 			arr.push(document.querySelector(selector));
 			return arr;
 		}, []);
-
 
 		tabItems.forEach((tab) => {
 			tab.classList.remove("tab-item--active");
