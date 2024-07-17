@@ -94,7 +94,7 @@ try {
 try {
 	const createCalendar = (inputSelector, dateSelector) => {
 		const complexDateInput = document.querySelector(inputSelector);
-		if(!document.querySelector(dateSelector) || !complexDateInput) return;
+		if (!document.querySelector(dateSelector) || !complexDateInput) return;
 		const calendar = new Calendar({
 			id: dateSelector,
 			calendarSize: "small",
@@ -198,7 +198,7 @@ try {
 	const createMask = (selector, mask = "+{7} (000) 000-00-00") => {
 		const inputs = document.querySelectorAll(selector);
 
-		if(!inputs.length) return;
+		if (!inputs.length) return;
 
 		inputs.forEach((input) => {
 			new IMask(input, {
@@ -208,7 +208,7 @@ try {
 	};
 
 	createMask("[type=tel]");
-	createMask("#callbackModalTime", "00:00-00:00")
+	createMask("#callbackModalTime", "00:00-00:00");
 } catch (e) {
 	console.log(e);
 }
@@ -240,19 +240,19 @@ try {
 	};
 
 	// Calc modal - home.html
-	createModal("#calcModal", "#calcModalOpenButton", ".calcModalCloseButton");
+	createModal("#calcModal", ".calcModalOpenButton", ".calcModalCloseButton");
 
 	// Callback modal - home.html
-	createModal("#callbackModal", "#callbackModalOpenButton", ".callbackModalCloseButton");
+	createModal("#callbackModal", ".callbackModalOpenButton", ".callbackModalCloseButton");
 
 	// Question modal - home.html
-	createModal("#questionModal", "#questionModalOpenButton", ".questionModalCloseButton");
+	createModal("#questionModal", ".questionModalOpenButton", ".questionModalCloseButton");
 
 	// Thanks - home.html
-	createModal("#thanksModal", "#openThanksModal", '[data-modal="closeThanksModal"');
+	createModal("#thanksModal", ".openThanksModal", '[data-modal="closeThanksModal"');
 
 	// Director modal - about-production.html
-	createModal("#directorModal", "#directorModalOpenButton", ".directorModalCloseButton");
+	createModal("#directorModal", ".directorModalOpenButton", ".directorModalCloseButton");
 
 	// Complex modal - about-production.html
 	createModal("#complexModal", ".complexModalOpenButton", ".complexModalCloseButton");
@@ -261,13 +261,13 @@ try {
 	createModal("#downloadModal", ".downloadModalOpenButton", ".downloadModalCloseButton");
 
 	// Price modal - project.html
-	createModal("#priceModal", "#priceModalOpenButton", ".priceModalCloseButton");
+	createModal("#priceModal", ".priceModalOpenButton", ".priceModalCloseButton");
 
 	// Tender modal - partners.html
-	createModal("#tenderModal", "#tenderModalOpenButton", ".tenderModalCloseButton");
+	createModal("#tenderModal", ".tenderModalOpenButton", ".tenderModalCloseButton");
 
 	// Resume modal - career.html
-	createModal("#resumeModal", "#resumeModalOpenButton", ".resumeModalCloseButton");
+	createModal("#resumeModal", ".resumeModalOpenButton", ".resumeModalCloseButton");
 } catch (e) {
 	console.log(e);
 }
@@ -358,16 +358,23 @@ try {
 		swiper2.slides[swiper1.activeIndex]?.classList.add("swiper-slide--active");
 	};
 
-	const createSwiper = (swiperSelector, gap, slidesPerView) => {
+	const createSwiper = (swiperSelector) => {
 		const sliders = document.querySelectorAll(swiperSelector);
 
 		sliders.forEach((slider) => {
 			if (!slider) return;
 
+			const gap = slider.getAttribute("data-swiper-gap") | 18;
+			const slidesPerView = slider.getAttribute("data-swiper-slides-per-view")
+				? slider.getAttribute("data-swiper-slides-per-view")
+				: "auto";
+
 			const swiperPagination = slider.querySelector(".swiper-pagination");
 			const swiperScrollbar = slider.querySelector(".swiper-scrollbar");
+			const swiperButtonPrev = slider.parentElement.querySelector(".swiper-arrow-prev");
+			const swiperButtonNext = slider.parentElement.querySelector(".swiper-arrow-next");
 
-			new Swiper(slider, {
+			const swiper = new Swiper(slider, {
 				slidesPerView: slidesPerView,
 				spaceBetween: gap,
 				pagination: {
@@ -377,156 +384,65 @@ try {
 					el: swiperScrollbar,
 				},
 			});
+
+			if (swiperButtonPrev) {
+				swiperButtonPrev.addEventListener("click", () => {
+					swiper.slidePrev();
+				});
+			}
+
+			if (swiperButtonNext) {
+				swiperButtonNext.addEventListener("click", () => {
+					swiper.slideNext();
+				});
+			}
 		});
 	};
 
 	window.addEventListener("load", (e) => {
 		const slidesPerView = window.innerWidth <= 480 ? 3 : 4;
 
-		const createDoubleSwiper = (swiper1, swiper2, prev, next) => {
-			const sliderEl1 = document.querySelector(swiper1);
-			const sliderEL2 = document.querySelector(swiper2);
+		const createDoubleSwiper = (sliderSelector) => {
+			const sliders = document.querySelectorAll(sliderSelector);
 
-			if (!sliderEl1 || !sliderEL2) return;
+			sliders.forEach((slider1) => {
+				const slider2 = slider1.parentElement.nextElementSibling;
 
-			const slider1 = new Swiper(sliderEl1, {
-				autoplay: true,
-				spaceBetween: 20,
-			});
-			const slider2 = new Swiper(sliderEL2, {
-				slidesPerView: slidesPerView,
-				slideToClickedSlide: true,
-				spaceBetween: 20,
-			});
+				if (!slider1 || !slider2) return;
 
-			slider2.slides[slider2.activeIndex]?.classList.add("swiper-slide--active");
-
-			const nextButton = document.querySelector(next);
-			const prevButton = document.querySelector(prev);
-
-			slider1.on("slideChange", () => syncSwipers(slider1, slider2, 1));
-			slider2.on("click", () => syncSwipers(slider1, slider2, 2));
-
-			if (nextButton && prevButton) {
-				nextButton.addEventListener("click", () => {
-					slider1.slideNext();
+				const swiper1 = new Swiper(slider1, {
+					autoplay: true,
+					spaceBetween: 20,
 				});
-				prevButton.addEventListener("click", () => {
-					slider1.slidePrev();
+				const swiper2 = new Swiper(slider2, {
+					slidesPerView: slidesPerView,
+					slideToClickedSlide: true,
+					spaceBetween: 20,
 				});
-			}
+
+				swiper2.slides[swiper2.activeIndex]?.classList.add("swiper-slide--active");
+
+				const prevButton = slider1.parentElement.querySelector(".swiper-arrow-prev");
+				const nextButton = slider1.parentElement.querySelector(".swiper-arrow-next");
+
+				swiper1.on("slideChange", () => syncSwipers(swiper1, swiper2, 1));
+				swiper2.on("click", () => syncSwipers(swiper1, swiper2, 2));
+
+				if (nextButton && prevButton) {
+					nextButton.addEventListener("click", () => {
+						swiper1.slideNext();
+					});
+					prevButton.addEventListener("click", () => {
+						swiper1.slidePrev();
+					});
+				}
+			});
 		};
 
-		// Product section swiper
-		createDoubleSwiper(
-			".productSwiper",
-			".productSwiper2",
-			"#productSwiperPrev",
-			"#productSwiperNext"
-		);
-
-		// About section swiper
-		const aboutSwiperPrevButton = document.getElementById("aboutSwiperPrev");
-		const aboutSwiperNextButton = document.getElementById("aboutSwiperNext");
-		const aboutSwiper = new Swiper(".aboutSwiper", {
-			autoplay: true,
-			spaceBetween: 20,
-		});
-		if (aboutSwiperPrevButton && aboutSwiperNextButton) {
-			aboutSwiperNextButton.addEventListener("click", () => {
-				aboutSwiper.slideNext();
-			});
-			aboutSwiperPrevButton.addEventListener("click", () => {
-				aboutSwiper.slidePrev();
-			});
-		}
-
-		// Project1 section swiper
-		createDoubleSwiper(
-			".projectSwiper11",
-			".projectSwiper12",
-			"#projectSwiperPrev",
-			"#projectSwiperNext"
-		);
-
-		// Project2 section swiper
-		createDoubleSwiper(
-			".projectSwiper21",
-			".projectSwiper22",
-			"#project2SwiperPrev",
-			"#project2SwiperNext"
-		);
-
-		// Complex swiper 1
-		createDoubleSwiper(
-			".complexSwiper11",
-			".complexSwiper12",
-			"#complexSwiper1Prev",
-			"#complexSwiper1Next"
-		);
-
-		// Complex swiper 2
-		createDoubleSwiper(
-			".complexSwiper21",
-			".complexSwiper22",
-			"#complexSwiper2Prev",
-			"#complexSwiper2Next"
-		);
-
-		// Complex swiper 3
-		createDoubleSwiper(
-			".complexSwiper31",
-			".complexSwiper32",
-			"#complexSwiper3Prev",
-			"#complexSwiper3Next"
-		);
-
-		// Complex swiper 4
-		createDoubleSwiper(
-			".complexSwiper41",
-			".complexSwiper42",
-			"#complexSwiper4Prev",
-			"#complexSwiper4Next"
-		);
+		createDoubleSwiper(".double-swiper");
 	});
 
-	// Advantages, Solutions
-	createSwiper(".swiper", 18, "auto");
-
-	// Team - about-production.html
-	createSwiper(".team-swiper", 22, "auto");
-
-	// Partners
-	createSwiper(".partnersSwiper", 60, 2);
-
-	// Docs - about-production.html
-	createSwiper(".docs-swiper", 40, "auto");
-
-	createSwiper(".products-swiper", 30, "auto");
-
-	createSwiper(".functions-swiper", 18, "auto");
-
-	// Groups
-	const groupSwiperPrev = document.getElementById("groupSwiperPrev");
-	const groupSwiperNext = document.getElementById("groupSwiperNext");
-	const groupSwiper = new Swiper(".groupSwiper", {
-		spaceBetween: 0,
-		slidesPerView: 1,
-		loop: true,
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-	});
-
-	if (groupSwiperPrev && groupSwiperNext) {
-		groupSwiperPrev.addEventListener("click", () => {
-			groupSwiper.slidePrev();
-		});
-		groupSwiperNext.addEventListener("click", () => {
-			groupSwiper.slideNext();
-		});
-	}
+	createSwiper(".swiper");
 } catch (e) {
 	console.log(e);
 }

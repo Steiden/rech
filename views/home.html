@@ -18,7 +18,7 @@
 						<i class="d_icon d_icon-calculator"></i>
 						<p class="actions__text">Запросы на<br />расчет</p>
 					</button>
-					<button class="actions__button actions__button--dark" id="callbackModalOpenButton">
+					<button class="actions__button actions__button--dark callbackModalOpenButton">
 						<i class="d_icon d_icon-telephone"></i>
 						<p class="actions__text">Обратный<br />звонок</p>
 					</button>
@@ -264,7 +264,7 @@
 								<div class="input__wrapper header__search-input">
 									<input type="text" placeholder="+ 7 (999) 999-99-99" class="telephone" />
 								</div>
-								<button class="my-button my-button--red header__button" id="openThanksModal">
+								<button class="my-button my-button--red header__button openThanksModal">
 									Получить КП под ваш запрос
 									<i class="d_icon d_icon-arrow-diagonal"></i>
 								</button>
@@ -382,7 +382,11 @@
 						</ul>
 
 						<div class="slider__inner about__slider">
-							<div class="slider about__img-container aboutSwiper">
+							<div
+								class="slider about__img-container swiper"
+								data-swiper-gap="20"
+								data-swiper-slides-per-view="1"
+							>
 								<div class="swiper-wrapper">
 									<a
 										href="/assets/img/background/bg-about.png"
@@ -422,12 +426,12 @@
 									</a>
 								</div>
 							</div>
-							<button class="slider__arrow slider__arrow--left" id="aboutSwiperPrev">
+							<button class="slider__arrow slider__arrow--left swiper-arrow-prev">
 								<i class="d_icon-quotation-left-red slider__arrow-icon"
 									><span class="path1"></span><span class="path2"></span><span class="path3"></span
 								></i>
 							</button>
-							<button class="slider__arrow slider__arrow--right" id="aboutSwiperNext">
+							<button class="slider__arrow slider__arrow--right swiper-arrow-next">
 								<i class="d_icon-quotation-right-red slider__arrow-icon"
 									><span class="path1"></span><span class="path2"></span><span class="path3"></span
 								></i>
@@ -555,7 +559,7 @@
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical product-card__slider">
 								<div class="slider__inner">
-									<div class="slider about__img-container productSwiper">
+									<div class="slider about__img-container double-swiper">
 										<div class="swiper-wrapper">
 											<a
 												href="/assets/img/products/product1.png"
@@ -610,13 +614,13 @@
 											</a>
 										</div>
 									</div>
-									<button class="slider__arrow slider__arrow--left" id="productSwiperPrev">
+									<button class="slider__arrow slider__arrow--left swiper-arrow-prev">
 										<i class="d_icon-quotation-left-red slider__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
 										></i>
 									</button>
-									<button class="slider__arrow slider__arrow--right" id="productSwiperNext">
+									<button class="slider__arrow slider__arrow--right swiper-arrow-next">
 										<i class="d_icon-quotation-right-red slider__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
@@ -624,7 +628,7 @@
 									</button>
 								</div>
 
-								<div class="slider productSwiper2">
+								<div class="slider doubleswiper2">
 									<div class="swiper-wrapper">
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
@@ -721,8 +725,7 @@
 										<i class="d_icon d_icon-arrow-diagonal"></i>
 									</a>
 									<button
-										class="my-button my-button--blue product-card__button"
-										id="calcModalOpenButton"
+										class="my-button my-button--blue product-card__button calcModalOpenButton"
 									>
 										Рассчитать стоимость и получить КП
 										<i class="d_icon d_icon-calculator"></i>
@@ -740,7 +743,8 @@
 							<i class="d_icon d_icon-title-mark title__icon hidden-mobile-l"></i>
 							<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
 							<span class="h2">
-								<span class="dark-blue">РЕАЛИЗУЕМ ПРОЕКТЫ</span> <span class="red">ПО ВСЕЙ РОССИИ</span>
+								<span class="dark-blue">РЕАЛИЗУЕМ ПРОЕКТЫ</span>
+								<span class="red">ПО ВСЕЙ РОССИИ</span>
 							</span>
 						</div>
 						<div class="map__img-container">
@@ -899,7 +903,7 @@
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical">
 								<div class="slider__inner">
-									<div class="slider about__img-container projectSwiper11">
+									<div class="slider about__img-container double-swiper">
 										<div class="swiper-wrapper">
 											<a
 												href="/assets/img/projects/project1.png"
@@ -954,13 +958,13 @@
 											</a>
 										</div>
 									</div>
-									<button class="slider__arrow slider__arrow--left" id="projectSwiperPrev">
+									<button class="slider__arrow slider__arrow--left swiper-arrow-prev">
 										<i class="d_icon-quotation-left-red slider__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
 										></i>
 									</button>
-									<button class="slider__arrow slider__arrow--right" id="projectSwiperNext">
+									<button class="slider__arrow slider__arrow--right swiper-arrow-next">
 										<i class="d_icon-quotation-right-red slider__arrow-icon"
 											><span class="path1"></span><span class="path2"></span
 											><span class="path3"></span
@@ -968,7 +972,7 @@
 									</button>
 								</div>
 
-								<div class="slider projectSwiper12">
+								<div class="slider double-swiper2">
 									<div class="swiper-wrapper">
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
@@ -1020,75 +1024,77 @@
 						<div class="projects__block hidden-tablet">
 							<!-- Компонент слайдера -->
 							<div class="slider slider--vertical">
-								<div class="slider about__img-container projects__slider projectSwiper21">
-									<div class="swiper-wrapper">
-										<a
-											href="/assets/img/projects/project1.png"
-											data-fancybox="projectsGallery2"
-											class="slider__img-button slider__link product__img-button swiper-slide"
-										>
-											<img
-												src="/assets/img/projects/project1.png"
-												alt="background"
-												class="slider__img product-card__img"
-											/>
-										</a>
-										<a
-											href="/assets/img/projects/project1.png"
-											data-fancybox="projectsGallery2"
-											class="slider__img-button slider__link product-card__img-button swiper-slide"
-										>
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img slider__img slider__img--small"
-											/>
-										</a>
-										<a
-											href="/assets/img/projects/project1.png"
-											data-fancybox="projectsGallery2"
-											class="slider__img-button slider__link product-card__img-button swiper-slide"
-										>
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img slider__img slider__img--small"
-											/>
-										</a>
-										<a
-											href="/assets/img/projects/project1.png"
-											data-fancybox="projectsGallery2"
-											class="slider__img-button slider__link product-card__img-button swiper-slide"
-										>
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img slider__img slider__img--small"
-											/>
-										</a>
-										<a
-											href="/assets/img/projects/project1.png"
-											data-fancybox="projectsGallery2"
-											class="slider__img-button slider__link product-card__img-button swiper-slide"
-										>
-											<img
-												src="/assets/img/projects/project1.png"
-												class="slider__img product-card__img product-card__img--small"
-											/>
-										</a>
+								<div class="slider__inner">
+									<div class="slider about__img-container projects__slider double-swiper">
+										<div class="swiper-wrapper">
+											<a
+												href="/assets/img/projects/project1.png"
+												data-fancybox="projectsGallery2"
+												class="slider__img-button slider__link product__img-button swiper-slide"
+											>
+												<img
+													src="/assets/img/projects/project1.png"
+													alt="background"
+													class="slider__img product-card__img"
+												/>
+											</a>
+											<a
+												href="/assets/img/projects/project1.png"
+												data-fancybox="projectsGallery2"
+												class="slider__img-button slider__link product-card__img-button swiper-slide"
+											>
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img slider__img slider__img--small"
+												/>
+											</a>
+											<a
+												href="/assets/img/projects/project1.png"
+												data-fancybox="projectsGallery2"
+												class="slider__img-button slider__link product-card__img-button swiper-slide"
+											>
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img slider__img slider__img--small"
+												/>
+											</a>
+											<a
+												href="/assets/img/projects/project1.png"
+												data-fancybox="projectsGallery2"
+												class="slider__img-button slider__link product-card__img-button swiper-slide"
+											>
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img slider__img slider__img--small"
+												/>
+											</a>
+											<a
+												href="/assets/img/projects/project1.png"
+												data-fancybox="projectsGallery2"
+												class="slider__img-button slider__link product-card__img-button swiper-slide"
+											>
+												<img
+													src="/assets/img/projects/project1.png"
+													class="slider__img product-card__img product-card__img--small"
+												/>
+											</a>
+										</div>
+										<button class="slider__arrow slider__arrow--left swiper-arrow-prev">
+											<i class="d_icon-quotation-left-red slider__arrow-icon"
+												><span class="path1"></span><span class="path2"></span
+												><span class="path3"></span
+											></i>
+										</button>
+										<button class="slider__arrow slider__arrow--right swiper-arrow-next">
+											<i class="d_icon-quotation-right-red slider__arrow-icon"
+												><span class="path1"></span><span class="path2"></span
+												><span class="path3"></span
+											></i>
+										</button>
 									</div>
-									<button class="slider__arrow slider__arrow--left" id="project2SwiperPrev">
-										<i class="d_icon-quotation-left-red slider__arrow-icon"
-											><span class="path1"></span><span class="path2"></span
-											><span class="path3"></span
-										></i>
-									</button>
-									<button class="slider__arrow slider__arrow--right" id="project2SwiperNext">
-										<i class="d_icon-quotation-right-red slider__arrow-icon"
-											><span class="path1"></span><span class="path2"></span
-											><span class="path3"></span
-										></i>
-									</button>
 								</div>
 
-								<div class="slider projects__slider projectSwiper22">
+								<div class="slider projects__slider double-swiper2">
 									<div class="swiper-wrapper">
 										<button class="slider__img-button slider__img-button--small swiper-slide">
 											<img
@@ -1203,7 +1209,11 @@
 						<i class="d_icon d_icon-title-mark-small title__icon visible-mobile-l"></i>
 						<span class="h2">С НАМИ <span class="blue">СОТРУДНИЧАЮТ</span></span>
 					</div>
-					<div class="partners__content partnersSwiper partners__swiper">
+					<div
+						class="partners__content swiper partners__swiper"
+						data-swiper-gap="60"
+						data-swiper-slides-per-view="2"
+					>
 						<div class="swiper-wrapper visible-mobile-l">
 							<div class="swiper-slide">
 								<div class="partners__block">
@@ -1496,7 +1506,7 @@
 							<i class="d_icon d_icon-whatsapp contact__icon contact__icon--whatsapp"></i>
 							<div class="contact__content">
 								<div class="contact__link-container contact__link-container--green">
-									<a class="contact__link" id="questionModalOpenButton">Задать вопрос</a>
+									<a class="contact__link questionModalOpenButton">Задать вопрос</a>
 									<i class="d_icon d_icon-arrow-diagonal contact__link-icon"></i>
 								</div>
 							</div>
@@ -1616,7 +1626,13 @@
 						<div class="modal__button-wrapper">
 							<span class="modal__span">Вложить техническое задание</span>
 							<div class="file-input__wrapper">
-								<input type="file" name="calcModalFile1" tag="form" id="calcModalFile1" class="file-input" />
+								<input
+									type="file"
+									name="calcModalFile1"
+									tag="form"
+									id="calcModalFile1"
+									class="file-input"
+								/>
 								<label for="calcModalFile1" class="modal__button file-input__label">
 									Прикрепить файл
 									<i class="d_icon d_icon-paper-clip"></i>
@@ -1626,7 +1642,13 @@
 						<div class="modal__button-wrapper">
 							<span class="modal__span">Вложить карточку предприятия</span>
 							<div class="file-input__wrapper">
-								<input type="file" name="calcModalFile1" tag="form" id="calcModalFile1" class="file-input" />
+								<input
+									type="file"
+									name="calcModalFile1"
+									tag="form"
+									id="calcModalFile1"
+									class="file-input"
+								/>
 								<label for="calcModalFile1" class="modal__button file-input__label">
 									Прикрепить файл
 									<i class="d_icon d_icon-paper-clip"></i>
