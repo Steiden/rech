@@ -11,10 +11,35 @@
 			.table__row:nth-child(1) {
 				background-color: var(--white-color);
 				color: var(--thirdy-alt-color);
+
+				* {
+					font-size: 22px;
+				}
+			}
+		}
+
+		.table__body {
+			.table__row {
+				&:nth-child(even) {
+					* {
+						font-size: 22px;
+					}
+				}
+	
+				&:nth-child(odd) {
+					* {
+						font-size: 18px;
+					}
+				}
 			}
 		}
 
 		&__row {
+			&:nth-child(odd) {
+			}
+
+			&:nth-child(even) {
+			}
 		}
 
 		&__th,

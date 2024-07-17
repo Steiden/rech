@@ -10,7 +10,7 @@
 		th,
 		td {
 			word-break: break-all;
-			
+
 			&:last-child {
 				width: 125px;
 			}
@@ -36,13 +36,15 @@
 		overflow: auto;
 	}
 
-	&__row {
-		&:nth-child(odd) {
-			background-color: #eaf8fd;
-		}
+	&__body {
+		.table__row {
+			&:nth-child(even) {
+				background-color: #eaf8fd;
+			}
 
-		&:nth-child(even) {
-			background-color: var(--white-color);
+			&:nth-child(odd) {
+				background-color: var(--white-color);
+			}
 		}
 	}
 
@@ -87,7 +89,7 @@
 	}
 
 	&__cell {
-		@include fluid-text(14, 20);
+		@include fluid-text(14, 18);
 		@include fluid-property(padding-block, 20, 30);
 
 		&:nth-child(1) {
@@ -127,6 +129,12 @@
 				&::before {
 					color: var(--link-hover-color);
 				}
+			}
+		}
+
+		.select__list {
+			* {
+				font-size: 18px !important;
 			}
 		}
 	}
