@@ -1262,13 +1262,13 @@
 								placeholder="+7 (___) ___-__-__*"
 								class="electrolaboratory-order__input"
 							/>
-							<button
-								type="button"
-								class="my-button my-button-transparent electrolaboratory-order__button"
-							>
-								Прикрепить файл
-								<i class="d_icon d_icon-paper-clip"></i>
-							</button>
+							<div class="file-input__wrapper">
+								<input type="file" name="calcModalFile1" tag="form" id="calcModalFile1" class="file-input" />
+								<label for="calcModalFile1" class="modal__button file-input__label my-button my-button-transparent electrolaboratory-order__button">
+									Прикрепить файл
+									<i class="d_icon d_icon-paper-clip"></i>
+								</label>
+							</div>
 							<button
 								class="my-button my-button--red justify-content-center electrolaboratory-order__send-button"
 							>

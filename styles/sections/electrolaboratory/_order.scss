@@ -48,6 +48,7 @@
 		@include fluid-property(padding-inline, 55, 50);
 
 		border: 1px solid var(--thirdy-color);
+		color: var(--white-color);
 
 		i::before {
 			color: var(--white-color);
