@@ -4,7 +4,7 @@
 	border: none;
 	width: 100%;
 
-	@include desktop-above {
+	@include desktop-200-above {
 		table-layout: fixed;
 
 		th,

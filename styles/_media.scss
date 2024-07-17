@@ -46,6 +46,18 @@ $mobile-s: 240px;
 	}
 }
 
+@mixin desktop-200-above {
+	@media (width > 1200px) {
+		@content;
+	}
+}
+
+@mixin desktop-200 {
+	@media (width <= 1200px) {
+		@content;
+	}
+}
+
 @mixin tablet-l-above {
 	@media (width > $tablet-l) {
 		@content;

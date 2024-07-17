@@ -1,6 +1,6 @@
 .search-input {
 	@include flex-center;
-	width: 100%;
+	width: max-content;
 
 	&--active {
 		.search-input__input {

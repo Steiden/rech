@@ -65,6 +65,10 @@
 				@include desktop-above {
 					@include adaptive-property(padding-right, 10, 40);
 				}
+
+				@include desktop {
+					padding-right: 10px;
+				}
 			}
 		}
 	}
