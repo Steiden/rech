@@ -115,8 +115,12 @@ try {
 
 // Fancybox
 try {
-	const createGallery = (name) => {
-		Fancybox.bind(`[data-fancybox="${name}"`, {
+	const fancyGalleries = document.querySelectorAll(`[data-fancybox]`);
+
+	fancyGalleries.forEach((gallery) => {
+		const galleryName = gallery.dataset.fancybox;
+
+		Fancybox.bind(`[data-fancybox="${galleryName}"`, {
 			hideScrollbar: false,
 
 			Toolbar: {
@@ -159,25 +163,25 @@ try {
 			`,
 			},
 		});
-	};
+	});
 
-	createGallery("aboutGallery");
+	// createGallery("aboutGallery");
 
-	createGallery("productsGallery");
+	// createGallery("productsGallery");
 
-	createGallery("projectsGallery1");
+	// createGallery("projectsGallery1");
 
-	createGallery("projectsGallery2");
+	// createGallery("projectsGallery2");
 
-	createGallery("complexGallery1");
-	createGallery("complexGallery2");
-	createGallery("complexGallery3");
-	createGallery("complexGallery4");
+	// createGallery("complexGallery1");
+	// createGallery("complexGallery2");
+	// createGallery("complexGallery3");
+	// createGallery("complexGallery4");
 
-	createGallery("docsGallery");
-	createGallery("docsGallery2");
+	// createGallery("docsGallery");
+	// createGallery("docsGallery2");
 
-	createGallery("productionGallery");
+	// createGallery("productionGallery");
 } catch (e) {
 	console.log(e);
 }
