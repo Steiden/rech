@@ -143,3 +143,13 @@
 .border-none {
 	border: none !important;
 }
+
+.border-radius-bottom-none {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+.border-radius-top-none {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}

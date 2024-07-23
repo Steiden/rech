@@ -23,18 +23,23 @@
 
 	&__text {
 		width: 100%;
+		color: var(--thirdy-alt-color);
+		font-weight: 700;
 	}
 
 	&__button {
+		@include flex-center;
 	}
 
 	&__icon {
 	}
 
 	&__input {
+		color: var(--primary-color);
+		font-weight: normal;
 		display: none;
 		height: 30px;
-		font-size: 20px;
+		font-size: 22px;
         width: 100%;
 	}
 }

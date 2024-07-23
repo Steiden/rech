@@ -86,6 +86,35 @@ try {
 			actions.classList.add("actions--visible");
 		}
 	});
+
+	const fixTableSelect = () => {
+		const tableWrappers = document.querySelectorAll("[data-fix-select-table");
+		tableWrappers.forEach((tableWrapper) => {
+			const tableSelects = tableWrapper.querySelectorAll(
+				`[data-fix-select="${tableWrapper.getAttribute("data-fix-select-table")}"]`
+			);
+			const tableCells = document.querySelectorAll(
+				`[data-fix-select-height="${tableWrapper.getAttribute("data-fix-select-table")}"]`
+			);
+
+			tableSelects.forEach((tableSelect, index) => {
+				tableSelect.style.top = `${tableCells[0].getBoundingClientRect().height}px`;
+				tableSelect.style.minWidth = `${tableCells[index].getBoundingClientRect().width}px`;
+			});
+
+			tableWrapper.addEventListener("scroll", () => {
+				tableSelects.forEach((tableSelect) => {
+					tableSelect.style.translate = `-${tableWrapper.scrollLeft}px 0`;
+					tableSelect.style.transitionDuration = "0s";
+				});
+			});
+		});
+	};
+	fixTableSelect();
+
+	window.addEventListener("resize", () => {
+		fixTableSelect();
+	});
 } catch (e) {
 	console.log(e);
 }
@@ -305,16 +334,25 @@ try {
 
 	allSelect.forEach((select) => {
 		const selectButton = select.querySelector(".select__content");
-		const selectList = select.querySelector(".select__list");
+		let selectList = select.querySelector(".select__list");
+		if (!selectList) {
+			selectList = document.querySelector(`[data-name="${select.dataset.for}"]`);
+			// setDropdownPosition(
+			// 	select.parentElement,
+			// 	selectList
+			// );
+		}
 		const selectItems = selectList.querySelectorAll(".select__item");
 		let isClicked = false;
 
 		selectButton.addEventListener("click", () => {
 			if (!isClicked) {
 				select.classList.add("select--active");
+				selectList.classList.add("select__list--active");
 				isClicked = true;
 			} else {
 				select.classList.remove("select--active");
+				selectList.classList.remove("select__list--active");
 				isClicked = false;
 			}
 		});
@@ -325,6 +363,7 @@ try {
 				selectInput.textContent = item.textContent.trim();
 				selectInput.value = item.textContent.trim();
 				select.classList.remove("select--active");
+				selectList.classList.remove("select__list--active");
 				isClicked = false;
 			});
 		});
@@ -332,6 +371,7 @@ try {
 		window.addEventListener("click", (e) => {
 			if (!select.contains(e.target)) {
 				select.classList.remove("select--active");
+				selectList.classList.remove("select__list--active");
 				isClicked = false;
 			}
 		});
