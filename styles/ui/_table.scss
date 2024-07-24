@@ -8,8 +8,18 @@
 		color: var(--thirdy-alt-color);
 	}
 
+	&__select-container {
+		display: contents;
+
+		.select__list {
+			min-width: fit-content;
+		}
+	}
+
 	&__container {
 		margin-top: 65px;
+		position: relative;
+		overflow-x: clip;
 
 		@include mobile-l {
 			padding: 0;
@@ -38,10 +48,10 @@
 	&__header {
 		.table__row {
 			&--blue {
-				background-color: var(--thirdy-alt-color);
+				background-color: var(--thirdy-alt-color) !important;
 
 				& * {
-					color: var(--white-color);
+					color: var(--white-color) !important;
 				}
 			}
 		}
@@ -60,7 +70,6 @@
 		@include fluid-property(padding-left, 50, 120);
 		padding-right: 10px;
 		text-align: left;
-		position: relative;
 	}
 
 	&__th {
@@ -68,10 +77,22 @@
 		@include fluid-property(padding-bottom, 22, 29);
 		font-weight: 700;
 		padding-top: 24px;
+
+		.select__text {
+			min-width: 50px;
+		}
 	}
 
 	&__body {
 		.table__cell {
+		}
+	}
+
+	&__row {
+		&--header {
+			@include flex-direction(row);
+			@include fluid-property(border-radius, 20, 30);
+			background-color: var(--white-color);
 		}
 	}
 
@@ -86,6 +107,10 @@
 		&:nth-child(2) {
 			@include fluid-property(padding-left, 20, 120);
 		}
+	}
+
+	&__select-list {
+		// top: 83px;
 	}
 
 	&__list {

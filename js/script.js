@@ -86,6 +86,35 @@ try {
 			actions.classList.add("actions--visible");
 		}
 	});
+
+	const fixTableSelect = () => {
+		const tableWrappers = document.querySelectorAll("[data-fix-select-table");
+		tableWrappers.forEach((tableWrapper) => {
+			const tableSelects = tableWrapper.querySelectorAll(
+				`[data-fix-select="${tableWrapper.getAttribute("data-fix-select-table")}"]`
+			);
+			const tableCells = document.querySelectorAll(
+				`[data-fix-select-height="${tableWrapper.getAttribute("data-fix-select-table")}"]`
+			);
+
+			tableSelects.forEach((tableSelect, index) => {
+				tableSelect.style.top = `${tableCells[0].getBoundingClientRect().height}px`;
+				tableSelect.style.minWidth = `${tableCells[index].getBoundingClientRect().width}px`;
+			});
+
+			tableWrapper.addEventListener("scroll", () => {
+				tableSelects.forEach((tableSelect) => {
+					tableSelect.style.translate = `-${tableWrapper.scrollLeft}px 0`;
+					tableSelect.style.transitionDuration = "0s";
+				});
+			});
+		});
+	};
+	fixTableSelect();
+
+	window.addEventListener("resize", () => {
+		fixTableSelect();
+	});
 } catch (e) {
 	console.log(e);
 }
@@ -275,7 +304,6 @@ try {
 } catch (e) {
 	console.log(e);
 }
-
 // Swiper
 try {
 	const removeSlidesActiveStyle = (slides) => {

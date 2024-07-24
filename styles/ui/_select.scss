@@ -67,7 +67,7 @@
 		translate: 0 0;
 
 		width: max-content;
-		min-width: 100%;
+		// min-width: 100%;
 
 		overflow: hidden;
 		z-index: 100;
@@ -75,6 +75,10 @@
 		visibility: hidden;
 		opacity: 0;
 		transition-duration: 0.3s;
+
+		&--active {
+			@include visible;
+		}
 	}
 
 	&__item {
@@ -88,8 +92,10 @@
 		}
 	}
 
-	& &__button {
+	& &__button,
+	&__button {
 		color: var(--primary-color);
+		font-weight: normal !important;
 		height: 57px;
 		width: 100%;
 		padding-inline: 25px;
