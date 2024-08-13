@@ -334,7 +334,7 @@ try {
 
 			const gap = slider.getAttribute("data-swiper-gap") | 18;
 			const slidesPerView = slider.getAttribute("data-swiper-slides-per-view")
-				? slider.getAttribute("data-swiper-slides-per-view")
+				? Number(slider.getAttribute("data-swiper-slides-per-view"))
 				: "auto";
 
 			const swiperPagination = slider.querySelector(".swiper-pagination");
