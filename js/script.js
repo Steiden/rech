@@ -351,6 +351,7 @@ try {
 				scrollbar: {
 					el: swiperScrollbar,
 				},
+				autoplay: false
 			});
 
 			if (swiperButtonPrev) {
@@ -386,6 +387,7 @@ try {
 					slidesPerView: slidesPerView,
 					slideToClickedSlide: true,
 					spaceBetween: 20,
+					autoplay: false
 				});
 
 				swiper2.slides[swiper2.activeIndex]?.classList.add("swiper-slide--active");
